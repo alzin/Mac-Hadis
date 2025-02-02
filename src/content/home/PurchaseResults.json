@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title1": "TopMan トップマン",
+    "title2": "岡田金属",
+    "title3": "小型 卓上旋盤",
+    "model": "TEL-400LS",
+    "image": "/images_db/product1.jpg"
+  },
+  {
+    "id": 2,
+    "title1": "ヤンマー",
+    "title2": "ディーゼルトラクター",
+    "title3": "ニューフォルテ",
+    "model": "F165D",
+    "image": "/images_db/product2.jpg"
+  },
+  {
+    "id": 3,
+    "title1": "スター農機",
+    "title2": "Strautmann",
+    "title3": "ストラウトマン圧縮減容機",
+    "model": "MK700 60Hz",
+    "image": "/images_db/product3.jpg"
+  },
+  {
+    "id": 4,
+    "title1": "コマツ",
+    "title2": "油圧ショベル ユンボ",
+    "model": "PC28UU-3",
+    "image": "/images_db/product4.jpg"
+  },
+  {
+    "id": 5,
+    "title1": "アネスト岩田",
+    "title2": "エンジンコンプレッサー",
+    "model": "PLUE22-10",
+    "image": "/images_db/product5.jpg"
+  },
+  {
+    "id": 6,
+    "title1": "Denyo デンヨー",
+    "title2": "防音型エンジン発電機",
+    "model": "DCA-60LSIE",
+    "image": "/images_db/product6.jpg"
+  }
+]

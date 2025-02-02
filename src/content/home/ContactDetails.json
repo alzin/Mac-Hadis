@@ -1,0 +1,14 @@
+{
+  "phoneNumber": {
+    "label": "0120-842-881",
+    "href": "tel:0120-842-881"
+  },
+  "support": {
+    "label": "フォームからご相談",
+    "href": "/#inquiry"
+  },
+  "line": {
+    "label": "LINE査定",
+    "href": "https://line.me/R/ti/p/@kikaikaitori"
+  }
+}

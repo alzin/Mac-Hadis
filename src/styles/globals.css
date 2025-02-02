@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.gradient-red {
+    background: linear-gradient(to right bottom, #B81122 50%, #AC0C1C 50%);
+    border: 2px solid #990E1C;
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #AD0D1D; */
+    text-shadow:
+        2px 2px 0 #990E1C,
+        -2px 2px 0 #990E1C,
+        -2px -2px 0 #990E1C,
+        2px -2px 0 #990E1C;
+}
+
+.gradient-green {
+    background: linear-gradient(to right bottom, #50CB68 50%, #49BF60 50%);
+    border: 2px solid #43B058;
+    /* -webkit-text-stroke-width: 2px; */
+    /* -webkit-text-stroke-color: #4AC061; */
+    text-shadow:
+        2px 2px 0 #4AC061,
+        -2px 2px 0 #4AC061,
+        -2px -2px 0 #4AC061,
+        2px -2px 0 #4AC061;
+}
+
+.gradient-blue {
+
+    background: linear-gradient(to right bottom, #0194F7 50%, #008AE6 50%);
+    border: 2px solid #017FD4;
+    /* -webkit-text-stroke-width: 2px; */
+    /* -webkit-text-stroke-color: #017FD4; */
+    text-shadow:
+        2px 2px 0 #017FD4,
+        -2px 2px 0 #017FD4,
+        -2px -2px 0 #017FD4,
+        2px -2px 0 #017FD4;
+}
+
+.gradient-navigation {
+    background: linear-gradient(to right bottom, #B81122 50%, #AC0C1C 50%);
+}
