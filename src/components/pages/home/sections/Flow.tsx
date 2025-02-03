@@ -29,9 +29,11 @@ const Flow: React.FC = () => {
                 </div>
             </div>
 
-            <p className="max-w-[736px] text-base leading-8 md:text-xl font-normal mt-4 mx-auto md:leading-10"> ハディズでは、DIY用の工具・電動工具をはじめ、工場で使用する大型機械など、
-                幅広く査定・買取を承っております。他店に負けない正当な価格での
-                査定に自信があります。まずはお気軽に査定をご依頼ください。</p>
+            <p className="max-w-[736px] text-base leading-8 md:text-xl font-normal mt-4 mx-auto md:leading-10">
+                ハディズでは、DIY用の工具・電動工具をはじめ、工場で使用する大型機械など、幅広く査定・買取を承っております。
+                <br></br> 他店に負けない正当な価格での査定に自信があります。
+                <br></br>まずはお気軽に査定をご依頼ください。
+            </p>
         </section>
     )
 };

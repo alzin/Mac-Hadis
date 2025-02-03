@@ -22,7 +22,7 @@ const Header: React.FC = () => {
             <div className=" px-4 lg:px-7 flex overflow-y-auto items-center justify-between lg:justify-start gap-8 h-full relative ">
 
                 {/* logo */}
-                <Link href={"/"} className="w-[52px] h-[33px] lg:w-[101px] lg:h-[64px] relative block">
+                <Link href={"/"} className="w-[70px] h-[45px] lg:w-[101px] lg:h-[64px] relative block">
                     <Image src="/images/hadis-logo.png" alt="Hadis Company Logo" fill unoptimized priority />
                 </Link>
 

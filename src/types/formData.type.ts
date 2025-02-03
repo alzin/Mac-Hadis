@@ -11,6 +11,7 @@ export type TFormData = {
   inquiry_source: string;
   product_details: string;
   product_condition: string;
-  image: string | null;
+  image?: string | null; 
   additional_notes: string;
+  fileName?: string; 
 };

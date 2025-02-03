@@ -21,7 +21,7 @@ const PurchaseItemsCard = ({ id, title, image }: IPurchaseItemsCardProps) => {
           className="w-[112px] h-[112px] lg:w-[150px] lg:h-[150px]"
         />
       </div>
-      <p className="max-h-[100px] px-[10px] lg:px-[6px] py-[7px] lg:py-[12px] absolute bottom-0 left-0 w-full bg-[#B81122] flex justify-center items-center text-white text-center font-black text-[10px] lg:text-[20px] leading-[27px] lg:leading-[30px] overflow-hidden text-ellipsis line-clamp-2">
+      <p className="max-h-[100px] px-[10px] lg:px-[6px] py-[7px] lg:py-[12px] absolute bottom-0 left-0 w-full bg-[#B81122] flex justify-center items-center text-white text-center font-semibold text-[10px] lg:text-[20px] leading-[27px] lg:leading-[30px] overflow-hidden text-ellipsis line-clamp-2">
         {title}
       </p>
     </div>
