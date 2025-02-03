@@ -43,6 +43,7 @@ const PurchasedItems = () => {
             changeCategory={setSelectedCategory}
           />
         ))}
+        <div id="scroll-to-items" className="w-0 ml-[-7px]"></div>
       </div>
       {/* items */}
       <div className="flex flex-wrap justify-between md:justify-center gap-[17px] lg:gap-8">
