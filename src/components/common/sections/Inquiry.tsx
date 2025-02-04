@@ -110,7 +110,7 @@ const Inquiry = () => {
           required
           value={formData.city}
           options={[
-            { value: "not_selected", label: "未選択" },
+            { value: "not_selected", label: "選択してください" },
             { value: "hokkaido", label: "北海道" },
             { value: "aomori", label: "青森県" },
             { value: "iwate", label: "岩手県" },
@@ -202,13 +202,14 @@ const Inquiry = () => {
           value={formData.product_condition}
           onChange={handleInputChange}
           options={[
-            { value: "unused", label: "01 未使用品" },
-            { value: "excellent", label: "02 極上美品" },
-            { value: "good", label: "03 美品" },
-            { value: "used", label: " 04中古なり" },
-            { value: "damaged", label: " 05キズ汚れ破損あり" },
-            { value: "junk", label: " 06ジャンク" },
-            { value: "scrap", label: " 07スクラップ" },
+            { value: "not_selected", label: "選択してください" },
+            { value: "unused", label: "未使用品" },
+            { value: "excellent", label: "極上美品" },
+            { value: "good", label: "美品" },
+            { value: "used", label: "中古なり" },
+            { value: "damaged", label: "キズ汚れ破損あり" },
+            { value: "junk", label: "ジャンク" },
+            { value: "scrap", label: "スクラップ" },
           ]}
         />
 
