@@ -79,7 +79,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth ">
-      <GoogleTagManager gtmId="G-id" />
+      <GoogleTagManager gtmId="GTM-W9W78KMS" />
       <body
         className={`${notoSansJP.variable} font-noto`}
       >
