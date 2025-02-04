@@ -106,7 +106,7 @@ const Inquiry = () => {
         <SelectField
           id="city"
           name="city"
-          label="市区町村"
+          label="都道府県"
           required
           value={formData.city}
           options={[
@@ -202,9 +202,13 @@ const Inquiry = () => {
           value={formData.product_condition}
           onChange={handleInputChange}
           options={[
-            { value: "scrap", label: "00 スクラップ" },
-            { value: "used", label: "01 中古" },
-            { value: "new", label: "02 新品" },
+            { value: "unused", label: "01 未使用品" },
+            { value: "excellent", label: "02 極上美品" },
+            { value: "good", label: "03 美品" },
+            { value: "used", label: " 04中古なり" },
+            { value: "damaged", label: " 05キズ汚れ破損あり" },
+            { value: "junk", label: " 06ジャンク" },
+            { value: "scrap", label: " 07スクラップ" },
           ]}
         />
 
