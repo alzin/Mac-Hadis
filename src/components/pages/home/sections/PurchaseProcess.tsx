@@ -33,8 +33,9 @@ const PurchaseProcess: React.FC = () => {
             </div>
 
             <div className="mx-auto flex flex-col justify-start space-y-4 lg:space-y-10 px-7 py-10 lg:px-24 lg:py-20 border-2 border-[#B81122] mt-8  bg-[#FFFFFF99] max-w-[1120px]">
-                {PurchaseProcessData[PurchaseProcessCategory].map(item =>
-                    <PurchaseProcessCard key={item.id} data={item} steps={PurchaseProcessData[PurchaseProcessCategory].length} />
+                <h3 className="text-[#D51A16] text-left font-black">{PurchaseProcessData[PurchaseProcessCategory].label}</h3>
+                {PurchaseProcessData[PurchaseProcessCategory].items.map(item =>
+                    <PurchaseProcessCard key={item.id} data={item} steps={PurchaseProcessData[PurchaseProcessCategory].items.length} />
                 )}
             </div>
 
