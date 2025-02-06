@@ -225,7 +225,6 @@ const Inquiry = () => {
           id="additionalNotes"
           name="additional_notes"
           placeholder="ご質問やご連絡事項はこちらにお願いします"
-          required
           value={formData.additional_notes}
           className="py-[9px] px-[16px] w-full h-[100px] border-[1px] border-[#D1D5DB] rounded-md text-[14px] leading-[23px] font-normal"
           onChange={handleInputChange}

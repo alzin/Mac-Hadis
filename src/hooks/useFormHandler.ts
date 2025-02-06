@@ -51,7 +51,7 @@ export const useFormHandler = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-  
+
     try {
       // Send only the Base64 image in `attachment`, and exclude it from `formData`
       const emailData = {
@@ -59,21 +59,21 @@ export const useFormHandler = () => {
         attachment: formData.image || null, // Send Base64 image as attachment
         fileName: formData.fileName || "attachment", // Include file name
       };
-  
+
       // Remove the image field from the email's context
       delete emailData.image;
-  
+
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(emailData),
       });
-  
+
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.message || "Email sending failed");
       }
-  
+
       setFormData(initialFormData);
       Toast.fire({
         icon: "success",
@@ -89,7 +89,7 @@ export const useFormHandler = () => {
       setIsSubmitting(false);
     }
   };
-  
+
   return {
     formData,
     isSubmitting,
