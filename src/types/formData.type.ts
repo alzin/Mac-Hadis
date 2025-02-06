@@ -9,9 +9,14 @@ export type TFormData = {
   city: string;
   product_info: string;
   inquiry_source: string;
+  productsList: Product[]
+  additional_notes: string;
+};
+
+export type Product = {
   product_details: string;
   product_condition: string;
-  image?: string | null; 
-  additional_notes: string;
-  fileName?: string; 
-};
+  images?: (string | null)[]
+}
+
+

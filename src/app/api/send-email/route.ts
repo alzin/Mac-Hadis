@@ -1,3 +1,4 @@
+import { Product } from "@/types/formData.type";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -14,11 +15,8 @@ export async function POST(req: Request) {
     provideRegistrationNumber,
     city,
     product_info,
-    product_details,
-    product_condition,
     additional_notes,
-    attachment,
-    fileName,
+    productsList,
   } = body;
 
   // Mapping from the English value to the Japanese label for 都道府県
@@ -85,11 +83,10 @@ export async function POST(req: Request) {
     scrap: "スクラップ",
   };
 
-  // Convert city and product condition values
+  // Convert city to Japanese
   const cityJP = cityMapping[city] || city;
-  const productConditionJP =
-    productConditionMapping[product_condition] || product_condition;
 
+  // Nodemailer setup
   const transporter = nodemailer.createTransport({
     host: "smtpout.secureserver.net",
     port: 465,
@@ -101,45 +98,57 @@ export async function POST(req: Request) {
   });
 
   try {
-    const systemAttachments = attachment
-      ? [
-          {
-            filename: `${fileName || "attachment"}.png`,
-            content: Buffer.from(attachment.split(",")[1], "base64"),
-            cid: "attached-image",
-          },
-        ]
-      : [];
+    // Process all product images
+    const systemAttachments = productsList
+      .flatMap((product: Product, productIndex: number) =>
+        (product.images ?? [])
+          .filter((image: string | null): image is string => image !== null) // Remove null values
+          .map((image: string, imageIndex: number) => ({
+            filename: `product_${productIndex + 1}_attachment_${imageIndex + 1}.png`,
+            content: Buffer.from(image.split(",")[1], "base64"),
+            encoding: "base64",
+            cid: `attached-image-${productIndex}-${imageIndex}`,
+          }))
+      );
 
-    // Email to system
+    // Email content for system
     const systemEmailContent = `
-      <h2>新しいお問い合わせが届きました</h2>
-      <p><strong>お名前:</strong> ${name}</p>
-      <p><strong>メールアドレス:</strong> ${email}</p>
-      <p><strong>電話番号:</strong> ${phone}</p>
-      <p><strong>電話の許可:</strong> ${
-        phonePermission === "allow_phone_call" ? "はい" : "いいえ"
-      }</p>
-      <p><strong>使用状況:</strong> ${
-        usageType === "business" ? "事業（個人事業者または法人）" : "個人で使用"
-      }</p>
-      <p><strong>インボイス登録:</strong> ${
-        invoiceRegistration === "registered" ? "はい" : "いいえ"
-      }</p>
-      <p><strong>登録番号の提供:</strong> ${
-        provideRegistrationNumber === "will_provide" ? "はい" : "いいえ"
-      }</p>
-      <p><strong>都道府県:</strong> ${cityJP}</p>
-      <p><strong>商品情報:</strong> ${product_info}</p>
-      <p><strong>査定希望商品の詳細:</strong> ${product_details}</p>
-      <p><strong>商品の状態:</strong> ${productConditionJP}</p>
-      <p><strong>追加のメモ:</strong> ${additional_notes}</p>
-      ${
-        attachment
-          ? `<p><strong>添付ファイル:</strong> ${fileName}.png</p><img src="cid:attached-image" alt="Attachment" />`
-          : "<p>添付ファイルはありません。</p>"
-      }
-    `;
+<h2>新しいお問い合わせが届きました</h2>
+<p><strong>お名前:</strong> ${name}</p>
+<p><strong>メールアドレス:</strong> ${email}</p>
+<p><strong>電話番号:</strong> ${phone}</p>
+<p><strong>電話の許可:</strong> ${phonePermission === "allow_phone_call" ? "はい" : "いいえ"}</p>
+<p><strong>使用状況:</strong> ${usageType === "business" ? "事業（個人事業者または法人）" : "個人で使用"}</p>
+<p><strong>インボイス登録:</strong> ${invoiceRegistration === "registered" ? "はい" : "いいえ"}</p>
+<p><strong>登録番号の提供:</strong> ${provideRegistrationNumber === "will_provide" ? "はい" : "いいえ"}</p>
+<p><strong>都道府県:</strong> ${cityJP}</p>
+<p><strong>商品情報:</strong> ${product_info}</p>
+<p><strong>追加のメモ:</strong> ${additional_notes}</p>
+
+${productsList
+        .map(
+          (product: Product, productIndex: number) => `
+    <hr>
+    <h3>商品 ${productIndex + 1}</h3>
+    <p><strong>商品の詳細:</strong> ${product.product_details}</p>
+    <p><strong>商品の状態:</strong> ${productConditionMapping[product.product_condition] || product.product_condition}</p>
+    
+    ${(product.images ?? []).length
+              ? product.images!
+                .filter((image: string | null): image is string => image !== null)
+                .map(
+                  (image: string, imageIndex: number) => `
+              <p><strong>添付ファイル ${imageIndex + 1}:</strong> product_${productIndex + 1}_attachment_${imageIndex + 1}.png</p>
+              <img src="cid:attached-image-${productIndex}-${imageIndex}" alt="Attachment ${imageIndex + 1}" />
+            `
+                )
+                .join("")
+              : "<p>添付ファイルはありません。</p>"
+            }
+  `
+        )
+        .join("")}
+`;
 
     await transporter.sendMail({
       from: `"Website Form" <${process.env.SMTP_USER}>`,
@@ -149,7 +158,7 @@ export async function POST(req: Request) {
       attachments: systemAttachments,
     });
 
-    // Email to client
+    // Email content for user
     const userEmailContent = `
       <h2>${name}様</h2>
       <p>お問い合わせいただきましてありがとうございます。<br />
@@ -165,7 +174,14 @@ export async function POST(req: Request) {
         <li><strong>電話番号:</strong> ${phone}</li>
         <li><strong>都道府県:</strong> ${cityJP}</li>
         <li><strong>商品情報:</strong> ${product_info}</li>
-        <li><strong>商品の状態:</strong> ${productConditionJP}</li>
+        ${productsList
+        .map(
+          (product: Product, index: number) => `
+            <li><strong>商品 ${index + 1} の詳細:</strong> ${product.product_details}</li>
+            <li><strong>商品の状態:</strong> ${productConditionMapping[product.product_condition] || product.product_condition}</li>
+          `
+        )
+        .join("")}
       </ul>
       <p>よろしくお願いいたします。<br />ハディズ</p>
     `;
@@ -180,12 +196,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Error sending email:", error);
-    return NextResponse.json(
-      {
-        message:
-          error instanceof Error ? error.message : "Error sending email",
-      },
-      { status: 500 }
-    );
+    return NextResponse.json({ message: error instanceof Error ? error.message : "Error sending email" }, { status: 500 });
   }
 }

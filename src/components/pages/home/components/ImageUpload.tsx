@@ -1,15 +1,14 @@
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 
 interface IImageUploadProps {
   label: string;
-  image: string | null;
-  setImage: (image: string | null) => void;
+  images: (string | null)[];
+  setImages: (images: (string | null)[], index: number) => void;
+  productIndex: number;
 }
 
-const ImageUpload = ({ label, setImage, image }: IImageUploadProps) => {
-  const fileInputRef = useRef<HTMLInputElement | null>(null);
-
+const ImageUpload = ({ label, setImages, images, productIndex }: IImageUploadProps) => {
   const compressImage = (
     file: File,
     maxWidth: number,
@@ -54,92 +53,94 @@ const ImageUpload = ({ label, setImage, image }: IImageUploadProps) => {
   };
 
   const handleImageChange = async (
-    event: React.ChangeEvent<HTMLInputElement>
+    event: React.ChangeEvent<HTMLInputElement>,
+    imageIndex: number
   ) => {
     const file = event.target.files?.[0];
     if (file) {
       try {
         const base64Image = await compressImage(file, 800, 800);
-        setImage(base64Image);
+        const updatedImages = [...images];
+        updatedImages[imageIndex] = base64Image;
+        setImages(updatedImages, productIndex);
       } catch (error) {
         console.error("Error compressing image:", error);
       }
-    } else {
-      setImage(null);
     }
   };
 
-  const handleDelete = () => setImage(null);
-  const triggerFileInput = () => fileInputRef.current?.click();
+  const handleDelete = (imageIndex: number) => {
+    const updatedImages = [...images];
+    updatedImages[imageIndex] = null;
+    setImages(updatedImages, productIndex);
+  };
 
   return (
     <div className="space-y-2">
-      <label htmlFor="file-input" className="text-sm font-medium text-gray-700">
-        {label}
-      </label>
-      <div className="flex items-center gap-4">
-        <div className="w-[300px] h-[150px] flex-1 border border-gray-300 rounded-md overflow-hidden flex items-center justify-center bg-gray-50">
-          {image ? (
-            <Image
-              src={image}
-              alt="Uploaded"
-              width={300}
-              height={150}
-              className="w-full h-full object-contain"
-            />
-          ) : (
-            <label
-              htmlFor="file-input"
-              className="flex flex-col items-center justify-center cursor-pointer w-full h-full"
-            >
-              <Image
-                src="/images/icons/Image-Icon.svg"
-                alt="Upload Icon"
-                width={54}
-                height={54}
-              />
-            </label>
-          )}
-        </div>
+      <label className="text-sm font-medium text-gray-700">{label}</label>
+      <div className="flex flex-wrap items-center justify-center gap-5">
+        {images.map((image, imageIndex) => (
+          <div key={imageIndex} className="flex items-center gap-1">
+            <div className="w-[225px] h-[140px] flex-1 border border-gray-300 rounded-md overflow-hidden flex items-center justify-center bg-gray-50">
+              {!!image ? (
+                <Image
+                  src={image}
+                  alt="Uploaded"
+                  width={300}
+                  height={150}
+                  className="w-full h-full object-contain"
+                />
+              ) : (
+                <label htmlFor={`file-input-${productIndex}-${imageIndex}`} className="flex flex-col items-center justify-center cursor-pointer w-full h-full">
+                  <Image
+                    src="/images/icons/Image-Icon.svg"
+                    alt="Upload Icon"
+                    width={40}
+                    height={40}
+                  />
+                </label>
+              )}
+            </div>
 
-        <input
-          id="file-input"
-          ref={fileInputRef}
-          type="file"
-          accept="image/*"
-          name="image"
-          className="hidden"
-          onChange={handleImageChange}
-        />
+            {/* Input is now correctly referenced with an ID */}
+            <input
+              id={`file-input-${productIndex}-${imageIndex}`}
+              type="file"
+              accept="image/*"
+              className="hidden"
+              onChange={(event) => handleImageChange(event, imageIndex)}
+            />
 
-        <div className="flex flex-col self-end gap-2">
-          <button
-            type="button"
-            onClick={triggerFileInput}
-            className="w-[24px] h-[24px] border border-[#DCDCDC] bg-white rounded-full flex items-center justify-center"
-            aria-label="Edit image"
-          >
-            <Image
-              src="/images/icons/edit.svg"
-              alt="Edit"
-              width={11}
-              height={11}
-            />
-          </button>
-          <button
-            type="button"
-            onClick={handleDelete}
-            className="w-[24px] h-[24px] border border-[#DCDCDC] bg-white rounded-full flex items-center justify-center"
-            aria-label="Delete image"
-          >
-            <Image
-              src="/images/icons/trash.svg"
-              alt="Delete"
-              width={11}
-              height={11}
-            />
-          </button>
-        </div>
+            <div className="flex flex-col self-end gap-2">
+              <button
+                type="button"
+                onClick={() => document.getElementById(`file-input-${productIndex}-${imageIndex}`)?.click()}
+                className="w-[24px] h-[24px] border border-[#DCDCDC] bg-white rounded-full flex items-center justify-center"
+                aria-label="Edit image"
+              >
+                <Image
+                  src="/images/icons/edit.svg"
+                  alt="Edit"
+                  width={11}
+                  height={11}
+                />
+              </button>
+              <button
+                type="button"
+                onClick={() => handleDelete(imageIndex)}
+                className="w-[24px] h-[24px] border border-[#DCDCDC] bg-white rounded-full flex items-center justify-center"
+                aria-label="Delete image"
+              >
+                <Image
+                  src="/images/icons/trash.svg"
+                  alt="Delete"
+                  width={11}
+                  height={11}
+                />
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
