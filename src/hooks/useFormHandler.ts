@@ -25,9 +25,13 @@ const initialFormData: TFormData = {
   city: "",
   product_info: "",
   inquiry_source: "",
-  product_details: "",
-  product_condition: "",
-  image: null,
+  productsList: [
+    {
+      product_details: "",
+      product_condition: "",
+      images: new Array(3).fill(null),
+    }
+  ],
   additional_notes: "",
 };
 
@@ -44,8 +48,49 @@ export const useFormHandler = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleImageChange = (base64Image: string | null) => {
-    setFormData((prevData) => ({ ...prevData, image: base64Image }));
+  const addProduct = () => {
+    setFormData((prevData) => ({
+      ...prevData,
+      productsList: [
+        ...prevData.productsList,
+        {
+          product_details: "",
+          product_condition: "",
+          images: new Array(3).fill(null),
+        },
+      ],
+    }));
+  };
+
+  const handleProductInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
+    index?: number
+  ) => {
+    const { name, value } = e.target;
+
+    setFormData((prevData) => ({
+      ...prevData,
+      productsList: prevData.productsList.map((product, i) =>
+        i === index ? { ...product, [name]: value } : product
+      ),
+    }));
+  };
+
+
+  const deleteProduct = (index: number) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      productsList: prevData.productsList.filter((_, i) => i !== index),
+    }));
+  };
+
+  const handleImageChange = (images: (string | null)[], index: number) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      productsList: prevData.productsList.map((product, i) =>
+        i === index ? { ...product, images } : product
+      ),
+    }));
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -56,12 +101,12 @@ export const useFormHandler = () => {
       // Send only the Base64 image in `attachment`, and exclude it from `formData`
       const emailData = {
         ...formData,
-        attachment: formData.image || null, // Send Base64 image as attachment
-        fileName: formData.fileName || "attachment", // Include file name
+        // attachment: formData.image || null, // Send Base64 image as attachment
+        // fileName: formData.fileName || "attachment", // Include file name
       };
 
       // Remove the image field from the email's context
-      delete emailData.image;
+      // delete emailData.image;
 
       const response = await fetch("/api/send-email", {
         method: "POST",
@@ -96,6 +141,9 @@ export const useFormHandler = () => {
     handleInputChange,
     handleImageChange,
     handleSubmit,
+    addProduct,
+    deleteProduct,
+    handleProductInputChange
   };
 };
 

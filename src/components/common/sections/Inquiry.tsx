@@ -14,14 +14,21 @@ const Inquiry = () => {
     handleInputChange,
     handleImageChange,
     handleSubmit,
+    addProduct,
+    deleteProduct,
+    handleProductInputChange
   } = useFormHandler();
+
+  const numberOfProduct = 3
+
+
   return (
     <section id="inquiry" className="py-[50px] lg:py-[60px] px-[20px] lg:px-0 bg-[url(/images/home-page/dot-bg-results.svg)] bg-auto font-noto">
       <h2 className="mb-[40px] md:mb-[42px] lg:mb-[50px] text-[30px] md:text-[40px] lg:text-[60px] leading-[45px] md:leading-[60px] lg:leading-[90px] font-black bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent text-center">
         お問い合わせ
       </h2>
       <form
-        className="space-y-6 md:w-[60%] lg:w-[40%] md:mx-auto"
+        className="space-y-6 max-w-[900px] md:mx-auto"
         onSubmit={handleSubmit}
       >
         {/* Input Fields */}
@@ -185,40 +192,69 @@ const Inquiry = () => {
             { value: "ad", label: "広告" },
           ]}
         /> */}
-        <InputField
-          id="productDetails"
-          name="product_details"
-          label="査定希望商品のメーカー名、型番"
-          placeholder="(例:リョービ電ノコ(ASK-1000)動作)"
-          required
-          value={formData.product_details}
-          onChange={handleInputChange}
-        />
-        <SelectField
-          id="productCondition"
-          name="product_condition"
-          label="状態を選択してください"
-          required={false}
-          value={formData.product_condition}
-          onChange={handleInputChange}
-          options={[
-            { value: "not_selected", label: "選択してください" },
-            { value: "unused", label: "未使用品" },
-            { value: "excellent", label: "極上美品" },
-            { value: "good", label: "美品" },
-            { value: "used", label: "中古なり" },
-            { value: "damaged", label: "キズ汚れ破損あり" },
-            { value: "junk", label: "ジャンク" },
-            { value: "scrap", label: "スクラップ" },
-          ]}
-        />
 
-        {/* Image Upload */}
-        <ImageUpload
-          label="買取商品の写真があればこちらに添付してください。"
-          setImage={handleImageChange}
-          image={formData.image ?? null}
-        />
+        {/* products list */}
+        {formData.productsList.map((item, index) =>
+          <div key={index} className="bg-[#fcf7f7] px-1 py-2 border">
+
+            {index !== 0 &&
+              <button
+                type="button"
+                onClick={() => deleteProduct(index)}
+                className="w-[24px] h-[24px] ml-auto border border-[#DCDCDC] bg-white rounded-full flex items-center justify-center"
+                aria-label="Delete Product"
+              >
+                <Image
+                  src="/images/icons/trash.svg"
+                  alt="Delete"
+                  width={11}
+                  height={11}
+                />
+              </button>
+            }
+
+            <InputField
+              id={`productDetails-${index}`}
+              name="product_details"
+              label="査定希望商品のメーカー名、型番"
+              placeholder="(例:リョービ電ノコ(ASK-1000)動作)"
+              required
+              value={item.product_details}
+              onChange={(e) => handleProductInputChange(e, index)}
+            />
+            <SelectField
+              id={`productCondition-${index}`}
+              name="product_condition"
+              label="状態を選択してください"
+              required={false}
+              value={item.product_condition}
+              onChange={(e) => handleProductInputChange(e, index)}
+              options={[
+                { value: "not_selected", label: "選択してください" },
+                { value: "unused", label: "未使用品" },
+                { value: "excellent", label: "極上美品" },
+                { value: "good", label: "美品" },
+                { value: "used", label: "中古なり" },
+                { value: "damaged", label: "キズ汚れ破損あり" },
+                { value: "junk", label: "ジャンク" },
+                { value: "scrap", label: "スクラップ" },
+              ]}
+            />
+
+            {/* Image Upload */}
+            <ImageUpload
+              label="買取商品の写真があればこちらに添付してください。"
+              setImages={handleImageChange}
+              images={item.images ?? new Array(3).fill(null)}
+              productIndex={index}
+            />
+          </div>
+        )}
+
+
+        {/* add product btn */}
+        {formData.productsList.length < numberOfProduct && <button type="button" onClick={addProduct}>＋商品追加</button>}
+
 
         {/* Textarea */}
         <textarea

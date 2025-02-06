@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: IBlogPage): Promise<Metadata>
         description: data?.description,
         siteName: "mac-hadis",
         images: [
-          { url: data?.imageSrc }
+          { url: `${baseUrl}${data?.imageSrc}` }
         ]
       },
 
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: IBlogPage): Promise<Metadata>
         card: "summary_large_image",
         title: data?.title,
         description: data?.description,
-        images: data?.imageSrc
+        images: `${baseUrl}${data?.imageSrc}`
       },
       alternates: {
         canonical: `${baseUrl}/blogs/${data?.title}`

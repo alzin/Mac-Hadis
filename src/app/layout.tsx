@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description: "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。専門のバイヤーが購入するので、高値で売却が可能です。ぜひ、1度御見積りをお願いします！",
     siteName: "mac-hadis",
     images: [
-      { url: "/images/hadis-logo.png" }
+      { url: `${baseUrl}/images/hadis-logo.png` }
     ]
   },
 
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     description: "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。専門のバイヤーが購入するので、高値で売却が可能です。ぜひ、1度御見積りをお願いします！",
     title: "中古機械、電動工具の高額買取のハディズ",
-    images: "/images/hadis-logo.png"
+    images: `${baseUrl}/images/hadis-logo.png`
   },
 
   verification: {
