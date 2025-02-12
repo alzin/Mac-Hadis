@@ -58,7 +58,7 @@
     },
     {
       "id": 2,
-      "title": "研削盤。研磨機",
+      "title": "研削盤 . 研磨機",
       "category": "工作機械・精密加工機械",
       "image": "/images_db/item2.jpg"
     },
@@ -172,7 +172,7 @@
     },
     {
       "id": 22,
-      "title": "Snap-on スナップオン。工具",
+      "title": "Snap-on スナップオン . 工具",
       "category": "自動車整備機械・自動車板金機械",
       "image": "/images_db/item22.jpg"
     },
@@ -346,7 +346,7 @@
     },
     {
       "id": 56,
-      "title": "アルミ矢板 .アルミブリッジ",
+      "title": "アルミ矢板 . アルミブリッジ",
       "category": "管工事機械・工具",
       "image": "/images_db/item56.jpg"
     },
@@ -1144,7 +1144,7 @@
     },
     {
       "id": 201,
-      "title": "ロール成形機.ハゼ折り機",
+      "title": "ロール成形機 . ハゼ折り機",
       "category": "金属加工機械・板金機械 (建築板金機械)",
       "image": "/images_db/item201.jpg"
     },
@@ -1156,7 +1156,7 @@
     },
     {
       "id": 203,
-      "title": "マルチワーカー. アングル加工機",
+      "title": "マルチワーカー",
       "category": "金属加工機械・板金機械 (建築板金機械)",
       "image": "/images_db/item203.png"
     },

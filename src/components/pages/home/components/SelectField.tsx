@@ -34,8 +34,10 @@ const SelectField = ({
         onChange={onChange}
         className="px-[17px] py-[9px] gap-2 rounded-md border-[1px] border-[#D1D5DB]"
         required={required}
-        aria-required={required}
       >
+        <option value="" disabled hidden>
+          選択してください
+        </option>
         {options.map((option, index) => (
           <option key={index} value={option.value}>
             {option.label}

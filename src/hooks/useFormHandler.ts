@@ -28,9 +28,9 @@ const initialFormData: TFormData = {
   productsList: [
     {
       product_details: "",
-      product_condition: "",
+      product_condition: "not_selected",
       images: new Array(3).fill(null),
-    }
+    },
   ],
   additional_notes: "",
 };
@@ -38,6 +38,7 @@ const initialFormData: TFormData = {
 export const useFormHandler = () => {
   const [formData, setFormData] = useState<TFormData>(initialFormData);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [agreePrivacy, setAgreePrivacy] = useState(false);
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -63,7 +64,9 @@ export const useFormHandler = () => {
   };
 
   const handleProductInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
     index?: number
   ) => {
     const { name, value } = e.target;
@@ -75,7 +78,6 @@ export const useFormHandler = () => {
       ),
     }));
   };
-
 
   const deleteProduct = (index: number) => {
     setFormData((prevData) => ({
@@ -95,43 +97,79 @@ export const useFormHandler = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (formData.city === "not_selected") {
+      Toast.fire({ icon: "warning", title: "都道府県を選択してください。" });
+      return;
+    }
+
+    const hasInvalidProductCondition = formData.productsList.some(
+      (product) =>
+        !product.product_condition ||
+        product.product_condition === "not_selected"
+    );
+
+    if (hasInvalidProductCondition) {
+      Toast.fire({ icon: "warning", title: "商品の状態を選択してください。" });
+      return;
+    }
+
     setIsSubmitting(true);
 
+    Swal.fire({
+      title: "送信しています...",
+      html: "そのままお待ちください。",
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    });
+
     try {
-      // Send only the Base64 image in `attachment`, and exclude it from `formData`
-      const emailData = {
-        ...formData,
-        // attachment: formData.image || null, // Send Base64 image as attachment
-        // fileName: formData.fileName || "attachment", // Include file name
-      };
-
-      // Remove the image field from the email's context
-      // delete emailData.image;
-
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(emailData),
+        body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || "Email sending failed");
+        throw new Error(
+          "サーバーエラーが発生しました。もう一度お試しください。"
+        );
       }
-
       setFormData(initialFormData);
-      Toast.fire({
+      setAgreePrivacy(false);
+      Swal.close();
+      await Swal.fire({
         icon: "success",
-        title: "メールが送信されました！確認メールをお送りしました。",
+        title: "送信が完了しました",
+        html: `メールを送信しました。<br />確認メールをお送りしましたので、<br />ご確認ください。<br /> <br />
+          <button id="close-modal" class="close-button">x</button>`,
+        showConfirmButton: false,
+        customClass: {
+          popup: "custom-popup",
+        },
+        didOpen: () => {
+          const closeButton = document.getElementById("close-modal");
+          if (closeButton) {
+            closeButton.addEventListener("click", () => {
+              Swal.close();
+            });
+          }
+        },
       });
     } catch (error: unknown) {
+      Swal.close();
+
       const errMsg = error instanceof Error ? error.message : "Unknown error";
-      Toast.fire({
+      Swal.fire({
         icon: "error",
-        title: `送信中にエラーが発生しました: ${errMsg}`,
+        title: "エラー発生！",
+        text: `送信中にエラーが発生しました: ${errMsg}`,
       });
     } finally {
       setIsSubmitting(false);
+      setAgreePrivacy(false);
     }
   };
 
@@ -143,7 +181,8 @@ export const useFormHandler = () => {
     handleSubmit,
     addProduct,
     deleteProduct,
-    handleProductInputChange
+    handleProductInputChange,
+    agreePrivacy,
+    setAgreePrivacy,
   };
 };
-
