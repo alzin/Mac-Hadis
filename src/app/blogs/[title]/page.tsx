@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: IBlogPage): Promise<Metadata>
         url: `${baseUrl}/blogs/${data?.title}`,
         title: data?.title,
         description: data?.description,
-        siteName: "mac-hadis",
+        siteName: "機械工具買取ハディズ",
         images: [
           { url: `${baseUrl}${data?.imageSrc}` }
         ]

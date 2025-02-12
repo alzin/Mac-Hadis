@@ -22,7 +22,8 @@
       "@/*": ["./src/*"],
       "@/content/*": ["./src/content/*"],
       "@/hooks/*": ["./src/hooks/*"],
-      "@/types/*": ["./src/types/*"]
+      "@/types/*": ["./src/types/*"],
+      "@/styles/*": ["./src/styles/*"]
     },
     "forceConsistentCasingInFileNames": true
   },
