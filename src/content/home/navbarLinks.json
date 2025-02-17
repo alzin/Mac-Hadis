@@ -61,7 +61,7 @@
     {
       "id": "5",
       "name": "email",
-      "iconSrc": "/images/icons/email.svg",
+      "iconSrc": "/images/icons/mail.svg",
       "href": "mailto:info@mac-hadis.com"
     }
   ]

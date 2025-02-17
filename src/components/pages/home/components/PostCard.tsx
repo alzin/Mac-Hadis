@@ -10,7 +10,7 @@ interface IPostCardProps {
 
 const PostCard = ({ title, imageSrc, description, className }: IPostCardProps) => {
   return (
-    <Link href={`/blogs/${title}`} className={`w-full md:w-[45%] lg:w-[30%] ${className}`}>
+    <Link href={`/blogs/${title}`} className={`w-[325px] ${className}`}>
       <Image
         src={imageSrc}
         alt={title}
@@ -18,7 +18,7 @@ const PostCard = ({ title, imageSrc, description, className }: IPostCardProps) =
         height={200}
         unoptimized
         loading="lazy"
-        className="w-full h-[200px]"
+        className="w-full h-[200px] object-cover"
       />
       <h3 className="my-4 lg:mb-[22px] text-[20px] leading-[30px] text-[#B81122] font-black text-start truncate">
         {title}

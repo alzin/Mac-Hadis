@@ -4,7 +4,6 @@ import InputField from "../../pages/home/components/InputField";
 import SelectField from "../../pages/home/components/SelectField";
 import ImageUpload from "../../pages/home/components/ImageUpload";
 import Image from "next/image";
-import React from "react";
 import { useFormHandler } from "@/hooks/useFormHandler";
 import PrivacyPolicy from "@/components/pages/home/components/PrivacyPolicy";
 
@@ -20,6 +19,8 @@ const Inquiry = () => {
     handleProductInputChange,
     agreePrivacy,
     setAgreePrivacy,
+    click,
+    setClick,
   } = useFormHandler();
 
   const numberOfProduct = 3;
@@ -79,6 +80,8 @@ const Inquiry = () => {
           required
           value={formData.phonePermission}
           onChange={handleInputChange}
+          click={click}
+          setClick={setClick}
           options={[
             { value: "allow_phone_call", label: "はい" },
             { value: "disallow_phone_call", label: "いいえ" },
@@ -90,6 +93,8 @@ const Inquiry = () => {
           inlineLabels={false}
           required
           value={formData.usageType}
+          click={click}
+          setClick={setClick}
           options={[
             { value: "business", label: "事業（個人事業者または法人)" },
             { value: "personal", label: "個人で使用" },
@@ -103,6 +108,8 @@ const Inquiry = () => {
           question="事業で使用していた場合、インボイスの登録はしていますか？"
           value={formData.invoiceRegistration}
           onChange={handleInputChange}
+          click={click}
+          setClick={setClick}
           options={[
             { value: "registered", label: "はい" },
             { value: "not_registered", label: "いいえ" },
@@ -115,6 +122,8 @@ const Inquiry = () => {
           question="買取が成立しましたら、登録番号をご提供いただけますでしょうか？"
           value={formData.provideRegistrationNumber}
           onChange={handleInputChange}
+          click={click}
+          setClick={setClick}
           options={[
             { value: "will_provide", label: "はい" },
             { value: "will_not_provide", label: "いいえ" },
@@ -276,6 +285,7 @@ const Inquiry = () => {
                 ? "opacity-50 cursor-not-allowed"
                 : ""
             }`}
+          onClick={() => setClick(true)}
         >
           {isSubmitting === true ? (
             "送信..."

@@ -39,6 +39,7 @@ export const useFormHandler = () => {
   const [formData, setFormData] = useState<TFormData>(initialFormData);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [agreePrivacy, setAgreePrivacy] = useState(false);
+  const [click, setClick] = useState(false);
 
   const handleInputChange = (
     e: React.ChangeEvent<
@@ -170,6 +171,7 @@ export const useFormHandler = () => {
     } finally {
       setIsSubmitting(false);
       setAgreePrivacy(false);
+      setClick(false);
     }
   };
 
@@ -184,5 +186,7 @@ export const useFormHandler = () => {
     handleProductInputChange,
     agreePrivacy,
     setAgreePrivacy,
+    click,
+    setClick,
   };
 };

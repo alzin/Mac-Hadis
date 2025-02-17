@@ -121,9 +121,8 @@ export async function POST(req: Request) {
         (product.images ?? [])
           .filter((image: string | null): image is string => image !== null) // Remove null values
           .map((image: string, imageIndex: number) => ({
-            filename: `product_${productIndex + 1}_attachment_${
-              imageIndex + 1
-            }.png`,
+            filename: `product_${productIndex + 1}_attachment_${imageIndex + 1
+              }.png`,
             content: Buffer.from(image.split(",")[1], "base64"),
             encoding: "base64",
             cid: `attached-image-${productIndex}-${imageIndex}`,
@@ -137,75 +136,70 @@ ${addField("お名前", name)}
 ${addField("メールアドレス", email)}
 ${addField("電話番号", phone)}
 ${addField(
-  "電話の許可",
-  phonePermission === "allow_phone_call"
-    ? "はい"
-    : phonePermission === "deny_phone_call"
-    ? "いいえ"
-    : ""
-)}
+      "電話の許可",
+      phonePermission === "allow_phone_call"
+        ? "はい"
+        : phonePermission === "disallow_phone_call"
+          ? "いいえ"
+          : ""
+    )}
 ${addField(
-  "使用状況",
-  usageType === "business"
-    ? "事業（個人事業者または法人）"
-    : usageType === "personal"
-    ? "個人で使用"
-    : ""
-)}
-${
-  invoiceRegistration && invoiceRegistration !== ""
-    ? addField(
-        "インボイス登録",
-        invoiceRegistration === "registered" ? "はい" : "いいえ"
-      )
-    : ""
-}
-${
-  provideRegistrationNumber && provideRegistrationNumber !== ""
-    ? addField(
-        "登録番号の提供",
-        provideRegistrationNumber === "will_provide" ? "はい" : "いいえ"
-      )
-    : ""
-}
+      "使用状況",
+      usageType === "business"
+        ? "事業（個人事業者または法人）"
+        : usageType === "personal"
+          ? "個人で使用"
+          : ""
+    )}
+${invoiceRegistration && invoiceRegistration !== ""
+        ? addField(
+          "インボイス登録",
+          invoiceRegistration === "registered" ? "はい" : "いいえ"
+        )
+        : ""
+      }
+${provideRegistrationNumber && provideRegistrationNumber !== ""
+        ? addField(
+          "登録番号の提供",
+          provideRegistrationNumber === "will_provide" ? "はい" : "いいえ"
+        )
+        : ""
+      }
 ${addField("都道府県", cityJP)}
 ${product_info && product_info !== "" ? addField("市区町村", product_info) : ""}
 ${addField("追加のメモ", additional_notes)}
 
 ${productsList
-  .map(
-    (product: Product, productIndex: number) => `
+        .map(
+          (product: Product, productIndex: number) => `
     <hr>
     <h3>商品 ${productIndex + 1}</h3>
     ${addField("商品の詳細", product.product_details)}
     ${addField(
-      "商品の状態",
-      productConditionMapping[product.product_condition] ||
-        product.product_condition
-    )}
+            "商品の状態",
+            productConditionMapping[product.product_condition] ||
+            product.product_condition
+          )}
     
-    ${
-      (product.images ?? []).length
-        ? product
-            .images!.filter(
-              (image: string | null): image is string => image !== null
-            )
-            .map(
-              (image: string, imageIndex: number) => `
-              <p><strong>添付ファイル ${imageIndex + 1}:</strong> product_${
-                productIndex + 1
-              }_attachment_${imageIndex + 1}.png</p>
-              <img src="cid:attached-image-${productIndex}-${imageIndex}" alt="Attachment ${
-                imageIndex + 1
-              }" />
+    ${(product.images ?? []).length
+              ? product
+                .images!.filter(
+                  (image: string | null): image is string => image !== null
+                )
+                .map(
+                  (image: string, imageIndex: number) => `
+              <p><strong>添付ファイル ${imageIndex + 1}:</strong> product_${productIndex + 1
+                    }_attachment_${imageIndex + 1}.png</p>
+              <img src="cid:attached-image-${productIndex}-${imageIndex}" alt="Attachment ${imageIndex + 1
+                    }" />
             `
-            )
-            .join("")
-        : "<p>添付ファイルはありません。</p>"
-    }
+                )
+                .join("")
+              : "<p>添付ファイルはありません。</p>"
+            }
   `
-  )
-  .join("")}
+        )
+        .join("")}
 `;
 
     await transporter.sendMail({
@@ -231,24 +225,21 @@ ${productsList
         ${addField("メールアドレス", email, true)}
         ${addField("電話番号", phone, true)}
         ${addField("都道府県", cityJP, true)}
-        ${
-          product_info &&
-          product_info !== "" &&
-          addField("市区町村", product_info, true)
-        }</li>
+        ${product_info &&
+      product_info !== "" &&
+      addField("市区町村", product_info, true)
+      }</li>
         ${productsList
-          .map(
-            (product: Product, index: number) => `
-            <li><strong>商品 ${index + 1} の詳細:</strong> ${
-              product.product_details
+        .map(
+          (product: Product, index: number) => `
+            <li><strong>商品 ${index + 1} の詳細:</strong> ${product.product_details
             }</li>
-            <li><strong>商品の状態:</strong> ${
-              productConditionMapping[product.product_condition] ||
-              product.product_condition
+            <li><strong>商品の状態:</strong> ${productConditionMapping[product.product_condition] ||
+            product.product_condition
             }</li>
           `
-          )
-          .join("")}
+        )
+        .join("")}
       </ul>
       <p>よろしくお願いいたします。<br /> <br />
       ◇ ◆<strong>　機械工具 高価買取　</strong>◆ ◇<br />

@@ -13,8 +13,14 @@ interface SimpleContent extends BlogItemBase {
     description: string;
 }
 
+interface ImageContent extends BlogItemBase {
+    type: "image";
+    imageSrc: string;
+}
+
 interface NumberedListContent extends BlogItemBase {
     type: "numberedList";
+    description?: string
     items: {
         id: string;
         title: string;
@@ -38,7 +44,7 @@ interface FAQContent extends BlogItemBase {
     }[];
 }
 
-type BlogSubContent = SimpleContent | NumberedListContent | UnNumberedListContent | FAQContent;
+type BlogSubContent = SimpleContent | NumberedListContent | UnNumberedListContent | FAQContent | ImageContent;
 
 interface BlogPost {
     id: string;

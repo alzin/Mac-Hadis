@@ -13,15 +13,15 @@ interface IPurchaseProcessCard {
 const PurchaseProcessCard: React.FC<IPurchaseProcessCard> = ({ data, steps }) => {
     return (
         <>
-            <div className={`flex items-start lg:items-center justify-center gap-6 flex-col lg:flex-row lg:gap-8 ${data.id % 2 !== 0 && "lg:odd:flex-row-reverse"}`}>
-                <div className="w-[256px] lg:flex-1 lg:w-1/2 h-[151px] lg:h-[250px] relative">
-                    <Image className=" absolute top-0 left-0 mr-[10px] mb-[10px] lg:mr-[23px] lg:mb-[23px]" fill src={data.imageSrc} alt={data.title} />
-                    <Image unoptimized loading="lazy" className=" absolute -z-10 bottom-0 right-0 ml-[10px] mt-[10px] lg:ml-[23px] lg:mt-[23px]" fill src={"/images/home-page/dotted-bg-block.png"} alt="dotted-bg-block" />
+            <div className={`flex items-center justify-center gap-6 flex-col lg:flex-row lg:gap-8 ${data.id % 2 === 0 ? "lg:odd:flex-row-reverse" : "lg:even:flex-row-reverse"}`}>
+                <div className=" lg:flex-1 w-[266px] lg:w-[448px] h-[161px] lg:h-[273px] relative">
+                    <Image className=" absolute top-0 left-0 pr-[10px] pb-[10px] lg:pr-[23px] lg:pb-[23px]" fill src={data.imageSrc} alt={data.title} />
+                    <Image unoptimized loading="lazy" className=" absolute -z-10 bottom-0 right-0 pl-[10px] pt-[10px] lg:pl-[23px] lg:pt-[23px]" fill src={"/images/home-page/dotted-bg-block.png"} alt="dotted-bg-block" />
                 </div>
 
-                <div className=" space-y-4 flex-1">
+                <div className=" space-y-4 lg:flex-1 max-w-[350px] lg:max-w-full">
                     <div className="flex items-center justify-start gap-2 lg:gap-4">
-                        <span className="rounded font-bold w-[103px] text-white gradient-red">
+                        <span className="rounded font-bold w-[103px] text-white gradient-red space-x-1">
                             <span className="text-2xl">Step</span>
                             <span className="text-[32px]">{data.id}</span>
                         </span>
@@ -30,7 +30,7 @@ const PurchaseProcessCard: React.FC<IPurchaseProcessCard> = ({ data, steps }) =>
                     <p className="text-base text-left lg:text-xl font-normal text-[#111111] " style={{ "lineHeight": "40px" }}>{data.content}</p>
                 </div>
 
-            </div >
+            </div>
 
             {steps > data.id && <Image className="mx-auto" width={41} height={49} src={"/images/icons/next-step-arrow.svg"} alt="next-step-arrow-hadis" />
             }
