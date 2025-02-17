@@ -12,7 +12,7 @@
         "id": 2,
         "title": "お見積もり",
         "content": "お見積り価格をお伝えいたします。ご納得頂けましたら買い取り出張致します。",
-        "imageSrc": "/images/home-page/on-site-purchase2.jpg"
+        "imageSrc": "/images/home-page/on-site-purchase2.jpeg"
       },
       {
         "id": 3,
@@ -42,25 +42,19 @@
         "id": 2,
         "title": "お見積り",
         "content": "お見積り価格をお知らせいたします。",
-        "imageSrc": "/images/home-page/on-site-purchase2.jpg"
+        "imageSrc": "/images/home-page/on-site-purchase2.jpeg"
       },
       {
         "id": 3,
         "title": "宅配便にて発送",
         "content": "金額にご納得いただけた場合には梱包していただき、身分証明書のコピー（余白にお振込先のご記入、押印）を同封して宅配便で弊社までお送りください。",
-        "imageSrc": "/images/home-page/on-site-purchase6.jpg"
+        "imageSrc": "/images/home-page/on-site-purchase6-2.jpeg"
       },
       {
         "id": 4,
-        "title": "査定金額のご連絡",
-        "content": "お客様に査定金額をご連絡いたします。",
-        "imageSrc": "/images/home-page/on-site-purchase4.jpg"
-      },
-      {
-        "id": 5,
         "title": "代金のお振込",
-        "content": "査定金額にご納得いただけた場合には、翌営業日以内に代金をお振込みいたします。",
-        "imageSrc": "/images/home-page/on-site-purchase7.jpg"
+        "content": "商品の状態を確認し、査定いたします。査定金額にご納得いただけた場合には、翌営業日以内に代金をお振込いたします。",
+        "imageSrc": "/images/home-page/on-site-purchase7.jpeg"
       }
     ]
   },
@@ -84,13 +78,13 @@
         "id": 3,
         "title": "査定",
         "content": "すぐに査定させていただきます。",
-        "imageSrc": "/images/home-page/on-site-purchase2.jpg"
+        "imageSrc": "/images/home-page/on-site-purchase2.jpeg"
       },
       {
         "id": 4,
         "title": "取引成立",
         "content": "金額にご納得いただけた場合、その場で現金で買取致します。",
-        "imageSrc": "/images/home-page/on-site-purchase7.jpg"
+        "imageSrc": "/images/home-page/on-site-purchase7.jpeg"
       }
     ]
   }

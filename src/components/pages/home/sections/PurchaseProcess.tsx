@@ -21,7 +21,7 @@ const PurchaseProcess: React.FC = () => {
     }
 
     return (
-        <section id="purchase-process" className=" lg:h-[2372px] relative w-full py-[50px] lg:py-[120px] text-center px-4">
+        <section id="purchase-process" className="relative w-full py-[50px] lg:py-[120px] text-center px-4">
             <Image className=" absolute -z-10 top-0 left-0 object-cover" fill src={"/images/home-page/flow-bg.png"} alt="hero-background-hadis" />
 
             <h2 className="font-black text-3xl lg:text-6xl text-[#D51A16]">カンタン買取の流れ</h2>
