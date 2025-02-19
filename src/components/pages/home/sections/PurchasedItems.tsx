@@ -1,19 +1,13 @@
 "use client";
-import { useState } from "react";
-import Image from "next/image";
 import data from "@/content/home/purchasedItems.json";
+import Image from "next/image";
 import PurchaseItemsCard from "../components/PurchaseItemsCard";
 import PurchaseItemsCategoryCard from "../components/PurchaseItemsCategoryCard";
+import { useFilterItems } from "@/hooks/useFilterItems";
 
 const PurchasedItems = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>(
-    data.filter[0].title || ""
-  );
-
-  const filteredItems = selectedCategory
-    ? data.items.filter((item) => item.category === selectedCategory)
-    : data.items;
-
+  const { filteredItems, selectedCategory, setSelectedCategory } =
+    useFilterItems();
   return (
     <section
       id="purchased-items"
@@ -37,7 +31,6 @@ const PurchasedItems = () => {
         {data.filter.map((filterItem) => (
           <PurchaseItemsCategoryCard
             key={filterItem.id}
-            id={filterItem.id}
             title={filterItem.title}
             activeCategory={selectedCategory}
             changeCategory={setSelectedCategory}
@@ -50,7 +43,6 @@ const PurchasedItems = () => {
         {filteredItems.map((item) => (
           <div className="w-[47%] md:w-[30%] lg:w-[22%]" key={item.id}>
             <PurchaseItemsCard
-              id={item.id}
               image={item.image}
               title={item.title}
             />

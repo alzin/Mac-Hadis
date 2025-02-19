@@ -1,17 +1,13 @@
 import Image from "next/image";
 
 interface IPurchaseItemsCardProps {
-  id: number;
   title: string;
   image: string;
 }
 
-const PurchaseItemsCard = ({ id, title, image }: IPurchaseItemsCardProps) => {
+const PurchaseItemsCard = ({ title, image }: IPurchaseItemsCardProps) => {
   return (
-    <div
-      key={id}
-      className="p-[20px_24px_60px_24px] lg:p-[25px_58px_65px_58px] min-h-[240px] lg:min-h-[258px] border-[2px] border-[#B81122] rounded-[4px] bg-white relative"
-    >
+    <div className="p-[20px_24px_60px_24px] lg:p-[25px_58px_65px_58px] min-h-[240px] lg:min-h-[258px] border-[2px] border-[#B81122] rounded-[4px] bg-white relative">
       <div className="w-full flex justify-center items-center">
         <Image
           src={image}
