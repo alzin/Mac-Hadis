@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                         {navbarLinksData.navbarBtns?.map(item =>
                             <Link key={item.id} href={item.href} title={`Navigate to ${item.label}`} className="bg-[#B81122] font-black text-white text-base flex items-center justify-center gap-2 py-3 px-8 rounded">
                                 <span>{item.label}</span>
-                                <Image src={"/images/icons/youtube-white.svg"} alt="arrow right hadis" width={20} height={20} priority />
+                                <Image src={"/images/icons/arrow-right-red.svg"} alt="arrow right hadis" width={20} height={20} priority />
                             </Link>
                         )}
                     </div>
