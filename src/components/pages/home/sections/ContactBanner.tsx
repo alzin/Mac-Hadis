@@ -14,6 +14,7 @@ const ContactBanner = () => {
         src="/images/home-page/banner-full-bg.png"
         alt="banner-background-hadis"
         fill
+        loading='lazy'
       />
       {/* Right image */}
       <div className="hidden md:block md:w-[48%] relative md:h-auto">
@@ -21,6 +22,7 @@ const ContactBanner = () => {
           src="/images/home-page/right-bg-banner.jpeg"
           alt="banner-right-bg"
           fill
+          loading='lazy'
           className="object-cover"
         />
       </div>

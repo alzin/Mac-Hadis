@@ -1,3 +1,5 @@
+import { useCallback } from "react";
+
 interface IPurchaseItemsCategoryCardProps {
   title: string;
   activeCategory: string;
@@ -10,14 +12,18 @@ const PurchaseItemsCategoryCard = ({
   changeCategory,
 }: IPurchaseItemsCategoryCardProps) => {
   
-  const handleCategoryClick = () => {
+  const handleCategoryClick = useCallback(() => {
     changeCategory(title);
-
-    // Scroll only for small screens
-    if (window.matchMedia("(max-width: 600px)").matches) {
-      document.getElementById("scroll-to-items")?.scrollIntoView({ behavior: "smooth" });
+  
+    // Avoid unnecessary DOM queries on every click
+    const scrollTarget = document.getElementById("scroll-to-items");
+  
+    // Scroll only for small screens if element exists
+    if (scrollTarget && window.innerWidth <= 600) {
+      scrollTarget.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  }, [title, changeCategory]);
+  
 
   return (
     <button
