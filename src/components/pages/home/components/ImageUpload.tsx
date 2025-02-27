@@ -86,6 +86,7 @@ const ImageUpload = ({ label, setImages, images, productIndex }: IImageUploadPro
                 <Image
                   src={image}
                   alt="Uploaded"
+                  loading="lazy"
                   width={300}
                   height={150}
                   className="w-full h-full object-contain"
@@ -97,6 +98,7 @@ const ImageUpload = ({ label, setImages, images, productIndex }: IImageUploadPro
                     alt="Upload Icon"
                     width={40}
                     height={40}
+                    loading="lazy"
                   />
                 </label>
               )}
@@ -123,6 +125,7 @@ const ImageUpload = ({ label, setImages, images, productIndex }: IImageUploadPro
                   alt="Edit"
                   width={11}
                   height={11}
+                  loading="lazy"
                 />
               </button>
               <button
@@ -136,6 +139,7 @@ const ImageUpload = ({ label, setImages, images, productIndex }: IImageUploadPro
                   alt="Delete"
                   width={11}
                   height={11}
+                  loading='lazy'
                 />
               </button>
             </div>

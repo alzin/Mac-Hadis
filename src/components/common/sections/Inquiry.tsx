@@ -212,6 +212,7 @@ const Inquiry = () => {
                   alt="Delete"
                   width={11}
                   height={11}
+                  loading="lazy"
                 />
               </button>
             )}
@@ -297,6 +298,7 @@ const Inquiry = () => {
                 alt="arrow-right-red"
                 width={32}
                 height={32}
+                loading="lazy"
               />
             </>
           )}
