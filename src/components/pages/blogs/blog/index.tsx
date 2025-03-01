@@ -40,12 +40,10 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
               />
             </div>
             {data.description.split("\n").map((item, index) => (
-              <p className="font-normal text-base leading-8" key={index}>
-                {item}
-              </p>
+              <p className="font-normal text-base leading-8" key={index} dangerouslySetInnerHTML={{ __html: item }} />
             ))}
             {data.subContent.map((item, index) => (
-              <SubContent key={index} content={item} />
+              <SubContent key={index} content={item} mainTitle={data.title} />
             ))}
           </div>
         </div>
