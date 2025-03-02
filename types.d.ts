@@ -23,6 +23,7 @@ interface VideoContent extends BlogItemBase {
     list: {
         id: string
         videoSrc: string;
+        poster: string
     }[]
 }
 
