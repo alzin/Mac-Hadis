@@ -244,7 +244,13 @@
       {
         "id": "img1",
         "title": "",
-        "imageSrc": "/images/blogs/blog3/2.jpeg",
+        "imageSrc": "/images/blogs/blog3/6.jpeg",
+        "type": "image"
+      },
+      {
+        "id": "img1",
+        "title": "",
+        "imageSrc": "/images/blogs/blog3/7.jpeg",
         "type": "image"
       },
       {
@@ -325,7 +331,7 @@
       {
         "id": "img5",
         "title": "",
-        "imageSrc": "/images/blogs/blog3/6.jpeg",
+        "imageSrc": "/images/blogs/blog3/2.jpeg",
         "type": "image"
       },
       {
@@ -381,11 +387,13 @@
         "list": [
           {
             "id": "1",
-            "videoSrc": "/images/blogs/blog3/video1.mp4"
+            "videoSrc": "/images/blogs/blog3/video1.mp4",
+            "poster": "/images/blogs/blog3/poster1.png"
           },
           {
             "id": "2",
-            "videoSrc": "/images/blogs/blog3/video2.mp4"
+            "videoSrc": "/images/blogs/blog3/video2.mp4",
+            "poster": "/images/blogs/blog3/poster2.png"
           }
         ]
       }
