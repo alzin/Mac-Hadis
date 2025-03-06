@@ -3,18 +3,18 @@ import React from "react";
 
 interface IPagination {
   totalItems: number;
-  itemsPerPage: number;
+  postsPerPage: number;
   currentPage: number;
   onPageChange: (x: number) => void;
 }
 
 const Pagination: React.FC<IPagination> = ({
   totalItems,
-  itemsPerPage,
+  postsPerPage,
   currentPage,
   onPageChange,
 }) => {
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  const totalPages = Math.ceil(totalItems / postsPerPage);
 
   const renderPageNumbers = () => {
     const pages = [];

@@ -6,7 +6,7 @@
     },
     {
       "id": 2,
-      "title": "自動車整備機械・自動車板金機械"
+      "title": "自動車整備機械"
     },
     {
       "id": 3,
@@ -101,79 +101,79 @@
     {
       "id": 9,
       "title": "高圧洗浄機",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item9.png"
     },
     {
       "id": 10,
       "title": "門型クレーン",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item10.jpg"
     },
     {
       "id": 12,
       "title": "整備用ジャッキ",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item12.jpg"
     },
     {
       "id": 13,
       "title": "整備リフト",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item13.png"
     },
     {
       "id": 14,
       "title": "排気ガステスター",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item14.jpg"
     },
     {
       "id": 15,
       "title": "ホイールバランサー",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item15.jpg"
     },
     {
       "id": 16,
       "title": "ヘッドライトテスター",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item16.jpeg"
     },
     {
       "id": 17,
       "title": "フレーム修正機",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item17.jpg"
     },
     {
       "id": 18,
       "title": "ヒーター(塗装用乾燥機)",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item18.jpg"
     },
     {
       "id": 19,
       "title": "タイヤチェンジャー",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item19.jpg"
     },
     {
       "id": 20,
       "title": "スポット溶接機",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item20.jpg"
     },
     {
       "id": 21,
       "title": "オイルチェンジャー",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item21.jpg"
     },
     {
       "id": 22,
       "title": "Snap-on スナップオン . 工具",
-      "category": "自動車整備機械・自動車板金機械",
+      "category": "自動車整備機械",
       "image": "/images_db/item22.jpg"
     },
     {

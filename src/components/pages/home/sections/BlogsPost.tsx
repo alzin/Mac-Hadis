@@ -4,9 +4,10 @@ import Link from "next/link";
 import PostCard from "../components/PostCard";
 
 // data
-import data from "@/content/blogs/blogs.json";
+import { getAllBlogs } from "@/services/blogs";
 
 const BlogsPost = () => {
+  const blogsData = getAllBlogs()
   return (
     <section className="px-[12px] md:px-[80px] lg:px-[160px] py-[80px] md:py-[100px] lg:py-[120px] font-noto text-[#111111]">
       <h2 className="mb-[40px] lg:mb-[50px] text-[30px] md:text-[40px] lg:text-[60px] leading-[45px] md:leading-[60px] lg:leading-[90px] font-black text-center bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent">
@@ -14,7 +15,7 @@ const BlogsPost = () => {
       </h2>
       {/* boxes */}
       <div className="gap-8 flex flex-wrap justify-center">
-        {data
+        {blogsData
           .slice(-3)
           .reverse()
           .map((blog) => (

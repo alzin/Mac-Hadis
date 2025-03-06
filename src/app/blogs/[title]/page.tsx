@@ -1,10 +1,11 @@
-// page
-import BlogDetails from "@/components/pages/blogs/blog";
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+// page
+import BlogDetails from "@/components/pages/blogs/blog";
+
 // services
-import { getBlogByTitle } from "@/services/blogs/getBlogByTitle";
-import { Metadata } from "next";
+import { getBlogByTitle } from "@/services/blogs";
 
 // baseUrl
 import { baseUrl } from "@/utils/baseUrl";
@@ -32,6 +33,7 @@ export async function generateMetadata({
       title: data?.title,
       description: data?.metaDescription,
       // keywords: "",
+
       openGraph: {
         type: "article",
         url: `${baseUrl}/blogs/${data?.title}`,
@@ -47,10 +49,10 @@ export async function generateMetadata({
         description: data?.metaDescription,
         images: `${baseUrl}${data?.imageSrc}`,
       },
+
       alternates: {
         canonical: `${baseUrl}/blogs/${data?.title}`,
       },
-      // robots: "index, follow",
     };
   }
 }

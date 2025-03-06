@@ -32,7 +32,7 @@ const RadioGroup = ({
         firstRadio.focus();
       }
     }
-  }, [click, required]);
+  }, [click, required, value]);
 
   return (
     <div

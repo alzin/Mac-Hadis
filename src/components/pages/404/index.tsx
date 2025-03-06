@@ -13,9 +13,9 @@ const Index: React.FC = () => {
       />
       <div>
         <h1 className="text-9xl text-[#D51A16] font-bold">404</h1>
-        <h2 className="text-[20px] lg:text-[40px] font-bold">おっと！</h2>
         <p className="text-[16px] lg:text-[25px] font-normal">
           お探しのページが見つかりませんでした。
+          <br />
           <Link href="/" className="text-[#D51A16] underline text-nowrap">
             ホームに戻る
           </Link>

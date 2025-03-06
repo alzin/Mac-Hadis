@@ -1,17 +1,15 @@
 "use client";
 
-// data
-import blogsData from "@/content/blogs/blogs.json";
+// common components
+import PostCard from "../home/components/PostCard";
+import ContactBanner from "../home/sections/ContactBanner";
 
 // components
-import PostCard from "../home/components/PostCard";
 import Pagination from "./components/Pagination";
-import ContactBanner from "../home/sections/ContactBanner";
 import { useBlog } from "@/hooks/useBlog";
 
 const Index = () => {
-  const { currentBlogs, itemsPerPage, currentPage, handlePageChange } =
-    useBlog();
+  const { currentBlogs, postsPerPage, currentPage, handlePageChange, numberOfBlogs } = useBlog();
 
   return (
     <>
@@ -32,8 +30,8 @@ const Index = () => {
             ))}
           </div>
           <Pagination
-            totalItems={blogsData.length}
-            itemsPerPage={itemsPerPage}
+            totalItems={numberOfBlogs}
+            postsPerPage={postsPerPage}
             currentPage={currentPage}
             onPageChange={handlePageChange}
           />

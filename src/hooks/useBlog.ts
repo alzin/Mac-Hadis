@@ -1,18 +1,21 @@
 import { useState } from "react";
-import blogsData from "@/content/blogs/blogs.json";
+
+// services
+import { getAllBlogs } from "@/services/blogs";
 
 export const useBlog = () => {
-  const itemsPerPage = 15; // Number of posts per page
+  const postsPerPage = 15;
+  const blogsData = getAllBlogs()
   const [currentPage, setCurrentPage] = useState(1);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
-    // window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // Calculate the range of blogs to display
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentBlogs = blogsData.slice(startIndex, startIndex + itemsPerPage);
+  const startIndex = (currentPage - 1) * postsPerPage;
+  const currentBlogs = blogsData.slice(startIndex, startIndex + postsPerPage);
+  const numberOfBlogs = blogsData.length
 
-  return { currentBlogs, itemsPerPage, currentPage, handlePageChange };
+  return { currentBlogs, postsPerPage, currentPage, handlePageChange, numberOfBlogs };
 };

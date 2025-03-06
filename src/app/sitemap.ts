@@ -1,13 +1,15 @@
 import { MetadataRoute } from 'next';
 
 // blogs data
-import blogsData from "@/content/blogs/blogs.json";
+import { getAllBlogs } from '@/services/blogs';
 
 // baseUrl
 import { baseUrl } from '@/utils/baseUrl';
 
 
 export default function sitemap(): MetadataRoute.Sitemap {
+    const blogsData = getAllBlogs()
+
     // Static URLs
     const staticUrls: MetadataRoute.Sitemap = [
         {
