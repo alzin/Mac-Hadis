@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+
+// common components
 import ContactBanner from "../../home/sections/ContactBanner";
-import SubContent from "../components/SubContent";
+
+// components
+import SubContent from "./sections/SubContent";
 
 interface IBlogPage {
   data: BlogPost;

@@ -8,7 +8,12 @@ interface IImageUploadProps {
   productIndex: number;
 }
 
-const ImageUpload = ({ label, setImages, images, productIndex }: IImageUploadProps) => {
+const ImageUpload = ({
+  label,
+  setImages,
+  images,
+  productIndex,
+}: IImageUploadProps) => {
   const compressImage = (
     file: File,
     maxWidth: number,
@@ -92,7 +97,10 @@ const ImageUpload = ({ label, setImages, images, productIndex }: IImageUploadPro
                   className="w-full h-full object-contain"
                 />
               ) : (
-                <label htmlFor={`file-input-${productIndex}-${imageIndex}`} className="flex flex-col items-center justify-center cursor-pointer w-full h-full">
+                <label
+                  htmlFor={`file-input-${productIndex}-${imageIndex}`}
+                  className="flex flex-col items-center justify-center cursor-pointer w-full h-full"
+                >
                   <Image
                     src="/images/icons/Image-Icon.svg"
                     alt="Upload Icon"
@@ -116,7 +124,11 @@ const ImageUpload = ({ label, setImages, images, productIndex }: IImageUploadPro
             <div className="flex flex-col self-end gap-2">
               <button
                 type="button"
-                onClick={() => document.getElementById(`file-input-${productIndex}-${imageIndex}`)?.click()}
+                onClick={() =>
+                  document
+                    .getElementById(`file-input-${productIndex}-${imageIndex}`)
+                    ?.click()
+                }
                 className="w-[24px] h-[24px] border border-[#DCDCDC] bg-white rounded-full flex items-center justify-center"
                 aria-label="Edit image"
               >
@@ -139,7 +151,7 @@ const ImageUpload = ({ label, setImages, images, productIndex }: IImageUploadPro
                   alt="Delete"
                   width={11}
                   height={11}
-                  loading='lazy'
+                  loading="lazy"
                 />
               </button>
             </div>
