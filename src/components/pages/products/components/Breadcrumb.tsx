@@ -3,7 +3,7 @@ import Link from "next/link";
 
 interface IBreadcrumbProps {
   title: string;
-  category: string;
+  category?: string;
 }
 
 const Breadcrumb = ({ title, category }: IBreadcrumbProps) => {

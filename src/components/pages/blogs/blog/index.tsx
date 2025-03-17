@@ -6,6 +6,7 @@ import ContactBanner from "../../home/sections/ContactBanner";
 
 // components
 import SubContent from "./sections/SubContent";
+import ContactFixedBanner from "@/components/common/sections/ContactFixedBanner";
 
 interface IBlogPage {
   data: BlogPost;
@@ -40,11 +41,15 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
                 src={data.imageSrc}
                 alt={data.title}
                 fill
-                loading='lazy'
+                loading="lazy"
               />
             </div>
             {data.description.split("\n").map((item, index) => (
-              <p className="font-normal text-base leading-8" key={index} dangerouslySetInnerHTML={{ __html: item }} />
+              <p
+                className="font-normal text-base leading-8"
+                key={index}
+                dangerouslySetInnerHTML={{ __html: item }}
+              />
             ))}
             {data.subContent.map((item, index) => (
               <SubContent key={index} content={item} mainTitle={data.title} />
@@ -53,6 +58,7 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
         </div>
       </section>
       <ContactBanner />
+      <ContactFixedBanner />
     </>
   );
 };

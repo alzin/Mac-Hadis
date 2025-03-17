@@ -1,5 +1,6 @@
 "use client";
 
+import ContactFixedBanner from "@/components/common/sections/ContactFixedBanner";
 // common components
 import PostCard from "../home/components/PostCard";
 import ContactBanner from "../home/sections/ContactBanner";
@@ -9,7 +10,13 @@ import Pagination from "./components/Pagination";
 import { useBlog } from "@/hooks/useBlog";
 
 const Index = () => {
-  const { currentBlogs, postsPerPage, currentPage, handlePageChange, numberOfBlogs } = useBlog();
+  const {
+    currentBlogs,
+    postsPerPage,
+    currentPage,
+    handlePageChange,
+    numberOfBlogs,
+  } = useBlog();
 
   return (
     <>
@@ -38,6 +45,7 @@ const Index = () => {
         </div>
       </section>
       <ContactBanner />
+      <ContactFixedBanner />
     </>
   );
 };

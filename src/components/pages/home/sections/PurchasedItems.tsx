@@ -48,7 +48,17 @@ const PurchasedItems = () => {
         ))}
       </div>
       {/* show more button */}
-      {selectedCategory === "自動車整備機械" && (
+      {[
+        "工作機械・精密加工機械",
+        "自動車整備機械",
+        "農業機械",
+        "金属加工機械・板金機械",
+        "発電機・溶接機・コンプレッサ",
+        "管工事機械・工具",
+        "住宅工事工具・大工機械",
+        "プリンター・ミシン・DIY用機器",
+        "梱包機・包装機",
+      ].includes(selectedCategory) && (
         <div className="w-full mt-10 md:mt-12 flex justify-center">
           <Link
             href={`/products/${selectedCategory}`}

@@ -28,6 +28,7 @@ interface VideoContent extends BlogItemBase {
 }
 interface FAQContent extends BlogItemBase {
     type: "faq";
+    description?: string;
     items: {
         id: string;
         question: string;

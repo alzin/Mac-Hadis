@@ -1,0 +1,401 @@
+{
+  "id": 6,
+  "title": "管工事機械・工具",
+  "items": [
+    {
+      "id": 1,
+      "title": "高圧洗浄機",
+      "image": "/images_db/item40.jpg"
+    },
+    {
+      "id": 2,
+      "title": "穿孔機",
+      "image": "/images_db/item41.jpg"
+    },
+    {
+      "id": 3,
+      "title": "発電機",
+      "image": "/images_db/item42.png"
+    },
+    {
+      "id": 4,
+      "title": "水道配水用コントローラ",
+      "image": "/images_db/item43.jpg"
+    },
+    {
+      "id": 5,
+      "title": "ドレンクリーナー",
+      "image": "/images_db/item44.jpg"
+    },
+    {
+      "id": 6,
+      "title": "ユンボ . ミニユンボ",
+      "image": "/images_db/item45.jpg"
+    },
+    {
+      "id": 7,
+      "title": "プレートコンパクター",
+      "image": "/images_db/item46.png"
+    },
+    {
+      "id": 8,
+      "title": "フリーパネル",
+      "image": "/images_db/item47.jpg"
+    },
+    {
+      "id": 9,
+      "title": "バンドソー",
+      "image": "/images_db/item48.jpg"
+    },
+    {
+      "id": 10,
+      "title": "ねじ切り機(パイプマシン)",
+      "image": "/images_db/item49.jpg"
+    },
+    {
+      "id": 11,
+      "title": "トレンチャー",
+      "image": "/images_db/item50.jpg"
+    },
+    {
+      "id": 12,
+      "title": "タンピングランマー",
+      "image": "/images_db/item51.png"
+    },
+    {
+      "id": 13,
+      "title": "コンクリートカッター",
+      "image": "/images_db/item52.png"
+    },
+    {
+      "id": 14,
+      "title": "コアドリル",
+      "image": "/images_db/item53.jpg"
+    },
+    {
+      "id": 15,
+      "title": "キールカッター",
+      "image": "/images_db/item54.png"
+    },
+    {
+      "id": 16,
+      "title": "エンジンコンプレッサ",
+      "image": "/images_db/item55.jpg"
+    },
+    {
+      "id": 17,
+      "title": "アルミ矢板 . アルミブリッジ",
+      "image": "/images_db/item56.jpg"
+    },
+    {
+      "id": 18,
+      "title": "コンクリートクラッシャー",
+      "image": "/images_db/item209.png"
+    },
+    {
+      "id": 19,
+      "title": "転圧機械",
+      "image": "/images_db/item210.jpg"
+    }
+  ],
+  "makers": [
+    {
+      "jp": "",
+      "en": "itabasi",
+      "link": "http://itabasi.com",
+      "imageSrc": "/images/category/category6/makers/itabasi.png"
+    },
+    {
+      "jp": "",
+      "en": "shibuya-group",
+      "link": "http://www.shibuya-group.co.jp",
+      "imageSrc": "/images/category/category6/makers/shibuya.jpg"
+    },
+    {
+      "jp": "",
+      "en": "mcccorp",
+      "link": "https://mcccorp.co.jp",
+      "imageSrc": "/images/category/category6/makers/mcccorp.webp"
+    },
+    {
+      "jp": "",
+      "en": "airman",
+      "link": "https://www.airman.co.jp",
+      "imageSrc": "/images/category/category6/makers/airman.svg"
+    },
+    {
+      "jp": "",
+      "en": "asada",
+      "link": "https://www.asada.co.jp",
+      "imageSrc": "/images/category/category6/makers/asda.svg"
+    },
+    {
+      "jp": "",
+      "en": "ccts",
+      "link": "https://www.ccts.co.jp",
+      "imageSrc": "/images/category/category6/makers/cactus.jpg"
+    },
+    {
+      "jp": "",
+      "en": "ebara",
+      "link": "https://www.ebara.co.jp",
+      "imageSrc": "/images/category/category6/makers/ebara.png"
+    },
+    {
+      "jp": "",
+      "en": "flutech",
+      "link": "https://www.flutech.co.jp",
+      "imageSrc": "/images/category/category6/makers/flutech.jpg"
+    },
+    {
+      "jp": "",
+      "en": "hikoki-powertools",
+      "link": "https://www.hikoki-powertools.jp",
+      "imageSrc": "/images/category/category6/makers/hikoki.jpg"
+    },
+    {
+      "jp": "",
+      "en": "honda",
+      "link": "https://www.honda.co.jp/generator/",
+      "imageSrc": "/images/category/category6/makers/honda.png"
+    },
+    {
+      "jp": "",
+      "en": "husqvarna",
+      "link": "https://www.husqvarna.com.jp",
+      "imageSrc": "/images/category/category6/makers/husqvarna.png"
+    },
+    {
+      "jp": "",
+      "en": "kamekura",
+      "link": "https://www.kamekura.co.jp",
+      "imageSrc": "/images/category/category6/makers/kamekura.png"
+    },
+    {
+      "jp": "",
+      "en": "kawamoto",
+      "link": "https://www.kawamoto.co.jp",
+      "imageSrc": "/images/category/category6/makers/kawamoto.png"
+    },
+    {
+      "jp": "",
+      "en": "kobelco-kenki",
+      "link": "https://www.kobelco-kenki.co.jp",
+      "imageSrc": "/images/category/category6/makers/kobelco.png"
+    },
+    {
+      "jp": "",
+      "en": "komatsu",
+      "link": "https://www.komatsu.jp",
+      "imageSrc": "/images/category/category6/makers/komatsu.svg"
+    },
+    {
+      "jp": "",
+      "en": "kubota",
+      "link": "https://www.kubota.co.jp/product/",
+      "imageSrc": "/images/category/category6/makers/kubota.png"
+    },
+    {
+      "jp": "",
+      "en": "mikasas",
+      "link": "https://www.mikasas.jp",
+      "imageSrc": "/images/category/category6/makers/mikasas.png"
+    },
+    {
+      "jp": "",
+      "en": "mkseiko",
+      "link": "https://www.mkseiko.co.jp",
+      "imageSrc": "/images/category/category6/makers/mkseiko.jpg"
+    },
+    {
+      "jp": "",
+      "en": "rex",
+      "link": "https://www.rexind.co.jp/jp/",
+      "imageSrc": "/images/category/category6/makers/rex.png"
+    },
+    {
+      "jp": "",
+      "en": "ridgid",
+      "link": "https://www.ridgid.com/jp/ja",
+      "imageSrc": "/images/category/category6/makers/ridgid.png"
+    },
+    {
+      "jp": "",
+      "en": "seiwa",
+      "link": "https://www.seiwa.com",
+      "imageSrc": "/images/category/category6/makers/seiwa.jpeg"
+    },
+    {
+      "jp": "",
+      "en": "super",
+      "link": "https://www.super-ace.co.jp",
+      "imageSrc": "/images/category/category6/makers/super.jpeg"
+    },
+    {
+      "jp": "",
+      "en": "technoflex",
+      "link": "https://www.tfn.technoflex.co.jp",
+      "imageSrc": "/images/category/category6/makers/technoflex.png"
+    },
+    {
+      "jp": "",
+      "en": "teral",
+      "link": "https://www.teral.net",
+      "imageSrc": "/images/category/category6/makers/teral.png"
+    },
+    {
+      "jp": "",
+      "en": "tsurumipump",
+      "link": "https://www.tsurumipump.co.jp",
+      "imageSrc": "/images/category/category6/makers/tsurumipump.jpeg"
+    },
+    {
+      "jp": "",
+      "en": "yamabiko",
+      "link": "https://www.yamabiko-corp.co.jp/shindaiwa/",
+      "imageSrc": "/images/category/category6/makers/yamabiko.png"
+    },
+    {
+      "jp": "",
+      "en": "yanma",
+      "link": "https://www.yanmar.com/jp/",
+      "imageSrc": "/images/category/category6/makers/yanma.png"
+    },
+    {
+      "jp": "",
+      "en": "zaohnet",
+      "link": "https://www.zaohnet.co.jp/products/",
+      "imageSrc": "/images/category/category6/makers/zaohnet.jpg"
+    }
+  ],
+  "purchaseItems": [
+    {
+      "title": "三笠★ランマー★MT-55",
+      "imageSrc": "/images/category/category6/purchaseItems/三笠★ランマー★MT-55.jpg"
+    },
+    {
+      "title": "AIRMAN 北越工業★エンジンコンプレッサ★ ★PDS130SC-5C3",
+      "imageSrc": "/images/category/category6/purchaseItems/AIRMAN 北越工業★エンジンコンプレッサ★ ★PDS130SC-5C3.jpg"
+    },
+    {
+      "title": "AIRMAN★エンジンコンプレッサー★ ★PDS185SC-7C5",
+      "imageSrc": "/images/category/category6/purchaseItems/AIRMAN★エンジンコンプレッサー★  ★PDS185SC-7C5.jpg"
+    },
+    {
+      "title": "Asada アサダ★バンドソー★BEAVER6 ビーバー6",
+      "imageSrc": "/images/category/category6/purchaseItems/Asada アサダ★バンドソー★BEAVER6 ビーバー6.jpg"
+    },
+    {
+      "title": "Hakken ハッケン★ダイヤモンドコアドリル★SPM-55★コアビット付",
+      "imageSrc": "/images/category/category6/purchaseItems/Hakken ハッケン★ダイヤモンドコアドリル★SPM-55★コアビット付.jpg"
+    },
+    {
+      "title": "Husqvarna ハスクバーナ★パワーカッター★K770★12インチ★エンジンカッター コンクリートカッター",
+      "imageSrc": "/images/category/category6/purchaseItems/Husqvarna ハスクバーナ★パワーカッター★K770★12インチ★エンジンカッター コンクリートカッター.jpg"
+    },
+    {
+      "title": "MCC32W★パイプマシン ねじ切り機★LM-21",
+      "imageSrc": "/images/category/category6/purchaseItems/MCC32W★パイプマシン ねじ切り機★LM-21.jpg"
+    },
+    {
+      "title": "MIKASA 三笠★エンジンコンクリートカッター★MCD-218VDXS",
+      "imageSrc": "/images/category/category6/purchaseItems/MIKASA 三笠★エンジンコンクリートカッター★MCD-218VDXS.jpg"
+    },
+    {
+      "title": "MIKASA 三笠★タンピングランマー 転圧機★MT-72FWA",
+      "imageSrc": "/images/category/category6/purchaseItems/MIKASA 三笠★タンピングランマー 転圧機★MT-72FWA.jpg"
+    },
+    {
+      "title": "MIKASA 三笠★前後進 バイブロコンパクター★プレートコンパクター★MVH-R60A",
+      "imageSrc": "/images/category/category6/purchaseItems/MIKASA 三笠★前後進 バイブロコンパクター★プレートコンパクター★MVH-R60A.jpg"
+    },
+    {
+      "title": "MIKASA 三笠産業★プレートコンパクター★プレートランマー★転圧機★MVC-T90H",
+      "imageSrc": "/images/category/category6/purchaseItems/MIKASA 三笠産業★プレートコンパクター★プレートランマー★転圧機★MVC-T90H.jpg"
+    },
+    {
+      "title": "REX★パイプマシン ねじ切り機★100V_200V切替★N100A",
+      "imageSrc": "/images/category/category6/purchaseItems/REX★パイプマシン ねじ切り機★100V_200V切替★N100A.jpg"
+    },
+    {
+      "title": "REX★水道排水用PE管用EFコントローラ★JWEF200-Ⅱ",
+      "imageSrc": "/images/category/category6/purchaseItems/REX★水道排水用PE管用EFコントローラ★JWEF200-Ⅱ.jpg"
+    },
+    {
+      "title": "RIDGID★ドレンクリーナー 排水管清掃機★K-1500B",
+      "imageSrc": "/images/category/category6/purchaseItems/RIDGID★ドレンクリーナー 排水管清掃機★K-1500B.jpg"
+    },
+    {
+      "title": "SEIWA 精和工業★ジェットクリーン 防音型エンジン高圧洗浄機★JC-1513DXPS★ホースリール ガン 吸水ホース付",
+      "imageSrc": "/images/category/category6/purchaseItems/SEIWA 精和工業★ジェットクリーン 防音型エンジン高圧洗浄機★JC-1513DXPS★ホースリール ガン 吸水ホース付.jpg"
+    },
+    {
+      "title": "TBC タブチ★プロボーラー★サドル分水栓用穿孔機★PB-M",
+      "imageSrc": "/images/category/category6/purchaseItems/TBC タブチ★プロボーラー★サドル分水栓用穿孔機★PB-M.jpg"
+    },
+    {
+      "title": "YAMAHA ヤマハ★インバータ発電機★EF1600iS",
+      "imageSrc": "/images/category/category6/purchaseItems/YAMAHA ヤマハ★インバータ発電機★EF1600iS.jpg"
+    },
+    {
+      "title": "YANMAR ヤンマー★高圧洗浄機★P1615S-1-ED★ホースリール付",
+      "imageSrc": "/images/category/category6/purchaseItems/YANMAR ヤンマー★高圧洗浄機★P1615S-1-ED★ホースリール付.jpg"
+    },
+    {
+      "title": "flutech フルテック★高圧洗浄機★GSB1520★洗浄ガン ホース付",
+      "imageSrc": "/images/category/category6/purchaseItems/flutech フルテック★高圧洗浄機★GSB1520★洗浄ガン ホース付.jpg"
+    },
+    {
+      "title": "アルミ矢板★2500mm×10枚★2000mm×10枚★腹起し★2000mm×2本★土留め 土木 掘削",
+      "imageSrc": "/images/category/category6/purchaseItems/アルミ矢板★2500mm×10枚★2000mm×10枚★腹起し★2000mm×2本★土留め 土木 掘削.jpg"
+    },
+    {
+      "title": "クボタ★ミニユンボ★K-008",
+      "imageSrc": "/images/category/category6/purchaseItems/クボタ★ミニユンボ★K-008.jpg"
+    },
+    {
+      "title": "コスモ工機★コスモボーラー★不断水穿孔機★SD1★40 50 75mm★ロビンエンジン付",
+      "imageSrc": "/images/category/category6/purchaseItems/コスモ工機★コスモボーラー★不断水穿孔機★SD1★40 50 75mm★ロビンエンジン付.jpg"
+    },
+    {
+      "title": "コマツ★油圧ショベル ユンボ★PC28UU-3",
+      "imageSrc": "/images/category/category6/purchaseItems/コマツ★油圧ショベル ユンボ★PC28UU-3.jpg"
+    },
+    {
+      "title": "シブヤ★ダイモドリル★M1511★コアドリル付",
+      "imageSrc": "/images/category/category6/purchaseItems/シブヤ★ダイモドリル★M1511★コアドリル付.jpg"
+    },
+    {
+      "title": "バロネス★トレンチャーミニ★TL-003A★根菜堀取 溝堀",
+      "imageSrc": "/images/category/category6/purchaseItems/バロネス★トレンチャーミニ★TL-003A★根菜堀取 溝堀.jpg"
+    },
+    {
+      "title": "マキタ★メタルバンドソー★B183",
+      "imageSrc": "/images/category/category6/purchaseItems/マキタ★メタルバンドソー★B183.jpg"
+    },
+    {
+      "title": "中野製作所★キールカッター★エンジン式フレキシャフト駆動型★N600 一式",
+      "imageSrc": "/images/category/category6/purchaseItems/中野製作所★キールカッター★エンジン式フレキシャフト駆動型★N600 一式.jpg"
+    },
+    {
+      "title": "共栄機器★バロネス★トレンチャーミニ★TL-003★溝堀 根菜堀取",
+      "imageSrc": "/images/category/category6/purchaseItems/共栄機器★バロネス★トレンチャーミニ★TL-003★溝堀 根菜堀取.jpg"
+    },
+    {
+      "title": "新ダイワ★インバータ発電機★IEG1600M-Y",
+      "imageSrc": "/images/category/category6/purchaseItems/新ダイワ★インバータ発電機★IEG1600M-Y.jpg"
+    },
+    {
+      "title": "日軽金アクト★日軽アルミブリッジ★PXF35-300-40★全長3000ｍm有効幅400mm最大積載3.5t_組",
+      "imageSrc": "/images/category/category6/purchaseItems/日軽金アクト★日軽アルミブリッジ★PXF35-300-40★全長3000ｍm有効幅400mm最大積載3.5t_組.jpg"
+    },
+    {
+      "title": "秋山★鋼製 フリーパネル★型枠★600 450",
+      "imageSrc": "/images/category/category6/purchaseItems/秋山★鋼製 フリーパネル★型枠★600 450.jpg"
+    },
+    {
+      "title": "板橋機械工業★エンジン式穿孔機5型★キールカッター★NSジョインター★ローラー台付★フルセット★水道管 土木",
+      "imageSrc": "/images/category/category6/purchaseItems/板橋機械工業★エンジン式穿孔機5型★キールカッター★NSジョインター★ローラー台付★フルセット★水道管 土木.jpg"
+    }
+  ]
+}

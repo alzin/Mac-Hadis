@@ -2,20 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-
 // data
 import navbarLinksData from "@/content/home/navbarLinks.json";
 
 const Footer: React.FC = () => {
-  const pathname = usePathname();
-  const isHomePage = pathname === "/";
-
   return (
-    <footer
-      className={isHomePage ? "mb-32 xl:mb-20" : ""}
-      aria-label="Website Footer"
-    >
+    <footer className="mb-32 xl:mb-20" aria-label="Website Footer">
       <div className="bg-white py-10 px-4 space-y-5 lg:space-y-6 font-medium text-sm lg:text-base text-[#B81122] flex items-center justify-center w-full flex-col">
         {/* logo */}
         <Link href={"/"} className="block">

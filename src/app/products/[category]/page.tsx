@@ -1,6 +1,6 @@
 import NotFound from "@/app/not-found";
 import CategoryPage from "@/components/pages/products/category/index";
-import data from "@/content/home/purchasedItems.json";
+import categories from "@/content/categories/categories";
 
 interface IPageProps {
   params: Promise<{
@@ -16,16 +16,14 @@ const page = async ({ params }: IPageProps) => {
   }
 
   const categoryDecoded = decodeURIComponent(category);
+  const categoryData = categories.find((c) => c.title.replace(/\n/g, '') === categoryDecoded);
+  const products = categoryData?.items;
 
-  const products = data.items.filter(
-    (product) => product.category === categoryDecoded
-  );
-
-  if (products.length === 0) {
+  if (!categoryData || !products || products?.length === 0) {
     return <NotFound />;
   }
 
-  return <CategoryPage category={categoryDecoded} products={products} />;
+  return <CategoryPage categoryData={categoryData} />;
 };
 
 export default page;

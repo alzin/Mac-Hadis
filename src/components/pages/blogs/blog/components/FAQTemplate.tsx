@@ -10,6 +10,7 @@ const FAQTemplate: React.FC<IFAQTemplate> = ({ content }) => {
       <h2 className="font-black text-[18px] lg:text-[25px] leading-[48px]">
         {content.title}
       </h2>
+      {content.description && <p className="font-normal text-base leading-8">{content.description}</p>}
       {content.items?.map((item, index) => (
         <div className="ml-5 pb-3" key={index}>
           <h3 className="font-black text-[16px] leading-[48px]">
