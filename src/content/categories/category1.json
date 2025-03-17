@@ -1,0 +1,220 @@
+{
+  "id": 1,
+  "title": "工作機械・精密加工機械",
+  "items": [
+    {
+      "id": 1,
+      "title": "鋸盤 (バンドソー)",
+      "category": "工作機械・精密加工機械",
+      "image": "/images_db/item1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "研削盤 . 研磨機",
+      "category": "工作機械・精密加工機械",
+      "image": "/images_db/item2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "汎用旋盤",
+      "category": "工作機械・精密加工機械",
+      "image": "/images_db/item3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "マシニングセンタ",
+      "category": "工作機械・精密加工機械",
+      "image": "/images_db/item4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "ボール盤",
+      "category": "工作機械・精密加工機械",
+      "image": "/images_db/item5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "プレス機械",
+      "category": "工作機械・精密加工機械",
+      "image": "/images_db/item6.png"
+    },
+    {
+      "id": 7,
+      "title": "フライス盤",
+      "category": "工作機械・精密加工機械",
+      "image": "/images_db/item7.jpg"
+    },
+    {
+      "id": 8,
+      "title": "NC旋盤",
+      "category": "工作機械・精密加工機械",
+      "image": "/images_db/item8.png"
+    }
+  ],
+  "makers": [
+    {
+      "jp": "",
+      "en": "TAKISAWA",
+      "link": "https://www.takisawa.co.jp/index.html",
+      "imageSrc": "/images/category/category1/makers/tadisawa.gif"
+    },
+    {
+      "jp": "",
+      "en": "MORISEIKI",
+      "link": "https://www.dmgmori.co.jp/",
+      "imageSrc": "/images/category/category1/makers/dmg.png"
+    },
+    {
+      "jp": "",
+      "en": "Mazak",
+      "link": "https://www.mazak.com/jp-ja/",
+      "imageSrc": "/images/category/category1/makers/mazak.jpg"
+    },
+    {
+      "jp": "",
+      "en": "HASEGAWA",
+      "link": "http://www.hasegawa-m.co.jp/",
+      "imageSrc": "/images/category/category1/makers/hasegawa.JPG"
+    },
+    {
+      "jp": "",
+      "en": "DAINICHI",
+      "link": "https://www.dainichikinzoku.co.jp/",
+      "imageSrc": "/images/category/category1/makers/dainichi.png"
+    },
+    {
+      "jp": "",
+      "en": "TSUDA",
+      "link": "https://www.tsudass.co.jp/",
+      "imageSrc": "/images/category/category1/makers/tsuda.png"
+    },
+    {
+      "jp": "",
+      "en": "HOWA",
+      "link": "https://www.howa.co.jp/",
+      "imageSrc": "/images/category/category1/makers/howa_logo.png"
+    },
+    {
+      "jp": "",
+      "en": "IKEGAI",
+      "link": "https://www.ikegai.co.jp/",
+      "imageSrc": "/images/category/category1/makers/ikegai.png"
+    },
+    {
+      "jp": "",
+      "en": "OKUMA",
+      "link": "https://www.okuma.co.jp/",
+      "imageSrc": "/images/category/category1/makers/okuma.gif"
+    },
+    {
+      "jp": "",
+      "en": "Kotobuki Mecanix",
+      "link": "https://www.kotobuki-mecanix.co.jp/",
+      "imageSrc": "/images/category/category1/makers/kotobuki.png"
+    },
+    {
+      "jp": "",
+      "en": "AMADA",
+      "link": "https://www.amada.co.jp/ja/",
+      "imageSrc": "/images/category/category1/makers/amada.png"
+    },
+    {
+      "jp": "",
+      "en": "Mitsutoyo",
+      "link": "https://www.mitutoyo.co.jp/",
+      "imageSrc": "/images/category/category1/makers/Mitutoyo.png"
+    },
+    {
+      "jp": "",
+      "en": "SHIZUOKA",
+      "link": "https://www.shizuokatekko.co.jp/",
+      "imageSrc": "/images/category/category1/makers/shizuoka.jpg"
+    },
+    {
+      "jp": "",
+      "en": "OKAMOTO",
+      "link": "https://www.okamoto.co.jp/",
+      "imageSrc": "/images/category/category1/makers/okamoto.jpg"
+    },
+    {
+      "jp": "",
+      "en": "MAKINO",
+      "link": "https://www.makino.co.jp/ja-jp/",
+      "imageSrc": "/images/category/category1/makers/makino.webp"
+    }
+  ],
+  "purchaseItems": [
+    {
+      "title": "ENKOH_S 遠州★タッピング兼用ボール盤★ESD350NTA",
+      "imageSrc": "/images/category/category1/purchaseItems/item1.jpg"
+    },
+    {
+      "title": "KIWA 紀和★直立ボール盤★KUD-550FP",
+      "imageSrc": "/images/category/category1/purchaseItems/item2.jpg"
+    },
+    {
+      "title": "Kosoku 高速電機★ロータ・バンドソー★HRB-2750N",
+      "imageSrc": "/images/category/category1/purchaseItems/item3.jpg"
+    },
+    {
+      "title": "nc旋盤",
+      "imageSrc": "/images/category/category1/purchaseItems/item4.JPG"
+    },
+    {
+      "title": "OKAMOTO 岡本工作機械★精密成形研削盤(平面研磨機)★PFG-450C",
+      "imageSrc": "/images/category/category1/purchaseItems/item5.jpg"
+    },
+    {
+      "title": "OOYA 大矢製作所★ラジアルボール盤★RE2-1300A",
+      "imageSrc": "/images/category/category1/purchaseItems/item6.jpg"
+    },
+    {
+      "title": "TAKISAWA 滝沢★4尺 旋盤★TSL-DELUXE",
+      "imageSrc": "/images/category/category1/purchaseItems/item7.jpg"
+    },
+    {
+      "title": "アマダ　AMADA プレス機　60ton",
+      "imageSrc": "/images/category/category1/purchaseItems/item8.jpg"
+    },
+    {
+      "title": "アマダ　AMADA プレス機　80ton",
+      "imageSrc": "/images/category/category1/purchaseItems/item9.jpg"
+    },
+    {
+      "title": "ワシノ★高速精密旋盤★LEO-80A★6尺旋盤★  ★ミツトヨ DRO付き",
+      "imageSrc": "/images/category/category1/purchaseItems/item10.jpg"
+    },
+    {
+      "title": "光畑製作所★COSMO ACE★卓上フライス盤★BM-1000★  ★電動YXテーブル カウンタ 取説付",
+      "imageSrc": "/images/category/category1/purchaseItems/item11.jpg"
+    },
+    {
+      "title": "大和工機 NEWS★PROFIT★工具研削盤★  ★CG-200-N",
+      "imageSrc": "/images/category/category1/purchaseItems/item12.jpg"
+    },
+    {
+      "title": "山崎鉄工所★旋盤★焼入ベッド★MAZAK-860",
+      "imageSrc": "/images/category/category1/purchaseItems/item13.jpg"
+    },
+    {
+      "title": "日立工機★180mmロータリーバンドソー★CB18FA3",
+      "imageSrc": "/images/category/category1/purchaseItems/item14.jpg"
+    },
+    {
+      "title": "日立工機★220mm ロータリバンドソー★CB22FA",
+      "imageSrc": "/images/category/category1/purchaseItems/item15.jpg"
+    },
+    {
+      "title": "松浦機械★立フライス盤★FVR-1B",
+      "imageSrc": "/images/category/category1/purchaseItems/item16.jpg"
+    },
+    {
+      "title": "牧野フライス精機 マキノ★小型フライス盤★  ★MH-20★三相200V",
+      "imageSrc": "/images/category/category1/purchaseItems/item17.jpg"
+    },
+    {
+      "title": "飯田鉄工所★工具研削盤★GT-200FR",
+      "imageSrc": "/images/category/category1/purchaseItems/item18.jpg"
+    }
+  ]
+}

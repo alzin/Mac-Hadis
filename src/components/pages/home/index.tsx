@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
 import Hero from "./sections/Hero";
-import ContactFixedBanner from "./sections/ContactFixedBanner";
+import ContactFixedBanner from "@/components/common/sections/ContactFixedBanner";
 
 const Flow = dynamic(() => import("./sections/Flow"));
 const WhyChoose = dynamic(() => import("./sections/WhyChoose"));
@@ -13,7 +13,9 @@ const PurchaseResults = dynamic(() => import("./sections/PurchaseResults"));
 const PurchaseProcess = dynamic(() => import("./sections/PurchaseProcess"));
 const BusinessPolicy = dynamic(() => import("./sections/BusinessPolicy"));
 const ReviewsReceived = dynamic(() => import("./sections/ReviewsReceived"));
-const FrequentlyAskedQuestions = dynamic(() => import("./sections/FrequentlyAskedQuestions"));
+const FrequentlyAskedQuestions = dynamic(
+  () => import("./sections/FrequentlyAskedQuestions")
+);
 const CompanyProfile = dynamic(() => import("./sections/CompanyProfile"));
 const Inquiry = dynamic(() => import("@/components/common/sections/Inquiry"));
 

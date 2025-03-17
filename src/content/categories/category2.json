@@ -1,0 +1,279 @@
+{
+  "id": 2,
+  "title": "自動車整備機械",
+  "items": [
+    {
+      "id": 1,
+      "title": "高圧洗浄機",
+      "image": "/images_db/item9.png"
+    },
+    {
+      "id": 2,
+      "title": "門型クレーン",
+      "image": "/images_db/item10.jpg"
+    },
+    {
+      "id": 3,
+      "title": "整備用ジャッキ",
+      "image": "/images_db/item12.jpg"
+    },
+    {
+      "id": 4,
+      "title": "整備リフト",
+      "image": "/images_db/item13.png"
+    },
+    {
+      "id": 5,
+      "title": "排気ガステスター",
+      "image": "/images_db/item14.jpg"
+    },
+    {
+      "id": 6,
+      "title": "ホイールバランサー",
+      "image": "/images_db/item15.jpg"
+    },
+    {
+      "id": 7,
+      "title": "ヘッドライトテスター",
+      "image": "/images_db/item16.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "フレーム修正機",
+      "image": "/images_db/item17.jpg"
+    },
+    {
+      "id": 9,
+      "title": "ヒーター(塗装用乾燥機)",
+      "image": "/images_db/item18.jpg"
+    },
+    {
+      "id": 10,
+      "title": "タイヤチェンジャー",
+      "image": "/images_db/item19.jpg"
+    },
+    {
+      "id": 11,
+      "title": "スポット溶接機",
+      "image": "/images_db/item20.jpg"
+    },
+    {
+      "id": 12,
+      "title": "オイルチェンジャー",
+      "image": "/images_db/item21.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Snap-on スナップオン . 工具",
+      "image": "/images_db/item22.jpg"
+    },
+    {
+      "id": 14,
+      "title": "フロンガス回収機",
+      "image": "/images_db/item213.jpg"
+    },
+    {
+      "id": 15,
+      "title": "サンドブラスト機",
+      "image": "/images_db/item214.jpg"
+    },
+    {
+      "id": 16,
+      "title": "油圧プレス",
+      "image": "/images_db/item215.jpg"
+    },
+    {
+      "id": 17,
+      "title": "塗装ブース",
+      "image": "/images_db/item216.png"
+    }
+  ],
+  "makers": [
+    {
+      "jp": "スナップオン",
+      "en": "Snap-on",
+      "link": "https://www.snapon.co.jp/",
+      "imageSrc": "/images/category/category2/makers/snapon-logo.gif"
+    },
+    {
+      "jp": "バンザイ",
+      "en": "BANZAI",
+      "link": "https://www.banzai.co.jp/",
+      "imageSrc": "/images/category/category2/makers/banzai-logo.svg"
+    },
+    {
+      "jp": "エイワ",
+      "en": "EIWA",
+      "link": "https://circuit-eiwa.co.jp/",
+      "imageSrc": "/images/category/category2/makers/eiwa-logo.jpg"
+    },
+    {
+      "jp": "オノダニ",
+      "en": "ONODANI",
+      "link": "https://www.onodani.co.jp/",
+      "imageSrc": "/images/category/category2/makers/onodani-logo.jpg"
+    },
+    {
+      "jp": "イヤサカ",
+      "en": "IYASAKA",
+      "link": "https://www.iyasaka.co.jp/",
+      "imageSrc": "/images/category/category2/makers/iyasaka-logo.png"
+    },
+    {
+      "jp": "ビシャモン",
+      "en": "Bishamon",
+      "link": "http://www.bishamon.co.jp/",
+      "imageSrc": "/images/category/category2/makers/bishamon-logo.jpg"
+    },
+    {
+      "jp": "スパネージ",
+      "en": "SPANESI",
+      "link": "https://www.maru-t.co.jp/products_lp/spanesi/",
+      "imageSrc": "/images/category/category2/makers/spanesi-logo.png"
+    },
+    {
+      "jp": "セレット",
+      "en": "CELETTE",
+      "link": "https://www.ipec-j.co.jp/products/frame/",
+      "imageSrc": "/images/category/category2/makers/celette-logo.png"
+    },
+    {
+      "jp": "カーベンチ",
+      "en": "CAR BENCH",
+      "link": "https://www.carbench.it/en",
+      "imageSrc": "/images/category/category2/makers/carbench-logo.png"
+    },
+    {
+      "jp": "キュービック",
+      "en": "CUBIC SYSTEM ",
+      "link": "http://www.cubicsystem.co.jp/system1",
+      "imageSrc": "/images/category/category2/makers/cubic-system-logo.png"
+    },
+    {
+      "jp": "ヤシマ",
+      "en": "Yashima",
+      "link": "https://www.yashima-corp.jp/yousetsuki/spot-welder/",
+      "imageSrc": "/images/category/category2/makers/yashima-logo.jpg"
+    },
+    {
+      "jp": "栄和",
+      "en": "EIWA",
+      "link": " http://www.eiwanet.co.jp/publics/index/17/",
+      "imageSrc": "/images/category/category2/makers/logo-trans.png"
+    }
+  ],
+  "purchaseItems": [
+    {
+      "title": "BIC TOOL★イオンシャワーブース★WX-700★  ★自動車板金 塗装",
+      "imageSrc": "/images/category/category2/purchaseItems/item1.jpg"
+    },
+    {
+      "title": "Edwin Trisk★赤外線乾燥機 自動車塗装★キュアマスター ツイン★ETS4",
+      "imageSrc": "/images/category/category2/purchaseItems/item2.jpg"
+    },
+    {
+      "title": "FuYo 芙蓉商事★サンドブラスト★SGW",
+      "imageSrc": "/images/category/category2/purchaseItems/item3.jpg"
+    },
+    {
+      "title": "IYASAKA イヤサカ★CO_HCアナライザ★ALTAS-300★自動車 排気ガステスター",
+      "imageSrc": "/images/category/category2/purchaseItems/item4.jpg"
+    },
+    {
+      "title": "IYASAKA イヤサカ★HESHBON ヘスボン★  ★ダイモスタイヤチェンジャー★HJT-380★最大24インチ",
+      "imageSrc": "/images/category/category2/purchaseItems/item5.jpg"
+    },
+    {
+      "title": "IYASAKA イヤサカ★HESHBON ヘスボン★  ★ホイールバランサー★HW-103★24インチ対応",
+      "imageSrc": "/images/category/category2/purchaseItems/item6.jpg"
+    },
+    {
+      "title": "KTC★チェスト&ローラーキャビネット★  ★SKX3206Y SKX3705Y★コーンウェルイエロー",
+      "imageSrc": "/images/category/category2/purchaseItems/item7.jpg"
+    },
+    {
+      "title": " Snap-on スナップオン★工具箱 ツールキャビネット ロールキャブ★KRA4813D",
+      "imageSrc": "/images/category/category2/purchaseItems/item8.jpg"
+    },
+    {
+      "title": "SPEEDY★キュアマックス★塗装乾燥機 ヒーター★N2C",
+      "imageSrc": "/images/category/category2/purchaseItems/item9.jpg"
+    },
+    {
+      "title": "SUMOTO 洲本★高圧温水洗浄機★COMPACT BODY★COM-3",
+      "imageSrc": "/images/category/category2/purchaseItems/item10.jpg"
+    },
+    {
+      "title": "SUPER スーパーツール★ポータブル門型クレーン 伸縮式★PMC480BN",
+      "imageSrc": "/images/category/category2/purchaseItems/item11.jpg"
+    },
+    {
+      "title": "YAMADA ヤマダ★オイルドレン★OD-700PG",
+      "imageSrc": "/images/category/category2/purchaseItems/item12.jpg"
+    },
+    {
+      "title": "タイヤチェンジャー★ユーロスター★EU39NA★  ★TECO 36 S ti★サポートアーム付 UPH4(A28)★50Hz",
+      "imageSrc": "/images/category/category2/purchaseItems/item13.jpg"
+    },
+    {
+      "title": "デンゲン★全自動フロンガス回収 再生 真空引き 充填装置★ ★エコマックス・ジュニアⅡ★CS-MRG-JrⅡ★取説 付属品付",
+      "imageSrc": "/images/category/category2/purchaseItems/item14.jpg"
+    },
+    {
+      "title": "フレーム修正機★タワー2基★オートポール★NAO-SU★自動車板金",
+      "imageSrc": "/images/category/category2/purchaseItems/item15.jpg"
+    },
+    {
+      "title": "ヤシマ★スポット溶接機★YSI-24EZ-S★ ★バーコード対応★自動車板金",
+      "imageSrc": "/images/category/category2/purchaseItems/item16.jpg"
+    },
+    {
+      "title": "ヤシマ★スポット溶接機★YSI-24EZ-S★バーコード対応★自動車板金",
+      "imageSrc": "/images/category/category2/purchaseItems/item17.jpg"
+    },
+    {
+      "title": "不二製作所★ニューマブラスター★SFC-2★サンドブラスター",
+      "imageSrc": "/images/category/category2/purchaseItems/item18.jpg"
+    },
+    {
+      "title": "岡常歯車製作所★オイルチェンジャー★AT-1",
+      "imageSrc": "/images/category/category2/purchaseItems/item19.jpg"
+    },
+    {
+      "title": "東亜工機★油圧プレス ショッププレス★15ton",
+      "imageSrc": "/images/category/category2/purchaseItems/item20.jpg"
+    },
+    {
+      "title": "長崎ジャッキ★エアーガレージジャッキ★手動 エア 兼用★NLA-1.8H★1.8トン",
+      "imageSrc": "/images/category/category2/purchaseItems/item21.jpg"
+    },
+    {
+      "title": "長崎ジャッキ★ミッションリフト★ミッションジャッキ★ML-800★耐荷重450kg★自動車整備",
+      "imageSrc": "/images/category/category2/purchaseItems/item22.jpg"
+    },
+    {
+      "title": "長崎ジャッキ★油圧プレス★HP300★15ton",
+      "imageSrc": "/images/category/category2/purchaseItems/item23.jpg"
+    },
+    {
+      "title": "ALTIA アルティア★ホイールバランサー スマートロードX★NSR-X WS3251-4002★60Hz",
+      "imageSrc": "/images/category/category2/purchaseItems/item24.jpg"
+    },
+    {
+      "title": "ARIMITSU 有光★温水洗浄機 HOT-CLEANER★AHC-3100 50Hz★洗浄ガン付",
+      "imageSrc": "/images/category/category2/purchaseItems/item25.jpg"
+    },
+    {
+      "title": "BANZAI バンザイ★ゲートリフト・スリムⅡ★GLY-40★  ★能力4t",
+      "imageSrc": "/images/category/category2/purchaseItems/item26.jpg"
+    },
+    {
+      "title": "Bishamon ビシャモン スギヤス★門型 二柱リフト★  ★NSA30-N33H★3000kgs",
+      "imageSrc": "/images/category/category2/purchaseItems/item27.jpg"
+    },
+    {
+      "title": "自動車板金★GLOBALJIG グローバルジグ★フレーム修正機 一式",
+      "imageSrc": "/images/category/category2/purchaseItems/item28.jpg"
+    }
+  ]
+}

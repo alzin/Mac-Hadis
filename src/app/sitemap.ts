@@ -3,6 +3,9 @@ import { MetadataRoute } from 'next';
 // blogs data
 import { getAllBlogs } from '@/services/blogs';
 
+// category data
+import categoriesData from "@/content/categories/categories"
+
 // baseUrl
 import { baseUrl } from '@/utils/baseUrl';
 
@@ -40,8 +43,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
+    // Dynamic category URLs
+    const dynamicCategoryUrls: MetadataRoute.Sitemap = categoriesData.map((category) => ({
+        url: `${baseUrl}/products/${encodeURIComponent(category.title)}`,
+        lastModified: new Date().toISOString(), // Use actual lastModified if available
+        changeFrequency: "weekly",
+        priority: 0.7,
+    }));
+
     return [
         ...staticUrls,
         ...dynamicBlogUrls,
+        ...dynamicCategoryUrls
     ];
 }

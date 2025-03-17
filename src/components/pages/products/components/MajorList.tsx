@@ -1,97 +1,13 @@
+import { TMaker } from "@/types/category.type";
 import Image from "next/image";
 import Link from "next/link";
 
 interface IMajorListProps {
   categoryName: string;
+  companies: TMaker[];
 }
 
-const companies = [
-  {
-    jp: "スナップオン",
-    en: "Snap-on",
-    link: "https://www.snapon.co.jp/",
-    imageSrc: "/images/category/companies/snapon-logo.gif",
-  },
-  {
-    jp: "バンザイ",
-    en: "BANZAI",
-    link: "https://www.banzai.co.jp/",
-    imageSrc: "/images/category/companies/banzai-logo.svg",
-  },
-  {
-    jp: "エイワ",
-    en: "EIWA",
-    link: "https://circuit-eiwa.co.jp/",
-    imageSrc: "/images/category/companies/eiwa-logo.jpg",
-  },
-  // {
-  //   jp: "小野谷機工",
-  //   en: "EXCEED",
-  //   link: "https://linkout.aucfan.com/?to=https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2015148&pid=884896608&vc_url=https%3A%2F%2Fpage.auctions.yahoo.co.jp%2Fjp%2Fauction%2Fs755148093",
-  //   imageSrc: "/images/category/companies/onodani-logo.svg",
-  // },
-  {
-    jp: "オノダニ",
-    en: "ONODANI",
-    link: "https://www.onodani.co.jp/",
-    imageSrc: "/images/category/companies/onodani-logo.jpg",
-  },
-  {
-    jp: "イヤサカ",
-    en: "IYASAKA",
-    link: "https://www.iyasaka.co.jp/",
-    imageSrc: "/images/category/companies/iyasaka-logo.png",
-  },
-  {
-    jp: "ビシャモン",
-    en: "Bishamon",
-    link: "http://www.bishamon.co.jp/",
-    imageSrc: "/images/category/companies/bishamon-logo.jpg",
-  },
-  {
-    jp: "スパネージ",
-    en: "SPANESI",
-    link: "https://www.maru-t.co.jp/products_lp/spanesi/",
-    imageSrc: "/images/category/companies/spanesi-logo.png",
-  },
-  {
-    jp: "セレット",
-    en: "CELETTE",
-    link: "https://www.ipec-j.co.jp/products/frame/",
-    imageSrc: "/images/category/companies/celette-logo.png",
-  },
-  {
-    jp: "カーベンチ",
-    en: "CAR BENCH",
-    link: "https://www.carbench.it/en",
-    imageSrc: "/images/category/companies/carbench-logo.png",
-  },
-  {
-    jp: "キュービック",
-    en: "CUBIC SYSTEM ",
-    link: "http://www.cubicsystem.co.jp/system1",
-    imageSrc: "/images/category/companies/cubic-system-logo.png",
-  },
-  {
-    jp: "ヤシマ",
-    en: "Yashima",
-    link: "https://www.yashima-corp.jp/yousetsuki/spot-welder/",
-    imageSrc: "/images/category/companies/yashima-logo.jpg",
-  },
-  {
-    jp: "栄和",
-    en: "EIWA",
-    link: " http://www.eiwanet.co.jp/publics/index/17/",
-    imageSrc: "/images/category/companies/logo-trans.png",
-  },
-  // {
-  //   jp: "堀場",
-  //   en: "HORIBA",
-  //   link: "https://www.horiba.com/jpn/",
-  //   imageSrc: "/images/category/companies/yashima-logo.jpg",
-  // },
-];
-const MajorList = ({ categoryName }: IMajorListProps) => {
+const MajorList = ({ categoryName, companies }: IMajorListProps) => {
   return (
     <section className="px-5 py-[50px] relative">
       <Image
@@ -110,7 +26,7 @@ const MajorList = ({ categoryName }: IMajorListProps) => {
       </p>
       {/* companies wrapper */}
       <div className="w-full md:w-[90%] lg:w-[80%] md:mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[7px] lg:gap-x-[32px] lg:gap-y-4 mt-10">
-        {companies.map((item, index) => (
+        {companies?.map((item, index) => (
           <Link
             key={index}
             target="_blank"
@@ -120,9 +36,9 @@ const MajorList = ({ categoryName }: IMajorListProps) => {
             <Image
               src={item.imageSrc}
               alt={item.en}
-              width={200}
-              height={200}
-              loading="lazy"
+              width={250}
+              height={250}
+              unoptimized
               className="w-full h-full object-contain"
             />
           </Link>

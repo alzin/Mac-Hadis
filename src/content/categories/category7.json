@@ -1,0 +1,416 @@
+{
+  "id": 7,
+  "title": "住宅工事工具・\n大工機械",
+  "items": [
+    {
+      "id": 1,
+      "title": "集じん機",
+      "image": "/images_db/item57.jpg"
+    },
+    {
+      "id": 2,
+      "title": "足場 . ローリングタワー",
+      "image": "/images_db/item58.jpg"
+    },
+    {
+      "id": 3,
+      "title": "荷揚機(瓦揚機)",
+      "image": "/images_db/item59.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "自動壁紙糊付機(糊付機)",
+      "image": "/images_db/item60.jpg"
+    },
+    {
+      "id": 5,
+      "title": "自動カンナ . 手押しかんな",
+      "image": "/images_db/item61.jpg"
+    },
+    {
+      "id": 6,
+      "title": "気圧リフター",
+      "image": "/images_db/item62.jpg"
+    },
+    {
+      "id": 7,
+      "title": "木工旋盤",
+      "image": "/images_db/item63.jpg"
+    },
+    {
+      "id": 8,
+      "title": "帯のこ盤(バンドソー)",
+      "image": "/images_db/item65.jpg"
+    },
+    {
+      "id": 9,
+      "title": "仕上かんな盤",
+      "image": "/images_db/item67.jpg"
+    },
+    {
+      "id": 10,
+      "title": "丸のこ盤 . 横切盤",
+      "image": "/images_db/item68.jpg"
+    },
+    {
+      "id": 11,
+      "title": "万能木工機",
+      "image": "/images_db/item69.jpg"
+    },
+    {
+      "id": 12,
+      "title": "モルタルミキサー",
+      "image": "/images_db/item70.jpg"
+    },
+    {
+      "id": 13,
+      "title": "ホゾキリ",
+      "image": "/images_db/item71.jpg"
+    },
+    {
+      "id": 14,
+      "title": "ベルトサンダー",
+      "image": "/images_db/item72.jpg"
+    },
+    {
+      "id": 15,
+      "title": "フロアスクレーパー",
+      "image": "/images_db/item73.webp"
+    },
+    {
+      "id": 16,
+      "title": "フラッシュプレス",
+      "image": "/images_db/item74.jpg"
+    },
+    {
+      "id": 17,
+      "title": "パネルソー",
+      "image": "/images_db/item75.jpg"
+    },
+    {
+      "id": 18,
+      "title": "エンジンコンプレッサー",
+      "image": "/images_db/item76.jpg"
+    },
+    {
+      "id": 19,
+      "title": "エアレス塗装機",
+      "image": "/images_db/item77.jpg"
+    },
+    {
+      "id": 20,
+      "title": "エアコンプレッサ",
+      "image": "/images_db/item78.jpg"
+    },
+    {
+      "id": 21,
+      "title": "パワートロウェル",
+      "image": "/images_db/item211.png"
+    },
+    {
+      "id": 22,
+      "title": "油圧式多機能工具",
+      "image": "/images_db/item212.jpg"
+    }
+  ],
+  "makers": [
+    {
+      "jp": "",
+      "en": "max-ltd",
+      "link": "https://www.max-ltd.co.jp",
+      "imageSrc": "/images/category/category7/makers/max-ltd.jpg"
+    },
+    {
+      "jp": "",
+      "en": "si-mark",
+      "link": "https://si-mark.co.jp/products/",
+      "imageSrc": "/images/category/category7/makers/si-mark.svg"
+    },
+    {
+      "jp": "",
+      "en": "amano",
+      "link": "https://www.amano.co.jp/",
+      "imageSrc": "/images/category/category7/makers/amano.PNG"
+    },
+    {
+      "jp": "",
+      "en": "anest-iwata",
+      "link": "https://www.anest-iwata.co.jp/",
+      "imageSrc": "/images/category/category7/makers/anest-iwata.PNG"
+    },
+    {
+      "jp": "",
+      "en": "compacttool",
+      "link": "https://www.compacttool.com/product/",
+      "imageSrc": "/images/category/category7/makers/compacttool.webp"
+    },
+    {
+      "jp": "",
+      "en": "deltamachinery",
+      "link": "https://www.deltamachinery.com",
+      "imageSrc": "/images/category/category7/makers/deltamachinery.png"
+    },
+    {
+      "jp": "",
+      "en": "dewalt",
+      "link": "https://www.dewalt.com",
+      "imageSrc": "/images/category/category7/makers/dewalt.png"
+    },
+    {
+      "jp": "",
+      "en": "festool",
+      "link": "https://www.festool.com/products",
+      "imageSrc": "/images/category/category7/makers/festool.webp"
+    },
+    {
+      "jp": "",
+      "en": "izumi",
+      "link": "https://www.izumi.maxell.co.jp/",
+      "imageSrc": "/images/category/category7/makers/izumi.PNG"
+    },
+    {
+      "jp": "",
+      "en": "klass-corp",
+      "link": "https://www.klass-corp.co.jp/",
+      "imageSrc": "/images/category/category7/makers/klass-corp.PNG"
+    },
+    {
+      "jp": "",
+      "en": "koki-holdings",
+      "link": "https://www.koki-holdings.co.jp",
+      "imageSrc": "/images/category/category7/makers/koki-holdings.png"
+    },
+    {
+      "jp": "",
+      "en": "klass",
+      "link": "https://www.klass-corp.co.jp/products",
+      "imageSrc": "/images/category/category7/makers/klass.jpg"
+    },
+    {
+      "jp": "",
+      "en": "makita",
+      "link": "https://www.makita.co.jp/product/",
+      "imageSrc": "/images/category/category7/makers/makita.svg"
+    },
+    {
+      "jp": "",
+      "en": "triton-japan",
+      "link": "http://www.triton-japan.com",
+      "imageSrc": "/images/category/category7/makers/triton-japan.png"
+    },
+    {
+      "jp": "",
+      "en": "murakoshi",
+      "link": "https://www.murakoshi.jp/",
+      "imageSrc": "/images/category/category7/makers/murakoshi.PNG"
+    },
+    {
+      "jp": "",
+      "en": "rupes",
+      "link": "https://www.rupes.com",
+      "imageSrc": "/images/category/category7/makers/rupes.png"
+    },
+    {
+      "jp": "",
+      "en": "ryobi-group",
+      "link": "https://www.ryobi-group.co.jp",
+      "imageSrc": "/images/category/category7/makers/ryobi-group.jpg"
+    },
+    {
+      "jp": "",
+      "en": "shinx",
+      "link": "https://www.shinx.co.jp",
+      "imageSrc": "/images/category/category7/makers/shinx.jpg"
+    },
+    {
+      "jp": "",
+      "en": "uniper",
+      "link": "https://www.uniper.co.jp/",
+      "imageSrc": "/images/category/category7/makers/uniper.PNG"
+    },
+    {
+      "jp": "",
+      "en": "wagner-group",
+      "link": "https://www.wagner-group.com/jp/",
+      "imageSrc": "/images/category/category7/makers/wagner-group.PNG"
+    }
+  ],
+  "purchaseItems": [
+    {
+      "title": "AcT アクティブ★コンクリートトロウェル プロペラ★60G-4",
+      "imageSrc": "/images/category/category7/purchaseItems/AcT アクティブ★コンクリートトロウェル プロペラ★60G-4.jpg"
+    },
+    {
+      "title": "ANEST アネスト岩田★オイルフリー レシプロコンプレッサー★COMGPAC CFUE22B-7S",
+      "imageSrc": "/images/category/category7/purchaseItems/ANEST アネスト岩田★オイルフリー レシプロコンプレッサー★COMGPAC CFUE22B-7S.jpg"
+    },
+    {
+      "title": " AOKI アオキ★木工旋盤",
+      "imageSrc": "/images/category/category7/purchaseItems/ AOKI アオキ★木工旋盤.jpg"
+    },
+    {
+      "title": "DELTA★18_×36_ ドラムベルトサンダー★集じん機付",
+      "imageSrc": "/images/category/category7/purchaseItems/DELTA★18_×36_ ドラムベルトサンダー★集じん機付.jpg"
+    },
+    {
+      "title": "DELTA デルタ★木工旋盤★LA200",
+      "imageSrc": "/images/category/category7/purchaseItems/DELTA デルタ★木工旋盤★LA200.jpg"
+    },
+    {
+      "title": "Genie HOISTⅡ ジーニーホイスト★気圧リフト エアリフター★最大揚程3.80m★160kg(350lb)",
+      "imageSrc": "/images/category/category7/purchaseItems/Genie HOISTⅡ ジーニーホイスト★気圧リフト エアリフター★最大揚程3.80m★160kg(350lb).jpg"
+    },
+    {
+      "title": "iwata 岩田★レシプロコンプレッサー★SUE-222PB",
+      "imageSrc": "/images/category/category7/purchaseItems/iwata 岩田★レシプロコンプレッサー★SUE-222PB.jpg"
+    },
+    {
+      "title": "IZUMI 泉精器★充電油圧式多機能工具★REC-Li200M★取説 付属品 ケース付",
+      "imageSrc": "/images/category/category7/purchaseItems/IZUMI 泉精器★充電油圧式多機能工具★REC-Li200M★取説 付属品 ケース付.jpg"
+    },
+    {
+      "title": "IZUMI 泉精器★充電油圧式多機能工具★REC-Li250M",
+      "imageSrc": "/images/category/category7/purchaseItems/IZUMI 泉精器★充電油圧式多機能工具★REC-Li250M.jpg"
+    },
+    {
+      "title": "JET★オッシレーティング ベルトサンディングマシン★OES-80CS",
+      "imageSrc": "/images/category/category7/purchaseItems/JET★オッシレーティング ベルトサンディングマシン★OES-80CS.jpg"
+    },
+    {
+      "title": "KYC 光洋機械産業★ベビーミキサー コンクリートミキサー★KBM-3DCW",
+      "imageSrc": "/images/category/category7/purchaseItems/KYC 光洋機械産業★ベビーミキサー コンクリートミキサー★KBM-3DCW.jpg"
+    },
+    {
+      "title": "KYOKUTO 極東産機★自動壁紙糊付機 クロス糊付機★Hiβ-Prime",
+      "imageSrc": "/images/category/category7/purchaseItems/KYOKUTO 極東産機★自動壁紙糊付機 クロス糊付機★Hiβ-Prime.jpg"
+    },
+    {
+      "title": "LINAX★振動ハガシ機 ペラーリⅡ 床材剥がし★VS-3EⅡ",
+      "imageSrc": "/images/category/category7/purchaseItems/LINAX★振動ハガシ機 ペラーリⅡ 床材剥がし★VS-3EⅡ.jpg"
+    },
+    {
+      "title": "MIKASA 三笠★フロアスクレーパー 床材剥がし★MS-60A",
+      "imageSrc": "/images/category/category7/purchaseItems/MIKASA 三笠★フロアスクレーパー 床材剥がし★MS-60A.jpg"
+    },
+    {
+      "title": "MISATO 三里工業★丸鋸昇降盤★TM-350",
+      "imageSrc": "/images/category/category7/purchaseItems/MISATO 三里工業★丸鋸昇降盤★TM-350.jpg"
+    },
+    {
+      "title": "RYOBI リョービ★バンドソー★BS-51N",
+      "imageSrc": "/images/category/category7/purchaseItems/RYOBI リョービ★バンドソー★BS-51N.jpg"
+    },
+    {
+      "title": "SEiWA 精和★低圧エアレス塗装機",
+      "imageSrc": "/images/category/category7/purchaseItems/SEiWA 精和★低圧エアレス塗装機.jpg"
+    },
+    {
+      "title": "SHINX シンクス★全自動型・パネルソー★切断長さ210cm",
+      "imageSrc": "/images/category/category7/purchaseItems/SHINX シンクス★全自動型・パネルソー★切断長さ210cm.jpg"
+    },
+    {
+      "title": "TAIYO 太洋製作所★手押しカンナ盤★SHP-300",
+      "imageSrc": "/images/category/category7/purchaseItems/TAIYO 太洋製作所★手押しカンナ盤★SHP-300.jpg"
+    },
+    {
+      "title": "TOKIWA 常盤工業★角のみ盤 木工 ほぞ穴 フライス★MH-30",
+      "imageSrc": "/images/category/category7/purchaseItems/TOKIWA 常盤工業★角のみ盤 木工 ほぞ穴 フライス★MH-30.jpg"
+    },
+    {
+      "title": "WAGNER★エアレス塗装機★ES3000",
+      "imageSrc": "/images/category/category7/purchaseItems/WAGNER★エアレス塗装機★ES3000.jpg"
+    },
+    {
+      "title": "アマノ★集塵機 集じん機★VNA-30",
+      "imageSrc": "/images/category/category7/purchaseItems/アマノ★集塵機 集じん機★VNA-30.jpg"
+    },
+    {
+      "title": " ☆マキタ MAKITA★超仕上カンナ盤★LP360★",
+      "imageSrc": "/images/category/category7/purchaseItems/ ☆マキタ MAKITA★超仕上カンナ盤★LP360★.JPG"
+    },
+    {
+      "title": "マキタ★エアコンプレッサ★AC462XL",
+      "imageSrc": "/images/category/category7/purchaseItems/マキタ★エアコンプレッサ★AC462XL.jpg"
+    },
+    {
+      "title": "マキタ★万能木工機★LM451★最大切削幅 455mm",
+      "imageSrc": "/images/category/category7/purchaseItems/マキタ★万能木工機★LM451★最大切削幅 455mm.jpg"
+    },
+    {
+      "title": "マキタ★小型アリカマホゾキリ★5520",
+      "imageSrc": "/images/category/category7/purchaseItems/マキタ★小型アリカマホゾキリ★5520.jpg"
+    },
+    {
+      "title": "マックス★エアリフタ★AL-2500★取説付",
+      "imageSrc": "/images/category/category7/purchaseItems/マックス★エアリフタ★AL-2500★取説付.jpg"
+    },
+    {
+      "title": "マックス★スーパーエア・コンプレッサ★AK-HL1270E2",
+      "imageSrc": "/images/category/category7/purchaseItems/マックス★スーパーエア・コンプレッサ★AK-HL1270E2.jpg"
+    },
+    {
+      "title": "ムラコシ★サイクロンフィルター式移動集塵機★マイコレクター★MY-150XN",
+      "imageSrc": "/images/category/category7/purchaseItems/ムラコシ★サイクロンフィルター式移動集塵機★マイコレクター★MY-150XN.jpg"
+    },
+    {
+      "title": "ユニパー★パワーコメット★UP-103P★荷揚げ機",
+      "imageSrc": "/images/category/category7/purchaseItems/ユニパー★パワーコメット★UP-103P★荷揚げ機.jpg"
+    },
+    {
+      "title": "ローリングタワー★足場★2段",
+      "imageSrc": "/images/category/category7/purchaseItems/ローリングタワー★足場★2段.jpg"
+    },
+    {
+      "title": "丸仲鐵工所★Royal Eight★超仕上かんな盤",
+      "imageSrc": "/images/category/category7/purchaseItems/丸仲鐵工所★Royal Eight★超仕上かんな盤.jpg"
+    },
+    {
+      "title": "伊藤産業★木工用フラッシュプレス ホットプレス★PL2400W4枚定盤",
+      "imageSrc": "/images/category/category7/purchaseItems/伊藤産業★木工用フラッシュプレス ホットプレス★PL2400W4枚定盤.jpg"
+    },
+    {
+      "title": "協和製作所★Petty Work ペティワーク★300 WS★軸傾斜横切盤 木工機械",
+      "imageSrc": "/images/category/category7/purchaseItems/協和製作所★Petty Work ペティワーク★300 WS★軸傾斜横切盤 木工機械.jpg"
+    },
+    {
+      "title": "日工 トンボ工業★エンジン式★モルタル コンクリート★ポットミキサー★NGM-3★83L",
+      "imageSrc": "/images/category/category7/purchaseItems/日工 トンボ工業★エンジン式★モルタル コンクリート★ポットミキサー★NGM-3★83L.jpg"
+    },
+    {
+      "title": "日本産業機械★ジェットスライダー スライド式荷揚機★JS-L",
+      "imageSrc": "/images/category/category7/purchaseItems/日本産業機械★ジェットスライダー スライド式荷揚機★JS-L.jpg"
+    },
+    {
+      "title": "日立工機★245mm 小形ほぞ取り★CT80F",
+      "imageSrc": "/images/category/category7/purchaseItems/日立工機★245mm 小形ほぞ取り★CT80F.jpg"
+    },
+    {
+      "title": "日立工機★312mm 小形自動かんな盤★P100RA3",
+      "imageSrc": "/images/category/category7/purchaseItems/日立工機★312mm 小形自動かんな盤★P100RA3.jpg"
+    },
+    {
+      "title": "日立工機★460mm万能木工機★PU150F★3相200V★自動かんな盤",
+      "imageSrc": "/images/category/category7/purchaseItems/日立工機★460mm万能木工機★PU150F★3相200V★自動かんな盤.jpg"
+    },
+    {
+      "title": "日立工機★バンドソー★CB100FA",
+      "imageSrc": "/images/category/category7/purchaseItems/日立工機★バンドソー★CB100FA.jpg"
+    },
+    {
+      "title": "日立工機★継手・仕口加工機★M25F",
+      "imageSrc": "/images/category/category7/purchaseItems/日立工機★継手・仕口加工機★M25F.jpg"
+    },
+    {
+      "title": "日立工機★継手・仕口加工機★M25F(1)",
+      "imageSrc": "/images/category/category7/purchaseItems/日立工機★継手・仕口加工機★M25F(1).jpg"
+    },
+    {
+      "title": "極東産機★Hiβ-VL★自動壁紙糊付機",
+      "imageSrc": "/images/category/category7/purchaseItems/極東産機★Hiβ-VL★自動壁紙糊付機.jpg"
+    },
+    {
+      "title": "足場セット",
+      "imageSrc": "/images/category/category7/purchaseItems/足場セット.jpg"
+    }
+  ]
+}
