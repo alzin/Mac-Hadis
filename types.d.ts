@@ -58,3 +58,27 @@ interface BlogPost {
     metaDescription: string;
     subContent: BlogSubContent[];
 }
+
+interface CategoryType {
+    id: string;
+    title: string;
+    imageSrc: string;
+
+    items: {
+        id: number;
+        title: string;
+        image: string;
+    }[];
+
+    makers: {
+        jp: string;
+        en: string;
+        link: string;
+        imageSrc: string;
+    }[];
+
+    purchaseItems: {
+        title: string;
+        imageSrc: string;
+    }[];
+}

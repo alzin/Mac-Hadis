@@ -1,0 +1,367 @@
+{
+  "id": "boenkyo-kenbikyo-sokutei-kiki",
+  "title": "望遠鏡・顕微鏡・\n測定機器",
+  "imageSrc": "https://www.mac-hadis.com/images/category/category11/main-ogp.png",
+  "items": [
+    {
+      "id": 153,
+      "title": "電気計測器",
+      "image": "/images_db/item153.jpg"
+    },
+    {
+      "id": 154,
+      "title": "試験器",
+      "image": "/images_db/item154.jpeg"
+    },
+    {
+      "id": 155,
+      "title": "計測器",
+      "image": "/images_db/item155.jpg"
+    },
+    {
+      "id": 156,
+      "title": "画像寸法測定器",
+      "image": "/images_db/item156.png"
+    },
+    {
+      "id": 157,
+      "title": "測定顕微鏡",
+      "image": "/images_db/item157.jpg"
+    },
+    {
+      "id": 158,
+      "title": "工業用顕微鏡",
+      "image": "/images_db/item158.jpg"
+    },
+    {
+      "id": 159,
+      "title": "天体望遠鏡",
+      "image": "/images_db/item159.jpg"
+    },
+    {
+      "id": 160,
+      "title": "双眼鏡",
+      "image": "/images_db/item160.png"
+    },
+    {
+      "id": 161,
+      "title": "光学顕微鏡",
+      "image": "/images_db/item161.jpg"
+    },
+    {
+      "id": 162,
+      "title": "三次元測定器",
+      "image": "/images_db/item162.jpg"
+    },
+    {
+      "id": 163,
+      "title": "レーザーレベル",
+      "image": "/images_db/item163.jpg"
+    },
+    {
+      "id": 164,
+      "title": "トランシット",
+      "image": "/images_db/item164.jpg"
+    },
+    {
+      "id": 165,
+      "title": "トータルステーション",
+      "image": "/images_db/item165.jpeg"
+    },
+    {
+      "id": 166,
+      "title": "スペクトラムアナライザ",
+      "image": "/images_db/item166.jpg"
+    },
+    {
+      "id": 167,
+      "title": "オシロスコープ",
+      "image": "/images_db/item167.png"
+    },
+    {
+      "id": 168,
+      "title": "オートレベル",
+      "image": "/images_db/item168.jpg"
+    }
+  ],
+  "makers": [
+    {
+      "jp": "",
+      "en": "carton-opt",
+      "link": "https://carton-opt.co.jp",
+      "imageSrc": "/images/category/category11/makers/carton-opt.png"
+    },
+    {
+      "jp": "",
+      "en": "diffractionlimited",
+      "link": "https://diffractionlimited.com",
+      "imageSrc": "/images/category/category11/makers/diffractionlimited.jpg"
+    },
+    {
+      "jp": "",
+      "en": "evidentscientific",
+      "link": "https://evidentscientific.com/ja/we-are-evident",
+      "imageSrc": "/images/category/category11/makers/evidentscientific.jpg"
+    },
+    {
+      "jp": "",
+      "en": "kkohki",
+      "link": "https://kkohki.com",
+      "imageSrc": "/images/category/category11/makers/kkohki.jpg"
+    },
+    {
+      "jp": "",
+      "en": "luntsolarsystems",
+      "link": "https://luntsolarsystems.com",
+      "imageSrc": "/images/category/category11/makers/luntsolarsystems.webp"
+    },
+    {
+      "jp": "",
+      "en": "nikon",
+      "link": "https://nij.nikon.com",
+      "imageSrc": "/images/category/category11/makers/nikon.png"
+    },
+    {
+      "jp": "",
+      "en": "nikkostirling",
+      "link": "https://nikkostirling.com",
+      "imageSrc": "/images/category/category11/makers/nikkostirling.png"
+    },
+    {
+      "jp": "",
+      "en": "takahashijapan",
+      "link": "https://takahashijapan.jp",
+      "imageSrc": "/images/category/category11/makers/takahashijapan.png"
+    },
+    {
+      "jp": "",
+      "en": "williamoptics",
+      "link": "https://williamoptics.com",
+      "imageSrc": "/images/category/category11/makers/williamoptics.png"
+    },
+    {
+      "jp": "",
+      "en": "advantest",
+      "link": "https://www.advantest.com.ja",
+      "imageSrc": "/images/category/category11/makers/advantest.png"
+    },
+    {
+      "jp": "",
+      "en": "ametek",
+      "link": "https://www.ametek.co.jp",
+      "imageSrc": "/images/category/category11/makers/ametek.png"
+    },
+    {
+      "jp": "",
+      "en": "celestron",
+      "link": "https://www.celestron.com",
+      "imageSrc": "/images/category/category11/makers/celestron.png"
+    },
+    {
+      "jp": "",
+      "en": "fujifilm",
+      "link": "https://www.fujifilm.com/jp/ja/consumer/binoculars",
+      "imageSrc": "/images/category/category11/makers/fujifilm.png"
+    },
+    {
+      "jp": "",
+      "en": "goto",
+      "link": "https://www.goto.co.jp",
+      "imageSrc": "/images/category/category11/makers/goto.jpg"
+    },
+    {
+      "jp": "",
+      "en": "hirox",
+      "link": "https://www.hirox.com/products",
+      "imageSrc": "/images/category/category11/makers/hirox.jpg"
+    },
+    {
+      "jp": "",
+      "en": "jeol",
+      "link": "https://www.jeol.co.jp/products",
+      "imageSrc": "/images/category/category11/makers/jeol.png"
+    },
+    {
+      "jp": "",
+      "en": "kenko-tokina",
+      "link": "https://www.kenko-tokina.co.jp",
+      "imageSrc": "/images/category/category11/makers/kenko-tokina.png"
+    },
+    {
+      "jp": "",
+      "en": "keyence",
+      "link": "https://www.keyence.co.jp/products/microscope",
+      "imageSrc": "/images/category/category11/makers/keyence.png"
+    },
+    {
+      "jp": "",
+      "en": "leica-microsystems",
+      "link": "https://www.leica-microsystems.com.jp",
+      "imageSrc": "/images/category/category11/makers/leica-microsystems.png"
+    },
+    {
+      "jp": "",
+      "en": "mitutoyo",
+      "link": "https://www.mitutoyo.co.jp",
+      "imageSrc": "/images/category/category11/makers/mitutoyo.png"
+    },
+    {
+      "jp": "",
+      "en": "nishimura",
+      "link": "https://www.nishimura-opt.co.jp",
+      "imageSrc": "/images/category/category11/makers/nishimura.jpg"
+    },
+    {
+      "jp": "",
+      "en": "noiseken",
+      "link": "https://www.noiseken.co.jp",
+      "imageSrc": "/images/category/category11/makers/noiseken.png"
+    },
+    {
+      "jp": "",
+      "en": "obsessiontelescopes",
+      "link": "https://www.obsessiontelescopes.com",
+      "imageSrc": "/images/category/category11/makers/obsessiontelescopes.jpg"
+    },
+    {
+      "jp": "",
+      "en": "orionoptics",
+      "link": "https://www.orionoptics.co.uk",
+      "imageSrc": "/images/category/category11/makers/orionoptics.png"
+    },
+    {
+      "jp": "",
+      "en": "swarovskioptik",
+      "link": "https://www.swarovskioptik.com/gb/en/hunting",
+      "imageSrc": "/images/category/category11/makers/swarovskioptik.png"
+    },
+    {
+      "jp": "",
+      "en": "takagi",
+      "link": "https://www.takagi-j.com.jp",
+      "imageSrc": "/images/category/category11/makers/takagi.png"
+    },
+    {
+      "jp": "",
+      "en": "tek",
+      "link": "https://www.tek.com.ja",
+      "imageSrc": "/images/category/category11/makers/tek.jpg"
+    },
+    {
+      "jp": "",
+      "en": "topcon",
+      "link": "https://www.topcon.co.jp",
+      "imageSrc": "/images/category/category11/makers/topcon.png"
+    },
+    {
+      "jp": "",
+      "en": "vixen",
+      "link": "https://www.vixen.co.jp",
+      "imageSrc": "/images/category/category11/makers/vixen.png"
+    },
+    {
+      "jp": "",
+      "en": "zeiss",
+      "link": "https://www.zeiss.com/corporate/en/home.html",
+      "imageSrc": "/images/category/category11/makers/zeiss.png"
+    }
+  ],
+  "purchaseItems": [
+    {
+      "title": "ADVANTEST★スペクトラムアナライザ★U3641N",
+      "imageSrc": "/images/category/category11/purchaseItems/item1.jpg"
+    },
+    {
+      "title": "ADVANTEST★スペクトラムアナライザー R3316A R3551★取説付",
+      "imageSrc": "/images/category/category11/purchaseItems/item2.jpg"
+    },
+    {
+      "title": "CELESTRON★天体望遠鏡★NexStar 6SE",
+      "imageSrc": "/images/category/category11/purchaseItems/item3.jpg"
+    },
+    {
+      "title": "Leica ライカ★回転レーザーレベル★RUGBY 100",
+      "imageSrc": "/images/category/category11/purchaseItems/item4.jpg"
+    },
+    {
+      "title": "MICRO・VU★小型三次元マルチセンサー測定機★VERTEX 251UC",
+      "imageSrc": "/images/category/category11/purchaseItems/item5.jpg"
+    },
+    {
+      "title": "NoiseKen ノイズ研究所★静電気試験器 ESS-B3011★放電ガン GT-30R★取説付",
+      "imageSrc": "/images/category/category11/purchaseItems/item6.jpg"
+    },
+    {
+      "title": "OLYMPUS オリンパス★顕微鏡★BH-2★付属品多数",
+      "imageSrc": "/images/category/category11/purchaseItems/item7.jpg"
+    },
+    {
+      "title": "PENTAX★MS-5 赤道儀★天体望遠鏡★ピラー脚★自動導入コントローラ AGS-10",
+      "imageSrc": "/images/category/category11/purchaseItems/item8.jpg"
+    },
+    {
+      "title": "SOKKIA ソキア★トータルステーション★SRX5★一式",
+      "imageSrc": "/images/category/category11/purchaseItems/item9.jpg"
+    },
+    {
+      "title": "SOKKIA ソキア★自動レベル オートレベル★C32",
+      "imageSrc": "/images/category/category11/purchaseItems/item10.jpg"
+    },
+    {
+      "title": "STS★縦横回転 グリーンレーザーレベル★GSL-VH10★リモコン 受光器 ACアダプタ",
+      "imageSrc": "/images/category/category11/purchaseItems/item11.jpg"
+    },
+    {
+      "title": "TOPCON トプコン★トータルステーション★GTS-320FⅡ★測定器 測量器",
+      "imageSrc": "/images/category/category11/purchaseItems/item12.jpg"
+    },
+    {
+      "title": "TOPCON★オートレベル★AT-G6★取説 ケース付★NCNR",
+      "imageSrc": "/images/category/category11/purchaseItems/item13.jpg"
+    },
+    {
+      "title": "Tektronix テクトロニクス★デジタルオシロスコープ★TBS1102B",
+      "imageSrc": "/images/category/category11/purchaseItems/item14.jpg"
+    },
+    {
+      "title": "Tektronix テクトロニクス★プログラマブルカーブトレーサー★SONY 370A",
+      "imageSrc": "/images/category/category11/purchaseItems/item15.jpg"
+    },
+    {
+      "title": "Tele Vue テレビュー★Ethos イーソス17mm100°★天体望遠鏡用★アイピース★接眼レンズ",
+      "imageSrc": "/images/category/category11/purchaseItems/item16.jpg"
+    },
+    {
+      "title": "Vixen★ASCOT★双眼鏡★7×50WP★Field6.4°★ケース付",
+      "imageSrc": "/images/category/category11/purchaseItems/item17.jpg"
+    },
+    {
+      "title": "Vixen★天体望遠鏡★ED114SS★D=114mm f=600mm★GPD赤道義★スカイセンサー2000PC★取説付",
+      "imageSrc": "/images/category/category11/purchaseItems/item18.jpg"
+    },
+    {
+      "title": "WILLIAM OPTICS★FLT98DDG★98mm F_6.3★ソフトケース付",
+      "imageSrc": "/images/category/category11/purchaseItems/item19.jpg"
+    },
+    {
+      "title": "WRAYMER レイマー★位相差顕微鏡",
+      "imageSrc": "/images/category/category11/purchaseItems/item20.jpg"
+    },
+    {
+      "title": "タカハシ★天体望遠鏡★フローライト FC-76★EM-1S★取説 木製三脚付",
+      "imageSrc": "/images/category/category11/purchaseItems/item21.jpg"
+    },
+    {
+      "title": "ノイズ研究所 NoiseKen★静電気試験器★ESS-2002EX★放電ガン TC-815R",
+      "imageSrc": "/images/category/category11/purchaseItems/item22.jpg"
+    },
+    {
+      "title": "ミツトヨ★工具顕微鏡★176-902",
+      "imageSrc": "/images/category/category11/purchaseItems/item23.jpg"
+    },
+    {
+      "title": "自作双眼鏡★天体望遠鏡★AD-VIX★Vixen ED115S 2個使用",
+      "imageSrc": "/images/category/category11/purchaseItems/item24.jpg"
+    }
+  ]
+}
