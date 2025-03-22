@@ -1,15 +1,14 @@
 import { useMemo, useState } from "react";
-import data from "@/content/home/purchasedItems.json";
+import { getAllCategories } from "@/services/category";
+
 export const useFilterItems = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>(
-    data.filter[0].title || ""
-  );
+
+  const categoriesData = getAllCategories()
+  const [selectedCategory, setSelectedCategory] = useState<string>(categoriesData[0].id);
 
   const filteredItems = useMemo(() => {
-    return selectedCategory
-      ? data.items.filter((item) => item.category === selectedCategory)
-      : data.items;
-  }, [selectedCategory]);
+    return categoriesData.find((item) => item.id === selectedCategory)!.items
+  }, [selectedCategory, categoriesData]);
 
   return { selectedCategory, setSelectedCategory, filteredItems };
 };

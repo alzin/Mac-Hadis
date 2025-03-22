@@ -1,14 +1,19 @@
 "use client";
-import data from "@/content/home/purchasedItems.json";
+
+import Link from "next/link";
 import Image from "next/image";
+
 import PurchaseItemsCard from "../components/PurchaseItemsCard";
 import PurchaseItemsCategoryCard from "../components/PurchaseItemsCategoryCard";
+
 import { useFilterItems } from "@/hooks/useFilterItems";
-import Link from "next/link";
+
+import { getAllCategories } from "@/services/category";
 
 const PurchasedItems = () => {
-  const { filteredItems, selectedCategory, setSelectedCategory } =
-    useFilterItems();
+  const { filteredItems, selectedCategory, setSelectedCategory } = useFilterItems();
+  const categoriesData = getAllCategories()
+
   return (
     <section
       id="purchased-items"
@@ -29,9 +34,10 @@ const PurchasedItems = () => {
       </h2>
       {/* filter */}
       <div className="mt-[40px] md:mt-[45px] lg:mt-[50px] mb-[24px] md:mb-[28px] lg:mb-[32px] w-full flex flex-wrap justify-center gap-2">
-        {data.filter.map((filterItem) => (
+        {categoriesData.map((filterItem) => (
           <PurchaseItemsCategoryCard
             key={filterItem.id}
+            id={filterItem.id}
             title={filterItem.title}
             activeCategory={selectedCategory}
             changeCategory={setSelectedCategory}
@@ -48,26 +54,14 @@ const PurchasedItems = () => {
         ))}
       </div>
       {/* show more button */}
-      {[
-        "工作機械・精密加工機械",
-        "自動車整備機械",
-        "農業機械",
-        "金属加工機械・板金機械",
-        "発電機・溶接機・コンプレッサ",
-        "管工事機械・工具",
-        "住宅工事工具・大工機械",
-        "プリンター・ミシン・DIY用機器",
-        "梱包機・包装機",
-      ].includes(selectedCategory) && (
-        <div className="w-full mt-10 md:mt-12 flex justify-center">
-          <Link
-            href={`/products/${selectedCategory}`}
-            className="block w-full md:w-[50%] lg:w-[30%] px-[16px] py-[11px] lg:p-[15px] text-center text-[14px] lg:text-[18px] leading-[18px] lg:leading-[24px] font-noto font-semibold border-[2px] border-[#990E1C] text-white gradient-red text-shadow-red"
-          >
-            もっと見る
-          </Link>
-        </div>
-      )}
+      <div className="w-full mt-10 md:mt-12 flex justify-center">
+        <Link
+          href={`/products/${selectedCategory}`}
+          className="block w-full md:w-[50%] lg:w-[30%] px-[16px] py-[11px] lg:p-[15px] text-center text-[14px] lg:text-[18px] leading-[18px] lg:leading-[24px] font-noto font-semibold border-[2px] border-[#990E1C] text-white gradient-red text-shadow-red"
+        >
+          もっと見る
+        </Link>
+      </div>
     </section>
   );
 };

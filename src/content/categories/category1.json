@@ -1,54 +1,55 @@
 {
-  "id": 1,
+  "id": "kosaku-kikai-seimitsu-kako-kikai",
   "title": "工作機械・精密加工機械",
+  "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/main-ogp.png",
   "items": [
     {
       "id": 1,
       "title": "鋸盤 (バンドソー)",
       "category": "工作機械・精密加工機械",
-      "image": "/images_db/item1.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/items/%E9%8B%B8%E7%9B%A4+(%E3%83%90%E3%83%B3%E3%83%89%E3%82%BD%E3%83%BC).jpg"
     },
     {
       "id": 2,
       "title": "研削盤 . 研磨機",
       "category": "工作機械・精密加工機械",
-      "image": "/images_db/item2.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/items/%E7%A0%94%E5%89%8A%E7%9B%A4+.+%E7%A0%94%E7%A3%A8%E6%A9%9F.jpg"
     },
     {
       "id": 3,
       "title": "汎用旋盤",
       "category": "工作機械・精密加工機械",
-      "image": "/images_db/item3.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/items/%E6%B1%8E%E7%94%A8%E6%97%8B%E7%9B%A4.jpg"
     },
     {
       "id": 4,
       "title": "マシニングセンタ",
       "category": "工作機械・精密加工機械",
-      "image": "/images_db/item4.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/items/%E3%83%9E%E3%82%B7%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF.jpg"
     },
     {
       "id": 5,
       "title": "ボール盤",
       "category": "工作機械・精密加工機械",
-      "image": "/images_db/item5.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/items/%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4.jpg"
     },
     {
       "id": 6,
       "title": "プレス機械",
       "category": "工作機械・精密加工機械",
-      "image": "/images_db/item6.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/items/%E3%83%97%E3%83%AC%E3%82%B9%E6%A9%9F%E6%A2%B0.png"
     },
     {
       "id": 7,
       "title": "フライス盤",
       "category": "工作機械・精密加工機械",
-      "image": "/images_db/item7.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/items/%E3%83%95%E3%83%A9%E3%82%A4%E3%82%B9%E7%9B%A4.jpg"
     },
     {
       "id": 8,
       "title": "NC旋盤",
       "category": "工作機械・精密加工機械",
-      "image": "/images_db/item8.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/items/NC%E6%97%8B%E7%9B%A4.png"
     }
   ],
   "makers": [
@@ -56,165 +57,165 @@
       "jp": "",
       "en": "TAKISAWA",
       "link": "https://www.takisawa.co.jp/index.html",
-      "imageSrc": "/images/category/category1/makers/tadisawa.gif"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/tadisawa.gif"
     },
     {
       "jp": "",
       "en": "MORISEIKI",
       "link": "https://www.dmgmori.co.jp/",
-      "imageSrc": "/images/category/category1/makers/dmg.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/dmg.png"
     },
     {
       "jp": "",
       "en": "Mazak",
       "link": "https://www.mazak.com/jp-ja/",
-      "imageSrc": "/images/category/category1/makers/mazak.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/mazak.jpg"
     },
     {
       "jp": "",
       "en": "HASEGAWA",
       "link": "http://www.hasegawa-m.co.jp/",
-      "imageSrc": "/images/category/category1/makers/hasegawa.JPG"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/hasegawa.JPG"
     },
     {
       "jp": "",
       "en": "DAINICHI",
       "link": "https://www.dainichikinzoku.co.jp/",
-      "imageSrc": "/images/category/category1/makers/dainichi.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/dainichi.png"
     },
     {
       "jp": "",
       "en": "TSUDA",
       "link": "https://www.tsudass.co.jp/",
-      "imageSrc": "/images/category/category1/makers/tsuda.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/tsuda.png"
     },
     {
       "jp": "",
       "en": "HOWA",
       "link": "https://www.howa.co.jp/",
-      "imageSrc": "/images/category/category1/makers/howa_logo.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/howa_logo.png"
     },
     {
       "jp": "",
       "en": "IKEGAI",
       "link": "https://www.ikegai.co.jp/",
-      "imageSrc": "/images/category/category1/makers/ikegai.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/ikegai.png"
     },
     {
       "jp": "",
       "en": "OKUMA",
       "link": "https://www.okuma.co.jp/",
-      "imageSrc": "/images/category/category1/makers/okuma.gif"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/okuma.gif"
     },
     {
       "jp": "",
       "en": "Kotobuki Mecanix",
       "link": "https://www.kotobuki-mecanix.co.jp/",
-      "imageSrc": "/images/category/category1/makers/kotobuki.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/kotobuki.png"
     },
     {
       "jp": "",
       "en": "AMADA",
       "link": "https://www.amada.co.jp/ja/",
-      "imageSrc": "/images/category/category1/makers/amada.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/amada.png"
     },
     {
       "jp": "",
       "en": "Mitsutoyo",
       "link": "https://www.mitutoyo.co.jp/",
-      "imageSrc": "/images/category/category1/makers/Mitutoyo.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/Mitutoyo.png"
     },
     {
       "jp": "",
       "en": "SHIZUOKA",
       "link": "https://www.shizuokatekko.co.jp/",
-      "imageSrc": "/images/category/category1/makers/shizuoka.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/shizuoka.jpg"
     },
     {
       "jp": "",
       "en": "OKAMOTO",
       "link": "https://www.okamoto.co.jp/",
-      "imageSrc": "/images/category/category1/makers/okamoto.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/okamoto.jpg"
     },
     {
       "jp": "",
       "en": "MAKINO",
       "link": "https://www.makino.co.jp/ja-jp/",
-      "imageSrc": "/images/category/category1/makers/makino.webp"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/makers/makino.webp"
     }
   ],
   "purchaseItems": [
     {
       "title": "ENKOH_S 遠州★タッピング兼用ボール盤★ESD350NTA",
-      "imageSrc": "/images/category/category1/purchaseItems/item1.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/ENKOH_S 遠州★タッピング兼用ボール盤★ESD350NTA.jpg"
     },
     {
       "title": "KIWA 紀和★直立ボール盤★KUD-550FP",
-      "imageSrc": "/images/category/category1/purchaseItems/item2.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/KIWA 紀和★直立ボール盤★KUD-550FP.jpg"
     },
     {
       "title": "Kosoku 高速電機★ロータ・バンドソー★HRB-2750N",
-      "imageSrc": "/images/category/category1/purchaseItems/item3.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/Kosoku 高速電機★ロータ・バンドソー★HRB-2750N.jpg"
     },
     {
       "title": "nc旋盤",
-      "imageSrc": "/images/category/category1/purchaseItems/item4.JPG"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/nc旋盤.JPG"
     },
     {
       "title": "OKAMOTO 岡本工作機械★精密成形研削盤(平面研磨機)★PFG-450C",
-      "imageSrc": "/images/category/category1/purchaseItems/item5.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/OKAMOTO 岡本工作機械★精密成形研削盤(平面研磨機)★PFG-450C.jpg"
     },
     {
       "title": "OOYA 大矢製作所★ラジアルボール盤★RE2-1300A",
-      "imageSrc": "/images/category/category1/purchaseItems/item6.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/OOYA 大矢製作所★ラジアルボール盤★RE2-1300A.jpg"
     },
     {
       "title": "TAKISAWA 滝沢★4尺 旋盤★TSL-DELUXE",
-      "imageSrc": "/images/category/category1/purchaseItems/item7.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/TAKISAWA 滝沢★4尺 旋盤★TSL-DELUXE.jpg"
     },
     {
       "title": "アマダ　AMADA プレス機　60ton",
-      "imageSrc": "/images/category/category1/purchaseItems/item8.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/アマダ　AMADA プレス機　60ton.jpg"
     },
     {
       "title": "アマダ　AMADA プレス機　80ton",
-      "imageSrc": "/images/category/category1/purchaseItems/item9.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/アマダ　AMADA プレス機　80ton.jpg"
     },
     {
       "title": "ワシノ★高速精密旋盤★LEO-80A★6尺旋盤★  ★ミツトヨ DRO付き",
-      "imageSrc": "/images/category/category1/purchaseItems/item10.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/ワシノ★高速精密旋盤★LEO-80A★6尺旋盤★  ★ミツトヨ DRO付き.jpg"
     },
     {
       "title": "光畑製作所★COSMO ACE★卓上フライス盤★BM-1000★  ★電動YXテーブル カウンタ 取説付",
-      "imageSrc": "/images/category/category1/purchaseItems/item11.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/光畑製作所★COSMO ACE★卓上フライス盤★BM-1000★  ★電動YXテーブル カウンタ 取説付.jpg"
     },
     {
       "title": "大和工機 NEWS★PROFIT★工具研削盤★  ★CG-200-N",
-      "imageSrc": "/images/category/category1/purchaseItems/item12.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/大和工機 NEWS★PROFIT★工具研削盤★  ★CG-200-N.jpg"
     },
     {
       "title": "山崎鉄工所★旋盤★焼入ベッド★MAZAK-860",
-      "imageSrc": "/images/category/category1/purchaseItems/item13.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/山崎鉄工所★旋盤★焼入ベッド★MAZAK-860.jpg"
     },
     {
       "title": "日立工機★180mmロータリーバンドソー★CB18FA3",
-      "imageSrc": "/images/category/category1/purchaseItems/item14.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/日立工機★180mmロータリーバンドソー★CB18FA3.jpg"
     },
     {
       "title": "日立工機★220mm ロータリバンドソー★CB22FA",
-      "imageSrc": "/images/category/category1/purchaseItems/item15.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/日立工機★220mm ロータリバンドソー★CB22FA.jpg"
     },
     {
       "title": "松浦機械★立フライス盤★FVR-1B",
-      "imageSrc": "/images/category/category1/purchaseItems/item16.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/松浦機械★立フライス盤★FVR-1B.jpg"
     },
     {
       "title": "牧野フライス精機 マキノ★小型フライス盤★  ★MH-20★三相200V",
-      "imageSrc": "/images/category/category1/purchaseItems/item17.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/牧野フライス精機 マキノ★小型フライス盤★  ★MH-20★三相200V.jpg"
     },
     {
       "title": "飯田鉄工所★工具研削盤★GT-200FR",
-      "imageSrc": "/images/category/category1/purchaseItems/item18.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/工作機械・精密加工機械/purchaseItems/飯田鉄工所★工具研削盤★GT-200FR.jpg"
     }
   ]
 }

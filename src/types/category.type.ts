@@ -1,7 +1,7 @@
 import { TProduct } from "./product.type";
 
 export type TCategory = {
-  id: number;
+  id: string;
   title: string;
   items: TProduct[];
   makers: TMaker[];
