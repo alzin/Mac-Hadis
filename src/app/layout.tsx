@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Noto_Sans_JP } from "next/font/google";
 import "@/styles/globals.css";
-
 // sections
 import Header from "@/components/common/sections/Header";
 import Footer from "@/components/common/sections/Footer";
@@ -52,7 +51,7 @@ export const metadata: Metadata = {
     description: "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。専門のバイヤーが購入するので、高値で売却が可能です。ぜひ、1度御見積りをお願いします！",
     siteName: "機械工具買取ハディズ",
     images: [
-      { url: `${baseUrl}/images/hadis-logo.png` }
+      { url: `${baseUrl}/images/main-ogp.jpg` }
     ]
   },
 
@@ -60,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     description: "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。専門のバイヤーが購入するので、高値で売却が可能です。ぜひ、1度御見積りをお願いします！",
     title: "中古機械、電動工具の高額買取のハディズ",
-    images: `${baseUrl}/images/hadis-logo.png`
+    images: `${baseUrl}/images/main-ogp.jpg`
   },
 
   verification: {
