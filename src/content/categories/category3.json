@@ -1,194 +1,194 @@
 {
   "id": "nogyo-kikai",
   "title": "農業機械",
-  "imageSrc": "https://www.mac-hadis.com/images/category/category3/main-ogp.png",
+  "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/main-ogp.png",
   "items": [
     {
-      "id": 23,
-      "title": "除雪機",
-      "image": "/images_db/item23.png"
-    },
-    {
-      "id": 24,
-      "title": "遠赤乾燥機",
-      "image": "/images_db/item24.jpg"
-    },
-    {
-      "id": 25,
-      "title": "運搬車 (トレーラー)",
-      "image": "/images_db/item25.jpg"
-    },
-    {
-      "id": 26,
-      "title": "耕運機",
-      "image": "/images_db/item26.jpg"
-    },
-    {
-      "id": 28,
-      "title": "稲刈り機",
-      "image": "/images_db/item28.jpeg"
-    },
-    {
-      "id": 29,
-      "title": "破砕機",
-      "image": "/images_db/item29.png"
-    },
-    {
-      "id": 30,
-      "title": "田植機",
-      "image": "/images_db/item30.jpg"
-    },
-    {
-      "id": 33,
-      "title": "ハーベスター 自動脱穀機",
-      "image": "/images_db/item33.jpg"
-    },
-    {
-      "id": 36,
+      "id": 1,
       "title": "コンバイン",
-      "image": "/images_db/item36.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/コンバイン.jpg"
     },
     {
-      "id": 37,
+      "id": 2,
       "title": "トラクター",
-      "image": "/images_db/item217.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/トラクター.jpg"
     },
     {
-      "id": 38,
+      "id": 3,
+      "title": "ハーベスター 自動脱穀機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/ハーベスター 自動脱穀機.jpg"
+    },
+    {
+      "id": 4,
       "title": "ホイールローダー",
-      "image": "/images_db/item218.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/ホイールローダー.jpg"
     },
     {
-      "id": 39,
+      "id": 5,
       "title": "業務用精米機",
-      "image": "/images_db/item219.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/業務用精米機.png"
     },
     {
-      "id": 40,
+      "id": 6,
+      "title": "田植機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/田植機.jpg"
+    },
+    {
+      "id": 7,
+      "title": "破砕機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/破砕機.png"
+    },
+    {
+      "id": 8,
+      "title": "稲刈り機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/稲刈り機.jpeg"
+    },
+    {
+      "id": 9,
       "title": "籾すり機（もみすり機）",
-      "image": "/images_db/item220.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/籾すり機（もみすり機）.jpg"
+    },
+    {
+      "id": 10,
+      "title": "耕運機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/耕運機.jpg"
+    },
+    {
+      "id": 11,
+      "title": "運搬車 (トレーラー)　",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/運搬車 (トレーラー)　.jpg"
+    },
+    {
+      "id": 12,
+      "title": "遠赤乾燥機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/遠赤乾燥機.jpg"
+    },
+    {
+      "id": 13,
+      "title": "除雪機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/除雪機.png"
     }
   ],
   "makers": [
     {
       "jp": "",
-      "en": "ISEKI",
-      "link": "https://www.iseki.co.jp/",
-      "imageSrc": "/images/category/category3/makers/ISEKI.svg"
-    },
-    {
-      "jp": "",
-      "en": "KUBOTA",
-      "link": "https://agriculture.kubota.co.jp/",
-      "imageSrc": "/images/category/category3/makers/KUBOTA.png"
-    },
-    {
-      "jp": "",
-      "en": "KOMATSU",
-      "link": "https://www.komatsu.jp/ja",
-      "imageSrc": "/images/category/category3/makers/KOMATSU.svg"
-    },
-    {
-      "jp": "",
-      "en": "YANMAR",
-      "link": "https://www.yanmar.com/jp/",
-      "imageSrc": "/images/category/category3/makers/YANMAR.png"
-    },
-    {
-      "jp": "",
-      "en": "MITSUBISHI",
-      "link": "https://www.mam.co.jp/",
-      "imageSrc": "/images/category/category3/makers/MITSUBISHI.jpg"
-    },
-    {
-      "jp": "",
       "en": "HITACHI",
       "link": "https://japan.hitachi-kenki.co.jp/products/industry/agriculture/",
-      "imageSrc": "/images/category/category3/makers/HITACHI.png"
-    },
-    {
-      "jp": "",
-      "en": "IHI",
-      "link": "https://www.ihi.co.jp/iat/",
-      "imageSrc": "/images/category/category3/makers/IHI.png"
-    },
-    {
-      "jp": "",
-      "en": "MAMETORA",
-      "link": "https://mametora.co.jp/",
-      "imageSrc": "/images/category/category3/makers/MAMETORA.svg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/makers/HITACHI.png"
     },
     {
       "jp": "",
       "en": "HONDA",
       "link": "https://www.honda.co.jp/tiller/",
-      "imageSrc": "/images/category/category3/makers/HONDA.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/makers/HONDA.jpg"
+    },
+    {
+      "jp": "",
+      "en": "IHI",
+      "link": "https://www.ihi.co.jp/iat/",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/makers/IHI.png"
+    },
+    {
+      "jp": "",
+      "en": "ISEKI",
+      "link": "https://www.iseki.co.jp/",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/makers/ISEKI.svg"
+    },
+    {
+      "jp": "",
+      "en": "KOMATSU",
+      "link": "https://www.komatsu.jp/ja",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/makers/KOMATSU.svg"
+    },
+    {
+      "jp": "",
+      "en": "KUBOTA",
+      "link": "https://agriculture.kubota.co.jp/",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/makers/KUBOTA.png"
+    },
+    {
+      "jp": "",
+      "en": "MAMETORA",
+      "link": "https://mametora.co.jp/",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/makers/MAMETORA.svg"
+    },
+    {
+      "jp": "",
+      "en": "MITSUBISHI",
+      "link": "https://www.mam.co.jp/",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/makers/MITSUBISHI.jpg"
+    },
+    {
+      "jp": "",
+      "en": "YANMAR",
+      "link": "https://www.yanmar.com/jp/",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/makers/YANMAR.png"
     }
   ],
   "purchaseItems": [
     {
       "title": "HONDA ホンダ★ユキオス ブレード除雪機★SB800",
-      "imageSrc": "/images/category/category3/purchaseItems/item1.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/HONDA ホンダ★ユキオス ブレード除雪機★SB800.jpg"
     },
     {
       "title": "YANMAR ヤンマー★6条植え 田植機★RJ6",
-      "imageSrc": "/images/category/category3/purchaseItems/item2.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/YANMAR ヤンマー★6条植え 田植機★RJ6.jpg"
     },
     {
       "title": "YANMAR ヤンマー★コンバイン★3条刈り★YH323",
-      "imageSrc": "/images/category/category3/purchaseItems/item3.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/YANMAR ヤンマー★コンバイン★3条刈り★YH323.jpg"
     },
     {
       "title": "YANMAR ヤンマー★バインダー★動力刈取機★Be214★2輪1条",
-      "imageSrc": "/images/category/category3/purchaseItems/item4.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/YANMAR ヤンマー★バインダー★動力刈取機★Be214★2輪1条.jpg"
     },
     {
       "title": "YANMAR ヤンマー★田植機 YR5J★側条施肥機 FT5J",
-      "imageSrc": "/images/category/category3/purchaseItems/item5.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/YANMAR ヤンマー★田植機 YR5J★側条施肥機 FT5J.jpg"
     },
     {
       "title": "YANMAR ヤンマー★自動脱穀機★PKG85",
-      "imageSrc": "/images/category/category3/purchaseItems/item6.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/YANMAR ヤンマー★自動脱穀機★PKG85.jpg"
     },
     {
       "title": "イセキ★GEAS 29★トラクター★TG29F-UV★29馬力",
-      "imageSrc": "/images/category/category3/purchaseItems/item7.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/イセキ★GEAS 29★トラクター★TG29F-UV★29馬力.jpg"
     },
     {
       "title": "コマツゼノア★ウッドチッパー★SR3000★木材破砕機 シュレッダー",
-      "imageSrc": "/images/category/category3/purchaseItems/item8.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/コマツゼノア★ウッドチッパー★SR3000★木材破砕機 シュレッダー.jpg"
     },
     {
       "title": "サタケ★ネオライスマスター★もみすり機★NRZ350FAK",
-      "imageSrc": "/images/category/category3/purchaseItems/item9.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E8%BE%B2%E6%A5%AD%E6%A9%9F%E6%A2%B0/purchaseItems/%E3%82%B5%E3%82%BF%E3%82%B1%E2%98%85%E3%83%8D%E3%82%AA%E3%83%A9%E3%82%A4%E3%82%B9%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E2%98%85%E3%82%82%E3%81%BF%E3%81%99%E3%82%8A%E6%A9%9F%E2%98%85NRZ350FAK(2).jpg"
     },
     {
       "title": "サンワ車輛★クロールタワー 高所作業車 リフト運搬車★ML1",
-      "imageSrc": "/images/category/category3/purchaseItems/item10.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E8%BE%B2%E6%A5%AD%E6%A9%9F%E6%A2%B0/purchaseItems/%E3%82%B5%E3%83%B3%E3%83%AF%E8%BB%8A%E8%BC%9B%E2%98%85%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%BF%E3%83%AF%E3%83%BC+%E9%AB%98%E6%89%80%E4%BD%9C%E6%A5%AD%E8%BB%8A+%E3%83%AA%E3%83%95%E3%83%88%E9%81%8B%E6%90%AC%E8%BB%8A%E2%98%85ML1.jpg"
     },
     {
       "title": "ニプロ★あぜぬり機★DZR303NJC★トラクター アタッチメント",
-      "imageSrc": "/images/category/category3/purchaseItems/item11.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/ニプロ★あぜぬり機★DZR303NJC★トラクター アタッチメント.jpg"
     },
     {
       "title": "マメトラ★農用トラクター 歩行型★HMD-V",
-      "imageSrc": "/images/category/category3/purchaseItems/item12.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/マメトラ★農用トラクター 歩行型★HMD-V.jpg"
     },
     {
-      "title": "マルマス★マルマスター★精米機★DX-1500E30",
-      "imageSrc": "/images/category/category3/purchaseItems/item13.jpg"
+      "title": "マルマス★マルマ`スター★精米機★DX-1500E30",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E8%BE%B2%E6%A5%AD%E6%A9%9F%E6%A2%B0/purchaseItems/%E3%83%9E%E3%83%AB%E3%83%9E%E3%82%B9%E2%98%85%E3%83%9E%E3%83%AB%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC%E2%98%85%E7%B2%BE%E7%B1%B3%E6%A9%9F%E2%98%85DX-1500E30.jpg"
     },
     {
       "title": "ヤンマー★ディーゼルトラクター★ニューフォルテ★  ★F165D",
-      "imageSrc": "/images/category/category3/purchaseItems/item14.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/ヤンマー★ディーゼルトラクター★ニューフォルテ★  ★F165D.jpg"
     },
     {
       "title": "ヤンマー★マルチャー 管理機 マルチ張り 耕運機★MK90F RB41TM",
-      "imageSrc": "/images/category/category3/purchaseItems/item15.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/ヤンマー★マルチャー 管理機 マルチ張り 耕運機★MK90F RB41TM.jpg"
     },
     {
       "title": "山本ハイパー乾燥機★Pro-win★ウィンディ ネックス★HD-25MR2",
-      "imageSrc": "/images/category/category3/purchaseItems/item16.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/purchaseItems/山本ハイパー乾燥機★Pro-win★ウィンディ ネックス★HD-25MR2.jpg"
     }
   ]
 }

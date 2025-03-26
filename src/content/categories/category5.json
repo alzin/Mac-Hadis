@@ -1,77 +1,82 @@
 {
   "id": "hatsudenki-yosetsuki-konpuressa",
   "title": "発電機・溶接機・\nコンプレッサ",
-  "imageSrc": "https://www.mac-hadis.com/images/category/category5/main-ogp.png",
+  "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/main-ogp.png",
   "items": [
     {
       "id": 1,
-      "title": "発電機兼用溶接機",
-      "image": "/images_db/item81.jpg"
+      "title": "TIG溶接機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/TIG溶接機.jpg"
     },
     {
       "id": 2,
-      "title": "半自動溶接機",
-      "image": "/images_db/item82.jpg"
+      "title": "アーク溶接機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/アーク溶接機.jpg"
     },
     {
       "id": 3,
-      "title": "ロボット溶接機",
-      "image": "/images_db/item83.jpg"
+      "title": "エアーコンプレッサー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エアーコンプレッサー.jpg"
     },
     {
       "id": 4,
-      "title": "ポジショナー",
-      "image": "/images_db/item84.jpg"
+      "title": "エンジンTIG溶接機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エンジンTIG溶接機.jpeg"
     },
     {
       "id": 5,
-      "title": "プラズマ溶接機",
-      "image": "/images_db/item85.jpg"
+      "title": "エンジン発電機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エンジン発電機.jpg"
     },
     {
       "id": 6,
-      "title": "バッテリー溶接機",
-      "image": "/images_db/item86.jpg"
+      "title": "スクリューコンプレッサ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スクリューコンプレッサ.jpg"
     },
     {
       "id": 7,
-      "title": "スポット溶接機",
-      "image": "/images_db/item87.jpg"
+      "title": "スクロールコンプレッサ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スクロールコンプレッサ.jpg"
     },
     {
       "id": 8,
       "title": "スタッド溶接機",
-      "image": "/images_db/item88.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スタッド溶接機.jpg"
     },
     {
       "id": 9,
-      "title": "スクロールコンプレッサ",
-      "image": "/images_db/item89.jpg"
+      "title": "スポット溶接機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スポット溶接機.jpg"
     },
     {
       "id": 10,
-      "title": "エンジン発電機",
-      "image": "/images_db/item90.jpg"
+      "title": "バッテリー溶接機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/バッテリー溶接機.jpg"
     },
     {
       "id": 11,
-      "title": "エンジンTIG溶接機",
-      "image": "/images_db/item91.jpeg"
+      "title": "プラズマ溶接機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/プラズマ溶接機.jpg"
     },
     {
       "id": 12,
-      "title": "エアーコンプレッサー",
-      "image": "/images_db/item92.jpg"
+      "title": "ポジショナー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/ポジショナー.jpg"
     },
     {
       "id": 13,
-      "title": "アーク溶接機",
-      "image": "/images_db/item93.jpg"
+      "title": "ロボット溶接機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/ロボット溶接機.jpg"
     },
     {
       "id": 14,
-      "title": "TIG溶接機",
-      "image": "/images_db/item94.jpg"
+      "title": "半自動溶接機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/半自動溶接機.jpg"
+    },
+    {
+      "id": 15,
+      "title": "発電機兼用溶接機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/発電機兼用溶接機.jpg"
     }
   ],
   "makers": [
@@ -79,207 +84,207 @@
       "jp": "",
       "en": "yashima",
       "link": "https://www.yashima-corp.jp",
-      "imageSrc": "/images/category/category5/makers/yashima.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/yashima.jpg"
     },
     {
       "jp": "",
       "en": "yanmar-construction",
       "link": "https://www.yanmar.com/jp/construction/products/generator/",
-      "imageSrc": "/images/category/category5/makers/yanmar-construction.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/yanmar-construction.png"
     },
     {
       "jp": "",
       "en": "yamaha-motor",
       "link": "https://www.yamaha-motor.co.jp/generator/",
-      "imageSrc": "/images/category/category5/makers/yamaha-motor.webp"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/yamaha-motor.webp"
     },
     {
       "jp": "",
       "en": "yamabiko-corp",
       "link": "https://www.yamabiko-corp.co.jp/shindaiwa/",
-      "imageSrc": "/images/category/category5/makers/yamabiko-corp.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/yamabiko-corp.png"
     },
     {
       "jp": "",
       "en": "n-sharyo",
       "link": "https://www.n-sharyo.co.jp/business/generator/",
-      "imageSrc": "/images/category/category5/makers/n-sharyo.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/n-sharyo.png"
     },
     {
       "jp": "",
       "en": "mitsuiseiki",
       "link": "https://www.mitsuiseiki.co.jp/compressor/",
-      "imageSrc": "/images/category/category5/makers/mitsuiseiki.svg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/mitsuiseiki.svg"
     },
     {
       "jp": "",
       "en": "meijiair",
       "link": "https://www.meijiair.co.jp/en/product/comp/ct/",
-      "imageSrc": "/images/category/category5/makers/meijiair.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/meijiair.png"
     },
     {
       "jp": "",
       "en": "makita",
       "link": "https://www.makita.co.jp",
-      "imageSrc": "/images/category/category5/makers/makita.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/makita.png"
     },
     {
       "jp": "",
       "en": "honda",
       "link": "https://www.honda.co.jp/generator/",
-      "imageSrc": "/images/category/category5/makers/honda.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/honda.png"
     },
     {
       "jp": "",
       "en": "hitachi",
       "link": "https://www.hitachi.co.jp",
-      "imageSrc": "/images/category/category5/makers/hitachi.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/hitachi.png"
     },
     {
       "jp": "",
       "en": "fujielectric",
       "link": "https://www.fujielectric.co.jp",
-      "imageSrc": "/images/category/category5/makers/fujielectric.svg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/fujielectric.svg"
     },
     {
       "jp": "",
       "en": "denyo",
       "link": "https://www.denyo.co.jp",
-      "imageSrc": "/images/category/category5/makers/denyo.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/denyo.jpg"
     },
     {
       "jp": "",
       "en": "daihen",
       "link": "https://www.daihen.co.jp",
-      "imageSrc": "/images/category/category5/makers/daihen.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/daihen.png"
     },
     {
       "jp": "",
       "en": "anest-iwata",
       "link": "https://www.anest-iwata.co.jp",
-      "imageSrc": "/images/category/category5/makers/anest-iwata.webp"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/anest-iwata.webp"
     },
     {
       "jp": "",
       "en": "airman",
       "link": "https://www.airman.co.jp",
-      "imageSrc": "/images/category/category5/makers/airman.svg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/airman.svg"
     },
     {
       "jp": "",
       "en": "panasonic",
       "link": "https://connect.panasonic.com/jp-ja/products-services_welding/products",
-      "imageSrc": "/images/category/category5/makers/panasonic.svg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/makers/panasonic.svg"
     }
   ],
   "purchaseItems": [
     {
-      "title": "AIRMAN★スクリューコンプレッサ★SAS11SD★50Hz",
-      "imageSrc": "/images/category/category5/purchaseItems/item1.jpg"
-    },
-    {
-      "title": "AIRMAN 北越工業★エンジン発電機★SDG25S",
-      "imageSrc": "/images/category/category5/purchaseItems/item2.jpg"
-    },
-    {
-      "title": "☆DAIDEN 大阪電気★空圧式スポット溶接機★SL-AJ35-400形★単相200V☆",
-      "imageSrc": "/images/category/category5/purchaseItems/item3.JPG"
-    },
-    {
-      "title": "DAIHEN ダイヘン★ダイナオート★XD350Ⅱ★CO2_MAG半自動溶接機",
-      "imageSrc": "/images/category/category5/purchaseItems/item4.jpg"
-    },
-    {
-      "title": "Denyo デンヨー★インバータ発電機 防音型エンジン溶接機★GAW-150ES2",
-      "imageSrc": "/images/category/category5/purchaseItems/item5.jpg"
-    },
-    {
-      "title": "Denyo デンヨー★防音型エンジンTIG溶接機★DAT-300RS",
-      "imageSrc": "/images/category/category5/purchaseItems/item6.jpg"
-    },
-    {
-      "title": "Denyo デンヨー★防音型エンジン発電機★DCA-60LSIE",
-      "imageSrc": "/images/category/category5/purchaseItems/item7.jpg"
-    },
-    {
-      "title": "HITACHI 日立★オイルフリーベビコン★エアーコンプレッサー★110P-8.5GP5_50Hz★11kW",
-      "imageSrc": "/images/category/category5/purchaseItems/item8.jpg"
-    },
-    {
-      "title": "KOBELCO★Kobelion-VS★22kW 30馬力★  ★ドライヤー内蔵スクリューコンプレッサ★VS410AD",
-      "imageSrc": "/images/category/category5/purchaseItems/item9.jpg"
-    },
-    {
-      "title": "KOIKE★LD-60NTig5型 ポジショナー★最大搭載荷重60kg",
-      "imageSrc": "/images/category/category5/purchaseItems/item10.jpg"
-    },
-    {
-      "title": "Panasonic★CO2_MAG 半自動溶接機★ワイヤ送給装置 ケーブル ワイヤ付",
-      "imageSrc": "/images/category/category5/purchaseItems/item11.jpg"
-    },
-    {
-      "title": "Panasonic★PANA-AUTO 半自動溶接機★KRⅡ500★YD-500KR2★ワイヤ送給装置付",
-      "imageSrc": "/images/category/category5/purchaseItems/item12.jpg"
-    },
-    {
-      "title": "Panasonic★Pana Robo ロボット溶接機★AW-010A",
-      "imageSrc": "/images/category/category5/purchaseItems/item13.jpg"
-    },
-    {
-      "title": "Panasonic★Pana Robo 溶接ロボット★AW-005C",
-      "imageSrc": "/images/category/category5/purchaseItems/item14.jpg"
-    },
-    {
-      "title": "Panasonic★インバータ制御交直両用TIG溶接機★YC-300WX4",
-      "imageSrc": "/images/category/category5/purchaseItems/item15.jpg"
-    },
-    {
-      "title": "Panasonic★スポット溶接機★YR-350SA2",
-      "imageSrc": "/images/category/category5/purchaseItems/item16.jpg"
-    },
-    {
-      "title": "Yashima ヤシマ★スタッド溶接機★YS-50",
-      "imageSrc": "/images/category/category5/purchaseItems/item17.jpg"
-    },
-    {
-      "title": "アネスト岩田★オイルフリー スクロールコンプレッサ★SLP-221EFD★2.2kW 3馬力★50Hz",
-      "imageSrc": "/images/category/category5/purchaseItems/item18.jpg"
-    },
-    {
-      "title": "アネスト岩田★オイルフリーレシプロコンプレッサー★3.7kW 5馬力★CFP37CF-8.5D",
-      "imageSrc": "/images/category/category5/purchaseItems/item19.jpg"
-    },
-    {
-      "title": "ダイヘン★インバーターアルゴ★300P★TIG溶接機★VRTP-300(S-6)",
-      "imageSrc": "/images/category/category5/purchaseItems/item20.jpg"
-    },
-    {
-      "title": "ダイヘン★ロボット溶接機★アルメガ AX-MV6★AX-C★DM350★取説付",
-      "imageSrc": "/images/category/category5/purchaseItems/item21.jpg"
-    },
-    {
       "title": " 三井精機★スクロールコンプレッサー★ZS045A-R",
-      "imageSrc": "/images/category/category5/purchaseItems/item22.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/ 三井精機★スクロールコンプレッサー★ZS045A-R.jpg"
     },
     {
       "title": " 新ダイワ★バッテリー溶接機★SBW150D",
-      "imageSrc": "/images/category/category5/purchaseItems/item23.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/ 新ダイワ★バッテリー溶接機★SBW150D.jpg"
+    },
+    {
+      "title": "AIRMAN 北越工業★エンジン発電機★SDG25S",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/AIRMAN 北越工業★エンジン発電機★SDG25S.jpg"
+    },
+    {
+      "title": "AIRMAN★スクリューコンプレッサ★SAS11SD★50Hz",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/AIRMAN★スクリューコンプレッサ★SAS11SD★50Hz.jpg"
+    },
+    {
+      "title": "DAIHEN ダイヘン★ダイナオート★XD350Ⅱ★CO2_MAG半自動溶接機 ",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/DAIHEN ダイヘン★ダイナオート★XD350Ⅱ★CO2_MAG半自動溶接機 .jpg"
+    },
+    {
+      "title": "Denyo デンヨー★インバータ発電機 防音型エンジン溶接機★GAW-150ES2",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/Denyo デンヨー★インバータ発電機 防音型エンジン溶接機★GAW-150ES2.jpg"
+    },
+    {
+      "title": "Denyo デンヨー★防音型エンジンTIG溶接機★DAT-300RS",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/Denyo デンヨー★防音型エンジンTIG溶接機★DAT-300RS.jpg"
+    },
+    {
+      "title": "Denyo デンヨー★防音型エンジン発電機★DCA-60LSIE",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/Denyo デンヨー★防音型エンジン発電機★DCA-60LSIE.jpg"
+    },
+    {
+      "title": "HITACHI 日立★オイルフリーベビコン★エアーコンプレッサー★110P-8.5GP5_50Hz★11kW",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/HITACHI 日立★オイルフリーベビコン★エアーコンプレッサー★110P-8.5GP5_50Hz★11kW.jpg"
+    },
+    {
+      "title": "KOBELCO★Kobelion-VS★22kW 30馬力★  ★ドライヤー内蔵スクリューコンプレッサ★VS410AD",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/KOBELCO★Kobelion-VS★22kW 30馬力★  ★ドライヤー内蔵スクリューコンプレッサ★VS410AD.jpg"
+    },
+    {
+      "title": "KOIKE★LD-60NTig5型 ポジショナー★最大搭載荷重60kg",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/KOIKE★LD-60NTig5型 ポジショナー★最大搭載荷重60kg.jpg"
+    },
+    {
+      "title": "Panasonic★CO2_MAG 半自動溶接機★ワイヤ送給装置 ケーブル ワイヤ付",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/Panasonic★CO2_MAG 半自動溶接機★ワイヤ送給装置 ケーブル ワイヤ付.jpg"
+    },
+    {
+      "title": "Panasonic★PANA-AUTO 半自動溶接機★KRⅡ500★YD-500KR2★ワイヤ送給装置付",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/Panasonic★PANA-AUTO 半自動溶接機★KRⅡ500★YD-500KR2★ワイヤ送給装置付.jpg"
+    },
+    {
+      "title": "Panasonic★Pana Robo ロボット溶接機★AW-010A",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/Panasonic★Pana Robo ロボット溶接機★AW-010A.jpg"
+    },
+    {
+      "title": "Panasonic★Pana Robo 溶接ロボット★AW-005C",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/Panasonic★Pana Robo 溶接ロボット★AW-005C.jpg"
+    },
+    {
+      "title": "Panasonic★インバータ制御交直両用TIG溶接機★YC-300WX4",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/Panasonic★インバータ制御交直両用TIG溶接機★YC-300WX4.jpg"
+    },
+    {
+      "title": "Panasonic★スポット溶接機★YR-350SA2",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/Panasonic★スポット溶接機★YR-350SA2.jpg"
+    },
+    {
+      "title": "Yashima ヤシマ★スタッド溶接機★YS-50",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/Yashima ヤシマ★スタッド溶接機★YS-50.jpg"
+    },
+    {
+      "title": "☆DAIDEN 大阪電気★空圧式スポット溶接機★SL-AJ35-400形★単相200V☆",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/purchaseItems/DAIDENSL-AJ35-400200V.jpg"
+    },
+    {
+      "title": "アネスト岩田★オイルフリー スクロールコンプレッサ★SLP-221EFD★2.2kW 3馬力★50Hz",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/アネスト岩田★オイルフリー スクロールコンプレッサ★SLP-221EFD★2.2kW 3馬力★50Hz.jpg"
+    },
+    {
+      "title": "アネスト岩田★オイルフリーレシプロコンプレッサー★3.7kW 5馬力★CFP37CF-8.5D",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/アネスト岩田★オイルフリーレシプロコンプレッサー★3.7kW 5馬力★CFP37CF-8.5D.jpg"
+    },
+    {
+      "title": "ダイヘン★インバーターアルゴ★300P★TIG溶接機★VRTP-300(S-6)",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/ダイヘン★インバーターアルゴ★300P★TIG溶接機★VRTP-300(S-6).jpg"
+    },
+    {
+      "title": "ダイヘン★ロボット溶接機★アルメガ AX-MV6★AX-C★DM350★取説付",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/ダイヘン★ロボット溶接機★アルメガ AX-MV6★AX-C★DM350★取説付.jpg"
     },
     {
       "title": "新ダイワ★マルチ発電機 ディーゼルエンジン発電機★DGM250MK",
-      "imageSrc": "/images/category/category5/purchaseItems/item24.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/新ダイワ★マルチ発電機 ディーゼルエンジン発電機★DGM250MK.jpg"
     },
     {
       "title": "新ダイワ★防音型エンジン発電機兼用溶接機★DGW310DMC",
-      "imageSrc": "/images/category/category5/purchaseItems/item25.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/新ダイワ★防音型エンジン発電機兼用溶接機★DGW310DMC.jpg"
     },
     {
       "title": "新ダイワ★防音型エンジン発電機兼用溶接機★EGW2800MI",
-      "imageSrc": "/images/category/category5/purchaseItems/item26.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/新ダイワ★防音型エンジン発電機兼用溶接機★EGW2800MI.jpg"
     },
     {
       "title": "日立★スクリューコンプレッサ★HISCREW37 NEXTⅡ★OSP-37M5AN2★37kW 50馬力★200V 50Hz",
-      "imageSrc": "/images/category/category5/purchaseItems/item27.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/purchaseItems/日立★スクリューコンプレッサ★HISCREW37 NEXTⅡ★OSP-37M5AN2★37kW 50馬力★200V 50Hz.jpg"
     }
   ]
 }
