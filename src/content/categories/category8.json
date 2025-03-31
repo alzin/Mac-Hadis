@@ -1,137 +1,137 @@
 {
   "id": "purinta-mishin-diy-yo-kiki",
   "title": "プリンター・ミシン・DIY用機器",
-  "imageSrc": "https://www.mac-hadis.com/images/category/category8/main-ogp.png",
+  "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%BB%E3%83%9F%E3%82%B7%E3%83%B3%E3%83%BBDIY%E7%94%A8%E6%A9%9F%E5%99%A8/main-ogp.png",
   "items": [
     {
       "id": 1,
-      "title": "電気式簡易ボイラー",
-      "image": "/images_db/item105.webp"
+      "title": "3Dプリンター",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/3Dプリンター.jpg"
     },
     {
       "id": 2,
-      "title": "電動ろくろ",
-      "image": "/images_db/item106.jpeg"
+      "title": "Tシャツプリンター",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/Tシャツプリンター.jpg"
     },
     {
       "id": 3,
-      "title": "自動転写プレス機",
-      "image": "/images_db/item107.jpg"
+      "title": "UVインクジェットプリンタ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/UV-LEDインクジェットプリンタ.jpg"
     },
     {
       "id": 4,
-      "title": "自動彫刻機",
-      "image": "/images_db/item108.jpeg"
+      "title": "UVプリンタ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/UVプリンタ.jpg"
     },
     {
       "id": 5,
-      "title": "腕ミシン",
-      "image": "/images_db/item109.jpg"
+      "title": "フラットベッド",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/フラットベッドカッティングプロッタ.png"
     },
     {
       "id": 6,
-      "title": "穴かがりミシン",
-      "image": "/images_db/item110.jpg"
+      "title": "ベルトコンベア検針機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/ベルトコンベア検針機.jpg"
     },
     {
       "id": 7,
-      "title": "真空成型機",
-      "image": "/images_db/item111.png"
+      "title": "ラベルプリンタ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/ラベルプリンタ.jpg"
     },
     {
       "id": 8,
-      "title": "皮漉機",
-      "image": "/images_db/item112.jpg"
+      "title": "レーザー加工機 .彫刻機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/レーザー加工機 . レーザー彫刻機.jpg"
     },
     {
       "id": 9,
-      "title": "業務用印刷機",
-      "image": "/images_db/item113.jpg"
+      "title": "刺繍ミシン.刺繍機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/刺繍ミシン . 刺しゅうミシン. 刺繍機.jpg"
     },
     {
       "id": 10,
-      "title": "業務用アイロン台",
-      "image": "/images_db/item114.jpg"
+      "title": "合鍵複製機(キーマシン)",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/合鍵複製機(キーマシン).png"
     },
     {
       "id": 11,
-      "title": "工業用ミシン",
-      "image": "/images_db/item115.jpg"
+      "title": "大判オートトリマー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/大判オートトリマー.png"
     },
     {
       "id": 12,
-      "title": "大判ラミネーター",
-      "image": "/images_db/item116.jpg"
+      "title": "大判プリンター",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/大判プリンター.png"
     },
     {
       "id": 13,
-      "title": "大判プリンター",
-      "image": "/images_db/item117.png"
+      "title": "大判ラミネーター",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/大判ラミネーター.jpg"
     },
     {
       "id": 14,
-      "title": "大判オートトリマー",
-      "image": "/images_db/item118.png"
+      "title": "工業用ミシン",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/工業用ミシン.jpg"
     },
     {
       "id": 15,
-      "title": "合鍵複製機(キーマシン)",
-      "image": "/images_db/item119.png"
+      "title": "業務用アイロン台",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/業務用アイロン台.jpg"
     },
     {
       "id": 16,
-      "title": "刺繍ミシン.刺繍機",
-      "image": "/images_db/item120.jpg"
+      "title": "業務用印刷機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/業務用印刷機.jpg"
     },
     {
       "id": 17,
-      "title": "レーザー加工機 .彫刻機",
-      "image": "/images_db/item121.jpg"
+      "title": "版画プレス機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/版画プレス機.jpg"
     },
     {
       "id": 18,
-      "title": "ラベルプリンタ",
-      "image": "/images_db/item122.jpg"
+      "title": "皮漉機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/皮漉機.jpg"
     },
     {
       "id": 19,
-      "title": "ベルトコンベア検針機",
-      "image": "/images_db/item124.jpg"
+      "title": "真空成型機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/真空成型機.png"
     },
     {
       "id": 20,
-      "title": "フラットベッド",
-      "image": "/images_db/item125.png"
+      "title": "穴かがりミシン",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/穴かがりミシン.jpg"
     },
     {
       "id": 21,
-      "title": "UVプリンタ",
-      "image": "/images_db/item126.jpg"
+      "title": "腕ミシン",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/腕ミシン.jpg"
     },
     {
       "id": 22,
-      "title": "UVインクジェットプリンタ",
-      "image": "/images_db/item127.jpg"
+      "title": "自動彫刻機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/自動彫刻機.jpeg"
     },
     {
       "id": 23,
-      "title": "Tシャツプリンター",
-      "image": "/images_db/item128.jpg"
+      "title": "自動転写プレス機 ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/自動転写プレス機 .jpg"
     },
     {
       "id": 24,
-      "title": "3Dプリンター",
-      "image": "/images_db/item130.jpg"
+      "title": "電動ろくろ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/電動ろくろ.jpeg"
+    },
+    {
+      "id": 25,
+      "title": "電動断裁機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/電動断裁機.jpg"
     },
     {
       "id": 26,
-      "title": "版画プレス機",
-      "image": "/images_db/item222.jpg"
-    },
-    {
-      "id": 27,
-      "title": "電動断裁機",
-      "image": "/images_db/item223.jpg"
+      "title": "電気式簡易ボイラー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/電気式簡易ボイラー.webp"
     }
   ],
   "makers": [
@@ -139,259 +139,263 @@
       "jp": "",
       "en": "canon",
       "link": "https://canon.jp",
-      "imageSrc": "/images/category/category8/makers/canon.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/canon.png"
     },
     {
       "jp": "",
       "en": "mimaki",
       "link": "https://japan.mimaki.com",
-      "imageSrc": "/images/category/category8/makers/mimaki.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/mimaki.jpg"
     },
     {
       "jp": "",
       "en": "brother",
       "link": "https://www.brother.co.jp",
-      "imageSrc": "/images/category/category8/makers/brother.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/brother.png"
     },
     {
       "jp": "",
       "en": "epson",
       "link": "https://www.epson.jp",
-      "imageSrc": "/images/category/category8/makers/epson.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/epson.png"
     },
     {
       "jp": "",
       "en": "hashima",
       "link": "https://www.hashima.co.jp",
-      "imageSrc": "/images/category/category8/makers/hashima.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/hashima.jpg"
     },
     {
       "jp": "",
       "en": "horizon",
       "link": "https://www.horizon.co.jp",
-      "imageSrc": "/images/category/category8/makers/horizon.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/horizon.png"
     },
     {
       "jp": "",
       "en": "janome",
       "link": "https://www.janome.co.jp",
-      "imageSrc": "/images/category/category8/makers/janome.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/janome.png"
     },
     {
       "jp": "",
       "en": "juki",
       "link": "https://www.juki.co.jp",
-      "imageSrc": "/images/category/category8/makers/juki.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/juki.png"
     },
     {
       "jp": "",
       "en": "mastermind",
       "link": "https://www.mastermind.co.jp",
-      "imageSrc": "/images/category/category8/makers/mastermind.svg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/mastermind.svg"
     },
     {
       "jp": "",
       "en": "mcwlaser",
       "link": "https://www.mcwlaser.com",
-      "imageSrc": "/images/category/category8/makers/mcwlaser.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/mcwlaser.png"
     },
     {
       "jp": "",
       "en": "mitsubishielectric",
       "link": "https://www.mitsubishielectric.co.jp/fa/index.html",
-      "imageSrc": "/images/category/category8/makers/mitsubishielectric.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/mitsubishielectric.jpg"
     },
     {
       "jp": "",
       "en": "naomoto",
       "link": "https://www.naomoto.co.jp/#product",
-      "imageSrc": "/images/category/category8/makers/naomoto.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/naomoto.png"
     },
     {
       "jp": "",
       "en": "pegasus",
       "link": "https://www.pegasus.co.jp/ja",
-      "imageSrc": "/images/category/category8/makers/pegasus.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/pegasus.png"
     },
     {
       "jp": "",
       "en": "rolanddg",
       "link": "https://www.rolanddg.co.jp",
-      "imageSrc": "/images/category/category8/makers/rolanddg.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/rolanddg.jpg"
     },
     {
       "jp": "",
       "en": "seiko-sewing",
       "link": "https://www.seiko-sewing.co.jp",
-      "imageSrc": "/images/category/category8/makers/seiko-sewing.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/seiko-sewing.png"
     },
     {
       "jp": "",
       "en": "yamato-sewing",
       "link": "https://www.yamato-sewing.com/ja",
-      "imageSrc": "/images/category/category8/makers/yamato-sewing.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/makers/yamato-sewing.png"
     }
   ],
   "purchaseItems": [
     {
-      "title": "brother ブラザー★業務用刺繍ミシン★PRT1201★PR1000e★取説 付属品付",
-      "imageSrc": "/images/category/category8/purchaseItems/item1.jpg"
+      "title": "CIRDAR サーダー★腕ミシン★TE-3★サーボモーター",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/CIRDAR サーダー★腕ミシン★TE-3★サーボモーター.jpg"
     },
     {
       "title": "Cheshire 595 568★ラベリングシステム ラベルプリンタ",
-      "imageSrc": "/images/category/category8/purchaseItems/item2.jpg"
-    },
-    {
-      "title": "CIRDAR サーダー★腕ミシン★TE-3★サーボモーター",
-      "imageSrc": "/images/category/category8/purchaseItems/item3.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Cheshire 595 568★ラベリングシステム ラベルプリンタ.jpg"
     },
     {
       "title": "EPSON エプソン★大判プリンター★SC-S80650★K271A",
-      "imageSrc": "/images/category/category8/purchaseItems/item4.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/EPSON エプソン★大判プリンター★SC-S80650★K271A.jpg"
     },
     {
       "title": "EPSON★大判プリンター ガーメントプリンター Tシャツプリンター★SC-F2150★取説 ソフト付",
-      "imageSrc": "/images/category/category8/purchaseItems/item5.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/EPSON★大判プリンター ガーメントプリンター Tシャツプリンター★SC-F2150★取説 ソフト付.jpg"
     },
     {
       "title": "HASHIMA ハシマ★コールドラミネーター★HCL-1400C★取説 未使用フィルム付",
-      "imageSrc": "/images/category/category8/purchaseItems/item6.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/HASHIMA ハシマ★コールドラミネーター★HCL-1400C★取説 未使用フィルム付.jpg"
     },
     {
       "title": "HASHIMA ハシマ★平型オートプレス ヒートプレス Tシャツ転写★HP-5400★100V",
-      "imageSrc": "/images/category/category8/purchaseItems/item7.jpg"
-    },
-    {
-      "title": "☆HOPKINS_BWM★シルクスクリーン印刷機★4ステーション★回転式手動印刷機★MRCB4_D-5200★",
-      "imageSrc": "/images/category/category8/purchaseItems/item8.JPG"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/HASHIMA ハシマ★平型オートプレス ヒートプレス Tシャツ転写★HP-5400★100V.jpg"
     },
     {
       "title": "Horizon ホリゾン★電動裁断機★PC-39Ⅱ★カウンター225回★替刃 鍵付",
-      "imageSrc": "/images/category/category8/purchaseItems/item9.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Horizon ホリゾン★電動裁断機★PC-39Ⅱ★カウンター225回★替刃 鍵付.jpg"
     },
     {
       "title": "Horizon 太陽精機★トランスファープレス機 ヒートプレス 熱転写★TP-600AⅡ",
-      "imageSrc": "/images/category/category8/purchaseItems/item10.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Horizon 太陽精機★トランスファープレス機 ヒートプレス 熱転写★TP-600AⅡ.jpg"
     },
     {
       "title": "JANOME ジャノメ★4針刺しゅう専用機 刺しゅうミシン★MB-4★取説 刺しゅう枠付",
-      "imageSrc": "/images/category/category8/purchaseItems/item11.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/JANOME ジャノメ★4針刺しゅう専用機 刺しゅうミシン★MB-4★取説 刺しゅう枠付.jpg"
     },
     {
       "title": "JOEI ジョーエイ製機★シリンダー専用機★JS-701SC★キーマシン 合鍵複製機★取扱付",
-      "imageSrc": "/images/category/category8/purchaseItems/item12.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/JOEI ジョーエイ製機★シリンダー専用機★JS-701SC★キーマシン 合鍵複製機★取扱付.jpg"
     },
     {
       "title": "JUKI★工業用ミシン 腕型二重環縫ミシン 3本針 厚物仕様★MS-1261",
-      "imageSrc": "/images/category/category8/purchaseItems/item13.jpg"
-    },
-    {
-      "title": "Mastermind★Tシャツプリンター★MMP813D-C★取説付",
-      "imageSrc": "/images/category/category8/purchaseItems/item14.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/JUKI★工業用ミシン 腕型二重環縫ミシン 3本針 厚物仕様★MS-1261.jpg"
     },
     {
       "title": "MCWlaser 30W★ファイバーレーザーマーキングマシン★金属用★フルセット",
-      "imageSrc": "/images/category/category8/purchaseItems/item15.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/MCWlaser 30W★ファイバーレーザーマーキングマシン★金属用★フルセット.jpg"
     },
     {
       "title": "MIMAKI ミマキ★3Dモデリングマシン 自動彫刻機★NC-5S★取説付",
-      "imageSrc": "/images/category/category8/purchaseItems/item16.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/MIMAKI ミマキ★3Dモデリングマシン 自動彫刻機★NC-5S★取説付.jpg"
+    },
+    {
+      "title": "Mastermind★Tシャツプリンター★MMP813D-C★取説付",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Mastermind★Tシャツプリンター★MMP813D-C★取説付.jpg"
     },
     {
       "title": "Mimaki ミマキ★UV-LED硬化フラットベッドインクジェットプリンタ★UJF-3042MkⅡ★2020年製 綺麗★Kebabユニット ソフト付",
-      "imageSrc": "/images/category/category8/purchaseItems/item17.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Mimaki ミマキ★UV-LED硬化フラットベッドインクジェットプリンタ★UJF-3042MkⅡ★2020年製 綺麗★Kebabユニット ソフト付.jpg"
     },
     {
       "title": "Mimaki ミマキ★UV-LED硬化フラットベッドインクジェットプリンタ★UJF-6042MkⅡ★取説 ソフト付",
-      "imageSrc": "/images/category/category8/purchaseItems/item18.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Mimaki ミマキ★UV-LED硬化フラットベッドインクジェットプリンタ★UJF-6042MkⅡ★取説 ソフト付.jpg"
     },
     {
       "title": "Mimaki ミマキ★UV硬化プリント インクジェットプリンタ★UJF-6042★ソフトウェア付",
-      "imageSrc": "/images/category/category8/purchaseItems/item19.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Mimaki ミマキ★UV硬化プリント インクジェットプリンタ★UJF-6042★ソフトウェア付.jpg"
     },
     {
       "title": "Mimaki ミマキ★ハイパフォーマンスフラットベッドUV-LEDインクジェットプリンタ★UJF-7151plusⅡ★2022年製★取説 ソフト付",
-      "imageSrc": "/images/category/category8/purchaseItems/item20.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Mimaki ミマキ★ハイパフォーマンスフラットベッドUV-LEDインクジェットプリンタ★UJF-7151plusⅡ★2022年製★取説 ソフト付.jpg"
     },
     {
       "title": "Mimaki ミマキ★大判オートトリマー★AT-200",
-      "imageSrc": "/images/category/category8/purchaseItems/item21.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Mimaki ミマキ★大判オートトリマー★AT-200.jpg"
     },
     {
       "title": "NIPPY ニッピ★皮漉機★NP-202★取説付",
-      "imageSrc": "/images/category/category8/purchaseItems/item22.jpg"
-    },
-    {
-      "title": "redt★MIRACLE ミラクル S10★合鍵複製機★ディンプルキー★キーマシン",
-      "imageSrc": "/images/category/category8/purchaseItems/item23.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/NIPPY ニッピ★皮漉機★NP-202★取説付.jpg"
     },
     {
       "title": "Roland ローランド★UV-LEDインクジェットプリンター★VersaUV LEF-12i★2018年製★取説_ソフト_専用脱臭装置付",
-      "imageSrc": "/images/category/category8/purchaseItems/item24.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Roland ローランド★UV-LEDインクジェットプリンター★VersaUV LEF-12i★2018年製★取説_ソフト_専用脱臭装置付.jpg"
     },
     {
       "title": "Roland ローランド★UVプリンター★VersaUV LEF-300",
-      "imageSrc": "/images/category/category8/purchaseItems/item25.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/Roland ローランド★UVプリンター★VersaUV LEF-300.jpg"
     },
     {
       "title": "SATOC★タグ・ラベルプリンタ ST312R★大型スタッカ STS300★PC 未使用ラベル インクリボン等付属品付",
-      "imageSrc": "/images/category/category8/purchaseItems/item26.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/SATOC★タグ・ラベルプリンタ ST312R★大型スタッカ STS300★PC 未使用ラベル インクリボン等付属品付.jpg"
     },
     {
       "title": "SEIKO セイコー★工業用 上下送り 腕ミシン★HC-2BL-1★取説付",
-      "imageSrc": "/images/category/category8/purchaseItems/item27.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/SEIKO セイコー★工業用 上下送り 腕ミシン★HC-2BL-1★取説付.jpg"
     },
     {
       "title": "SURE シュアー工業★電動断裁機★SH-651H★取説付",
-      "imageSrc": "/images/category/category8/purchaseItems/item28.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/SURE シュアー工業★電動断裁機★SH-651H★取説付.jpg"
     },
     {
       "title": "UNIVERSAL★レーザー彫刻切断システム★XL-9200",
-      "imageSrc": "/images/category/category8/purchaseItems/item29.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/UNIVERSAL★レーザー彫刻切断システム★XL-9200.jpg"
+    },
+    {
+      "title": "brother ブラザー★業務用刺繍ミシン★PRT1201★PR1000e★取説 付属品付",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/brother ブラザー★業務用刺繍ミシン★PRT1201★PR1000e★取説 付属品付.jpg"
+    },
+    {
+      "title": "redt★MIRACLE ミラクル S10★合鍵複製機★ディンプルキー★キーマシン",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/redt★MIRACLE ミラクル S10★合鍵複製機★ディンプルキー★キーマシン.jpg"
     },
     {
       "title": "withus ウィズアス★印章彫刻機 印鑑彫刻機★BIZ60★取説 ソフト おまけ(材料)付",
-      "imageSrc": "/images/category/category8/purchaseItems/item30.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/withus ウィズアス★印章彫刻機 印鑑彫刻機★BIZ60★取説 ソフト おまけ(材料)付.jpg"
+    },
+    {
+      "title": "☆HOPKINS_BWM★シルクスクリーン印刷機★4ステーション★回転式手動印刷機★MRCB4_D-5200★",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/☆HOPKINS_BWM★シルクスクリーン印刷機★4ステーション★回転式手動印刷機★MRCB4_D-5200★.JPG"
     },
     {
       "title": "アコブランズジャパン★ワイドフォーマットラミネーター★X-TREME 54W★GWFXT54WP★取説付",
-      "imageSrc": "/images/category/category8/purchaseItems/item31.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/アコブランズジャパン★ワイドフォーマットラミネーター★X-TREME 54W★GWFXT54WP★取説付.jpg"
     },
     {
       "title": "ボイラー_大阪アイロン OSG-25",
-      "imageSrc": "/images/category/category8/purchaseItems/item32.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/ボイラー_大阪アイロン OSG-25.jpg"
     },
     {
       "title": "ミマキ★デスクトップタイプ LED方式 UV硬化フラットベッド★インクジェットプリンタ★UJF-3042HG★Kebabシステム付",
-      "imageSrc": "/images/category/category8/purchaseItems/item33.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/ミマキ★デスクトップタイプ LED方式 UV硬化フラットベッド★インクジェットプリンタ★UJF-3042HG★Kebabシステム付.jpg"
+    },
+    {
+      "title": "ミマキ★小型フラットベッドカッティングプロッタ★CFL-605RT★取説 未使用替刃など付属品付",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/ミマキ★小型フラットベッドカッティングプロッタ★CFL-605RT★取説 未使用替刃など付属品付.jpg"
     },
     {
       "title": "三菱★工業用ミシン★小型電子パターン極厚縫いミシン★一本針本縫い★PLK-E1008H",
-      "imageSrc": "/images/category/category8/purchaseItems/item34.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/三菱★工業用ミシン★小型電子パターン極厚縫いミシン★一本針本縫い★PLK-E1008H.jpg"
     },
     {
       "title": "大阪電機工業★電気ボイラー EB-5F★サクション台 高さ調整型 OSB-P6-56★アイロン J-88-R",
-      "imageSrc": "/images/category/category8/purchaseItems/item35.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/大阪電機工業★電気ボイラー EB-5F★サクション台 高さ調整型 OSB-P6-56★アイロン J-88-R.jpg"
     },
     {
       "title": "成光産業★フォーミング480★真空成型機★未使用★型作り 見本 モデリング 彫刻 ロストワックス",
-      "imageSrc": "/images/category/category8/purchaseItems/item36.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/成光産業★フォーミング480★真空成型機★未使用★型作り 見本 モデリング 彫刻 ロストワックス.jpg"
     },
     {
       "title": "新日本造形★版画プレス機 エッチングプレス★SF-185★ローラー幅450",
-      "imageSrc": "/images/category/category8/purchaseItems/item37.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/新日本造形★版画プレス機 エッチングプレス★SF-185★ローラー幅450.jpg"
     },
     {
       "title": "理想科学工業★リソグラフ デジタル印刷機★SD5430★未使用インク マスター付",
-      "imageSrc": "/images/category/category8/purchaseItems/item38.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/理想科学工業★リソグラフ デジタル印刷機★SD5430★未使用インク マスター付.jpg"
     },
     {
       "title": "直本 ナオモト★電気式簡易ボイラー NBN-103Sa★アイロン ASL-621",
-      "imageSrc": "/images/category/category8/purchaseItems/item39.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/直本 ナオモト★電気式簡易ボイラー NBN-103Sa★アイロン ASL-621.jpg"
     },
     {
       "title": "直本工業★バキュームアイロン仕上台★FBシリーズ 大型★業務用 クリーニング",
-      "imageSrc": "/images/category/category8/purchaseItems/item40.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/purchaseItems/直本工業★バキュームアイロン仕上台★FBシリーズ 大型★業務用 クリーニング.jpg"
     }
   ]
 }

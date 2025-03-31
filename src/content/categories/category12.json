@@ -4,130 +4,109 @@
   "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%AE%E8%B2%B7%E5%8F%96%E5%AF%BE%E5%BF%9C/main-ogp.png.jpg",
   "items": [
     {
-      "id": 169,
-      "title": "靴修理フィニッシャー",
-      "category": "その他の買取対応",
-      "image": "/images_db/item169.jpg"
-    },
-    {
-      "id": 170,
-      "title": "金属検出機",
-      "category": "その他の買取対応",
-      "image": "/images_db/item170.jpg"
-    },
-    {
-      "id": 171,
-      "title": "遠心機",
-      "category": "その他の買取対応",
-      "image": "/images_db/item171.jpeg"
-    },
-    {
-      "id": 172,
-      "title": "船外機",
-      "category": "その他の買取対応",
-      "image": "/images_db/item172.jpg"
-    },
-    {
-      "id": 173,
-      "title": "自動販売機",
-      "category": "その他の買取対応",
-      "image": "/images_db/item173.jpg"
-    },
-    {
-      "id": 174,
-      "title": "粉砕機",
-      "category": "その他の買取対応",
-      "image": "/images_db/item174.png"
-    },
-    {
-      "id": 175,
-      "title": "物置",
-      "category": "その他の買取対応",
-      "image": "/images_db/item175.jpg"
-    },
-    {
-      "id": 176,
-      "title": "焼却炉",
-      "category": "その他の買取対応",
-      "image": "/images_db/item176.jpg"
-    },
-    {
-      "id": 177,
-      "title": "油圧クリッカー",
-      "category": "その他の買取対応",
-      "image": "/images_db/item177.png"
-    },
-    {
-      "id": 178,
-      "title": "恒温器",
-      "category": "その他の買取対応",
-      "image": "/images_db/item178.png"
-    },
-    {
-      "id": 179,
-      "title": "屋外風呂シャワーユニット",
-      "category": "その他の買取対応",
-      "image": "/images_db/item179.jpg"
-    },
-    {
-      "id": 180,
-      "title": "大型シュレッダー",
-      "category": "その他の買取対応",
-      "image": "/images_db/item180.jpg"
-    },
-    {
-      "id": 181,
-      "title": "冷却水循環装置 チラー",
-      "category": "その他の買取対応",
-      "image": "/images_db/item181.jpg"
-    },
-    {
-      "id": 182,
-      "title": "全自動線切断皮剥装置",
-      "category": "その他の買取対応",
-      "image": "/images_db/item182.jpg"
-    },
-    {
-      "id": 183,
-      "title": "仮設トイレ",
-      "category": "その他の買取対応",
-      "image": "/images_db/item183.jpg"
-    },
-    {
-      "id": 184,
-      "title": "乾燥器",
-      "category": "その他の買取対応",
-      "image": "/images_db/item184.png"
-    },
-    {
-      "id": 185,
-      "title": "両替機",
-      "category": "その他の買取対応",
-      "image": "/images_db/item185.jpg"
-    },
-    {
-      "id": 186,
-      "title": "ホイスト",
-      "category": "その他の買取対応",
-      "image": "/images_db/item186.jpg"
-    },
-    {
-      "id": 187,
-      "title": "プレハブ",
-      "category": "その他の買取対応",
-      "image": "/images_db/item187.jpg"
-    },
-    {
-      "id": 188,
-      "title": "フォークリフト",
-      "category": "その他の買取対応",
-      "image": "/images_db/item188.jpg"
-    },
-    {
-      "id": 189,
+      "id": 1,
       "title": "オートクレーブ",
-      "category": "その他の買取対応",
-      "image": "/images_db/item189.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/オートクレーブ.jpg"
+    },
+    {
+      "id": 2,
+      "title": "フォークリフト",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/フォークリフト.jpg"
+    },
+    {
+      "id": 3,
+      "title": "プレハブ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/プレハブ.jpg"
+    },
+    {
+      "id": 4,
+      "title": "ホイスト",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/ホイスト.jpg"
+    },
+    {
+      "id": 5,
+      "title": "両替機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/両替機.jpg"
+    },
+    {
+      "id": 6,
+      "title": "乾燥器",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/乾燥器.png"
+    },
+    {
+      "id": 7,
+      "title": "仮設トイレ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/仮設トイレ.jpg"
+    },
+    {
+      "id": 8,
+      "title": "全自動線切断皮剥装置",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/全自動線切断皮剥装置.jpg"
+    },
+    {
+      "id": 9,
+      "title": "冷却水循環装置 チラー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/冷却水循環装置 チラー.jpg"
+    },
+    {
+      "id": 10,
+      "title": "大型シュレッダー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/大型シュレッダー.jpg"
+    },
+    {
+      "id": 11,
+      "title": "屋外風呂シャワーユニット",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/屋外風呂シャワーユニット.jpg"
+    },
+    {
+      "id": 12,
+      "title": "恒温器",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/恒温器.png"
+    },
+    {
+      "id": 13,
+      "title": "油圧クリッカー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/油圧クリッカー.png"
+    },
+    {
+      "id": 14,
+      "title": "焼却炉",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/焼却炉.jpg"
+    },
+    {
+      "id": 15,
+      "title": "物置",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/物置.jpg"
+    },
+    {
+      "id": 16,
+      "title": "粉砕機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/粉砕機.png"
+    },
+    {
+      "id": 17,
+      "title": "自動販売機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/自動販売機.jpg"
+    },
+    {
+      "id": 18,
+      "title": "船外機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/船外機.jpg"
+    },
+    {
+      "id": 19,
+      "title": "遠心機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/遠心機.jpeg"
+    },
+    {
+      "id": 20,
+      "title": "金属検出機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/金属検出機.jpg"
+    },
+    {
+      "id": 21,
+      "title": "靴修理フィニッシャー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/その他の買取対応/items/靴修理フィニッシャー.jpg"
     }
   ],
   "makers": [

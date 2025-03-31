@@ -1,61 +1,52 @@
 {
   "id": "konpo-ki-hoso-ki",
   "title": "梱包機・包装機",
-  "imageSrc": "https://www.mac-hadis.com/images/category/category9/main-ogp.png",
+  "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E6%A2%B1%E5%8C%85%E6%A9%9F%E3%83%BB%E5%8C%85%E8%A3%85%E6%A9%9F/main-ogp.png",
   "items": [
     {
-      "id": 96,
-      "title": "自動貼付機",
-      "category": "梱包機・包装機",
-      "image": "/images_db/item96.png"
-    },
-    {
-      "id": 97,
-      "title": "自動計量包装値付機",
-      "category": "梱包機・包装機",
-      "image": "/images_db/item97.jpg"
-    },
-    {
-      "id": 98,
-      "title": "自動真空包装機",
-      "category": "梱包機・包装機",
-      "image": "/images_db/item98.png"
-    },
-    {
-      "id": 99,
-      "title": "自動包装機",
-      "category": "梱包機・包装機",
-      "image": "/images_db/item99.jpg"
-    },
-    {
-      "id": 100,
-      "title": "梱包機",
-      "category": "梱包機・包装機",
-      "image": "/images_db/item100.jpg"
-    },
-    {
-      "id": 101,
-      "title": "圧縮梱包機",
-      "category": "梱包機 。包装機",
-      "image": "/images_db/item101.jpg"
-    },
-    {
-      "id": 102,
-      "title": "ストレッチ包装機",
-      "category": "梱包機・包装機",
-      "image": "/images_db/item102.jpg"
-    },
-    {
-      "id": 103,
+      "id": 1,
       "title": "シュリンク包装機",
-      "category": "梱包機・包装機",
-      "image": "/images_db/item103.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/シュリンク包装機.jpg"
     },
     {
-      "id": 104,
+      "id": 2,
       "title": "シーラー機",
-      "category": "梱包機・包装機",
-      "image": "/images_db/item104.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/シーラー機.jpg"
+    },
+    {
+      "id": 3,
+      "title": "ストレッチ包装機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/ストレッチ包装機.jpg"
+    },
+    {
+      "id": 4,
+      "title": "圧縮梱包機 ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/圧縮梱包機 .jpg"
+    },
+    {
+      "id": 5,
+      "title": "梱包機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/梱包機.jpg"
+    },
+    {
+      "id": 6,
+      "title": "自動包装機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動包装機.jpg"
+    },
+    {
+      "id": 7,
+      "title": "自動真空包装機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動真空包装機.png"
+    },
+    {
+      "id": 8,
+      "title": "自動計量包装値付機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動計量包装値付機.jpg"
+    },
+    {
+      "id": 9,
+      "title": "自動貼付機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動貼付機.png"
     }
   ],
   "makers": [
@@ -63,201 +54,201 @@
       "jp": "",
       "en": "shindaigo",
       "link": "http://shindaigo.co.jp",
-      "imageSrc": "/images/category/category9/makers/shindaigo.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/shindaigo.png"
     },
     {
       "jp": "",
       "en": "sugiyasu",
       "link": "http://sugiyasu.co.jp/products/products/house.php",
-      "imageSrc": "/images/category/category9/makers/sugiyasu.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/sugiyasu.jpg"
     },
     {
       "jp": "",
       "en": "nippon-polystar",
       "link": "https://nippon-polystar.co.jp",
-      "imageSrc": "/images/category/category9/makers/nippon-polystar.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/nippon-polystar.png"
     },
     {
       "jp": "",
       "en": "nishihara",
       "link": "https://nishihara-mfg.co.jp",
-      "imageSrc": "/images/category/category9/makers/nishihara.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/nishihara.jpg"
     },
     {
       "jp": "",
       "en": "suzuki",
       "link": "https://suzuki-ss.co.jp",
-      "imageSrc": "/images/category/category9/makers/suzuki.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/suzuki.png"
     },
     {
       "jp": "",
       "en": "foodmach",
       "link": "https://www.foodmach.co.jp/index_j.html",
-      "imageSrc": "/images/category/category9/makers/foodmach.jpeg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/foodmach.jpeg"
     },
     {
       "jp": "",
       "en": "furukawa",
       "link": "https://www.furukawa-mfg.co.jp",
-      "imageSrc": "/images/category/category9/makers/furukawa.jpeg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/furukawa.jpeg"
     },
     {
       "jp": "",
       "en": "ishida",
       "link": "https://www.ishida.co.jp/ww/jp/",
-      "imageSrc": "/images/category/category9/makers/ishida.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/ishida.png"
     },
     {
       "jp": "",
       "en": "kawashima",
       "link": "https://www.kawashima-pack.co.jp",
-      "imageSrc": "/images/category/category9/makers/kawashima.svg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/kawashima.svg"
     },
     {
       "jp": "",
       "en": "light-nhk",
       "link": "https://www.light-nhk.co.jp",
-      "imageSrc": "/images/category/category9/makers/light-nhk.jpeg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/light-nhk.jpeg"
     },
     {
       "jp": "",
       "en": "mitsuwasangyo",
       "link": "https://www.mitsuwasangyo.com",
-      "imageSrc": "/images/category/category9/makers/mitsuwasangyo.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/mitsuwasangyo.jpg"
     },
     {
       "jp": "",
       "en": "ogiwarakk",
       "link": "https://www.ogiwarakk.com",
-      "imageSrc": "/images/category/category9/makers/ogiwarakk.PNG"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/ogiwarakk.PNG"
     },
     {
       "jp": "",
       "en": "omori",
       "link": "https://www.omori.co.jp",
-      "imageSrc": "/images/category/category9/makers/omori.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/omori.jpg"
     },
     {
       "jp": "",
       "en": "orihiro",
       "link": "https://www.orihiro.com/machinery",
-      "imageSrc": "/images/category/category9/makers/orihiro.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/orihiro.jpg"
     },
     {
       "jp": "",
       "en": "sanko-kikai",
       "link": "https://www.sanko-kikai.co.jp",
-      "imageSrc": "/images/category/category9/makers/sanko-kikai.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/sanko-kikai.png"
     },
     {
       "jp": "",
       "en": "strapack",
       "link": "https://www.strapack.co.jp",
-      "imageSrc": "/images/category/category9/makers/strapack.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/strapack.png"
     },
     {
       "jp": "",
       "en": "sunmore",
       "link": "https://www.sunmore.net",
-      "imageSrc": "/images/category/category9/makers/sunmore.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/sunmore.jpg"
     },
     {
       "jp": "",
       "en": "teraokaseiko",
       "link": "https://www.teraokaseiko.com/jp/",
-      "imageSrc": "/images/category/category9/makers/teraokaseiko.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/teraokaseiko.png"
     },
     {
       "jp": "",
       "en": "tom-yamada",
       "link": "https://www.tom-yamada.co.jp",
-      "imageSrc": "/images/category/category9/makers/tom-yamada.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/tom-yamada.jpg"
     },
     {
       "jp": "",
       "en": "tosei-corporation",
       "link": "https://www.tosei-corporation.co.jp",
-      "imageSrc": "/images/category/category9/makers/tosei-corporation.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/tosei-corporation.png"
     },
     {
       "jp": "",
       "en": "yuki",
       "link": "https://yuki-mfg.co.jp",
-      "imageSrc": "/images/category/category9/makers/yuki.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/makers/yuki.jpg"
     }
   ],
   "purchaseItems": [
     {
       "title": "ISHIDA イシダ★自動軽量包装値付機 ラベルプリンタ はかり★WM-AI★取説 ソフト付★2017年製★精肉 鮮魚",
-      "imageSrc": "/images/category/category9/purchaseItems/item1.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/ISHIDA イシダ★自動軽量包装値付機 ラベルプリンタ はかり★WM-AI★取説 ソフト付★2017年製★精肉 鮮魚.jpg"
     },
     {
       "title": "ISHIDA イシダ★自動軽量包装値付機 ラベルプリンタ はかり★WM-UNI★取説付★2010年製★精肉 鮮魚",
-      "imageSrc": "/images/category/category9/purchaseItems/item2.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/ISHIDA イシダ★自動軽量包装値付機 ラベルプリンタ はかり★WM-UNI★取説付★2010年製★精肉 鮮魚.jpg"
     },
     {
       "title": "SANKOH インターナショナル三興★高性能シュリンク包装機★DUO54New",
-      "imageSrc": "/images/category/category9/purchaseItems/item3.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E6%A2%B1%E5%8C%85%E6%A9%9F%E3%83%BB%E5%8C%85%E8%A3%85%E6%A9%9F/purchaseItems/SANKOH+%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E4%B8%89%E8%88%88%E2%98%85%E9%AB%98%E6%80%A7%E8%83%BD%E3%82%B7%E3%83%A5%E3%83%AA%E3%83%B3%E3%82%AF%E5%8C%85%E8%A3%85%E6%A9%9F%E2%98%85DUO54New.jpg"
     },
     {
       "title": "TOSEI 東静★自動真空包装機★TOSPACK★V-306G-2★取説付",
-      "imageSrc": "/images/category/category9/purchaseItems/item4.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/TOSEI 東静★自動真空包装機★TOSPACK★V-306G-2★取説付.jpg"
     },
     {
       "title": "アケボノ★ニチロ工業★自動梱包機★RAN-305★フットペダル 未使用バンド付",
-      "imageSrc": "/images/category/category9/purchaseItems/item5.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E6%A2%B1%E5%8C%85%E6%A9%9F%E3%83%BB%E5%8C%85%E8%A3%85%E6%A9%9F/purchaseItems/%E3%82%A2%E3%82%B1%E3%83%9C%E3%83%8E%E2%98%85%E3%83%8B%E3%83%81%E3%83%AD%E5%B7%A5%E6%A5%AD%E2%98%85%E8%87%AA%E5%8B%95%E6%A2%B1%E5%8C%85%E6%A9%9F%E2%98%85RAN-305%E2%98%85%E3%83%95%E3%83%83%E3%83%88%E3%83%9A%E3%83%80%E3%83%AB+%E6%9C%AA%E4%BD%BF%E7%94%A8%E3%83%90%E3%83%B3%E3%83%89%E4%BB%98.jpg"
     },
     {
       "title": "サンモア★縦型圧縮梱包機★SX-V8055★圧縮能力10t★2017年製★取説付",
-      "imageSrc": "/images/category/category9/purchaseItems/item6.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/サンモア★縦型圧縮梱包機★SX-V8055★圧縮能力10t★2017年製★取説付.jpg"
     },
     {
       "title": "シール栄登★シールエイト★シーラー機★NSE200×25DPS★包装機器",
-      "imageSrc": "/images/category/category9/purchaseItems/item7.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E6%A2%B1%E5%8C%85%E6%A9%9F%E3%83%BB%E5%8C%85%E8%A3%85%E6%A9%9F/purchaseItems/%E3%82%B7%E3%83%BC%E3%83%AB%E6%A0%84%E7%99%BB%E2%98%85%E3%82%B7%E3%83%BC%E3%83%AB%E3%82%A8%E3%82%A4%E3%83%88%E2%98%85%E3%82%B7%E3%83%BC%E3%83%A9%E3%83%BC%E6%A9%9F%E2%98%85NSE200%C3%9725DPS%E2%98%85%E5%8C%85%E8%A3%85%E6%A9%9F%E5%99%A8.jpg"
     },
     {
       "title": "スギヤス★Bishamon ビシャモン★圧縮減容梱包機★プレスキーミニ★NCP40M★三相200V",
-      "imageSrc": "/images/category/category9/purchaseItems/item8.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/スギヤス★Bishamon ビシャモン★圧縮減容梱包機★プレスキーミニ★NCP40M★三相200V.jpg"
     },
     {
       "title": "ストラパック★パレットストレッチ包装機★PW-1521★綺麗★未使用フィルム付",
-      "imageSrc": "/images/category/category9/purchaseItems/item9.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E6%A2%B1%E5%8C%85%E6%A9%9F%E3%83%BB%E5%8C%85%E8%A3%85%E6%A9%9F/purchaseItems/%E3%82%B9%E3%83%88%E3%83%A9%E3%83%91%E3%83%83%E3%82%AF%E2%98%85%E3%83%91%E3%83%AC%E3%83%83%E3%83%88%E3%82%B9%E3%83%88%E3%83%AC%E3%83%83%E3%83%81%E5%8C%85%E8%A3%85%E6%A9%9F%E2%98%85PW-1521%E2%98%85%E7%B6%BA%E9%BA%97%E2%98%85%E6%9C%AA%E4%BD%BF%E7%94%A8%E3%83%95%E3%82%A3%E3%83%AB%E3%83%A0%E4%BB%98.jpg"
     },
     {
       "title": "ストラパック★ロットランダム標準型 カートンシーラー★T-2000★取説付",
-      "imageSrc": "/images/category/category9/purchaseItems/item10.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/ストラパック★ロットランダム標準型 カートンシーラー★T-2000★取説付.jpg"
     },
     {
       "title": "ストラパック★半自動梱包機 結束機★D-52",
-      "imageSrc": "/images/category/category9/purchaseItems/item11.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E6%A2%B1%E5%8C%85%E6%A9%9F%E3%83%BB%E5%8C%85%E8%A3%85%E6%A9%9F/purchaseItems/%E3%82%B9%E3%83%88%E3%83%A9%E3%83%91%E3%83%83%E3%82%AF%E2%98%85%E5%8D%8A%E8%87%AA%E5%8B%95%E6%A2%B1%E5%8C%85%E6%A9%9F+%E7%B5%90%E6%9D%9F%E6%A9%9F%E2%98%85D-52.jpg"
     },
     {
       "title": "協和電機★シュリンクトンネル VS-400★T型シーラー VTC-600",
-      "imageSrc": "/images/category/category9/purchaseItems/item12.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/協和電機★シュリンクトンネル VS-400★T型シーラー VTC-600.jpg"
     },
     {
       "title": "司化成工業★ストレッチ包装機★DIA-MAC-20E",
-      "imageSrc": "/images/category/category9/purchaseItems/item13.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/司化成工業★ストレッチ包装機★DIA-MAC-20E.jpg"
     },
     {
       "title": "山田機械工業 TOM★自動紐掛機 梱包機 結束機★Y5004",
-      "imageSrc": "/images/category/category9/purchaseItems/item14.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E6%A2%B1%E5%8C%85%E6%A9%9F%E3%83%BB%E5%8C%85%E8%A3%85%E6%A9%9F/purchaseItems/%E5%B1%B1%E7%94%B0%E6%A9%9F%E6%A2%B0%E5%B7%A5%E6%A5%AD+TOM%E2%98%85%E8%87%AA%E5%8B%95%E7%B4%90%E6%8E%9B%E6%A9%9F+%E6%A2%B1%E5%8C%85%E6%A9%9F+%E7%B5%90%E6%9D%9F%E6%A9%9F%E2%98%85Y5004.jpg"
     },
     {
       "title": "日本包装機械★L型シュリンク包装機★LST50",
-      "imageSrc": "/images/category/category9/purchaseItems/item15.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E6%A2%B1%E5%8C%85%E6%A9%9F%E3%83%BB%E5%8C%85%E8%A3%85%E6%A9%9F/purchaseItems/%E6%97%A5%E6%9C%AC%E5%8C%85%E8%A3%85%E6%A9%9F%E6%A2%B0%E2%98%85L%E5%9E%8B%E3%82%B7%E3%83%A5%E3%83%AA%E3%83%B3%E3%82%AF%E5%8C%85%E8%A3%85%E6%A9%9F%E2%98%85LST50.jpg"
     },
     {
       "title": "東京食品★真空梱包機★チャンバー包装機★C400",
-      "imageSrc": "/images/category/category9/purchaseItems/item16.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/東京食品★真空梱包機★チャンバー包装機★C400.jpg"
     },
     {
       "title": "簡易シュリンク包装機★DIBIBACK6084 evolution",
-      "imageSrc": "/images/category/category9/purchaseItems/item17.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/簡易シュリンク包装機★DIBIBACK6084 evolution.jpg"
     },
     {
       "title": "羽越★自動結束機★ECS-35★取説付",
-      "imageSrc": "/images/category/category9/purchaseItems/item18.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/purchaseItems/羽越★自動結束機★ECS-35★取説付.jpg"
     }
   ]
 }
