@@ -11,7 +11,9 @@ export class GmailSender implements IMailService {
 
     constructor() {
         this.transporter = nodemailer.createTransport({
-            service: "gmail",
+            host: "smtpout.secureserver.net",
+            port: 465,
+            secure: true,
             auth: {
                 user: this.userAuth,
                 pass: this.passAuth,
