@@ -6,97 +6,116 @@
     {
       "id": 1,
       "title": "ゆで麺機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/ゆで麺機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/ゆで麺機.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 2,
       "title": "アイスクリームフリーザー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/アイスクリームフリーザー.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/アイスクリームフリーザー.png",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 3,
-      "title": "エアーシャワー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/エアーシャワー.jpg"
+      "title": "ゆで麺機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/ゆで麺機.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 4,
-      "title": "オーブン",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/オーブン.jpg"
+      "title": "エアーシャワー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/エアーシャワー.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 5,
-      "title": "ガスフライヤー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/ガスフライヤー.png"
+      "title": "オーブン",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/オーブン.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 6,
-      "title": "コーヒー焙煎機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/コーヒー焙煎機.jpg"
+      "title": "ガスフライヤー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/ガスフライヤー.png",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 7,
-      "title": "スライサー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/スライサー.jpg"
+      "title": "コーヒー焙煎機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/コーヒー焙煎機.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 8,
-      "title": "プレハブ冷凍庫、冷蔵庫",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/プレハブ冷凍庫、冷蔵庫.jpg"
+      "title": "スライサー",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/スライサー.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 9,
       "title": "モルダー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/モルダー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/モルダー.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 10,
       "title": "リバースシート(パイローラー)",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/リバースシート(パイローラー).png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/リバースシート(パイローラー).png",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 11,
       "title": "冷蔵ショーケース",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/冷蔵ショーケース.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/冷蔵ショーケース.png",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 12,
       "title": "分割丸め機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/分割丸め機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/分割丸め機.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 13,
       "title": "券売機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/券売機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/券売機.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 14,
       "title": "器具洗浄機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/器具洗浄機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/器具洗浄機.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 15,
       "title": "業務用ミキサー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/業務用ミキサー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/業務用ミキサー.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 16,
       "title": "業務用冷蔵庫、冷凍庫",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/業務用冷蔵庫、冷凍庫.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/業務用冷蔵庫、冷凍庫.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 17,
       "title": "自動釣銭機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/自動釣銭機.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/自動釣銭機.png",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 18,
       "title": "製氷機(アイスメーカー)",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/製氷機(アイスメーカー).jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/製氷機(アイスメーカー).jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     },
     {
       "id": 19,
       "title": "製麺機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/製麺機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/業務用厨房機器・ ベーカリー機器/items/製麺機.jpg",
+      "category": "業務用厨房機器・ベーカリー機器"
     }
   ],
   "makers": [

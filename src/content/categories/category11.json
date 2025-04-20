@@ -6,82 +6,98 @@
     {
       "id": 1,
       "title": "オシロスコープ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/オシロスコープ.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/オシロスコープ.png",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 2,
       "title": "オートレベル",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/オートレベル.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/オートレベル.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 3,
       "title": "スペクトラムアナライザ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/スペクトラムアナライザ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/スペクトラムアナライザ.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 4,
       "title": "トランシット",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/トランシット.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/トランシット.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 5,
       "title": "トータルステーション",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/トータルステーション.jpeg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/トータルステーション.jpeg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 6,
       "title": "レーザーレベル",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/レーザーレベル.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/レーザーレベル.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 7,
       "title": "三次元測定器",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/三次元測定器.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/三次元測定器.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 8,
       "title": "光学顕微鏡",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/光学顕微鏡.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/光学顕微鏡.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 9,
       "title": "双眼鏡",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/双眼鏡.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/双眼鏡.png",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 10,
       "title": "天体望遠鏡",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/天体望遠鏡.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/天体望遠鏡.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 11,
       "title": "工業用顕微鏡",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/工業用顕微鏡.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/工業用顕微鏡.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 12,
       "title": "測定顕微鏡",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/測定顕微鏡.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/測定顕微鏡.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 13,
       "title": "画像寸法測定器",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/画像寸法測定器.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/画像寸法測定器.png",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 14,
       "title": "計測器",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/計測器.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/計測器.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 15,
       "title": "試験器",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/試験器.jpeg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/試験器.jpeg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     },
     {
       "id": 16,
       "title": "電気計測器",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/電気計測器.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/望遠鏡・顕微鏡・ 測定機器/items/電気計測器.jpg",
+      "category": "望遠鏡・顕微鏡・測定機器"
     }
   ],
   "makers": [

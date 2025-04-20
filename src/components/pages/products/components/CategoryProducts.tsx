@@ -1,24 +1,29 @@
-import { TProduct } from "@/types/product.type";
+import { TItem } from "@/types/item.type";
 import PurchaseItemsCard from "../../home/components/PurchaseItemsCard";
 import Image from "next/image";
 
 interface ICategoryProductsProps {
-  products?: TProduct[];
+  products?: TItem[];
   categoryName: string;
+  categoryId: string;
 }
 
 const CategoryProducts = ({
   products,
   categoryName,
+  categoryId,
 }: ICategoryProductsProps) => {
+
   return (
     <section className="relative py-[50px] md:py-[80px] lg:py-[120px] px-5 md:px-[50px] lg:px-[80px]">
       <Image
         className=" absolute -z-10 top-0 left-0 object-cover"
         fill
-        src={"/images/home-page/flow-bg.png"}
+        src={
+          "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/backgrounds/flow-bg.jpeg"
+        }
         alt="hero-background-hadis"
-        loading="lazy"
+        loading="eager"
       />
       <h2 className="text-[30px] md:text-[50px] lg:text-[60px] leading-[45px] md:leading-[60px] lg:leading-[90px] font-black text-center font-noto bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent">
         {categoryName}
@@ -32,7 +37,11 @@ const CategoryProducts = ({
       <div className="mt-[40px] md:mt-[45px] lg:mt-[50px] flex flex-wrap justify-between md:justify-center gap-[17px] lg:gap-8">
         {products?.map((item) => (
           <div className="w-[47%] md:w-[30%] lg:w-[22%]" key={item.id}>
-            <PurchaseItemsCard image={item.image} title={item.title} />
+            <PurchaseItemsCard
+              image={item.image}
+              title={item.title}
+              categoryId={categoryId}
+            />
           </div>
         ))}
       </div>

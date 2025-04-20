@@ -8,7 +8,7 @@ const BusinessPolicy = () => {
   ];
 
   return (
-    <section className="space-y-[40px] lg:space-y-[50px] py-[50px] lg:py-[120px] bg-[url(/images/home-page/dot-bg-results.svg)] bg-auto font-noto relative px-4">
+    <section className="space-y-[40px] lg:space-y-[50px] py-[50px] lg:py-[120px] bg-[url(https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/backgrounds/dot-bg-results.svg)] bg-auto font-noto relative px-4">
       <h2 className="font-black text-3xl lg:text-6xl text-[#D51A16] text-center">
         ハディズのポリシー
       </h2>

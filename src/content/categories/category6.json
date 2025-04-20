@@ -6,97 +6,116 @@
     {
       "id": 1,
       "title": "ねじ切り機(パイプマシン)",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/ねじ切り機(パイプマシン).jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/ねじ切り機(パイプマシン).jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 2,
       "title": "アルミ矢板 .アルミブリッジ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/アルミ矢板 .アルミブリッジ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/アルミ矢板 .アルミブリッジ.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 3,
       "title": "エンジンコンプレッサ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/エンジンコンプレッサ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/エンジンコンプレッサ.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 4,
       "title": "キールカッター",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/キールカッター.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/キールカッター.png",
+      "category": "管工事機械・工具"
     },
     {
       "id": 5,
       "title": "コアドリル",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/コアドリル.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/コアドリル.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 6,
       "title": "コンクリートカッター",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/コンクリートカッター.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/コンクリートカッター.png",
+      "category": "管工事機械・工具"
     },
     {
       "id": 7,
       "title": "コンクリートクラッシャー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/コンクリートクラッシャー.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/コンクリートクラッシャー.png",
+      "category": "管工事機械・工具"
     },
     {
       "id": 8,
       "title": "タンピングランマー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/タンピングランマー.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/タンピングランマー.png",
+      "category": "管工事機械・工具"
     },
     {
       "id": 9,
       "title": "トレンチャー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/トレンチャー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/トレンチャー.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 10,
       "title": "バンドソー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/バンドソー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/バンドソー.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 11,
       "title": "フリーパネル",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/フリーパネル.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/フリーパネル.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 12,
       "title": "プレートコンパクター",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/プレートコンパクター.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/プレートコンパクター.png",
+      "category": "管工事機械・工具"
     },
     {
       "id": 13,
       "title": "ユンボ . ミニユンボ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/ユンボ . ミニユンボ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/ユンボ . ミニユンボ.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 14,
       "title": "ドレンクリーナー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/排水管清掃機・ドレンクリーナー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/排水管清掃機・ドレンクリーナー.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 15,
       "title": "水道配水用コントローラ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/水道配水用コントローラ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/水道配水用コントローラ.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 16,
       "title": "発電機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/発電機.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/発電機.png",
+      "category": "管工事機械・工具"
     },
     {
       "id": 17,
       "title": "穿孔機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/穿孔機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/穿孔機.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 18,
       "title": "転圧機械",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/転圧機械.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/転圧機械.jpg",
+      "category": "管工事機械・工具"
     },
     {
       "id": 19,
       "title": "高圧洗浄機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/高圧洗浄機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/管工事機械・工具/items/高圧洗浄機.jpg",
+      "category": "管工事機械・工具"
     }
   ],
   "makers": [

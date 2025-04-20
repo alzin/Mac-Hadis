@@ -91,7 +91,7 @@ const ImageUpload = ({
                 <Image
                   src={image}
                   alt="Uploaded"
-                  loading="lazy"
+                  loading="eager"
                   width={300}
                   height={150}
                   className="w-full h-full object-contain"
@@ -102,11 +102,11 @@ const ImageUpload = ({
                   className="flex flex-col items-center justify-center cursor-pointer w-full h-full"
                 >
                   <Image
-                    src="/images/icons/Image-Icon.svg"
+                    src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/Image-Icon.svg"
                     alt="Upload Icon"
                     width={40}
                     height={40}
-                    loading="lazy"
+                    loading="eager"
                   />
                 </label>
               )}
@@ -133,11 +133,11 @@ const ImageUpload = ({
                 aria-label="Edit image"
               >
                 <Image
-                  src="/images/icons/edit.svg"
+                  src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/edit.svg"
                   alt="Edit"
                   width={11}
                   height={11}
-                  loading="lazy"
+                  loading="eager"
                 />
               </button>
               <button
@@ -147,11 +147,11 @@ const ImageUpload = ({
                 aria-label="Delete image"
               >
                 <Image
-                  src="/images/icons/trash.svg"
+                  src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/trash.svg"
                   alt="Delete"
                   width={11}
                   height={11}
-                  loading="lazy"
+                  loading="eager"
                 />
               </button>
             </div>

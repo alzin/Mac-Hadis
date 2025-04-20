@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         {/* logo */}
         <Link href={"/"} className="block">
           <Image
-            src="/images/hadis-logo.png"
+            src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/hadis-logo.png"
             alt="Hadis International Logo"
             unoptimized
             width={101}
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                   alt={item.name}
                   width={40}
                   height={40}
-                  loading="lazy"
+                  loading="eager"
                 />
               </a>
             ) : (
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
                   alt={item.name}
                   width={40}
                   height={40}
-                  loading="lazy"
+                  loading="eager"
                 />
               </Link>
             )

@@ -6,6 +6,7 @@ interface IPostCardProps {
   imageSrc: string;
   description: string;
   className?: string;
+  date: string
 }
 
 const PostCard = ({
@@ -13,6 +14,7 @@ const PostCard = ({
   imageSrc,
   description,
   className,
+  date,
 }: IPostCardProps) => {
   return (
     <Link href={`/blogs/${title}`} className={`w-[325px] ${className}`}>
@@ -22,13 +24,14 @@ const PostCard = ({
         width={352}
         height={200}
         unoptimized
-        loading="lazy"
+        loading="eager"
         className="w-full h-[200px] object-cover"
       />
       <h3 className="my-4 lg:mb-[22px] text-[20px] leading-[30px] text-[#B81122] font-black text-start truncate">
         {title}
       </h3>
-      <p className="text-[16px] leading-[32px] line-clamp-2">{description}</p>
+      <p className="text-[16px] leading-[32px] line-clamp-2" dangerouslySetInnerHTML={{ __html: description }} />
+      <span className="text-[#B81122] font-black text-sm">{date}</span>
     </Link>
   );
 };

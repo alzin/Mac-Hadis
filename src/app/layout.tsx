@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GoogleTagManager } from '@next/third-parties/google'
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Noto_Sans_JP } from "next/font/google";
 import "@/styles/globals.css";
 // sections
@@ -7,14 +7,13 @@ import Header from "@/components/common/sections/Header";
 import Footer from "@/components/common/sections/Footer";
 
 // baseUrl
-import { baseUrl } from '@/utils/baseUrl';
+import { baseUrl } from "@/utils/baseUrl";
 
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
   subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "700", "900"], // Include the font weights you need
 });
-
 
 // metadata
 export const metadata: Metadata = {
@@ -24,13 +23,19 @@ export const metadata: Metadata = {
     template: "%s | 機械工具買取ハディズ",
   },
 
-  description: "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。専門のバイヤーが購入するので、高値で売却が可能です。ぜひ、1度御見積りをお願いします",
+  description:
+    "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。専門のバイヤーが購入するので、高値で売却が可能です。ぜひ、1度御見積りをお願いします",
 
   applicationName: "機械工具買取ハディズ",
 
   generator: "Next.js",
 
-  keywords: ["大型UVインクジェットプリンター買取", "機械・電動工具の高価買取", "簡単！買取の手順", "Hadis INTERNATIONAL"],
+  keywords: [
+    "大型UVインクジェットプリンター買取",
+    "機械・電動工具の高価買取",
+    "簡単！買取の手順",
+    "Hadis INTERNATIONAL",
+  ],
 
   referrer: "origin",
 
@@ -41,25 +46,27 @@ export const metadata: Metadata = {
   // robots: "index, follow",
 
   alternates: {
-    canonical: baseUrl
+    canonical: baseUrl,
   },
 
   openGraph: {
     type: "website",
     url: baseUrl,
     title: "中古機械、電動工具の高額買取のハディズ",
-    description: "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。専門のバイヤーが購入するので、高値で売却が可能です。ぜひ、1度御見積りをお願いします！",
+    description:
+      "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。専門のバイヤーが購入するので、高値で売却が可能です。ぜひ、1度御見積りをお願いします！",
     siteName: "機械工具買取ハディズ",
     images: [
-      { url: `${baseUrl}/images/main-ogp.jpg` }
-    ]
+      { url: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/main-ogp.jpg" },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
-    description: "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。専門のバイヤーが購入するので、高値で売却が可能です。ぜひ、1度御見積りをお願いします！",
+    description:
+      "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。専門のバイヤーが購入するので、高値で売却が可能です。ぜひ、1度御見積りをお願いします！",
     title: "中古機械、電動工具の高額買取のハディズ",
-    images: `${baseUrl}/images/main-ogp.jpg`
+    images: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/main-ogp.jpg",
   },
 
   verification: {
@@ -69,7 +76,7 @@ export const metadata: Metadata = {
   category: "Sells",
 
   classification: "Sells",
-}
+};
 
 export default function RootLayout({
   children,
@@ -79,9 +86,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth ">
       <GoogleTagManager gtmId="GTM-W9W78KMS" />
-      <body
-        className={`${notoSansJP.variable} font-noto`}
-      >
+      <body className={`${notoSansJP.variable} font-noto`}>
         <main>
           <Header />
           {children}

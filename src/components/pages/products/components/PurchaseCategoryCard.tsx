@@ -15,7 +15,7 @@ const PurchaseCategoryCard = ({ title, image }: IPurchaseCategoryCardProps) => {
             alt={title}
             width={190}
             height={190}
-            loading="lazy"
+            loading="eager"
             className="w-auto h-[140px] lg:w-auto lg:h-[190px]"
           />
         </div>

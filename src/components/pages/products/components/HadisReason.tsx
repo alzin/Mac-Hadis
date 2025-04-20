@@ -33,7 +33,7 @@ const pointsData = [
 
 const HadisReason = () => {
   return (
-    <section className="px-5 py-[50px] bg-[url(/images/home-page/dot-bg-results.svg)] bg-auto">
+    <section className="px-5 py-[50px] bg-[url(https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/backgrounds/dot-bg-results.svg)] bg-auto">
       {/* Content */}
       <h2 className="bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent text-center text-[32px] leading-[36px] lg:text-[65px] lg:leading-[90px] font-black">
         ハディズがを高額で買える理由

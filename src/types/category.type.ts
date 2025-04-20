@@ -1,18 +1,12 @@
-import { TProduct } from "./product.type";
+import { TItem } from "./item.type";
+import { TMaker } from "./maker.type";
 
 export type TCategory = {
   id: string;
   title: string;
-  items: TProduct[];
+  items: TItem[];
   makers: TMaker[];
   purchaseItems: TPurchaseItem[];
-};
-
-export type TMaker = {
-  jp: string;
-  en: string;
-  link: string;
-  imageSrc: string;
 };
 
 export type TPurchaseItem = {

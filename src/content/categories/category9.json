@@ -6,47 +6,56 @@
     {
       "id": 1,
       "title": "シュリンク包装機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/シュリンク包装機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/シュリンク包装機.jpg",
+      "category": "梱包機・包装機"
     },
     {
       "id": 2,
       "title": "シーラー機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/シーラー機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/シーラー機.jpg",
+      "category": "梱包機・包装機"
     },
     {
       "id": 3,
       "title": "ストレッチ包装機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/ストレッチ包装機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/ストレッチ包装機.jpg",
+      "category": "梱包機・包装機"
     },
     {
       "id": 4,
       "title": "圧縮梱包機 ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/圧縮梱包機 .jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/圧縮梱包機 .jpg",
+      "category": "梱包機・包装機"
     },
     {
       "id": 5,
       "title": "梱包機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/梱包機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/梱包機.jpg",
+      "category": "梱包機・包装機"
     },
     {
       "id": 6,
       "title": "自動包装機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動包装機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動包装機.jpg",
+      "category": "梱包機・包装機"
     },
     {
       "id": 7,
       "title": "自動真空包装機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動真空包装機.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動真空包装機.png",
+      "category": "梱包機・包装機"
     },
     {
       "id": 8,
       "title": "自動計量包装値付機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動計量包装値付機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動計量包装値付機.jpg",
+      "category": "梱包機・包装機"
     },
     {
       "id": 9,
       "title": "自動貼付機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動貼付機.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/梱包機・包装機/items/自動貼付機.png",
+      "category": "梱包機・包装機"
     }
   ],
   "makers": [

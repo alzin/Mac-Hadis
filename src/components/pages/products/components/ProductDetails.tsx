@@ -1,38 +1,20 @@
-import { TProduct } from "@/types/product.type";
-import Breadcrumb from "./Breadcrumb";
-import Image from "next/image";
-import SpecsTable from "./SpecsTable";
-import ContentText from "./ContentText";
-
 interface IProductDetailsProps {
-  product: TProduct;
+  subTitle: string;
+  description: string;
 }
 
-const ProductDetails = ({ product }: IProductDetailsProps) => {
+const ProductDetails = ({ subTitle, description }: IProductDetailsProps) => {
   return (
-    <section className="bg-[#f8f7f6] text-[#111111]">
-      <div className="max-w-[928px] space-y-4 mx-auto pt-4 lg:pt-10 px-4">
-        {/* Breadcrumb Navigation */}
-        <Breadcrumb title={product.title} category={product.category} />
-        <div className="bg-white px-4 lg:px-24 py-[60px] space-y-9 lg:space-y-12">
-          <h1 className="font-black text-xl lg:text-[32px] leading-[48px] text-[#333333]">
-            {product.title}
-          </h1>
-          <div className=" relative w-[335px] h-[173px] lg:w-[544px] lg:h-[307px] mx-auto">
-            <Image
-              className="object-contains"
-              src={product.image}
-              alt={product.title}
-              fill
-            />
-          </div>
-          {/* Table  */}
-          <SpecsTable />
-          {/* Content */}
-          <ContentText />
-        </div>
+    <div className="mt-8 py-8 px-4">
+      <div className="text-center space-y-4 max-w-[90%] mx-auto md:max-w-[80%] lg:max-w-[50%]">
+        <h1 className="font-bold text-[28px] md:text-[32px] lg:text-[36px] text-[#303030]">
+          {subTitle}
+        </h1>
+        <p className="text-[#303030] text-[16px] md:text-[18px] leading-7 md:leading-8 font-medium">
+          {description}
+        </p>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -11,8 +11,9 @@ import { useFilterItems } from "@/hooks/useFilterItems";
 import { getAllCategories } from "@/services/category";
 
 const PurchasedItems = () => {
-  const { filteredItems, selectedCategory, setSelectedCategory } = useFilterItems();
-  const categoriesData = getAllCategories()
+  const { filteredItems, selectedCategory, setSelectedCategory } =
+    useFilterItems();
+  const categoriesData = getAllCategories();
 
   return (
     <section
@@ -21,10 +22,10 @@ const PurchasedItems = () => {
       aria-labelledby="purchased-items-heading"
     >
       <Image
-        src="/images/home-page/bg-items.jpg"
+        src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/backgrounds/bg-items.jpg"
         alt="banner-right-bg"
         fill
-        loading="lazy"
+        loading="eager"
         className="object-cover opacity-10 -z-10"
       />
       {/* overlay */}
@@ -49,7 +50,11 @@ const PurchasedItems = () => {
       <div className="flex flex-wrap justify-between md:justify-center gap-[17px] lg:gap-8">
         {filteredItems.slice(0, 8).map((item) => (
           <div className="w-[47%] md:w-[30%] lg:w-[22%]" key={item.id}>
-            <PurchaseItemsCard image={item.image} title={item.title} />
+            <PurchaseItemsCard
+              image={item.image}
+              title={item.title}
+              categoryId={selectedCategory}
+            />
           </div>
         ))}
       </div>

@@ -37,31 +37,31 @@
     {
       "id": "1",
       "name": "facebook",
-      "iconSrc": "/images/icons/facebook-colored.svg",
+      "iconSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/facebook-colored.svg",
       "href": "https://www.facebook.com/Hadis.International"
     },
     {
       "id": "2",
       "name": "instagram",
-      "iconSrc": "/images/icons/instagram-colored.svg",
+      "iconSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/instagram-colored.svg",
       "href": "https://www.instagram.com/kikai.kaitori"
     },
     {
       "id": "3",
       "name": "twitter",
-      "iconSrc": "/images/icons/twitter-x-colored.svg",
+      "iconSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/twitter-x-colored.svg",
       "href": "https://x.com/hadisjapan"
     },
     {
       "id": "4",
       "name": "youtube",
-      "iconSrc": "/images/icons/youtube-colored.svg",
+      "iconSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/youtube-colored.svg",
       "href": "https://www.youtube.com/channel/UCuUeHnzcpEYr_3mxwzTHSLQ"
     },
     {
       "id": "5",
       "name": "email",
-      "iconSrc": "/images/icons/mail.svg",
+      "iconSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/mail.svg",
       "href": "mailto:info@mac-hadis.com"
     }
   ]
