@@ -42,9 +42,11 @@ const PurchaseProcess: React.FC = () => {
       <Image
         className=" absolute -z-10 top-0 left-0 object-cover"
         fill
-        src={"/images/home-page/flow-bg.png"}
+        src={
+          "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/backgrounds/flow-bg.jpeg"
+        }
         alt="hero-background-hadis"
-        loading="lazy"
+        loading="eager"
       />
 
       <h2 className="font-black text-3xl lg:text-6xl text-[#D51A16]">

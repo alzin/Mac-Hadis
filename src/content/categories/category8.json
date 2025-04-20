@@ -6,132 +6,158 @@
     {
       "id": 1,
       "title": "3Dプリンター",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/3Dプリンター.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/3Dプリンター.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 2,
       "title": "Tシャツプリンター",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/Tシャツプリンター.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/Tシャツプリンター.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 3,
       "title": "UVインクジェットプリンタ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/UV-LEDインクジェットプリンタ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/UV-LEDインクジェットプリンタ.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 4,
       "title": "UVプリンタ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/UVプリンタ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/UVプリンタ.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 5,
       "title": "フラットベッド",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/フラットベッドカッティングプロッタ.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/フラットベッドカッティングプロッタ.png",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 6,
       "title": "ベルトコンベア検針機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/ベルトコンベア検針機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/ベルトコンベア検針機.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 7,
       "title": "ラベルプリンタ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/ラベルプリンタ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/ラベルプリンタ.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 8,
       "title": "レーザー加工機 .彫刻機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/レーザー加工機 . レーザー彫刻機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/レーザー加工機 . レーザー彫刻機.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 9,
       "title": "刺繍ミシン.刺繍機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/刺繍ミシン . 刺しゅうミシン. 刺繍機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/刺繍ミシン . 刺しゅうミシン. 刺繍機.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 10,
       "title": "合鍵複製機(キーマシン)",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/合鍵複製機(キーマシン).png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/合鍵複製機(キーマシン).png",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 11,
       "title": "大判オートトリマー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/大判オートトリマー.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/大判オートトリマー.png",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 12,
       "title": "大判プリンター",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/大判プリンター.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/大判プリンター.png",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 13,
       "title": "大判ラミネーター",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/大判ラミネーター.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/大判ラミネーター.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 14,
       "title": "工業用ミシン",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/工業用ミシン.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/工業用ミシン.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 15,
       "title": "業務用アイロン台",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/業務用アイロン台.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/業務用アイロン台.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 16,
       "title": "業務用印刷機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/業務用印刷機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/業務用印刷機.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 17,
       "title": "版画プレス機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/版画プレス機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/版画プレス機.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 18,
       "title": "皮漉機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/皮漉機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/皮漉機.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 19,
       "title": "真空成型機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/真空成型機.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/真空成型機.png",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 20,
       "title": "穴かがりミシン",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/穴かがりミシン.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/穴かがりミシン.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 21,
       "title": "腕ミシン",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/腕ミシン.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/腕ミシン.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 22,
       "title": "自動彫刻機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/自動彫刻機.jpeg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/自動彫刻機.jpeg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 23,
-      "title": "自動転写プレス機 ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/自動転写プレス機 .jpg"
+      "title": "自動転写プレス機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/自動転写プレス機 .jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 24,
       "title": "電動ろくろ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/電動ろくろ.jpeg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/電動ろくろ.jpeg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 25,
       "title": "電動断裁機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/電動断裁機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/電動断裁機.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
     },
     {
       "id": 26,
       "title": "電気式簡易ボイラー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/電気式簡易ボイラー.webp"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/電気式簡易ボイラー.webp",
+      "category": "プリンター・ミシン・DIY用機器"
     }
   ],
   "makers": [

@@ -29,6 +29,7 @@ interface VideoContent extends BlogItemBase {
 interface FAQContent extends BlogItemBase {
     type: "faq";
     description?: string;
+    subTitle?: string
     items: {
         id: string;
         question: string;
@@ -39,11 +40,14 @@ interface FAQContent extends BlogItemBase {
 interface ListContent extends BlogItemBase {
     type: "list";
     topDescription?: string;
-    listType?: "number" | "dot" | "none"
+    listType?: "number" | "dot" | "none",
+    subTitle?: string
     items: {
         id: string;
         title?: string;
         description?: string;
+        isLink?: boolean
+        href?: string
     }[];
     bottomDescription?: string;
 }
@@ -53,6 +57,7 @@ type BlogSubContent = SimpleContent | FAQContent | ImageContent | ListContent | 
 interface BlogPost {
     id: string;
     title: string;
+    date: string
     imageSrc: string;
     description: string;
     metaDescription: string;

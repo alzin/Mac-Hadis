@@ -6,67 +6,80 @@
     {
       "id": 1,
       "title": "コンバイン",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/コンバイン.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/コンバイン.jpg",
+      "category": "農業機械"
     },
     {
       "id": 2,
       "title": "トラクター",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/トラクター.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/トラクター.jpg",
+      "category": "農業機械"
     },
     {
       "id": 3,
       "title": "ハーベスター 自動脱穀機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/ハーベスター 自動脱穀機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/ハーベスター 自動脱穀機.jpg",
+      "category": "農業機械"
     },
     {
       "id": 4,
       "title": "ホイールローダー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/ホイールローダー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/ホイールローダー.jpg",
+      "category": "農業機械"
     },
     {
       "id": 5,
       "title": "業務用精米機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/業務用精米機.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/業務用精米機.png",
+      "category": "農業機械"
     },
     {
       "id": 6,
       "title": "田植機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/田植機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/田植機.jpg",
+      "category": "農業機械"
     },
     {
       "id": 7,
       "title": "破砕機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/破砕機.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/破砕機.png",
+      "category": "農業機械"
     },
     {
       "id": 8,
       "title": "稲刈り機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/稲刈り機.jpeg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/稲刈り機.jpeg",
+      "category": "農業機械"
     },
     {
       "id": 9,
       "title": "籾すり機（もみすり機）",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/籾すり機（もみすり機）.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/籾すり機（もみすり機）.jpg",
+      "category": "農業機械"
     },
     {
       "id": 10,
       "title": "耕運機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/耕運機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/耕運機.jpg",
+      "category": "農業機械"
     },
     {
       "id": 11,
       "title": "運搬車 (トレーラー)　",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/運搬車 (トレーラー)　.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/運搬車 (トレーラー)　.jpg",
+      "category": "農業機械"
     },
     {
       "id": 12,
       "title": "遠赤乾燥機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/遠赤乾燥機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/遠赤乾燥機.jpg",
+      "category": "農業機械"
     },
     {
       "id": 13,
       "title": "除雪機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/除雪機.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/農業機械/items/除雪機.png",
+      "category": "農業機械"
     }
   ],
   "makers": [

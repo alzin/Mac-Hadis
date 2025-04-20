@@ -14,7 +14,7 @@ const FlowCard: React.FC<IFlowCard> = ({ imageSrc, title }) => {
           alt={title}
           fill
           className="object-cover"
-          loading="lazy"
+          loading="eager"
         />
       </div>
       <p

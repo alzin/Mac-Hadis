@@ -17,7 +17,7 @@ const PurchaseProcessCategoryBtn: React.FC<IPurchaseProcessCategoryBtn> = ({
       className={`font-black text-xs lg:text-base w-[170px] p-4 ${
         category === activeCategory
           ? "text-white gradient-red"
-          : "text-[#111111] border-2 border-[#111111] bg-[url(/images/home-page/doted-bg-btn.svg)] bg-cover"
+          : "text-[#111111] border-2 border-[#111111] bg-[url(https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/backgrounds/doted-bg-btn.svg)] bg-cover"
       }`}
     >
       {label}

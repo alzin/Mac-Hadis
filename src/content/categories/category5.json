@@ -6,77 +6,92 @@
     {
       "id": 1,
       "title": "TIG溶接機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/TIG溶接機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/TIG溶接機.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 2,
       "title": "アーク溶接機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/アーク溶接機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/アーク溶接機.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 3,
       "title": "エアーコンプレッサー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エアーコンプレッサー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エアーコンプレッサー.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 4,
       "title": "エンジンTIG溶接機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エンジンTIG溶接機.jpeg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エンジンTIG溶接機.jpeg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 5,
       "title": "エンジン発電機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エンジン発電機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エンジン発電機.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 6,
       "title": "スクリューコンプレッサ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スクリューコンプレッサ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スクリューコンプレッサ.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 7,
       "title": "スクロールコンプレッサ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スクロールコンプレッサ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スクロールコンプレッサ.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 8,
       "title": "スタッド溶接機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スタッド溶接機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スタッド溶接機.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 9,
       "title": "スポット溶接機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スポット溶接機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/スポット溶接機.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 10,
       "title": "バッテリー溶接機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/バッテリー溶接機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/バッテリー溶接機.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 11,
       "title": "プラズマ溶接機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/プラズマ溶接機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/プラズマ溶接機.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 12,
       "title": "ポジショナー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/ポジショナー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/ポジショナー.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 13,
       "title": "ロボット溶接機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/ロボット溶接機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/ロボット溶接機.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 14,
       "title": "半自動溶接機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/半自動溶接機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/半自動溶接機.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     },
     {
       "id": 15,
       "title": "発電機兼用溶接機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/発電機兼用溶接機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/発電機兼用溶接機.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
     }
   ],
   "makers": [

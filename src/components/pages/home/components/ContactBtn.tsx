@@ -30,9 +30,10 @@ const ContactBtn: React.FC<ContactBtnProps> = ({
 
   // Define icon paths for each variant
   const iconPaths = {
-    red: "/images/icons/phone_in_talk.svg",
-    blue: "/images/icons/computer.svg",
-    green: "/images/icons/line-green.svg",
+    red: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/phone_in_talk.svg",
+    blue: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/computer.svg",
+    green:
+      "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/line-green.svg",
   };
 
   return (
@@ -56,7 +57,7 @@ const ContactBtn: React.FC<ContactBtnProps> = ({
         alt={`${variant} contact icon`}
         width={32}
         height={32}
-        loading="lazy"
+        loading="eager"
       />
       <span className="text-nowrap overflow-hidden hidden lg:block">
         {label}
@@ -65,11 +66,11 @@ const ContactBtn: React.FC<ContactBtnProps> = ({
         {mobileLabel}
       </span>
       <Image
-        src={`/images/icons/arrow-right-${variant}.svg`}
+        src={`https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/arrow-right-${variant}.svg`}
         alt={`Arrow pointing right, styled in ${variant}`}
         width={32}
         height={32}
-        loading="lazy"
+        loading="eager"
       />
     </Link>
   );

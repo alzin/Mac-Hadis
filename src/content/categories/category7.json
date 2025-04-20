@@ -6,112 +6,134 @@
     {
       "id": 1,
       "title": "エアコンプレッサ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/エアコンプレッサ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/エアコンプレッサ.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 2,
       "title": "エアレス塗装機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E4%BD%8F%E5%AE%85%E5%B7%A5%E4%BA%8B%E5%B7%A5%E5%85%B7%E3%83%BB%E5%A4%A7%E5%B7%A5%E6%A9%9F%E6%A2%B0/items/%E3%82%A8%E3%82%A2%E3%83%AC%E3%82%B9%E5%A1%97%E8%A3%85%E6%A9%9F.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E4%BD%8F%E5%AE%85%E5%B7%A5%E4%BA%8B%E5%B7%A5%E5%85%B7%E3%83%BB%E5%A4%A7%E5%B7%A5%E6%A9%9F%E6%A2%B0/items/%E3%82%A8%E3%82%A2%E3%83%AC%E3%82%B9%E5%A1%97%E8%A3%85%E6%A9%9F.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 3,
       "title": "エンジンコンプレッサー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/エンジンコンプレッサー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/エンジンコンプレッサー.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 4,
       "title": "パネルソー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/パネルソー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/パネルソー.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 5,
       "title": "パワートロウェル",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/パワートロウェル.png"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/パワートロウェル.png",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 6,
       "title": "フラッシュプレス",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/フラッシュプレス.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/フラッシュプレス.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 7,
       "title": "フロアスクレーパー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/フロアスクレーパー.webp"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/フロアスクレーパー.webp",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 8,
       "title": "ベルトサンダー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/ベルトサンダー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/ベルトサンダー.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 9,
       "title": "ホゾキリ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/ホゾキリ.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/ホゾキリ.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 10,
       "title": "モルタルミキサー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/モルタルミキサー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/モルタルミキサー.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 11,
       "title": "万能木工機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/万能木工機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/万能木工機.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 12,
       "title": "丸のこ盤 . 横切盤　",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/丸のこ盤 . 横切盤　.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/丸のこ盤 . 横切盤　.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 13,
       "title": "仕上かんな盤",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/仕上かんな盤.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/仕上かんな盤.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 14,
       "title": "帯のこ盤(バンドソー)",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/帯のこ盤(バンドソー).jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/帯のこ盤(バンドソー).jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 15,
       "title": "木工旋盤",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/木工旋盤.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/木工旋盤.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 16,
       "title": "気圧リフター",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/気圧リフター.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/気圧リフター.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 17,
       "title": "油圧式多機能工具",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/油圧式多機能工具.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/油圧式多機能工具.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 18,
       "title": "自動カンナ . 手押しかんな",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/自動カンナ . 手押しかんな.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/自動カンナ . 手押しかんな.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 19,
       "title": "自動壁紙糊付機(糊付機)",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/自動壁紙糊付機(糊付機).jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/自動壁紙糊付機(糊付機).jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 20,
       "title": "荷揚機(瓦揚機)",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/荷揚機(瓦揚機).jpeg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/荷揚機(瓦揚機).jpeg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 21,
       "title": "足場 . ローリングタワー",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/足場 . ローリングタワー.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/足場 . ローリングタワー.jpg",
+      "category": "住宅工事工具・大工機械"
     },
     {
       "id": 22,
       "title": "集じん機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/集じん機.jpg"
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/住宅工事工具・大工機械/items/集じん機.jpg",
+      "category": "住宅工事工具・大工機械"
     }
   ],
   "makers": [

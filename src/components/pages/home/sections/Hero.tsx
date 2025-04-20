@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 -z-30">
           {/* Mobile Background */}
           <Image
-            src="/images/home-page/hero-background-mobile.webp"
+            src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
             alt="Company's legacy image"
             sizes="100vw"
             quality={100}
@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
           />
           {/* Desktop Background */}
           <Image
-            src="/images/home-page/hero-background.webp"
+            src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
             alt="Company's legacy image"
             sizes="100vw"
             quality={100}
@@ -35,21 +35,21 @@ const Hero: React.FC = () => {
           {/* image 1  */}
           <div className="text-hero relative xl:w-[810px] xl:h-[64px] w-[335px] h-[38px] sm:h-[50px] lg:h-[70px] z-10">
             <Image
-              src="/images/home-page/hero-1.webp"
+              src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-1.webp"
               alt="Company's legacy image"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
               fill
-              loading="lazy"
+              priority
             />
           </div>
           {/* image 2 */}
           <div className="text-hero relative w-[340px] h-[88px] sm:h-[130px] lg:h-[300px] xl:w-[810px] xl:h-[350px] z-10">
             <Image
-              src="/images/home-page/hero-2.webp"
+              src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-2.webp"
               alt="Hero promotional banner with details"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
               fill
-              loading="lazy"
+              priority
               quality={100}
             />
           </div>
