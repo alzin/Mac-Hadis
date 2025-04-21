@@ -40,14 +40,14 @@ export async function generateMetadata({
         title: data?.title,
         description: data?.metaDescription,
         siteName: "機械工具買取ハディズ",
-        images: [{ url: `${baseUrl}${data?.imageSrc}` }],
+        images: [{ url: `${data?.imageSrc}` }],
       },
 
       twitter: {
         card: "summary_large_image",
         title: data?.title,
         description: data?.metaDescription,
-        images: `${baseUrl}${data?.imageSrc}`,
+        images: `${data?.imageSrc}`,
       },
 
       alternates: {
