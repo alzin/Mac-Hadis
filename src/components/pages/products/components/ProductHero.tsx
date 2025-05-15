@@ -10,9 +10,7 @@ const ProductHero = ({ productTitle }: IProductHeroProps) => {
       {/* Background wrapper */}
       <div className="absolute -z-10 inset-0">
         <Image
-          src={
-            "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/category-background-her.jpeg"
-          }
+          src={"/hero2.png"}
           alt="category hero"
           sizes="100vw"
           quality={100}
