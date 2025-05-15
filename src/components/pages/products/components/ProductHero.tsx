@@ -29,7 +29,7 @@ const ProductHero = ({ productTitle }: IProductHeroProps) => {
           ))}
         </h2>
         <p className="text-[24px] leading-[36px] lg:text-[48px] lg:leading-[90px] font-semibold text-left lg:text-center">
-          買取はハディスに お任せ！
+          買取はハディズに お任せ！
         </p>
       </div>
     </section>
