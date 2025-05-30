@@ -39,7 +39,7 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
             <h1 className="font-black text-xl lg:text-[32px] leading-[48px]">
               {data.title}
             </h1>
-            <div className=" relative w-[335px] h-[173px] lg:w-[544px] lg:h-[307px] mx-auto">
+            <div className=" relative w-[330px] h-[200px] lg:w-[500px] lg:h-[300px] mx-auto">
               <Image
                 className="object-cover"
                 src={data.imageSrc}
