@@ -68,7 +68,7 @@
         {
           "id": "2",
           "title": "自動車整備機械",
-          "description": "リフト、タイヤチェンジャー、ホイールバランサー <a class='text-blue-600 underline hover:no-underline' href='https://www.mac-hadis.com/products/%E8%87%AA%E5%8B%95%E8%BB%8A%E6%95%B4%E5%82%99%E6%A9%9F%E6%A2%B0'>当社の自動車整備機械買取ページ</a>で詳細をご覧いただけます。"
+          "description": "リフト、タイヤチェンジャー、ホイールバランサー <a target='_blank' class='text-blue-600 underline hover:no-underline' href='https://www.mac-hadis.com/products/%E8%87%AA%E5%8B%95%E8%BB%8A%E6%95%B4%E5%82%99%E6%A9%9F%E6%A2%B0'>当社の自動車整備機械買取ページ</a>で詳細をご覧いただけます。"
         },
         {
           "id": "3",
