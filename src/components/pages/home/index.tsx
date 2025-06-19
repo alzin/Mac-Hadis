@@ -5,7 +5,7 @@ import ContactFixedBanner from "@/components/common/sections/ContactFixedBanner"
 
 const Flow = dynamic(() => import("./sections/Flow"));
 const WhyChoose = dynamic(() => import("./sections/WhyChoose"));
-const VideoSection = dynamic(() => import("./sections/VideoSection"));
+// const VideoSection = dynamic(() => import("./sections/VideoSection"));
 const BlogsPost = dynamic(() => import("./sections/BlogsPost"));
 const ContactBanner = dynamic(() => import("./sections/ContactBanner"));
 const PurchasedItems = dynamic(() => import("./sections/PurchasedItems"));
@@ -26,7 +26,7 @@ const Index = () => {
       <ContactFixedBanner />
       <Flow />
       <WhyChoose />
-      <VideoSection />
+      {/* <VideoSection /> */}
       <ContactBanner />
       <PurchasedItems />
       <PurchaseResults />
