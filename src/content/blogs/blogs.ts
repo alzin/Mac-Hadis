@@ -7,11 +7,12 @@ import blog5 from "./blog5.json";
 import blog6 from "./blog6.json";
 import blog7 from "./blog7.json";
 import blog8 from "./blog8.json";
+import blog9 from "./blog9.json";
 
 
 
 // Create array of blog posts
-const blogs = [blog1, blog2, blog3, blog4, blog5, blog6, blog7, blog8];
+const blogs = [blog1, blog2, blog3, blog4, blog5, blog6, blog7, blog8, blog9];
 
 // Export the array as default
 export default blogs;

@@ -5,50 +5,50 @@
   "items": [
     {
       "id": 1,
+      "title": "インクジェットプリンタ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/UV-LEDインクジェットプリンタ.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
+    },
+    {
+      "id": 2,
+      "title": "レーザー加工機 . 彫刻機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/レーザー加工機 . レーザー彫刻機.jpg",
+      "category": "プリンター・ミシン・DIY用機器"
+    },
+    {
+      "id": 3,
       "title": "3Dプリンター",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/3Dプリンター.jpg",
       "category": "プリンター・ミシン・DIY用機器"
     },
     {
-      "id": 2,
+      "id": 4,
       "title": "Tシャツプリンター",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/Tシャツプリンター.jpg",
       "category": "プリンター・ミシン・DIY用機器"
     },
     {
-      "id": 3,
-      "title": "UVインクジェットプリンタ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/UV-LEDインクジェットプリンタ.jpg",
-      "category": "プリンター・ミシン・DIY用機器"
-    },
-    {
-      "id": 4,
+      "id": 5,
       "title": "UVプリンタ",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/UVプリンタ.jpg",
       "category": "プリンター・ミシン・DIY用機器"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "フラットベッド",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/フラットベッドカッティングプロッタ.png",
       "category": "プリンター・ミシン・DIY用機器"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "ベルトコンベア検針機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/ベルトコンベア検針機.jpg",
       "category": "プリンター・ミシン・DIY用機器"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "ラベルプリンタ",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/ラベルプリンタ.jpg",
-      "category": "プリンター・ミシン・DIY用機器"
-    },
-    {
-      "id": 8,
-      "title": "レーザー加工機 .彫刻機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/プリンター・ミシン・DIY用機器/items/レーザー加工機 . レーザー彫刻機.jpg",
       "category": "プリンター・ミシン・DIY用機器"
     },
     {
