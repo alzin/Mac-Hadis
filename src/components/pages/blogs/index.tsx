@@ -32,7 +32,7 @@ const Index = () => {
                 key={item.id}
                 title={item.title}
                 imageSrc={item.imageSrc}
-                description={item.description}
+                description={item.metaDescription}
                 date={item.date}
               />
             ))}
