@@ -1,0 +1,148 @@
+{
+  "id": 8,
+  "title": "ボール盤",
+  "subTitle": "ボール盤とは？",
+  "description": "ボール盤は、回転する主軸に取り付けた切削工具（主にドリル）を上下に送り、工作物に正確な穴あけ加工を行う工作機械です。金属・樹脂・木材など様々な素材に対して、穴あけ・リーマ加工・皿もみ・タップ加工・中ぐり加工などが可能で、垂直方向の精密な加工に特化しています。卓上型から床置き型まで様々なサイズがあり、手動送りによる繊細な加工から、自動送りによる量産加工まで対応できます。部品の穴あけ加工、位置決め穴の製作、ねじ穴の下穴加工など、機械加工において欠かせない基本的な工作機械であり、比較的操作が簡単で、初期投資も少なく、小規模な工場から大規模な製造現場まで幅広く使用されています。",
+  "category": "工作機械・精密加工機械",
+  "servicesTitle": "中古ボール盤の買取サービス",
+  "purchaseeProductTitle": "の買取実績",
+  "servicesDescription": "ご使用されなくなった汎用旋盤はございませんか？\nハディズでは、あらゆるメーカー・型式の中古汎用旋盤を買取しています。重量のある工作機械の搬出・運搬も、専門知識を持つスタッフが安全に対応いたします。機械の状態を適正に評価し、公正な価格での買取と速やかなお支払いをお約束します。",
+  "questions": [
+    {
+      "id": 1,
+      "question": "事前に準備しておくことはありますか？",
+      "answer": "いいえ、ありません。解体等が必要な場合も、その場で当社のスタッフが作業します。"
+    },
+    {
+      "id": 2,
+      "question": "現地にフォークリフトやクレーンがないのですが、買取可能ですか？",
+      "answer": "はい、必要に応じてリフトや専用の機材・道具を持参し、パワーゲート付きトラックまたはユニック車でお伺いいたします。"
+    },
+    {
+      "id": 3,
+      "question": "積み込みの手伝いが必要ですか？",
+      "answer": "いいえ、お客様のお手伝いは不要です。搬出から積み込みまで当社のスタッフが対応します。"
+    },
+    {
+      "id": 4,
+      "question": "遠方でも買取に来てくれますか？",
+      "answer": "はい、日本各地でボール盤の買取実績があります。"
+    }
+  ],
+  "kinds": [
+    "普通旋盤 – 最も一般的なタイプで、手動操作により幅広い加工に対応可能",
+    "卓上旋盤 – コンパクトで省スペース、小物部品の加工や教育用途に最適",
+    "正面旋盤 – 大径・短尺の工作物に特化し、フランジやディスクの加工に優れる",
+    "タレット旋盤 – 複数の工具を搭載し、工具交換時間を短縮して生産性を向上"
+  ],
+  "merit": [
+    "汎用性の高さ – 単品から少量生産まで、様々な形状・サイズの加工に柔軟に対応",
+    "低コスト導入 – NC旋盤と比較して初期投資が少なく、中小企業でも導入しやすい",
+    "技術習得の基礎 – 機械加工の基本技術を身につけられ、熟練により高度な加工も可能"
+  ],
+  "tips": [
+    "スイング（振り）と心間距離 – 加工可能な工作物の最大径と長さを確認し、用途に合わせて選定",
+    "主軸回転数の範囲 – 加工材料と必要な表面粗さに応じた回転数が得られる機種を選択",
+    "付属品と精度 – チャック、心押台、工具類の充実度と、振れ精度・真直度を確認"
+  ],
+  "cameraImagesGallery": [
+    {
+      "title": "ENKOH_S 遠州★タッピング兼用ボール盤★ESD350NTA",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/ENKOH_S 遠州★タッピング兼用ボール盤★ESD350NTA.jpg"
+    },
+    {
+      "title": "KIRA キラ★万能ボール盤 タッピングボール盤★KRTG-420",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/KIRA キラ★万能ボール盤 タッピングボール盤★KRTG-420.jpg"
+    },
+    {
+      "title": "KIWA 紀和鉄工所★卓上ボール盤★TBT-460",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/KIWA 紀和鉄工所★卓上ボール盤★TBT-460.jpg"
+    },
+    {
+      "title": "MIKUNI 御国★フリーセンターボール盤★MFC-550S",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/MIKUNI 御国★フリーセンターボール盤★MFC-550S.jpg"
+    },
+    {
+      "title": "OOYA 大矢製作所★ラジアルボール盤★RE2-1300A",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/OOYA 大矢製作所★ラジアルボール盤★RE2-1300A.jpg"
+    },
+    {
+      "title": "☆ブラザー★タッピングマシン★タッピングボール盤★Hi-Tap ハイタップ★BTO-263☆",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/☆ブラザー★タッピングマシン★タッピングボール盤★Hi-Tap ハイタップ★BTO-263☆.JPG"
+    },
+    {
+      "title": "吉田鐵工所★直立ボール盤★YUD-540",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/吉田鐵工所★直立ボール盤★YUD-540.jpg"
+    },
+    {
+      "title": "日立工機★23mm タッピングボール盤★BT23R",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/日立工機★23mm タッピングボール盤★BT23R.jpg"
+    }
+  ],
+  "webImagesGallery": [
+    {
+      "title": "IMG_9208",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9208.JPG"
+    },
+    {
+      "title": "IMG_9209",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9209.JPG"
+    },
+    {
+      "title": "IMG_9210",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9210.JPG"
+    },
+    {
+      "title": "IMG_9211",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9211.JPG"
+    },
+    {
+      "title": "IMG_9212",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9212.JPG"
+    },
+    {
+      "title": "IMG_9213",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9213.JPG"
+    },
+    {
+      "title": "IMG_9214",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9214.JPG"
+    },
+    {
+      "title": "IMG_9216",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9216.JPG"
+    }
+  ],
+  "makers": [
+    {
+      "jp": "",
+      "en": "brother",
+      "link": "https://www.brother.co.jp/",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/makers/brother.PNG"
+    },
+    {
+      "jp": "",
+      "en": "enkohs",
+      "link": "https://www.enkohs.co.jp",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/makers/enkohs.PNG"
+    },
+    {
+      "jp": "",
+      "en": "hikoki",
+      "link": "https://www.hikoki-powertools.jp/",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/makers/hikoki.PNG"
+    },
+    {
+      "jp": "",
+      "en": "kiracorp",
+      "link": "https://www.kiracorp.co.jp",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/makers/kiracorp.JPG"
+    },
+    {
+      "jp": "",
+      "en": "makita",
+      "link": "https://www.makita.co.jp",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/makers/makita.PNG"
+    }
+  ]
+}
