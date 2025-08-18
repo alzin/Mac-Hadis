@@ -84,7 +84,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth ">
+    <html lang="ja" className="scroll-smooth">
       <GoogleTagManager gtmId="GTM-W9W78KMS" />
       <body className={`${notoSansJP.variable} font-noto`}>
         <main>
