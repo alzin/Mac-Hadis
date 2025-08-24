@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { Noto_Sans_JP } from "next/font/google";
+import localFont from "next/font/local";
 import "@/styles/globals.css";
 // sections
 import Header from "@/components/common/sections/Header";
@@ -9,10 +9,34 @@ import Footer from "@/components/common/sections/Footer";
 // baseUrl
 import { baseUrl } from "@/utils/baseUrl";
 
-const notoSansJP = Noto_Sans_JP({
+// Define local font
+const notoSansJP = localFont({
+  src: [
+    {
+      path: "./fonts/noto-sans-jp-japanese-400-normal.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/noto-sans-jp-japanese-500-normal.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/noto-sans-jp-japanese-700-normal.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/noto-sans-jp-japanese-900-normal.ttf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
+  preload: true,
+  display: 'swap',
   variable: "--font-noto-sans-jp",
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "700", "900"], // Include the font weights you need
+  fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Arial', 'sans-serif'],
 });
 
 // metadata
@@ -85,6 +109,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className="scroll-smooth">
+      <head>
+        {/* Preconnect to external domains */}
+        <link rel="preconnect" href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com" />
+        <link rel="dns-prefetch" href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com" />
+
+        {/* Preload critical images */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
+          type="image/webp"
+          media="(min-width: 1024px)"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
+          type="image/webp"
+          media="(max-width: 1023px)"
+        />
+      </head>
       <GoogleTagManager gtmId="GTM-W9W78KMS" />
       <body className={`${notoSansJP.variable} font-noto`}>
         <main>
