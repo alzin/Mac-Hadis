@@ -16,8 +16,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sweetalert2": "^11.15.10",
-    "swiper": "^11.2.6",
-    "webpack-bundle-analyzer": "^4.10.2"
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -25,7 +24,6 @@
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@types/webpack-bundle-analyzer": "^4.7.0",
     "critters": "^0.0.23",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
