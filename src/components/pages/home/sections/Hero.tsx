@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       >
         {/* Background wrapper to ensure correct positioning */}
         <div className="absolute inset-0 -z-30">
-          {/* Mobile Background */}
+          {/* Mobile Background - LCP Image with fetchPriority */}
           <Image
             src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
             alt="Company's legacy image"
@@ -18,9 +18,10 @@ const Hero: React.FC = () => {
             quality={100}
             fill
             priority
+            fetchPriority="high"
             className="object-cover object-center block lg:hidden"
           />
-          {/* Desktop Background */}
+          {/* Desktop Background - LCP Image with fetchPriority */}
           <Image
             src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
             alt="Company's legacy image"
@@ -28,6 +29,7 @@ const Hero: React.FC = () => {
             quality={100}
             fill
             priority
+            fetchPriority="high"
             className="object-cover lg:object-right-top hidden lg:block"
           />
         </div>
@@ -39,7 +41,7 @@ const Hero: React.FC = () => {
               alt="Company's legacy image"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
               fill
-              priority
+              loading="eager"
             />
           </div>
           {/* image 2 */}
@@ -49,7 +51,7 @@ const Hero: React.FC = () => {
               alt="Hero promotional banner with details"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
               fill
-              priority
+              loading="eager"
               quality={100}
             />
           </div>
