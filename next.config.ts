@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -86,6 +87,14 @@ const nextConfig: NextConfig = {
           },
         },
       };
+
+      config.plugins.push(
+        new BundleAnalyzerPlugin({
+          analyzerMode: 'static',
+          openAnalyzer: false,
+        })
+      );
+
     }
 
     return config;
@@ -94,12 +103,6 @@ const nextConfig: NextConfig = {
   // Headers for caching
   async headers() {
     return [
-      {
-        source: '/_next/image(.*)',
-        headers: [
-          { key: 'Cache-Control', value: 'public, max-age=60, s-maxage=31536000, stale-while-revalidate=86400' },
-        ],
-      },
       {
         source: '/:all*(svg|jpg|jpeg|png|gif|ico|webp|avif)',
         locale: false,
@@ -120,7 +123,7 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        source: '/:path*.(woff2|woff|ttf|otf)',
+        source: '/:path*.ttf',
         headers: [
           {
             key: 'Cache-Control',
