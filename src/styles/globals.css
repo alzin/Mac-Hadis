@@ -39,6 +39,15 @@
     2px -2px 0 #017fd4;
 }
 
+.gradient-sky {
+  background: linear-gradient(to right bottom, #3FA7D6 50%, #164E63 50%);
+  border: 2px solid #017fd4;
+  /* -webkit-text-stroke-width: 2px; */
+  /* -webkit-text-stroke-color: #017FD4; */
+  text-shadow: 2px 2px 0 #3FA7D6, -2px 2px 0 #3FA7D6, -2px -2px 0 #3FA7D6,
+    2px -2px 0 #3FA7D6;
+}
+
 .gradient-navigation {
   background: linear-gradient(to right bottom, #b81122 50%, #ac0c1c 50%);
 }
