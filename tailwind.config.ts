@@ -14,6 +14,12 @@ export default {
       colors: {
         "light-red": "#D51A16",
         "dark-red": "#B81122",
+        factory: {
+          sky: '#3FA7D6',     // accent blue
+          teal: '#164E63',    // deep teal (headings)
+          yellow: '#FFD166',  // callouts / timeline
+          sky50: '#E6F6FD',   // light panel background
+        },
       },
       textShadow: {
         red: "-2px -2px 0 #4AC061, 2px -2px 0 #4AC061, -2px 2px 0 #4AC061, 2px 2px 0 #4AC061",

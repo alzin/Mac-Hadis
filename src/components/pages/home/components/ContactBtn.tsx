@@ -8,7 +8,7 @@ interface ContactBtnProps {
   label: string;
   href: string;
   mobileLabel?: string;
-  variant: "red" | "blue" | "green";
+  variant: "red" | "blue" | "green" | "sky";
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }
 
@@ -26,6 +26,7 @@ const ContactBtn: React.FC<ContactBtnProps> = ({
     red: "gradient-red",
     blue: "gradient-blue",
     green: "gradient-green",
+    sky: "gradient-sky",
   }[variant];
 
   // Define icon paths for each variant
@@ -34,6 +35,7 @@ const ContactBtn: React.FC<ContactBtnProps> = ({
     blue: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/computer.svg",
     green:
       "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/line-green.svg",
+      sky: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/phone_in_talk.svg"
   };
 
   return (
