@@ -1,28 +1,32 @@
 import nodemailer from "nodemailer";
+import SMTPTransport from "nodemailer/lib/smtp-transport";
 
 // interfaces
 import { IMailService, mailInfo } from "../interfaces/IMailService";
 
 export class GmailSender implements IMailService {
+    private transporter: nodemailer.Transporter;
 
-    private transporter;
-    private userAuth = process.env.SMTP_USER
-    private passAuth = process.env.SMTP_PASSWORD
+    private readonly userAuth = process.env.SMTP_USER!;
+    private readonly passAuth = process.env.SMTP_PASSWORD!;
+    private readonly smtpHost = process.env.SMTP_HOST || "smtp.gmail.com";
+    private readonly smtpPort = Number(process.env.SMTP_PORT || 465);
 
     constructor() {
-        this.transporter = nodemailer.createTransport({
-            host: "smtpout.secureserver.net",
-            port: 465,
-            secure: true,
+        const options: SMTPTransport.Options = {
+            host: this.smtpHost,
+            port: this.smtpPort,
+            secure: this.smtpPort === 465,
             auth: {
                 user: this.userAuth,
                 pass: this.passAuth,
             },
-        });
+        };
+
+        this.transporter = nodemailer.createTransport(options);
     }
 
     async send({ from, to, subject, template }: mailInfo): Promise<void> {
-
         await this.transporter.sendMail({
             from,
             to,
