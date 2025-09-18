@@ -11,12 +11,13 @@ export class GmailSender implements IMailService {
     private readonly passAuth = process.env.SMTP_PASSWORD!;
     private readonly smtpHost = process.env.SMTP_HOST || "smtp.gmail.com";
     private readonly smtpPort = Number(process.env.SMTP_PORT || 465);
+    private readonly nodeEnv = process.env.NODE_ENV || "production";
 
     constructor() {
         const options: SMTPTransport.Options = {
             host: this.smtpHost,
             port: this.smtpPort,
-            secure: this.smtpPort === 465,
+            secure: this.nodeEnv === "development" ? false : true,
             auth: {
                 user: this.userAuth,
                 pass: this.passAuth,

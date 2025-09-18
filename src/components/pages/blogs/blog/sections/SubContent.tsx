@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 
 // Content Templates
@@ -6,7 +8,7 @@ import FAQTemplate from "../components/FAQTemplate";
 import ImageTemplate from "../components/ImageTemplate";
 import VideoTemplate from "../components/VideoTemplate";
 import ListTemplate from "../components/ListTemplate";
-import TableTemplate from "../components/TableTemplate"; 
+import TableTemplate from "../components/TableTemplate";
 
 interface ISubContent {
   content: BlogSubContent;
@@ -26,7 +28,7 @@ const SubContent: React.FC<ISubContent> = ({ content, mainTitle }) => {
     case "faq":
       return <FAQTemplate content={content} />;
     case "table":
-      return <TableTemplate content={content} />; 
+      return <TableTemplate content={content} />;
     default:
       return null;
   }

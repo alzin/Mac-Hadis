@@ -43,7 +43,11 @@ const Header: React.FC = () => {
           <ul className="flex items-center justify-center gap-8 font-bold text-base text-[#B81122]">
             {navbarLinksData?.navbarItems?.map((item) => (
               <li key={item.id}>
-                <Link href={item.href} title={`Navigate to ${item.label}`}>
+                <Link
+                  href={item.href}
+                  title={`Navigate to ${item.label}`}
+                  className="whitespace-nowrap"
+                >
                   {item.label}
                 </Link>
               </li>
@@ -78,7 +82,7 @@ const Header: React.FC = () => {
                 title={`Navigate to ${item.label}`}
                 className="bg-[#B81122] font-black text-white text-base flex items-center justify-center gap-2 py-3 px-8 rounded"
               >
-                <span>{item.label}</span>
+                <span className="whitespace-nowrap">{item.label}</span>
                 <Image
                   src={
                     "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/arrow-right-red.svg"
@@ -133,7 +137,11 @@ const Header: React.FC = () => {
           <ul className="flex items-start flex-col justify-center gap-10 font-bold text-sm text-[#111111]">
             {navbarLinksData?.navbarItems?.map((item) => (
               <li key={item.id} onClick={toggleMenu}>
-                <Link href={item.href} title={`Navigate to ${item.label}`}>
+                <Link
+                  href={item.href}
+                  title={`Navigate to ${item.label}`}
+                  className="whitespace-nowrap"
+                >
                   {item.label}
                 </Link>
               </li>

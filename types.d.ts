@@ -50,6 +50,7 @@ interface ListContent extends BlogItemBase {
         href?: string
     }[];
     bottomDescription?: string;
+    withPagination?: boolean;
 }
 
 type BlogSubContent = SimpleContent | FAQContent | ImageContent | ListContent | VideoContent | TableContent;
@@ -88,14 +89,14 @@ interface CategoryType {
     }[];
 }
 interface TableContent extends BlogItemBase {
-  type: "table";
-  title: string;
-  topDescription: string;
-  headers: string[];
-  rows: {
-    id: string;
-    columns: string[];
-  }[];
-  bottomDescription: string;
+    type: "table";
+    title: string;
+    topDescription: string;
+    headers: string[];
+    rows: {
+        id: string;
+        columns: string[];
+    }[];
+    bottomDescription: string;
 }
 
