@@ -1,27 +1,20 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
+
+  // Better for Cloud Run: smaller runtime image
+  output: 'standalone',
 
   // Optimize images
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'mac-hadis.s3.ap-northeast-1.amazonaws.com',
-        pathname: '**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'mac-hadis.com',
-        pathname: '**',
-      },
+      { protocol: 'https', hostname: 'mac-hadis.s3.ap-northeast-1.amazonaws.com', pathname: '**' },
+      { protocol: 'https', hostname: 'mac-hadis.com', pathname: '**' },
     ],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 60,
-    // Add image optimization
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
@@ -38,31 +31,28 @@ const nextConfig: NextConfig = {
 
   // Experimental features for better performance
   experimental: {
-    optimizeCss: true,
+    // REMOVE optimizeCss to avoid version-related quirks
+    // optimizeCss: true,
     scrollRestoration: true,
   },
 
-  // Webpack optimizations
+  // Webpack optimizations (suggest disabling temporarily if you see issues)
   webpack: (config, { dev, isServer }) => {
-    // Production optimizations
     if (!dev && !isServer) {
-      // Enable module concatenation
       config.optimization.concatenateModules = true;
 
-      // Split chunks for better caching
+      // If you hit odd client/runtime issues, comment this whole splitChunks block out.
       config.optimization.splitChunks = {
         chunks: 'all',
         cacheGroups: {
           default: false,
           vendors: false,
-          // Vendor chunk
           vendor: {
             name: 'vendor',
             chunks: 'all',
             test: /node_modules/,
             priority: 20,
           },
-          // Common chunk
           common: {
             name: 'common',
             minChunks: 2,
@@ -71,7 +61,6 @@ const nextConfig: NextConfig = {
             reuseExistingChunk: true,
             enforce: true,
           },
-          // Separate heavy libraries
           swiper: {
             test: /[\\/]node_modules[\\/](swiper)[\\/]/,
             name: 'swiper',
@@ -87,46 +76,32 @@ const nextConfig: NextConfig = {
         },
       };
     }
-
     return config;
   },
 
-  // Headers for caching
   async headers() {
     return [
       {
         source: '/_next/image(.*)',
         headers: [
-          { key: 'Cache-Control', value: 'public, max-age=60, s-maxage=31536000, stale-while-revalidate=86400' },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=60, s-maxage=31536000, stale-while-revalidate=86400',
+          },
         ],
       },
       {
         source: '/:all*(svg|jpg|jpeg|png|gif|ico|webp|avif)',
         locale: false,
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
       },
       {
         source: '/_next/static/:path*',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
       },
       {
         source: '/:path*.(woff2|woff|ttf|otf)',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
       },
     ];
   },
