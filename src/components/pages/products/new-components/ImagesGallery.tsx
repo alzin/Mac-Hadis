@@ -6,21 +6,22 @@ import { ChevronLeft, ChevronRight, ZoomIn, X } from "lucide-react";
 
 // Types
 interface TImage {
-  imageSrc: string; // absolute URL to image (URL-encoded!)
+  imageSrc: string;
   title: string;
   isCenter?: boolean;
 }
 
 interface IImagesGalleryProps {
   images: TImage[];
-  purchaseeProductTitle?: string | null;
+  purchaseProductTitle?: string | null;
   title?: string | null;
   isCameraImages?: boolean;
 }
 
+
 const ImagesGallery = ({
   images,
-  purchaseeProductTitle,
+  purchaseProductTitle,
   title,
   isCameraImages,
 }: IImagesGalleryProps) => {
@@ -30,7 +31,6 @@ const ImagesGallery = ({
   const [imageLoading, setImageLoading] = useState<{ [key: number]: boolean }>(
     {}
   );
-  const [imageError, setImageError] = useState<{ [key: number]: boolean }>({});
   const [zoomScale, setZoomScale] = useState(1);
   const [zoomPosition, setZoomPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
@@ -39,8 +39,6 @@ const ImagesGallery = ({
     width: 0,
     height: 0,
   });
-
-  const main = images[selectedImageIndex];
 
   const handlePrev = () => {
     setSelectedImageIndex((prev) =>
@@ -61,37 +59,39 @@ const ImagesGallery = ({
     }
   };
 
-  const handleImageLoadStart = (index: number) => {
-    setImageLoading((p) => ({ ...p, [index]: true }));
-    setImageError((p) => ({ ...p, [index]: false }));
-  };
   const handleImageLoad = (index: number) => {
-    setImageLoading((p) => ({ ...p, [index]: false }));
-  };
-  const handleImageErr = (index: number) => {
-    setImageLoading((p) => ({ ...p, [index]: false }));
-    setImageError((p) => ({ ...p, [index]: true }));
-    // Diagnostics
-    console.error("Image failed:", images[index]?.imageSrc);
+    setImageLoading((prev) => ({ ...prev, [index]: false }));
   };
 
-  // Zoom
-  const handleZoomIn = () => setZoomScale((p) => Math.min(p * 1.5, 4));
-  const handleZoomOut = () => setZoomScale((p) => Math.max(p / 1.5, 1));
+  const handleImageLoadStart = (index: number) => {
+    setImageLoading((prev) => ({ ...prev, [index]: true }));
+  };
+
+  // Zoom functionality
+  const handleZoomIn = () => {
+    setZoomScale((prev) => Math.min(prev * 1.5, 4));
+  };
+
+  const handleZoomOut = () => {
+    setZoomScale((prev) => Math.max(prev / 1.5, 1));
+  };
+
   const resetZoom = () => {
     setZoomScale(1);
     setZoomPosition({ x: 0, y: 0 });
   };
+
   const handleZoomOpen = () => {
     setIsZoomed(true);
     resetZoom();
   };
+
   const handleZoomClose = () => {
     setIsZoomed(false);
     resetZoom();
   };
 
-  // Drag
+  // Drag functionality
   const handleMouseDown = (e: React.MouseEvent) => {
     if (zoomScale > 1) {
       setIsDragging(true);
@@ -101,21 +101,28 @@ const ImagesGallery = ({
       });
     }
   };
+
   const handleMouseMove = (e: React.MouseEvent) => {
     if (isDragging && zoomScale > 1) {
       const newX = e.clientX - dragStart.x;
       const newY = e.clientY - dragStart.y;
+
+      // Calculate boundaries to prevent dragging outside image bounds
       const maxX = (imageDimensions.width * (zoomScale - 1)) / 2;
       const maxY = (imageDimensions.height * (zoomScale - 1)) / 2;
+
       setZoomPosition({
         x: Math.max(-maxX, Math.min(maxX, newX)),
         y: Math.max(-maxY, Math.min(maxY, newY)),
       });
     }
   };
-  const handleMouseUp = () => setIsDragging(false);
 
-  // Touch
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  // Touch events for mobile
   const handleTouchStart = (e: React.TouchEvent) => {
     if (zoomScale > 1 && e.touches.length === 1) {
       setIsDragging(true);
@@ -125,59 +132,78 @@ const ImagesGallery = ({
       });
     }
   };
+
   const handleTouchMove = (e: React.TouchEvent) => {
     if (isDragging && zoomScale > 1 && e.touches.length === 1) {
       e.preventDefault();
       const newX = e.touches[0].clientX - dragStart.x;
       const newY = e.touches[0].clientY - dragStart.y;
+
       const maxX = (imageDimensions.width * (zoomScale - 1)) / 2;
       const maxY = (imageDimensions.height * (zoomScale - 1)) / 2;
+
       setZoomPosition({
         x: Math.max(-maxX, Math.min(maxX, newX)),
         y: Math.max(-maxY, Math.min(maxY, newY)),
       });
     }
   };
-  const handleTouchEnd = () => setIsDragging(false);
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+  };
 
   // Wheel zoom
   const handleWheel = (e: React.WheelEvent) => {
     e.preventDefault();
-    if (e.deltaY < 0) handleZoomIn();
-    else handleZoomOut();
+    if (e.deltaY < 0) {
+      handleZoomIn();
+    } else {
+      handleZoomOut();
+    }
   };
 
-  // Key controls in modal
+  // Handle zoom modal keyboard events
   const handleZoomKeyDown = (e: React.KeyboardEvent) => {
     e.preventDefault();
-    if (e.key === "Escape") handleZoomClose();
-    if (e.key === "ArrowLeft") handlePrev();
-    if (e.key === "ArrowRight") handleNext();
-    if (e.key === "+" || e.key === "=") handleZoomIn();
-    if (e.key === "-") handleZoomOut();
-    if (e.key === "0") resetZoom();
+    if (e.key === "Escape") {
+      handleZoomClose();
+    }
+    if (e.key === "ArrowLeft") {
+      handlePrev();
+    }
+    if (e.key === "ArrowRight") {
+      handleNext();
+    }
+    if (e.key === "+" || e.key === "=") {
+      handleZoomIn();
+    }
+    if (e.key === "-") {
+      handleZoomOut();
+    }
+    if (e.key === "0") {
+      resetZoom();
+    }
   };
-
-  // (Optional) Dev diagnostic
-  console.log("MAIN SRC:", main?.imageSrc);
 
   return (
     <div className="w-full max-w-6xl mx-auto p-4 md:p-8">
       {/* Product Title */}
-      {purchaseeProductTitle && (
+      {purchaseProductTitle && (
         <p className="mt-2 mb-5 lg:mt-4 text-[20px] lg:text-[40px] leading-[30px] lg:leading-[60px] font-black text-center bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent">
           {title}
-          {purchaseeProductTitle}
+          {purchaseProductTitle}
         </p>
       )}
 
-      {/* Main Image */}
+      {/* Main Image Container */}
       <div className="relative mb-6">
         <div
           className="relative bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
+          {/* Main Image */}
           <div className="relative flex items-center justify-center min-h-[200px] p-4 md:p-6">
             {/* Loading Skeleton */}
             {imageLoading[selectedImageIndex] && (
@@ -185,42 +211,30 @@ const ImagesGallery = ({
             )}
 
             <div className="relative w-full h-full flex items-center justify-center">
-              {!imageError[selectedImageIndex] ? (
-                <Image
-                  src={main.imageSrc}
-                  alt={`${main.title} - Main view`}
-                  width={1200}
-                  height={1200}
-                  priority
-                  quality={90}
-                  className="w-auto h-auto max-w-full max-h-[70vh] object-contain transition-all duration-300 hover:scale-[1.02] drop-shadow-lg"
-                  onLoad={() => handleImageLoad(selectedImageIndex)}
-                  onLoadStart={() => handleImageLoadStart(selectedImageIndex)}
-                  onError={() => handleImageErr(selectedImageIndex)}
-                  onLoadingComplete={({ naturalWidth, naturalHeight }) => {
-                    setImageDimensions({ width: naturalWidth, height: naturalHeight });
-                  }}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
-                />
-              ) : (
-                <div className="flex items-center justify-center w-full h-[40vh] max-h-[70vh] bg-gray-50 text-gray-500 rounded-lg border border-dashed">
-                  Image unavailable
-                </div>
-              )}
+              <Image
+                src={images[selectedImageIndex].imageSrc}
+                alt={`${images[selectedImageIndex].title} - Main view`}
+                width={600}
+                height={600}
+                priority
+                quality={90}
+                className="w-auto h-auto max-w-full max-h-[70vh] object-contain transition-all duration-300 hover:scale-[1.02] drop-shadow-lg"
+                onLoad={() => handleImageLoad(selectedImageIndex)}
+                onLoadStart={() => handleImageLoadStart(selectedImageIndex)}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+              />
             </div>
 
             {/* Zoom Button */}
-            {!imageError[selectedImageIndex] && (
-              <button
-                onClick={handleZoomOpen}
-                className={`absolute top-3 right-3 bg-white/95 hover:bg-white text-gray-600 hover:text-gray-800 p-2 rounded-lg shadow-sm border border-gray-100 transition-all duration-200 ${
-                  isHovered ? "opacity-100 scale-100" : "opacity-0 scale-95"
-                }`}
-                aria-label="Zoom image"
-              >
-                <ZoomIn size={18} />
-              </button>
-            )}
+            <button
+              onClick={handleZoomOpen}
+              className={`absolute top-3 right-3 bg-white/95 hover:bg-white text-gray-600 hover:text-gray-800 p-2 rounded-lg shadow-sm border border-gray-100 transition-all duration-200 ${
+                isHovered ? "opacity-100 scale-100" : "opacity-0 scale-95"
+              }`}
+              aria-label="Zoom image"
+            >
+              <ZoomIn size={18} />
+            </button>
 
             {/* Image Counter */}
             <div className="absolute bottom-3 right-3 bg-gray-900/80 text-white px-2.5 py-1 rounded-md text-xs font-medium backdrop-blur-sm">
@@ -228,9 +242,9 @@ const ImagesGallery = ({
             </div>
 
             {/* Camera Image Title */}
-            {isCameraImages && !imageError[selectedImageIndex] && (
+            {isCameraImages && (
               <div className="absolute bottom-3 left-3 bg-white/95 text-rose-600 px-3 py-1.5 rounded-md text-sm font-medium shadow-sm border border-gray-100 backdrop-blur-sm">
-                {main.title}
+                {images[selectedImageIndex].title}
               </div>
             )}
           </div>
@@ -272,30 +286,21 @@ const ImagesGallery = ({
                 }`}
                 aria-label={`View ${image.title}`}
               >
+                {/* Thumbnail Loading Skeleton */}
                 {imageLoading[index] && (
                   <div className="absolute inset-0 bg-gray-200 animate-pulse" />
                 )}
 
-                {!imageError[index] ? (
-                  <div className="relative aspect-square w-16 sm:w-16 md:w-32 lg:w-40">
-                    <Image
-                      src={image.imageSrc}
-                      alt={`${image.title} thumbnail`}
-                      fill
-                      className="object-cover rounded-xl"
-                      sizes="(max-width: 640px) 64px, (max-width: 1024px) 128px, (max-width: 1280px) 160px, 200px"
-                      loading="lazy"
-                      onLoad={() => handleImageLoad(index)}
-                      onLoadStart={() => handleImageLoadStart(index)}
-                      onError={() => handleImageErr(index)}
-                      placeholder="empty"
-                    />
-                  </div>
-                ) : (
-                  <div className="flex items-center justify-center w-full h-full bg-gray-50 text-gray-400 text-xs">
-                    N/A
-                  </div>
-                )}
+                <Image
+                  src={image.imageSrc}
+                  alt={`${image.title} thumbnail`}
+                  width={80}
+                  height={80}
+                  className="w-full h-full object-cover"
+                  onLoad={() => handleImageLoad(index)}
+                  onLoadStart={() => handleImageLoadStart(index)}
+                  sizes="(max-width: 768px) 64px, 80px"
+                />
 
                 {selectedImageIndex === index && (
                   <div className="absolute inset-0 bg-rose-500/10 border-2 border-rose-500 rounded-lg" />
@@ -304,19 +309,20 @@ const ImagesGallery = ({
             ))}
           </div>
 
+          {/* Gradient Fade for Scroll Indication */}
           <div className="absolute right-0 top-0 w-6 h-full bg-gradient-to-l from-white via-white/80 to-transparent pointer-events-none" />
         </div>
       )}
 
       {/* Zoom Modal */}
-      {isZoomed && !imageError[selectedImageIndex] && (
+      {isZoomed && (
         <div
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center"
           onKeyDown={handleZoomKeyDown}
           tabIndex={-1}
           onWheel={handleWheel}
         >
-          {/* Controls */}
+          {/* Zoom Controls */}
           <div className="absolute top-4 left-4 z-10 flex gap-2">
             <button
               onClick={handleZoomOut}
@@ -324,7 +330,14 @@ const ImagesGallery = ({
               className="bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 p-2 rounded-lg shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               aria-label="Zoom out"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <circle cx="11" cy="11" r="8" />
                 <path d="m21 21-4.35-4.35" />
                 <line x1="8" y1="11" x2="14" y2="11" />
@@ -343,7 +356,14 @@ const ImagesGallery = ({
               className="bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 p-2 rounded-lg shadow-lg transition-all duration-200"
               aria-label="Reset zoom"
             >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
                 <path d="M21 3v5h-5" />
                 <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
@@ -352,7 +372,7 @@ const ImagesGallery = ({
             </button>
           </div>
 
-          {/* Zoom Level */}
+          {/* Zoom Level Indicator */}
           <div className="z-10 absolute top-4 left-1/2 -translate-x-1/2 bg-white/90 text-gray-900 px-3 py-1 rounded-lg text-sm font-medium shadow-lg">
             {Math.round(zoomScale * 100)}%
           </div>
@@ -376,23 +396,27 @@ const ImagesGallery = ({
               }}
             >
               <Image
-                src={main.imageSrc}
-                alt={`${main.title} - Zoomed view`}
-                width={1600}
-                height={1600}
+                src={images[selectedImageIndex].imageSrc}
+                alt={`${images[selectedImageIndex].title} - Zoomed view`}
+                width={1200}
+                height={1200}
                 quality={95}
                 className="max-w-[90vw] max-h-[90vh] object-contain select-none"
                 sizes="100vw"
                 priority
-                onLoadingComplete={({ naturalWidth, naturalHeight }) => {
-                  setImageDimensions({ width: naturalWidth, height: naturalHeight });
+                onLoad={(e) => {
+                  const img = e.target as HTMLImageElement;
+                  setImageDimensions({
+                    width: img.naturalWidth,
+                    height: img.naturalHeight,
+                  });
                 }}
                 draggable={false}
               />
             </div>
           </div>
 
-          {/* Close */}
+          {/* Close Button */}
           <button
             onClick={handleZoomClose}
             className="absolute top-4 right-4 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 p-2 rounded-lg shadow-lg transition-all duration-200 z-10"
@@ -418,7 +442,7 @@ const ImagesGallery = ({
             <ChevronRight size={24} />
           </button>
 
-          {/* Counter */}
+          {/* Modal Image Counter */}
           <div className="absolute bottom-6 md:bottom-4 left-10 md:left-1/2 -translate-x-1/2 bg-white/90 text-gray-900 px-4 py-2 rounded-lg text-sm font-medium shadow-lg">
             {selectedImageIndex + 1} / {images.length}
           </div>
