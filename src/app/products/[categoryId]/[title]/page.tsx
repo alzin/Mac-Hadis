@@ -1,8 +1,14 @@
+/* 
+  ! IMPORTANT NOTE: 
+  ! A NewProductPage component is used to display the new product page when get a confirmation we well replace the old product page with this one
+*/
+import NewProductPage from "@/components/pages/products/new-product/index";
 import ProductPage from "@/components/pages/products/product/index";
 import { Metadata } from "next";
 import { getCategoryById, getCategoryTitleById } from "@/services/category";
 import { getProductByTitle } from "@/services/products";
 import { notFound } from "next/navigation";
+import { isNewProduct, isTProduct } from "@/utils/typeguards";
 
 interface IProductPageProps {
   params: Promise<{ title: string; categoryId: string }>;
@@ -34,9 +40,9 @@ const Page = async ({ params }: IProductPageProps) => {
   // const categoryData = await getCategoryById(categoryId);
 
   const categoryTitle = getCategoryTitleById(categoryId);
-  console.log(categoryTitle);
+  console.log(title,categoryTitle);
   const productData = getProductByTitle(title, categoryTitle);
-
+  console.log("product details", productData)
   if (!productData) {
     return notFound();
   }
@@ -45,7 +51,13 @@ const Page = async ({ params }: IProductPageProps) => {
   // const productData = categoryData.items.find(
   //   (item) => item.title === decodedTitle
   // )!;
-  return <ProductPage product={productData} />;
+  if (isNewProduct(productData)) {
+    // If true, TypeScript now knows productData is TNewProduct
+    return <NewProductPage product={productData} />;
+  } else if (isTProduct(productData)) {
+    // If false, TypeScript knows productData must be TProduct
+    return <ProductPage product={productData} />;
+  }
 };
 
 export default Page;
