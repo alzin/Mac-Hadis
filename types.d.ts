@@ -1,6 +1,6 @@
 type PurchaseProcessCategoryType = "On-site purchase" | "Home delivery purchase" | "Bring-in purchase"
 
-type SubContentType = "simple" | "faq" | "list" | "image" | "video" | "table";
+type SubContentType = "simple" | "faq" | "list" | "image" | "video" | "table" | "imageList";
 
 interface BlogItemBase {
     id: string;
@@ -53,7 +53,16 @@ interface ListContent extends BlogItemBase {
     withPagination?: boolean;
 }
 
-type BlogSubContent = SimpleContent | FAQContent | ImageContent | ListContent | VideoContent | TableContent;
+interface ImageListContent extends BlogItemBase {
+    type: "imageList";
+    items: {
+        id: string;
+        imageSrc: string;
+        alt: string;
+    }[];
+}
+
+type BlogSubContent = SimpleContent | FAQContent | ImageContent | ListContent | VideoContent | TableContent | ImageListContent;
 
 interface BlogPost {
     id: string;

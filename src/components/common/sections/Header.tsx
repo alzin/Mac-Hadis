@@ -130,9 +130,8 @@ const Header: React.FC = () => {
 
         {/* mobile menu */}
         <div
-          className={`bg-white w-full space-y-10 h-[100vh] fixed overflow-y-auto top-16 left-0 z-50 py-7 px-5 lg:hidden transition-transform duration-300 ${
-            activeMenu ? "translate-x-0" : "translate-x-[-100%]"
-          }`}
+          className={`bg-white w-full space-y-10 h-[100vh] fixed overflow-y-auto top-16 left-0 z-50 py-7 px-5 lg:hidden transition-transform duration-300 ${activeMenu ? "translate-x-0" : "translate-x-[-100%]"
+            }`}
         >
           <ul className="flex items-start flex-col justify-center gap-10 font-bold text-sm text-[#111111]">
             {navbarLinksData?.navbarItems?.map((item) => (

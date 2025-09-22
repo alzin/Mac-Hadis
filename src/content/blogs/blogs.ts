@@ -12,6 +12,8 @@ import blog10 from "./blog10.json";
 import blog11 from "./blog11.json";
 import blog12 from "./blog12.json";
 import blog13 from "./blog13.json";
+import blog14 from "./blog14.json";
+
 
 
 // Create array of blog posts
@@ -28,7 +30,8 @@ const blogs = [
     blog10,
     blog11,
     blog12,
-    blog13
+    blog13,
+    blog14
 ];
 
 // Export the array as default
