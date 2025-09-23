@@ -4,7 +4,6 @@
 */
 import Breadcrumb from "../components/Breadcrumb";
 import ImagesGallery from "../new-components/ImagesGallery";
-import CameraImagesSlider from "@/components/common/sections/CameraImagesSlider";
 import { TNewProduct } from "@/types/product.type";
 // import ProductDetails from "../components/ProductDetails";
 // import MajorList from "../components/MajorList";
@@ -18,6 +17,7 @@ import Questions from "../new-components/Questions";
 import Makers from "../new-components/Makers";
 import PurchasedItems from "../../home/sections/PurchasedItems";
 import ProductHero from "../components/ProductHero";
+import { PurchaseRecords } from "@/components/common/sections/PurchaseRecords";
 
 interface IIndexProps {
   product: TNewProduct;
@@ -33,9 +33,13 @@ const index = ({ product }: IIndexProps) => {
       {/* <MajorList title={product.title} companies={product.makers} /> */}
       <Makers companies={product.makers} />
       {/* Camera images as slider of image+title */}
-      <CameraImagesSlider
+      {/* <CameraImagesSlider
         sectionTitle={`${product.title}${product.purchaseProductTitle ?? ""}`}
         items={product.cameraImagesGallery}
+      /> */}
+      <PurchaseRecords
+        label={`${product.title}${product.purchaseProductTitle ?? ""}`}
+        purchaseItems={product.cameraImagesGallery}
       />
       <Information information={product.information} />
       <Questions questions={product.questions} />

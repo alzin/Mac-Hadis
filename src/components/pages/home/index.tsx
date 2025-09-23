@@ -2,6 +2,9 @@ import dynamic from "next/dynamic";
 
 import Hero from "./sections/Hero";
 import ContactFixedBanner from "@/components/common/sections/ContactFixedBanner";
+import { PurchaseRecords } from "@/components/common/sections/PurchaseRecords";
+import data from "@/content/home/PurchaseResults.json";
+
 
 const Flow = dynamic(() => import("./sections/Flow"));
 const WhyChoose = dynamic(() => import("./sections/WhyChoose"));
@@ -9,7 +12,7 @@ const WhyChoose = dynamic(() => import("./sections/WhyChoose"));
 const BlogsPost = dynamic(() => import("./sections/BlogsPost"));
 const ContactBanner = dynamic(() => import("./sections/ContactBanner"));
 const PurchasedItems = dynamic(() => import("./sections/PurchasedItems"));
-const PurchaseResults = dynamic(() => import("./sections/PurchaseResults"));
+// const PurchaseResults = dynamic(() => import("./sections/PurchaseResults"));
 const PurchaseProcess = dynamic(() => import("./sections/PurchaseProcess"));
 const BusinessPolicy = dynamic(() => import("./sections/BusinessPolicy"));
 const ReviewsReceived = dynamic(() => import("./sections/ReviewsReceived"));
@@ -29,7 +32,8 @@ const Index = () => {
       {/* <VideoSection /> */}
       <ContactBanner />
       <PurchasedItems />
-      <PurchaseResults />
+      {/* <PurchaseResults /> */}
+      <PurchaseRecords label="買取実績" purchaseItems={data} />
       <PurchaseProcess />
       <BusinessPolicy />
       <ContactBanner />
