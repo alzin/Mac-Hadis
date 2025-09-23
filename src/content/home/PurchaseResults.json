@@ -1,47 +1,26 @@
 [
   {
-    "id": 1,
-    "title1": "TopMan トップマン",
-    "title2": "岡田金属",
-    "title3": "小型 卓上旋盤",
-    "model": "TEL-400LS",
-    "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product1.jpg"
+    "title": "TopMan トップマン 岡田金属 TEL-400LS",
+    "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product1.jpg"
   },
   {
-    "id": 2,
-    "title1": "ヤンマー",
-    "title2": "ディーゼルトラクター",
-    "title3": "ニューフォルテ",
-    "model": "F165D",
-    "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product2.jpg"
+    "title": "ヤンマー ディーゼルトラクター F165D",
+    "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product2.jpg"
   },
   {
-    "id": 3,
-    "title1": "スター農機",
-    "title2": "Strautmann",
-    "title3": "ストラウトマン圧縮減容機",
-    "model": "MK700 60Hz",
-    "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product3.jpg"
+    "title": "スター農機 Strautmann MK700 60Hz",
+    "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product3.jpg"
   },
   {
-    "id": 4,
-    "title1": "コマツ",
-    "title2": "油圧ショベル ユンボ",
-    "model": "PC28UU-3",
-    "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product4.jpg"
+    "title": "コマツ 油圧ショベル ユンボ PC28UU-3",
+    "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product4.jpg"
   },
   {
-    "id": 5,
-    "title1": "アネスト岩田",
-    "title2": "エンジンコンプレッサー",
-    "model": "PLUE22-10",
-    "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product5.jpg"
+    "title": "アネスト岩田 エンジンコンプレッサー PLUE22-10",
+    "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product5.jpg"
   },
   {
-    "id": 6,
-    "title1": "Denyo デンヨー",
-    "title2": "防音型エンジン発電機",
-    "model": "DCA-60LSIE",
-    "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product6.jpg"
+    "title": "Denyo デンヨー 防音型エンジン発電機 DCA-60LSIE",
+    "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/purchase-resultes-section/product6.jpg"
   }
 ]

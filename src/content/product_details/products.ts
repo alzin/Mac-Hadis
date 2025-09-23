@@ -7,7 +7,8 @@ import product6 from './プリンター・ミシン・DIY用機器/レーザー�
 import product7 from './工作機械・精密加工機械/汎用旋盤.json'
 import product8 from './工作機械・精密加工機械/ボール盤.json'
 import product9 from './金属加工機械・板金機械/ロール成形機 . ハゼ折り機.json'
+import product10 from './金属加工機械・板金機械/マルチワーカー.json'
 
-const products = [product1, product2, product3, product4, product5, product6, product7, product8, product9]
+const products = [product1, product2, product3, product4, product5, product6, product7, product8, product9, product10]
 
 export default products
