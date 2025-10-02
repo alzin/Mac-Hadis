@@ -104,7 +104,7 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
               <div className="bg-white">
 
                 {/* Introduction Section */}
-                <section className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-8 lg:p-12 mb-12 relative overflow-hidden">
+                {data.description && <section className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-8 lg:p-12 mb-12 relative overflow-hidden">
                   <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-red-500 to-blue-500"></div>
 
                   <div className="prose prose-lg max-w-none">
@@ -114,7 +114,7 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
                         dangerouslySetInnerHTML={{ __html: paragraph }} />
                     ))}
                   </div>
-                </section>
+                </section>}
 
                 {/* Sub Content Sections */}
                 <div className="space-y-12">
