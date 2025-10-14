@@ -5,32 +5,32 @@
   "items": [
     {
       "id": 1,
+      "title": "エンジン発電機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E7%99%BA%E9%9B%BB%E6%A9%9F.jpg",
+      "category": "発電機・溶接機・コンプレッサ"
+    },
+    {
+      "id": 2,
       "title": "TIG溶接機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/TIG溶接機.jpg",
       "category": "発電機・溶接機・コンプレッサ"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "アーク溶接機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/アーク溶接機.jpg",
       "category": "発電機・溶接機・コンプレッサ"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "エアーコンプレッサー",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エアーコンプレッサー.jpg",
       "category": "発電機・溶接機・コンプレッサ"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "エンジンTIG溶接機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/発電機・溶接機・コンプレッサ/items/エンジンTIG溶接機.jpeg",
-      "category": "発電機・溶接機・コンプレッサ"
-    },
-    {
-      "id": 5,
-      "title": "エンジン発電機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E7%99%BA%E9%9B%BB%E6%A9%9F.jpg",
       "category": "発電機・溶接機・コンプレッサ"
     },
     {
