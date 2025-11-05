@@ -29,32 +29,32 @@
     },
     {
       "id": 5,
+      "title": "フレーム修正機",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/フレーム修正機.png",
+      "category": "自動車整備機械"
+    },
+    {
+      "id": 6,
       "title": "Snap-on スナップオン",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/Snap-on スナップオン。自動車整備工具.jpeg",
       "category": "自動車整備機械"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "オイルチェンジャー",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/オイルチェンジャー.png",
       "category": "自動車整備機械"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "サンドブラスト機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/サンドブラスト機.png",
       "category": "自動車整備機械"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "ヒーター(塗装用乾燥機)",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/ヒーター(塗装用乾燥機).png",
-      "category": "自動車整備機械"
-    },
-    {
-      "id": 9,
-      "title": "フレーム修正機",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/フレーム修正機.png",
       "category": "自動車整備機械"
     },
     {
