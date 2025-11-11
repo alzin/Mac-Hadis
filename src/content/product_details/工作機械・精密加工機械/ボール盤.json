@@ -14,12 +14,28 @@
   "purchaseProductTitle": "の買取実績",
   "cameraImagesGallery": [
     {
+      "title": " KIWA 紀和★直立ボール盤★KUD-550FP★",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/ KIWA 紀和★直立ボール盤★KUD-550FP★.jpg"
+    },
+    {
       "title": "ENKOH_S 遠州★タッピング兼用ボール盤★ESD350NTA",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4/cameraImagesGallery/ENKOH_S%20%E9%81%A0%E5%B7%9E%E2%98%85%E3%82%BF%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E5%85%BC%E7%94%A8%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4%E2%98%85ESD350NTA.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/ENKOH_S 遠州★タッピング兼用ボール盤★ESD350NTA.jpg"
+    },
+    {
+      "title": "ENSYU 遠州★ENKOH’S★タッピング兼用ボール盤★ESD460MT",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/ENSYU 遠州★ENKOH’S★タッピング兼用ボール盤★ESD460MT.jpg"
+    },
+    {
+      "title": "KANETSU★マグボール 磁気ボール盤★KCD-2",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/KANETSU★マグボール 磁気ボール盤★KCD-2.jpg"
     },
     {
       "title": "KIRA キラ★万能ボール盤 タッピングボール盤★KRTG-420",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4/cameraImagesGallery/KIRA%20%E3%82%AD%E3%83%A9%E2%98%85%E4%B8%87%E8%83%BD%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4%20%E3%82%BF%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4%E2%98%85KRTG-420.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/KIRA キラ★万能ボール盤 タッピングボール盤★KRTG-420.jpg"
+    },
+    {
+      "title": "KIWA 紀和★直立ボール盤★KUD-550FP",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/KIWA 紀和★直立ボール盤★KUD-550FP.jpg"
     },
     {
       "title": "KIWA 紀和鉄工所★卓上ボール盤★TBT-460",
@@ -27,19 +43,51 @@
     },
     {
       "title": "MIKUNI 御国★フリーセンターボール盤★MFC-550S",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4/cameraImagesGallery/MIKUNI%20%E5%BE%A1%E5%9B%BD%E2%98%85%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4%E2%98%85MFC-550S.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/MIKUNI 御国★フリーセンターボール盤★MFC-550S.jpg"
+    },
+    {
+      "title": "NITTO 日東工器★アトラエース 磁気ボール盤★LO-3000",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/NITTO 日東工器★アトラエース 磁気ボール盤★LO-3000.jpg"
     },
     {
       "title": "OOYA 大矢製作所★ラジアルボール盤★RE2-1300A",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4/cameraImagesGallery/OOYA%20%E5%A4%A7%E7%9F%A2%E8%A3%BD%E4%BD%9C%E6%89%80%E2%98%85%E3%83%A9%E3%82%B8%E3%82%A2%E3%83%AB%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4%E2%98%85RE2-1300A.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/OOYA 大矢製作所★ラジアルボール盤★RE2-1300A.jpg"
     },
     {
-      "title": "☆ブラザー★タッピングマシン★タッピングボール盤★Hi-Tap ハイタップ★BTO-263☆",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4/cameraImagesGallery/%E2%98%86%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E2%98%85%E3%82%BF%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%83%9E%E3%82%B7%E3%83%B3%E2%98%85%E3%82%BF%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4%E2%98%85Hi-Tap%20%E3%83%8F%E3%82%A4%E3%82%BF%E3%83%83%E3%83%97%E2%98%85BTO-263%E2%98%86.JPG"
+      "title": "YAMAMOTO 山本 ヤマモト★フリーボール盤★ラジアルボール盤★NEF-40☆",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/YAMAMOTO 山本 ヤマモト★フリーボール盤★ラジアルボール盤★NEF-40☆.jpg"
+    },
+    {
+      "title": "brother ブラザー★Hi-Tap タッピングマシン★BT61-511★",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/brother ブラザー★Hi-Tap タッピングマシン★BT61-511★.jpg"
+    },
+    {
+      "title": "アシナ★タッピングボール盤★ATD-410",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/アシナ★タッピングボール盤★ATD-410.jpg"
+    },
+    {
+      "title": "ブラザー★タッピングマシン★タッピングボール盤★Hi-Tap ハイタップ★BTO-263☆",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/ブラザー★タッピングマシン★タッピングボール盤★Hi-Tap ハイタップ★BTO-263☆.JPG"
     },
     {
       "title": "吉田鐵工所★直立ボール盤★YUD-540",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/%E5%B7%A5%E4%BD%9C%E6%A9%9F%E6%A2%B0%E3%83%BB%E7%B2%BE%E5%AF%86%E5%8A%A0%E5%B7%A5%E6%A9%9F%E6%A2%B0/%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4/cameraImagesGallery/%E5%90%89%E7%94%B0%E9%90%B5%E5%B7%A5%E6%89%80%E2%98%85%E7%9B%B4%E7%AB%8B%E3%83%9C%E3%83%BC%E3%83%AB%E7%9B%A4%E2%98%85YUD-540.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/吉田鐵工所★直立ボール盤★YUD-540.jpg"
+    },
+    {
+      "title": "山本 ヤマモト YAMAMOTO★フリーボール盤★ラジアルボール盤★NEF-40",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/山本 ヤマモト YAMAMOTO★フリーボール盤★ラジアルボール盤★NEF-40.jpg"
+    },
+    {
+      "title": "日東工器★ATRA MASTER アトラマスター★M-210B★  ★磁気ボール盤★穿孔径21mm",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/日東工器★ATRA MASTER アトラマスター★M-210B★  ★磁気ボール盤★穿孔径21mm.jpg"
+    },
+    {
+      "title": "日東工器★アトラミニエース 磁気ボール盤★AMT-18",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/日東工器★アトラミニエース 磁気ボール盤★AMT-18.jpg"
+    },
+    {
+      "title": "日立工機★13mmタッピングボール盤★B13YA★三相200V☆",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/cameraImagesGallery/日立工機★13mmタッピングボール盤★B13YA★三相200V☆.JPG"
     },
     {
       "title": "日立工機★23mm タッピングボール盤★BT23R",
@@ -48,36 +96,36 @@
   ],
   "webImagesGallery": [
     {
-      "title": "IMG_9208",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9208.JPG"
+      "title": "ボール盤(1)",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/ボール盤(1).png"
     },
     {
-      "title": "IMG_9209",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9209.JPG"
+      "title": "ボール盤(2)",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/ボール盤(2).png"
     },
     {
-      "title": "IMG_9210",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9210.JPG"
+      "title": "ボール盤(3)",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/ボール盤(3).png"
     },
     {
-      "title": "IMG_9211",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9211.JPG"
+      "title": "ボール盤(4)",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/ボール盤(4).png"
     },
     {
-      "title": "IMG_9212",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9212.JPG"
+      "title": "ボール盤(5)",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/ボール盤(5).png"
     },
     {
-      "title": "IMG_9213",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9213.JPG"
+      "title": "ボール盤(6)",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/ボール盤(6).png"
     },
     {
-      "title": "IMG_9214",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9214.JPG"
+      "title": "ボール盤(7)",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/ボール盤(7).png"
     },
     {
-      "title": "IMG_9216",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/IMG_9216.JPG"
+      "title": "ボール盤",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/webImagesGallery/ボール盤.png"
     }
   ],
   "makers": [
@@ -110,6 +158,12 @@
       "en": "makita",
       "link": "https://www.makita.co.jp",
       "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/makers/makita.PNG"
+    },
+    {
+      "jp": "",
+      "en": "nitto-kohki",
+      "link": "https://www.nitto-kohki.co.jp/prd/tool",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/工作機械・精密加工機械/ボール盤/makers/nitto-kohki.JPG"
     }
   ],
   "information": [
