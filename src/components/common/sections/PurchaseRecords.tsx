@@ -1,17 +1,31 @@
 import { TPurchaseItem } from "@/types/purchase-item.types";
 import { PurchaseRecordsCard } from "./PurchaseRecordsCard";
+import { headers } from "next/headers";
+import Link from "next/link";
 
 interface IPurchaseRecordsProps {
   label: string;
   isCategory?: boolean;
   purchaseItems?: TPurchaseItem[];
+  isLimit?: boolean;
 }
 
-export const PurchaseRecords = ({
+export const PurchaseRecords = async ({
   label,
   isCategory,
   purchaseItems,
+  isLimit=false,
 }: IPurchaseRecordsProps) => {
+  let purchaseItemsList = purchaseItems;
+  if (isLimit) {
+    const userAgent = (await headers()).get("user-agent") || "";
+
+    const isMobile =
+      /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(userAgent);
+
+    const itemsToShow = isMobile ? 4 : 8;
+    purchaseItemsList = purchaseItems?.slice(0, itemsToShow);
+  }
   return (
     <section className="relative py-[50px] md:py-[80px] lg:py-[120px] px-5 md:px-[50px] lg:px-[80px]">
       <h2 className="text-[30px] md:text-[50px] lg:text-[60px] leading-[45px] md:leading-[60px] lg:leading-[90px] font-black text-center font-noto bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent">
@@ -21,7 +35,7 @@ export const PurchaseRecords = ({
         {isCategory ? "の買取実績" : ""}
       </p>
       <div className="mt-[40px] md:mt-[45px] lg:mt-[50px] flex flex-wrap justify-between md:justify-center gap-[17px] lg:gap-8">
-        {purchaseItems?.map((item, index) => (
+        {purchaseItemsList?.map((item, index) => (
           <PurchaseRecordsCard
             key={index}
             title={item.title}
@@ -29,6 +43,14 @@ export const PurchaseRecords = ({
           />
         ))}
       </div>
+      {isLimit && <div className="px-[8px] w-full">
+        <Link
+          href="/purchase-records"
+          className="mt-[24px] md:mt-[35px] lg:mt-[40px] mx-auto py-[12px] w-[90%] md:w-[50%] lg:w-[27%] text-[24px] lg:text-[28px] leading-[36px] lg:leading-[42px] font-black text-white gradient-red rounded text-center block"
+        >
+          もっと見る
+        </Link>
+      </div>}
     </section>
   );
 };

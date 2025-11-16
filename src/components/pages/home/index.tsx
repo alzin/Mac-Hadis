@@ -33,7 +33,7 @@ const Index = () => {
       <ContactBanner />
       <PurchasedItems />
       {/* <PurchaseResults /> */}
-      <PurchaseRecords label="買取実績" purchaseItems={data} />
+      <PurchaseRecords label="買取実績" purchaseItems={data} isLimit={true} />
       <PurchaseProcess />
       <BusinessPolicy />
       <ContactBanner />
