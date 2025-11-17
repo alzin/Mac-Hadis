@@ -1,6 +1,5 @@
 import { TPurchaseItem } from "@/types/purchase-item.types";
 import { PurchaseRecordsCard } from "./PurchaseRecordsCard";
-import { headers } from "next/headers";
 import Link from "next/link";
 
 interface IPurchaseRecordsProps {
@@ -18,13 +17,8 @@ export const PurchaseRecords = async ({
 }: IPurchaseRecordsProps) => {
   let purchaseItemsList = purchaseItems;
   if (isLimit) {
-    const userAgent = (await headers()).get("user-agent") || "";
-
-    const isMobile =
-      /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(userAgent);
-
-    const itemsToShow = isMobile ? 4 : 8;
-    purchaseItemsList = purchaseItems?.slice(0, itemsToShow);
+    const itemsToShow = 12;
+    purchaseItemsList = purchaseItems?.filter((item) => item.categoryCover).slice(0, itemsToShow);
   }
   return (
     <section className="relative py-[50px] md:py-[80px] lg:py-[120px] px-5 md:px-[50px] lg:px-[80px]">
