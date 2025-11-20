@@ -39,18 +39,15 @@ const Page = async ({ params }: IProductPageProps) => {
   // const decodedTitle = decodeURIComponent(title);
   // const categoryData = await getCategoryById(categoryId);
 
-  const categoryTitle = getCategoryTitleById(categoryId);
-  console.log(title,categoryTitle);
-  const productData = getProductByTitle(title, categoryTitle);
-  console.log("product details", productData)
+  const categoryTitle = await getCategoryTitleById(categoryId);
+  console.log(title, categoryTitle);
+  const productData = await getProductByTitle(title, categoryTitle);
+  console.log("product details", productData);
   if (!productData) {
     return notFound();
   }
   console.log(productData);
 
-  // const productData = categoryData.items.find(
-  //   (item) => item.title === decodedTitle
-  // )!;
   if (isNewProduct(productData)) {
     // If true, TypeScript now knows productData is TNewProduct
     return <NewProductPage product={productData} />;
@@ -58,6 +55,8 @@ const Page = async ({ params }: IProductPageProps) => {
     // If false, TypeScript knows productData must be TProduct
     return <ProductPage product={productData} />;
   }
+
+  return notFound();
 };
 
 export default Page;
