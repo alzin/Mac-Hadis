@@ -14,21 +14,31 @@
     },
     {
       "id":"2",
-      "type": "image",
-      "title":"",
-      "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog_3.jpg"
+      "type": "imageList",
+      "items": [
+        {
+          "id":"1",
+          "alt":"",
+          "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog18_3.jpg"
+        },
+        {
+          "id":"2",
+          "alt":"",
+          "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog18_8.jpg"
+        }
+      ]
     },
     {
       "id": "3",
       "title": "専門スタッフによる安全な解体作業",
       "topDescription": "当社スタッフは自動車整備機械や自動車板金設備の取り扱いに豊富な経験を持っており、まず塗装ブースの構造を現場で綿密に確認しました。その上で最適な解体手順を計画し、<strong>適切な順序で安全に分解作業</strong>を実施しています。電源や配線類は事前に遮断・切離しを行い、固定されていた配線ケーブルやダクトも専門の知識で支障なく取り外しました。ボルトやパネルを一本ずつ外しながらブース本体を丁寧に分解し、解体後は<strong>部品ごとに保護材で養生</strong>を行っています。これは、運搬中の部品同士の接触による傷や品質低下を防ぐためで、細部まで細心の注意を払いました。</br></br>以下に<strong>塗装ブース解体・搬出作業のおおまかな手順</strong>をまとめます：",
-      "bottomDescription": "このように解体から運搬まで一括対応できるのは、専門業者に依頼する大きなメリットです。大型機械の場合、通常は取り外しや運搬に費用がかかることもありますが、買取専門業者によっては解体・搬出費用を無料で対応してくれる場合もあります。当社でも査定から撤去作業まで<span style='color:red;'>基本的には無料で</span>承っており、お客様のご負担を最低限に抑えております。<span style='color:red;'>※ただし、作業内容・現場の状況によっては作業費をいただく場合があります。</span>",
+      "bottomDescription": "このように解体から運搬まで一括対応できるのは、専門業者に依頼する大きなメリットです。大型機械の場合、通常は取り外しや運搬に費用がかかることもありますが、買取専門業者によっては解体・搬出費用を無料で対応してくれる場合もあります。当社でも査定から撤去作業まで基本的には無料で承っており、お客様のご負担を最低限に抑えております。※ただし、作業内容・現場の状況によっては作業費をいただく場合があります。",
       "type": "list",
       "listType": "number",
       "items": [
         {
           "id": "1",
-          "description": "<strong>現地<span style='color:red;'>確認</span>・作業計画の立案:</strong> 専門スタッフが現場で機械の状態を<span style='color:red;'>確認</span>し、解体・搬出の工程を綿密に計画。"
+          "description": "<strong>現地確認・作業計画の立案:</strong> 専門スタッフが現場で機械の状態を確認し、解体・搬出の工程を綿密に計画。"
         },
         {
           "id": "2",
@@ -54,9 +64,19 @@
     },
     {
       "id":"4",
-      "type": "image",
-      "title":"",
-      "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog_9.jpg"
+      "type": "imageList",
+      "items": [
+        {
+          "id":"1",
+          "alt":"",
+          "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog18_9.jpg"
+        },
+        {
+          "id":"2",
+          "alt":"",
+          "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog18_6.jpg"
+        }
+      ]
     },
     {
       "id": "5",
@@ -66,21 +86,46 @@
     },
     {
       "id":"6",
-      "type": "image",
-      "title":"",
-      "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog_5.jpg"
+      "type": "imageList",
+      "items": [
+        {
+          "id":"1",
+          "alt":"",
+          "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog18_5.jpg"
+        },
+        {
+          "id":"2",
+          "alt":"",
+          "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog18_1.jpg"
+        }
+      ]
     },
     {
       "id": "7",
       "title": "不要な塗装ブースの売却は当社にお任せください",
-      "description": "廃業や機材入れ替えなどで<strong>不要になった塗装ブースの買取</strong>をご検討中の方は、ぜひ当社の出張買取サービスをご利用ください。当社は<strong>自動車整備機械や自動車板金設備</strong>の買取実績が豊富で、塗装ブース以外にもフレーム修正機、塗装乾燥機、コンプレッサー、スポット溶接機など幅広い機械・工具に対応可能です。</br>お電話一本で埼玉県内はもちろん、関東一円どこへでも無料で出張査定にお伺いいたします。<span style=color:red;>写真をお送りいただければ、一両日中に査定をお出しすることも可能です。代金は買取当日現金支払いいたしますので、お待たせすることもありません。</span><strong>迅速・丁寧</strong>をモットーに、大型機械でもお客様の手を煩わせることなく解体・搬出まで対応いたします。不要機械の売却をご希望でしたら、お気軽に当社までお問い合わせください。迅速かつ誠実に対応させていただきます！",
+      "description": "廃業や機材入れ替えなどで<strong>不要になった塗装ブースの買取</strong>をご検討中の方は、ぜひ当社の出張買取サービスをご利用ください。当社は<strong>自動車整備機械や自動車板金設備</strong>の買取実績が豊富で、塗装ブース以外にもフレーム修正機、塗装乾燥機、コンプレッサー、スポット溶接機など幅広い機械・工具に対応可能です。</br>お電話一本で埼玉県内はもちろん、関東一円どこへでも無料で出張査定にお伺いいたします。写真をお送りいただければ、一両日中に査定をお出しすることも可能です。代金は買取当日現金支払いいたしますので、お待たせすることもありません。<strong>迅速・丁寧</strong>をモットーに、大型機械でもお客様の手を煩わせることなく解体・搬出まで対応いたします。不要機械の売却をご希望でしたら、お気軽に当社までお問い合わせください。迅速かつ誠実に対応させていただきます！",
       "type": "simple"
     },
     {
       "id":"8",
-      "type": "image",
-      "title":"",
-      "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog_2.jpg"
+      "type": "imageList",
+      "items": [
+        {
+          "id":"1",
+          "alt": "",
+          "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog18_10.jpg"
+        },
+        {
+          "id":"2",
+          "alt": "",
+          "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog18_11.jpg"
+        },
+        {
+          "id":"3",
+          "alt": "",
+          "imageSrc":"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B%EF%BC%9A%E8%95%A8%E5%B8%82%E3%81%A7%E3%81%AE%E5%A1%97%E8%A3%85%E3%83%96%E3%83%BC%E3%82%B9%E8%B2%B7%E5%8F%96%E3%81%A8%E6%90%AC%E5%87%BA%E4%BD%9C%E6%A5%AD/blog18_12.jpg"
+        }
+      ]
     }
   ]
 }
