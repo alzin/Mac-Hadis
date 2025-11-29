@@ -12,33 +12,41 @@
   "cameraImagesGallery": [
     {
       "title": "BIC TOOL★イオンシャワーブース★WX-700★  ★自動車板金 塗装",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/images_gallery/BIC TOOL★イオンシャワーブース★WX-700★  ★自動車板金 塗装.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/cameraImagesGallery/BIC TOOL★イオンシャワーブース★WX-700★  ★自動車板金 塗装.jpg"
     },
     {
       "title": "plo プロ★スプレーブース 塗装ブース★ST-300HR",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/images_gallery/plo プロ★スプレーブース 塗装ブース★ST-300HR.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/cameraImagesGallery/plo プロ★スプレーブース 塗装ブース★ST-300HR.jpg"
+    },
+    {
+      "title": "☆BIGTOOL ビック・ツール★イオンシャワーブース 塗装ブース★MX-200★",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/cameraImagesGallery/☆BIGTOOL ビック・ツール★イオンシャワーブース 塗装ブース★MX-200★.jpeg"
+    },
+    {
+      "title": "☆栗田工業★カーテンタイプ塗装ブース スペース・ブース★SPB-42改",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/cameraImagesGallery/☆栗田工業★カーテンタイプ塗装ブース スペース・ブース★SPB-42改.jpeg"
     },
     {
       "title": "ペイントブース 塗装ブース",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/images_gallery/ペイントブース 塗装ブース.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/cameraImagesGallery/ペイントブース 塗装ブース.jpg"
     }
   ],
-  "webImagesGallery": [
+  "webImagesGallery":[
     {
       "title": "塗装ブース(1)",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/images_gallery/塗装ブース(1).jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/webImagesGallery/塗装ブース(1).png"
     },
     {
       "title": "塗装ブース(2)",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/images_gallery/塗装ブース(2).jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/webImagesGallery/塗装ブース(2).png"
     },
     {
-      "title": "塗装ブース1",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/images_gallery/塗装ブース.jpg"
+      "title": "塗装ブース(3)",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/webImagesGallery/塗装ブース(3).png"
     },
     {
       "title": "塗装ブース",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/images_gallery/塗装ブース.png"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/webImagesGallery/塗装ブース.png"
     }
   ],
   "makers": [
@@ -70,13 +78,13 @@
       "jp": "",
       "en": "maru-t",
       "link": "https://www.maru-t.co.jp/auto_paint/",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/makers/maru-t.jpg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/makers/maru-t.png"
     },
     {
       "jp": "",
       "en": "triens",
       "link": "https://www.triens.jp/special-order",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/makers/triens.jpeg"
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/自動車整備機械/塗装ブース/makers/triens.png"
     }
   ],
   "information": [
