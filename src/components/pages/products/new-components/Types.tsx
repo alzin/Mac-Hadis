@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export interface ICategory {
   title: string;
-  items: string[];
+  items?: string[];
 }
 
 interface ITypesProps {
@@ -42,7 +42,7 @@ const Types = ({ types }: ITypesProps) => {
                   {category.title}
                 </h4>
                 <div className="space-y-2 pl-2">
-                  {category.items.map((item, itemIndex) =>
+                  {category?.items?.map((item, itemIndex) =>
                     renderItem(item, itemIndex)
                   )}
                 </div>

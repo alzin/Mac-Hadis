@@ -12,7 +12,8 @@ import product11 from './発電機・溶接機・コンプレッサ/エンジン
 import product12 from './発電機・溶接機・コンプレッサ/スクリューコンプレッサ.json'
 import product13 from './自動車整備機械/フレーム修正機.json'
 import product14 from './自動車整備機械/Snap-on スナップオン.json'
+import product15 from './住宅工事機械工具・木工機械/万能木工機.json'
 
-const products = [product1, product2, product3, product4, product5, product6, product7, product8, product9, product10, product11, product12, product13, product14]
+const products = [product1, product2, product3, product4, product5, product6, product7, product8, product9, product10, product11, product12, product13, product14, product15]
 
 export default products
