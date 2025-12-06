@@ -225,6 +225,16 @@ const FactoryService: React.FC = () => {
             長年の経験と実績により、機械設備の適正な買取から、最終清掃まで、
             お客様の負担を最小限に抑えながら、スムーズな工場整理を実現します。
           </p>
+
+          <p
+            className={`
+            text-base md:text-lg/relaxed mx-auto
+            break-keep [overflow-wrap:normal] [word-break:keep-all]
+            max-[640px]:break-words max-[640px]:[overflow-wrap:anywhere]
+          `}
+          >
+            弁護士様/事業主様/不動産会社様　お気軽にご相談ください
+          </p>
         </div>
       </section>
 
