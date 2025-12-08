@@ -282,46 +282,39 @@ const FactoryService: React.FC = () => {
 
       {/* Reasons Section */}
       <section className="bg-gray-100 py-20">
+        {/* Strengths Section */}
         <div className="fs-container max-w-6xl mx-auto px-5">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-factory-teal mb-4">
-              工場の移転・閉鎖廃業による片付けのご依頼理由
+            <h2 className="text-3xl font-bold text-factory-teal">
+              ハディズの強み
             </h2>
           </div>
 
-          {/* Strengths Section */}
-          <div className="fs-container max-w-6xl mx-auto px-5">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-factory-teal">
-                ハディズの強み
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
-              {strengths.map((strength, index) => (
-                <div
-                  key={index}
-                  data-animate={`strength-${index}`}
-                  className={`bg-white p-8 rounded-lg relative border-l-4 transition-all duration-700 ${
-                    isVisible[`strength-${index}`]
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-5"
-                  } border-factory-sky`}
-                >
-                  <h3 className="text-xl font-bold mb-3 text-factory-teal">
-                    {strength.title}
-                  </h3>
-                  <p>{strength.content}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="text-white p-8 rounded-lg text-center bg-factory-sky mb-8">
-              <h3 className="text-2xl font-bold mb-4">無料サービス</h3>
-              <p className="text-xl">現地調査・見積もり / 買取査定</p>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+            {strengths.map((strength, index) => (
+              <div
+                key={index}
+                data-animate={`strength-${index}`}
+                className={`bg-white p-8 rounded-lg relative border-l-4 transition-all duration-700 ${
+                  isVisible[`strength-${index}`]
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-5"
+                } border-factory-sky`}
+              >
+                <h3 className="text-xl font-bold mb-3 text-factory-teal">
+                  {strength.title}
+                </h3>
+                <p>{strength.content}</p>
+              </div>
+            ))}
           </div>
-          {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+
+          <div className="text-white p-8 rounded-lg text-center bg-factory-sky mb-8">
+            <h3 className="text-2xl font-bold mb-4">無料サービス</h3>
+            <p className="text-xl">現地調査・見積もり / 買取査定</p>
+          </div>
+        </div>
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
             {reasons.map((reason, index) => (
               <div
                 key={index}
@@ -340,61 +333,58 @@ const FactoryService: React.FC = () => {
             ))}
           </div> */}
 
+        {/* slider */}
+        <div className="relative mt-10">
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={16}
+            slidesPerView={3.5}
+            loop
+            centeredSlides
+            // preloads neighbors for smoother UX
+            lazyPreloadPrevNext={2}
+            // keep your existing selectors
+            navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              320: { slidesPerView: 1.3, spaceBetween: 8 },
+              640: { slidesPerView: 2, spaceBetween: 16 },
+              768: { slidesPerView: 3.5, spaceBetween: 16 },
+              1024: { slidesPerView: 3.5, spaceBetween: 32 },
+            }}
+            className="!pb-10"
+          >
+            {reasonesImage.map((src, i) => (
+              <SwiperSlide key={src}>
+                <div className="relative h-[400px] overflow-hidden rounded-xl bg-gray-200">
+                  <Image
+                    src={src}
+                    alt={`作業ステップ ${i + 1}`}
+                    fill
+                    sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-
-          {/* slider */}
-          <div className="relative mt-10">
-            <Swiper
-              modules={[Navigation, Pagination]}
-              spaceBetween={16}
-              slidesPerView={3.5}
-              loop
-              centeredSlides
-              // preloads neighbors for smoother UX
-              lazyPreloadPrevNext={2}
-              // keep your existing selectors
-              navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
-              pagination={{ clickable: true }}
-              breakpoints={{
-                320: { slidesPerView: 1.3, spaceBetween: 8 },
-                640: { slidesPerView: 2, spaceBetween: 16 },
-                768: { slidesPerView: 3.5, spaceBetween: 16 },
-                1024: { slidesPerView: 3.5, spaceBetween: 32 },
-              }}
-              className="!pb-10"
-            >
-              {reasonesImage.map((src, i) => (
-                <SwiperSlide key={src}>
-                  <div className="relative h-[400px] overflow-hidden rounded-xl bg-gray-200">
-                    <Image
-                      src={src}
-                      alt={`作業ステップ ${i + 1}`}
-                      fill
-                      sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            {/* Custom nav buttons (match your selectors) */}
-            <button
-              className="custom-prev absolute -left-3 md:-left-6 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/90 backdrop-blur px-2.5 py-2 shadow hover:bg-white focus:outline-none focus:ring-2 focus:ring-factory-teal"
-              aria-label="前へ"
-              type="button"
-            >
-              ‹
-            </button>
-            <button
-              className="custom-next absolute -right-3 md:-right-6 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/90 backdrop-blur px-2.5 py-2 shadow hover:bg-white focus:outline-none focus:ring-2 focus:ring-factory-teal"
-              aria-label="次へ"
-              type="button"
-            >
-              ›
-            </button>
-          </div>
+          {/* Custom nav buttons (match your selectors) */}
+          <button
+            className="custom-prev absolute -left-3 md:-left-6 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/90 backdrop-blur px-2.5 py-2 shadow hover:bg-white focus:outline-none focus:ring-2 focus:ring-factory-teal"
+            aria-label="前へ"
+            type="button"
+          >
+            ‹
+          </button>
+          <button
+            className="custom-next absolute -right-3 md:-right-6 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/90 backdrop-blur px-2.5 py-2 shadow hover:bg-white focus:outline-none focus:ring-2 focus:ring-factory-teal"
+            aria-label="次へ"
+            type="button"
+          >
+            ›
+          </button>
         </div>
       </section>
 
