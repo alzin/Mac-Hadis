@@ -250,16 +250,7 @@ const FactoryService: React.FC = () => {
           >
             弁護士様/事業主様/不動産会社様　お気軽にご相談ください
           </p>
-
-          <p
-            className={`
-            text-base md:text-lg/relaxed mx-auto
-            break-keep [overflow-wrap:normal] [word-break:keep-all]
-            max-[640px]:break-words max-[640px]:[overflow-wrap:anywhere]
-          `}
-          >
-            弁護士様/事業主様/不動産会社様　お気軽にご相談ください
-          </p>
+          
         </div>
       </section>
 
