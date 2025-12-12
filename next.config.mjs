@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  turbopack: {},
   reactStrictMode: true,
 
   // Better for Cloud Run: smaller runtime image

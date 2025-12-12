@@ -144,6 +144,14 @@ const FactoryService: React.FC = () => {
       title: "6. 搬出困難な場所も対応",
       content: "2階、道幅が狭い、段差があるなど、搬出が難しい場所でも対応可能",
     },
+    {
+      title: "5. 安全・安心の作業",
+      content: "安全管理の徹底 / 守秘義務契約",
+    },
+    {
+      title: "6. 搬出困難な場所も対応",
+      content: "2階、道幅が狭い、段差があるなど、搬出が難しい場所でも対応可能",
+    },
   ];
 
   const processSteps = [
@@ -231,6 +239,16 @@ const FactoryService: React.FC = () => {
             ハディズは、工場の閉鎖・移転・廃業に伴うあらゆる作業を一括でお引き受けいたします。
             長年の経験と実績により、機械設備の適正な買取から、最終清掃まで、
             お客様の負担を最小限に抑えながら、スムーズな工場整理を実現します。
+          </p>
+
+          <p
+            className={`
+            text-base md:text-lg/relaxed mx-auto
+            break-keep [overflow-wrap:normal] [word-break:keep-all]
+            max-[640px]:break-words max-[640px]:[overflow-wrap:anywhere]
+          `}
+          >
+            弁護士様/事業主様/不動産会社様　お気軽にご相談ください
           </p>
 
           <p
