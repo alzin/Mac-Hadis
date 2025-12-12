@@ -148,10 +148,6 @@ const FactoryService: React.FC = () => {
       title: "5. 安全・安心の作業",
       content: "安全管理の徹底 / 守秘義務契約",
     },
-    {
-      title: "6. 搬出困難な場所も対応",
-      content: "2階、道幅が狭い、段差があるなど、搬出が難しい場所でも対応可能",
-    },
   ];
 
   const processSteps = [
