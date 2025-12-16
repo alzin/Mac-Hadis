@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -78,6 +79,22 @@ const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
                                             item.title
                                         )}
                                     </h3>
+                                )}
+                                {/* Optional Image */}
+                                {item.imageSrc && (
+                                    <div className="mb-8 w-full relative">
+                                        <Image
+                                            src={item.imageSrc}
+                                            alt={item.title || "Section illustration"}
+                                            /* 1. Define base dimensions (Tailwind classes will override these to make it responsive) */
+                                            width={1200}
+                                            height={600}
+                                            /* 2. w-full and h-auto ensure it scales correctly */
+                                            className="w-full h-auto max-h-[500px] object-cover rounded-xl shadow-sm border border-gray-100"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+                                            loading="lazy"
+                                        />
+                                    </div>
                                 )}
                                 {item.description && (
                                     <div className="text-gray-600 leading-relaxed text-base"
