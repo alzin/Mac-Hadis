@@ -84,7 +84,7 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
             </div>
 
             {/* Quick Contact Card */}
-            <div className="w-full mb-12">
+            {/* <div className="w-full mb-12">
               <div className="bg-gradient-to-br from-red-600 to-red-700 text-white rounded-xl p-6 text-center">
                 <h3 className="text-lg font-bold mb-4">
                   無料査定・相談受付中
@@ -97,7 +97,7 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
                   今すぐ相談する
                 </Link>
               </div>
-            </div>
+            </div> */}
 
             {/* Main Content */}
             <main className="w-full">
