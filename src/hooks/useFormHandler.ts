@@ -144,17 +144,33 @@ export const useFormHandler = () => {
       await Swal.fire({
         icon: "success",
         title: "送信が完了しました",
-        html: `メールを送信しました。<br />確認メールをお送りしましたので、<br />ご確認ください。<br /> <br />
-          <button id="close-modal" class="close-button">x</button>`,
+        html: `メールを送信しました。<br />確認メールをお送りしましたので、<br />ご確認ください。`,
         showConfirmButton: false,
+        showCloseButton: true,
         customClass: {
           popup: "custom-popup",
+          closeButton: "swal-close-button-red",
         },
-        didOpen: () => {
-          const closeButton = document.getElementById("close-modal");
+        didOpen: (popup) => {
+          const closeButton = popup.querySelector(".swal2-close");
           if (closeButton) {
-            closeButton.addEventListener("click", () => {
-              Swal.close();
+            (closeButton as HTMLElement).style.cssText = `
+              color: #dc2626;
+              font-size: 28px;
+              font-weight: bold;
+              position: absolute;
+              top: 8px;
+              right: 12px;
+              background: transparent;
+              border: none;
+              cursor: pointer;
+              transition: color 0.2s ease;
+            `;
+            closeButton.addEventListener("mouseenter", () => {
+              (closeButton as HTMLElement).style.color = "#b91c1c";
+            });
+            closeButton.addEventListener("mouseleave", () => {
+              (closeButton as HTMLElement).style.color = "#dc2626";
             });
           }
         },
