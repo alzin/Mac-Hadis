@@ -16,22 +16,30 @@
         {
           "id": "1",
           "description": "<strong>ベンダー・シャーリング：</strong></br>金属板の折り曲げと、切断の機能を兼ね備えた板金折り曲げ切断機です。板金加工には欠かせない機械で、中古市場でも常に需要が高い機械です。動作状態も良好で、精度良く加工できることから高額買取となりました。",
-          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E3%80%90%E8%B2%B7%E5%8F%96%E5%AE%9F%E7%B8%BE%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E3%81%B8%E6%9D%BF%E9%87%91%E6%A9%9F%E6%A2%B0%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0%E3%81%AE%E8%B2%B7%E5%8F%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/blog20_1.jpeg"
+          "imageSrc": [
+            "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E3%80%90%E8%B2%B7%E5%8F%96%E5%AE%9F%E7%B8%BE%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E3%81%B8%E6%9D%BF%E9%87%91%E6%A9%9F%E6%A2%B0%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0%E3%81%AE%E8%B2%B7%E5%8F%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/blog20_1.jpeg"
+          ]
         },
         {
           "id": "2",
           "description": "<strong>自動カンナ：</strong></br>木材を平滑に削る自動かんな盤です。木工加工の主要設備であり、製材所や家具工場など幅広い現場で使われています。古い機種でも正常動作するものは評価が高く、今回の機械も丁寧にメンテナンスされていたため高額査定となりました。",
-          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E3%80%90%E8%B2%B7%E5%8F%96%E5%AE%9F%E7%B8%BE%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E3%81%B8%E6%9D%BF%E9%87%91%E6%A9%9F%E6%A2%B0%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0%E3%81%AE%E8%B2%B7%E5%8F%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/blog20_2.jpeg"
+          "imageSrc": [
+            "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E3%80%90%E8%B2%B7%E5%8F%96%E5%AE%9F%E7%B8%BE%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E3%81%B8%E6%9D%BF%E9%87%91%E6%A9%9F%E6%A2%B0%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0%E3%81%AE%E8%B2%B7%E5%8F%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/blog20_2.jpeg"
+          ]
         },
         {
           "id": "3",
           "description": "<strong>コンターマシン（帯鋸盤）：</strong></br>金属加工で使用される縦型の帯ノコ盤で、曲線や不規則な形状の切断が可能な機械です。年式は経っていましたが整備状況が良く、動作も安定していたため問題なく買取させていただきました。",
-          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E3%80%90%E8%B2%B7%E5%8F%96%E5%AE%9F%E7%B8%BE%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E3%81%B8%E6%9D%BF%E9%87%91%E6%A9%9F%E6%A2%B0%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0%E3%81%AE%E8%B2%B7%E5%8F%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/blog20_3.jpeg"
+          "imageSrc": [
+            "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E3%80%90%E8%B2%B7%E5%8F%96%E5%AE%9F%E7%B8%BE%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E3%81%B8%E6%9D%BF%E9%87%91%E6%A9%9F%E6%A2%B0%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0%E3%81%AE%E8%B2%B7%E5%8F%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/blog20_3.jpeg"
+          ]
         },
         {
           "id": "4",
           "description": "<strong>電動工具類：</strong></br>電動丸ノコやコアドリル、小型卓上ボール盤など各種電動工具を多数買取しました。状態の良い工具は中古でも人気があり、付属品やケースが揃っていることで査定額アップにつながります。",
-          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E3%80%90%E8%B2%B7%E5%8F%96%E5%AE%9F%E7%B8%BE%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E3%81%B8%E6%9D%BF%E9%87%91%E6%A9%9F%E6%A2%B0%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0%E3%81%AE%E8%B2%B7%E5%8F%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/blog20_4.jpeg"
+          "imageSrc": [
+            "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E3%80%90%E8%B2%B7%E5%8F%96%E5%AE%9F%E7%B8%BE%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%80%91%E5%B1%B1%E6%A2%A8%E7%9C%8C%E5%8D%97%E9%83%BD%E7%95%99%E9%83%A1%E5%AF%8C%E5%A3%AB%E6%B2%B3%E5%8F%A3%E6%B9%96%E7%94%BA%E3%81%B8%E6%9D%BF%E9%87%91%E6%A9%9F%E6%A2%B0%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0%E3%81%AE%E8%B2%B7%E5%8F%96%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F/blog20_4.jpeg"
+          ]
         }
       ],
       "bottomDescription": "今回はオーナー様が丁寧に使用・保管されていたため機械の状態が良く、全体的に高値を付けさせていただきました。付属品や取扱説明書、工具類の消耗部品や機械の付属治具などが完備されていると査定評価が上がり[3]、高額査定に繋がります。屋内保管でサビや損傷が少ない点もプラス材料となります。"
