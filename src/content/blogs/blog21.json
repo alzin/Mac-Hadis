@@ -29,7 +29,7 @@
       "description": "まず私たちは事前に現場の構造を入念に確認し、天井の梁の強度や位置を計算した上で作業計画を立案しました。重量物搬出では<strong>搬出ルートの確認（建物入口、通路幅、床の強度、段差、天井高など）や対象機械の重量・寸法の把握、必要機材の選定</strong>が初手の重要なフローとなります[4]。今回は天井梁が使えると判断したため、まず機械上部をその梁に<strong>専用の鉄製チェーンと吊り具（チェーンブロック等）でしっかり固定</strong>しました[5]。上部を梁から吊り支えた状態で、下部からはウインチ式の<strong>引き寄せ工具</strong>を用いて角度を少しずつ調整していきます。もちろん一度に大きく倒そうとするのは非常に危険なため、ここでは「引く → 下ろす → 固定 → 確認」という工程を何度も反復し、<strong>徐々に角度を変えながら慎重に傾けていく</strong>方法を採りました。実際、類似案件ではチェーンブロックで吊り上げた機械を<strong>ゆっくり降ろしつつ台車で支える作業を繰り返し、水平に寝かせるまでに3時間以上要した例もあります</strong>[6]。時間をかけてでも細心の注意を払うことで、機械本体や建物を傷つけることなく安全にパネルソーを水平状態へ移行させ、無事に床へ設置することができました。</br>なお、今回のように天井に梁がありチェーン固定が可能な場合は梁を利用しましたが、<strong>もし現場に鉄骨梁がない場合でもご安心ください。</strong> 当社では<strong>移動式の門型クレーン</strong>など専門機材を用意しておりますので、そのような環境でも重量物を安全に吊り上げ・搬出することが可能です[7]。現場ごとの条件に合わせて最適な方法と機材を選定し、「安全第一」で作業を進めてまいります。"
     },
     {
-      "id": "1",
+      "id": "3",
       "type": "imageList",
       "items": [
         {
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "id": "3",
+      "id": "4",
       "title": "買取の流れについて",
       "type": "list",
       "listType": "dot",
@@ -101,17 +101,6 @@
       "bottomDescription": "このように、木工機械や木材加工設備、各種<strong>切断機</strong>を中心とした複数機械の一括出張買取にも対応しております。工場の閉鎖や設備整理に伴う大量の機械処分などもご相談ください。"
     },
     {
-      "id": "4",
-      "type": "imageList",
-      "items": [
-        {
-          "id": "1",
-          "alt": "",
-          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_8.jpeg"
-        }
-      ]
-    },
-    {
       "id": "5",
       "title": "木工機械・重量機械の出張買取はお任せください",
       "type": "list",
@@ -139,44 +128,28 @@
     },
     {
       "id": "6",
-      "type": "imageList",
-      "items": [
-        {
-          "id": "1",
-          "alt": "",
-          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_9.jpeg"
-        },
-        {
-          "id": "2",
-          "alt": "",
-          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_14.jpeg"
-        }
-      ]
-    },
-    {
-      "id": "4",
       "type": "list",
       "listType": "number",
       "items": [
         {
           "id": "1",
-          "description": "[1] 今週の問題（どうやって倒したか？） - 大工道具屋のひとりごと"
+          "description": "<a target='_blank' class='text-blue-600 underline hover:no-underline' href='https://toshikane.hatenablog.com/entry/2020/10/27/060000'>[1] 今週の問題（どうやって倒したか？） - 大工道具屋のひとりごと</a>"
         },
         {
           "id": "2",
-          "description": "[2] [4] 重量物搬入の災害事故例と防止策｜重量物搬入の施工管理マン"
+          "description": "<a target='_blank' class='text-blue-600 underline hover:no-underline' href='https://note.com/jolly_beetle5745/n/n3d054098b420'>[2] [4] 重量物搬入の災害事故例と防止策｜重量物搬入の施工管理マン</a>"
         },
         {
           "id": "3",
-          "description": "[3] [7] [8] 江戸川区 / 工場片付け 工場移転　片付けは　江戸川区　藤井商店へ！　工作機械 移設 重量機械 のスッキリ搬出術！実例とプロの裏技を大公開 | コンプレッサー修理 オーダーメイド復刻部品製造 ガス切断器 修理 / 東京都 江戸川区 藤井商店"
+          "description": "<a target='_blank' class='text-blue-600 underline hover:no-underline' href='https://fujiisyouten.com/2023/07/09/tidying-up-heavy-machinery/?srsltid=AfmBOorhLzgDLz6qGGWTBqPGImXzavHa-5X5XhNzbjcGBmq5bYAd0s1M'>[3] [7] [8] 江戸川区 / 工場片付け 工場移転　片付けは　江戸川区　藤井商店へ！　工作機械 移設 重量機械 のスッキリ搬出術！実例とプロの裏技を大公開 | コンプレッサー修理 オーダーメイド復刻部品製造 ガス切断器 修理 / 東京都 江戸川区 藤井商店</a>"
         },
         {
           "id": "4",
-          "description": "[5] [6] 機械撤去の事例 | 豊橋市の廃棄物リサイクル会社　佐く間商店　〜未来を担う子供のために頑張る企業〜"
+          "description": "<a target='_blank' class='text-blue-600 underline hover:no-underline' href='https://sakuma-recycle.com/2025/11/11/%E6%A9%9F%E6%A2%B0%E6%92%A4%E5%8E%BB%E3%81%AE%E4%BA%8B%E4%BE%8B%E7%B4%B9%E4%BB%8B/'>[5] [6] 機械撤去の事例 | 豊橋市の廃棄物リサイクル会社　佐く間商店　〜未来を担う子供のために頑張る企業〜</a>"
         },
         {
           "id": "5",
-          "description": "[9] FP601S_MJ_88101786.indb"
+          "description": "<a target='_blank' class='text-blue-600 underline hover:no-underline' href='https://www.makita.co.jp/product/files/882796-3.pdf'>[9] FP601S_MJ_88101786.indb</a>"
         }
       ]
     }
