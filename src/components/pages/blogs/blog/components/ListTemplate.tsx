@@ -160,6 +160,27 @@ const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
                       dangerouslySetInnerHTML={{ __html: item.description }}
                     />
                   )}
+
+                  {item.subItems && item.subItems.length > 0 && (
+                    <ul className="mt-4 space-y-3 ml-4 border-l-2 border-gray-100 pl-4">
+                      {item.subItems.map((subItem) => (
+                        <li
+                          key={subItem.id}
+                          className="flex items-start text-gray-700 text-sm lg:text-base"
+                        >
+                          <span className="text-red-500 mr-2 mt-1.5 flex-shrink-0 text-[10px]">
+                            ●
+                          </span>
+                          <span
+                            className={
+                              subItem.isBold ? "font-bold text-gray-800" : ""
+                            }
+                            dangerouslySetInnerHTML={{ __html: subItem.text }}
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             </div>

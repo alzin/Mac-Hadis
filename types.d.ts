@@ -50,6 +50,11 @@ interface ListContent extends BlogItemBase {
         images?: { src: string; alt?: string }[];
         isLink?: boolean
         href?: string
+        subItems?: {
+            id: string;
+            text: string;
+            isBold?: boolean;
+        }[];
     }[];
     bottomDescription?: string;
     withPagination?: boolean;
