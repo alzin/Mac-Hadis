@@ -99,7 +99,7 @@ const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
                       )}
                     </h3>
                   )}
-                  {/* Optional Images - Multiple or Single */}
+                  {/* Optional Images - Multiple or Single (Item Specific) */}
                   {(item.imageSrc || item.images) && (
                     <div className="mb-8 w-full space-y-4">
                       {/* Handle imageSrc array or single string */}
@@ -186,6 +186,47 @@ const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
             </div>
           ))}
       </div>
+
+      {/* NEW: Section Gallery / Images (Below items, Above/Before Bottom Description) */}
+      {content.sectionImages && content.sectionImages.length > 0 && (
+        <div className="my-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+            {content.sectionImages.map((img, idx) => {
+              // Handle both string URLs and object {src, alt}
+              const src = typeof img === "string" ? img : img.src;
+              const alt =
+                typeof img === "string"
+                  ? `${content.title} gallery image ${idx + 1}`
+                  : img.alt || `${content.title} gallery image ${idx + 1}`;
+
+              return (
+                <div
+                  key={idx}
+                  className="relative group rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                >
+                  <div className="relative aspect-[4/3] w-full bg-gray-50">
+                    <Image
+                      src={src}
+                      alt={alt}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                  {/* Optional: Show caption if it exists in object format */}
+                  {typeof img !== "string" && img.alt && (
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                      <p className="text-white text-sm font-medium line-clamp-1">
+                        {img.alt}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Bottom Description */}
       {content.bottomDescription && (

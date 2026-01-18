@@ -56,6 +56,7 @@ interface ListContent extends BlogItemBase {
             isBold?: boolean;
         }[];
     }[];
+    sectionImages?: string[] | { src: string; alt?: string }[];
     bottomDescription?: string;
     withPagination?: boolean;
 }
