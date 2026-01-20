@@ -42,6 +42,7 @@ interface ListContent extends BlogItemBase {
     topDescription?: string;
     listType?: "number" | "dot" | "none",
     subTitle?: string
+    withCounter?: boolean;
     items: {
         id: string;
         title?: string;

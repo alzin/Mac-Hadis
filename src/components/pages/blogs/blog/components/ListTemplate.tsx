@@ -8,6 +8,7 @@ interface IListTemplate {
 
 const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
   const withPagination: boolean = !!content.withPagination;
+  const withCounter : boolean = content.withCounter !== undefined ? content.withCounter : true;
 
   const [show, setShow] = useState(!withPagination);
 
@@ -69,7 +70,7 @@ const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
           ?.map((item, index) => (
             <div
               key={index}
-              className="bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-sm transition-all duration-200"
+              className={` ${withCounter ? " bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-sm transition-all duration-200" : ""}`}
             >
               <div className="flex items-start">
                 {/* List Marker */}
@@ -99,61 +100,7 @@ const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
                       )}
                     </h3>
                   )}
-                  {/* Optional Images - Multiple or Single (Item Specific) */}
-                  {(item.imageSrc || item.images) && (
-                    <div className="mb-8 w-full space-y-4">
-                      {/* Handle imageSrc array or single string */}
-                      {item.imageSrc && typeof item.imageSrc === "string" ? (
-                        <div className="relative w-full">
-                          <Image
-                            src={item.imageSrc}
-                            alt={item.title || "Section illustration"}
-                            width={1200}
-                            height={600}
-                            className="w-full h-auto max-h-[500px] object-cover rounded-xl shadow-sm border border-gray-100"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
-                            loading="lazy"
-                          />
-                        </div>
-                      ) : item.imageSrc && Array.isArray(item.imageSrc) ? (
-                        item.imageSrc.map((src, imgIndex) => (
-                          <div key={imgIndex} className="relative w-full">
-                            <Image
-                              src={src}
-                              alt={`${
-                                item.title || "Section illustration"
-                              } - Image ${imgIndex + 1}`}
-                              width={1200}
-                              height={600}
-                              className="w-full h-auto max-h-[500px] object-cover rounded-xl shadow-sm border border-gray-100"
-                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
-                              loading="lazy"
-                            />
-                          </div>
-                        ))
-                      ) : null}
-                      {/* Handle images array */}
-                      {item.images &&
-                        item.images.map((image, imgIndex) => (
-                          <div key={imgIndex} className="relative w-full">
-                            <Image
-                              src={image.src}
-                              alt={
-                                image.alt ||
-                                `${
-                                  item.title || "Section illustration"
-                                } - Image ${imgIndex + 1}`
-                              }
-                              width={1200}
-                              height={600}
-                              className="w-full h-auto max-h-[500px] object-cover rounded-xl shadow-sm border border-gray-100"
-                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
-                              loading="lazy"
-                            />
-                          </div>
-                        ))}
-                    </div>
-                  )}
+
                   {item.description && (
                     <div
                       className="text-gray-600 leading-relaxed text-base"
@@ -161,14 +108,72 @@ const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
                     />
                   )}
 
+                  {/* --- IMAGES SECTION START --- */}
+                  {(item.imageSrc || item.images) && (
+                    <div className="mt-8 w-full space-y-4">
+                      {/* 1. Handle Single String Image */}
+                      {item.imageSrc && typeof item.imageSrc === "string" ? (
+                        <div className="relative w-full">
+                          <Image
+                            src={item.imageSrc}
+                            alt={item.title || "Section illustration"}
+                            width={1200}
+                            height={600}
+                            // CHANGE: Removed 'object-cover', added 'object-contain', changed 'w-full' to 'max-w-full'
+                            className="max-w-full h-auto max-h-[500px] object-contain rounded-xl shadow-sm border border-gray-100"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+                            loading="lazy"
+                          />
+                        </div>
+                      ) : item.imageSrc && Array.isArray(item.imageSrc) ? (
+                        // 2. Handle String Array Images
+                        item.imageSrc.map((src, imgIndex) => (
+                          <div key={imgIndex} className="relative w-full">
+                            <Image
+                              src={src}
+                              alt={`${item.title || "Section illustration"} - Image ${imgIndex + 1}`}
+                              width={1200}
+                              height={600}
+                              // CHANGE: Applied same fix here
+                              className="max-w-full h-auto max-h-[500px] object-contain rounded-xl shadow-sm border border-gray-100"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+                              loading="lazy"
+                            />
+                          </div>
+                        ))
+                      ) : null}
+
+                      {/* 3. Handle Object Array Images */}
+                      {item.images &&
+                        item.images.map((image, imgIndex) => (
+                          <div key={imgIndex} className="relative w-full">
+                            <Image
+                              src={image.src}
+                              alt={
+                                image.alt ||
+                                `${item.title || "Section illustration"} - Image ${imgIndex + 1}`
+                              }
+                              width={1200}
+                              height={600}
+                              // CHANGE: Applied same fix here
+                              className="max-w-full h-auto max-h-[500px] object-contain rounded-xl shadow-sm border border-gray-100"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+                              loading="lazy"
+                            />
+                          </div>
+                        ))}
+                    </div>
+                  )}
+                  {/* --- IMAGES SECTION END --- */}
+
                   {item.subItems && item.subItems.length > 0 && (
-                    <ul className="mt-4 space-y-3 ml-4 border-l-2 border-gray-100 pl-4">
+                    <ul className="mt-4 space-y-3">
                       {item.subItems.map((subItem) => (
                         <li
                           key={subItem.id}
                           className="flex items-start text-gray-700 text-sm lg:text-base"
                         >
-                          <span className="text-red-500 mr-2 mt-1.5 flex-shrink-0 text-[10px]">
+                          <span className="text-red-500 mr-2 flex-shrink-0 text-[10px]">
                             ●
                           </span>
                           <span
