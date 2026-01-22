@@ -104,6 +104,12 @@
       "title": "高圧洗浄機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/高圧洗浄機.png",
       "category": "自動車整備機械"
+    },
+    {
+      "id": 18,
+      "title": "ミキシングマシン",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/ミキシングマシン.jpeg",
+      "category": "自動車整備機械"
     }
   ],
   "makers": [
