@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
+import { Noto_Sans_JP } from "next/font/google";
 import "@/styles/globals.css";
 // sections
 import Header from "@/components/common/sections/Header";
@@ -10,32 +11,40 @@ import Footer from "@/components/common/sections/Footer";
 import { baseUrl } from "@/utils/baseUrl";
 
 // Define local font
-const notoSansJP = localFont({
-  src: [
-    {
-      path: "./fonts/noto-sans-jp-japanese-400-normal.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/noto-sans-jp-japanese-500-normal.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "./fonts/noto-sans-jp-japanese-700-normal.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./fonts/noto-sans-jp-japanese-900-normal.ttf",
-      weight: "900",
-      style: "normal",
-    },
-  ],
-  display: 'swap',
+// const notoSansJP = localFont({
+//   src: [
+//     {
+//       path: "./fonts/noto-sans-jp-japanese-400-normal.ttf",
+//       weight: "400",
+//       style: "normal",
+//     },
+//     {
+//       path: "./fonts/noto-sans-jp-japanese-500-normal.ttf",
+//       weight: "500",
+//       style: "normal",
+//     },
+//     {
+//       path: "./fonts/noto-sans-jp-japanese-700-normal.ttf",
+//       weight: "700",
+//       style: "normal",
+//     },
+//     {
+//       path: "./fonts/noto-sans-jp-japanese-900-normal.ttf",
+//       weight: "900",
+//       style: "normal",
+//     },
+//   ],
+//   display: 'swap',
+//   variable: "--font-noto-sans-jp",
+//   fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Arial', 'sans-serif'],
+// });
+
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"], // Start with latin, it auto-fetches Japanese glyphs as needed
+  weight: ["400", "500", "700", "900"], // Specify weights you need
   variable: "--font-noto-sans-jp",
-  fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Arial', 'sans-serif'],
+  display: "swap",
+  preload: true,
 });
 
 // metadata
@@ -112,20 +121,6 @@ export default function RootLayout({
         {/* Preconnect to external domains */}
         <link rel="preconnect" href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com" />
         <link rel="dns-prefetch" href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com" />
-
-        {/* Preload critical images */}
-        <link
-          as="image"
-          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
-          type="image/webp"
-          media="(min-width: 1024px)"
-        />
-        <link
-          as="image"
-          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
-          type="image/webp"
-          media="(max-width: 1023px)"
-        />
       </head>
       <GoogleTagManager gtmId="GTM-W9W78KMS" />
       <body className={`${notoSansJP.variable} font-noto`}>

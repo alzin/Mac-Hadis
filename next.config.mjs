@@ -33,7 +33,7 @@ const nextConfig = {
   // Experimental features for better performance
   experimental: {
     // REMOVE optimizeCss to avoid version-related quirks
-    // optimizeCss: true,
+    optimizeCss: false,
     scrollRestoration: true,
   },
 
