@@ -32,6 +32,7 @@ const MajorList = ({ title, companies }: IMajorListProps) => {
           <Link
             key={index}
             target="_blank"
+            rel="noopener noreferrer"
             href={item.link}
             className="px-4 py-3 bg-white border-[3px] border-[#B81122] flex justify-center items-center min-h-[100px] max-h-[100px] lg:min-h-[150px] lg:max-h-[150px] overflow-hidden"
           >
