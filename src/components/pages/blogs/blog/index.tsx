@@ -11,9 +11,9 @@ interface IBlogPage {
 const Index: React.FC<IBlogPage> = ({ data }) => {
   // Extract first sentence or first 200 characters for subtitle
   const getSubtitle = (description: string) => {
-    const firstSentence = description.split('。')[0];
+    const firstSentence = description.split("。")[0];
     return firstSentence.length > 200
-      ? firstSentence.substring(0, 200) + '...'
+      ? firstSentence.substring(0, 200) + "..."
       : firstSentence;
   };
 
@@ -28,8 +28,12 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
 
           {/* Centered intro text for better readability */}
           <div className="max-w-3xl mx-auto">
-            <p className="text-gray-600 text-base lg:text-lg font-normal mb-8 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: getSubtitle(data.description) }} />
+            <p
+              className="text-gray-600 text-base lg:text-lg font-normal mb-8 leading-relaxed"
+              dangerouslySetInnerHTML={{
+                __html: getSubtitle(data.description),
+              }}
+            />
           </div>
 
           <div className="inline-block bg-white text-gray-600 px-6 py-3 rounded-lg text-sm font-semibold shadow-md mb-8">
@@ -43,7 +47,6 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
               src={data.imageSrc}
               alt={data.title}
               fill
-              priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
             />
           </div>
@@ -55,10 +58,8 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
       {/* Main Content Wrapper */}
       <div className="bg-white py-12 lg:py-16">
         <div className="container max-w-7xl mx-auto px-4 lg:px-8">
-          
           {/* UX IMPROVEMENT: Kept the Reading Column (max-w-4xl) for text legibility */}
           <div className="max-w-4xl mx-auto">
-
             {/* Table of Contents */}
             <div className="w-full mb-8">
               <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
@@ -69,11 +70,18 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
                 <nav>
                   <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
                     {data.subContent
-                      .filter(item => item.title && item.type !== 'image' && item.type !== 'video')
+                      .filter(
+                        (item) =>
+                          item.title &&
+                          item.type !== "image" &&
+                          item.type !== "video",
+                      )
                       .map((item, index) => (
                         <li key={index}>
-                          <a href={`#${item.title}`}
-                            className="block text-sm text-gray-600 hover:text-red-600 py-2 pl-4 border-l-2 border-transparent hover:border-red-600 transition-all duration-200">
+                          <a
+                            href={`#${item.title}`}
+                            className="block text-sm text-gray-600 hover:text-red-600 py-2 pl-4 border-l-2 border-transparent hover:border-red-600 transition-all duration-200"
+                          >
                             {item.title}
                           </a>
                         </li>
@@ -101,17 +109,18 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
 
             {/* Main Content */}
             <main className="w-full">
-              
               {/* Introduction Section */}
               {data.description && (
                 <section className="bg-gradient-to-br from-gray-50 to-white border border-gray-200 rounded-2xl p-8 lg:p-12 mb-12 relative overflow-hidden">
                   <div className="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-red-500 to-blue-500"></div>
 
                   <div className="prose prose-lg max-w-none">
-                    {data.description.split('\n').map((paragraph, index) => (
-                      <p key={index}
+                    {data.description.split("\n").map((paragraph, index) => (
+                      <p
+                        key={index}
                         className="text-gray-700 leading-relaxed mb-6 text-base lg:text-lg"
-                        dangerouslySetInnerHTML={{ __html: paragraph }} />
+                        dangerouslySetInnerHTML={{ __html: paragraph }}
+                      />
                     ))}
                   </div>
                 </section>
@@ -120,10 +129,13 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
               {/* Sub Content Sections */}
               <div className="space-y-12">
                 {data.subContent.map((item, index) => (
-                  <SubContent key={index} content={item} mainTitle={data.title} />
+                  <SubContent
+                    key={index}
+                    content={item}
+                    mainTitle={data.title}
+                  />
                 ))}
               </div>
-
             </main>
           </div>
           {/* End of Reading Column */}
@@ -145,19 +157,22 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/satei"
-                    className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-base hover:translate-y-[-2px] hover:shadow-lg transition-all duration-200">
+                  <Link
+                    href="/satei"
+                    className="bg-white text-red-600 px-8 py-4 rounded-lg font-bold text-base hover:translate-y-[-2px] hover:shadow-lg transition-all duration-200"
+                  >
                     無料査定のご依頼
                   </Link>
-                  <Link href="/satei"
-                    className="bg-transparent text-white border-2 border-white px-8 py-4 rounded-lg font-bold text-base hover:bg-white hover:text-red-600 transition-all duration-200">
+                  <Link
+                    href="/satei"
+                    className="bg-transparent text-white border-2 border-white px-8 py-4 rounded-lg font-bold text-base hover:bg-white hover:text-red-600 transition-all duration-200"
+                  >
                     お問い合わせ
                   </Link>
                 </div>
               </div>
             </section>
           </div>
-
         </div>
       </div>
 
@@ -165,9 +180,16 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
       <div className="bg-gray-50 py-4">
         <div className="container max-w-7xl mx-auto px-4 lg:px-8">
           <div className="text-gray-500 text-sm">
-            <Link href="/" className="hover:text-red-600 transition-colors">ホーム</Link>
+            <Link href="/" className="hover:text-red-600 transition-colors">
+              ホーム
+            </Link>
             <span className="mx-2">›</span>
-            <Link href="/blogs" className="hover:text-red-600 transition-colors">ブログ</Link>
+            <Link
+              href="/blogs"
+              className="hover:text-red-600 transition-colors"
+            >
+              ブログ
+            </Link>
             <span className="mx-2">›</span>
             <span className="text-gray-700">{data.title}</span>
           </div>

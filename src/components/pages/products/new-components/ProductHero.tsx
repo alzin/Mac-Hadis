@@ -18,7 +18,6 @@ const ProductHero = ({ productTitle }: IProductHeroProps) => {
           sizes="100vw"
           quality={100}
           fill
-          priority
           className="object-cover object-[75%] lg:object-center"
         />
       </div>

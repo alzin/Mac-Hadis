@@ -10,15 +10,14 @@ const Hero: React.FC = () => {
       >
         {/* Background wrapper to ensure correct positioning */}
         <div className="absolute inset-0 -z-30">
-          {/* Mobile Background - LCP Image with fetchPriority */}
+          {/* Mobile Background - LCP Image with fetch */}
           <Image
             src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
             alt="Company's legacy image"
             sizes="100vw"
             quality={100}
             fill
-            priority
-            fetchPriority="high"
+
             className="object-cover object-center block lg:hidden"
           />
           {/* Desktop Background - LCP Image with fetchPriority */}
@@ -28,8 +27,6 @@ const Hero: React.FC = () => {
             sizes="100vw"
             quality={100}
             fill
-            priority
-            fetchPriority="high"
             className="object-cover lg:object-right-top hidden lg:block"
           />
         </div>

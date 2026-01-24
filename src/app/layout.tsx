@@ -33,7 +33,6 @@ const notoSansJP = localFont({
       style: "normal",
     },
   ],
-  preload: true,
   display: 'swap',
   variable: "--font-noto-sans-jp",
   fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Arial', 'sans-serif'],
@@ -116,14 +115,12 @@ export default function RootLayout({
 
         {/* Preload critical images */}
         <link
-          rel="preload"
           as="image"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
           type="image/webp"
           media="(min-width: 1024px)"
         />
         <link
-          rel="preload"
           as="image"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
           type="image/webp"
