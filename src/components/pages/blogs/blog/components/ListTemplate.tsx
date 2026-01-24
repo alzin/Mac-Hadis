@@ -8,7 +8,8 @@ interface IListTemplate {
 
 const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
   const withPagination: boolean = !!content.withPagination;
-  const withCounter : boolean = content.withCounter !== undefined ? content.withCounter : true;
+  const withCounter: boolean =
+    content.withCounter !== undefined ? content.withCounter : true;
 
   const [show, setShow] = useState(!withPagination);
 
@@ -185,6 +186,17 @@ const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
                         </li>
                       ))}
                     </ul>
+                  )}
+                  {/* Bottom Description */}
+                  {item.bottomDescription && (
+                    <div className="mt-8 p-6 bg-blue-50 border-l-4 border-blue-500 rounded-lg">
+                      <p
+                        className="text-gray-700 leading-relaxed text-base lg:text-lg"
+                        dangerouslySetInnerHTML={{
+                          __html: item.bottomDescription,
+                        }}
+                      />
+                    </div>
                   )}
                 </div>
               </div>
