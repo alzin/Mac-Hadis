@@ -17,7 +17,6 @@ const Footer: React.FC = () => {
             unoptimized
             width={101}
             height={64}
-            priority
           />
         </Link>
 
@@ -77,7 +76,7 @@ const Footer: React.FC = () => {
                   loading="eager"
                 />
               </Link>
-            )
+            ),
           )}
         </div>
 

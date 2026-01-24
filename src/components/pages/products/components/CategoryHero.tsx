@@ -16,8 +16,7 @@ const CategoryHero = ({ categoryName }: ICategoryHeroProps) => {
           alt="category hero"
           sizes="100vw"
           quality={100}
-          fill
-          priority
+          fill          
           className="object-cover object-[75%] lg:object-center"
         />
       </div>

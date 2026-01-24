@@ -191,7 +191,6 @@ const ImagesGallery = ({
                   alt={`${main.title} - Main view`}
                   width={1200}
                   height={1200}
-                  priority
                   quality={90}
                   className="w-auto h-auto max-w-full max-h-[70vh] object-contain transition-all duration-300 hover:scale-[1.02] drop-shadow-lg"
                   onLoad={() => handleImageLoad(selectedImageIndex)}
@@ -383,7 +382,6 @@ const ImagesGallery = ({
                 quality={95}
                 className="max-w-[90vw] max-h-[90vh] object-contain select-none"
                 sizes="100vw"
-                priority
                 onLoadingComplete={({ naturalWidth, naturalHeight }) => {
                   setImageDimensions({ width: naturalWidth, height: naturalHeight });
                 }}

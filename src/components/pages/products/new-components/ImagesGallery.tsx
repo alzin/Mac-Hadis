@@ -216,7 +216,6 @@ const ImagesGallery = ({
                 alt={`${images[selectedImageIndex].title} - Main view`}
                 width={600}
                 height={600}
-                priority
                 quality={90}
                 className="w-auto h-auto max-w-full max-h-[70vh] object-contain transition-all duration-300 hover:scale-[1.02] drop-shadow-lg"
                 onLoad={() => handleImageLoad(selectedImageIndex)}
@@ -403,7 +402,6 @@ const ImagesGallery = ({
                 quality={95}
                 className="max-w-[90vw] max-h-[90vh] object-contain select-none"
                 sizes="100vw"
-                priority
                 onLoad={(e) => {
                   const img = e.target as HTMLImageElement;
                   setImageDimensions({
