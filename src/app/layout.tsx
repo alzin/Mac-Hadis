@@ -1,15 +1,23 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import localFont from "next/font/local";
+// 1. next/font/google から Open Sans をインポート
+import { Open_Sans } from "next/font/google";
 import "@/styles/globals.css";
 // sections
 import Header from "@/components/common/sections/Header";
 import Footer from "@/components/common/sections/Footer";
-
 // baseUrl
 import { baseUrl } from "@/utils/baseUrl";
 
-// Define local font
+// 2. Open Sans の設定
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-open-sans", // Tailwind等で使う変数名
+});
+
+// Define local font (Noto Sans JP)
 const notoSansJP = localFont({
   src: [
     {
@@ -33,45 +41,40 @@ const notoSansJP = localFont({
       style: "normal",
     },
   ],
-  display: 'swap',
+  display: "swap",
   variable: "--font-noto-sans-jp",
-  fallback: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Arial', 'sans-serif'],
+  fallback: [
+    "system-ui",
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "Arial",
+    "sans-serif",
+  ],
 });
 
-// metadata
 export const metadata: Metadata = {
+  // ... (メタデータ部分は変更なしでOK) ...
   icons: "/favicon.ico",
   title: {
     default: "中古機械、電動工具の高額買取のハディズ",
     template: "%s | 機械工具買取ハディズ",
   },
-
   description:
     "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。",
-
   applicationName: "機械工具買取ハディズ",
-
   generator: "Next.js",
-
   keywords: [
     "大型UVインクジェットプリンター買取",
     "機械・電動工具の高価買取",
     "簡単！買取の手順",
     "Hadis INTERNATIONAL",
   ],
-
   referrer: "origin",
-
   creator: "機械工具買取ハディズs",
-
   publisher: "機械工具買取ハディズ",
-
-  // robots: "index, follow",
-
   alternates: {
     canonical: baseUrl,
   },
-
   openGraph: {
     type: "website",
     url: baseUrl,
@@ -83,7 +86,6 @@ export const metadata: Metadata = {
       { url: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/main-ogp.jpg" },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
     description:
@@ -91,13 +93,10 @@ export const metadata: Metadata = {
     title: "中古機械、電動工具の高額買取のハディズ",
     images: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/main-ogp.jpg",
   },
-
   verification: {
     google: "id",
   },
-
   category: "Sells",
-
   classification: "Sells",
 };
 
@@ -109,26 +108,17 @@ export default function RootLayout({
   return (
     <html lang="ja" className="scroll-smooth">
       <head>
-        {/* Preconnect to external domains */}
-        <link rel="preconnect" href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com" />
-        <link rel="dns-prefetch" href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com" />
-
-        {/* Preload critical images */}
-        {/* <link
-          as="image"
-          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
-          type="image/webp"
-          media="(min-width: 1024px)"
+        <link
+          rel="preconnect"
+          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
         />
         <link
-          as="image"
-          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
-          type="image/webp"
-          media="(max-width: 1023px)"
-        /> */}
+          rel="dns-prefetch"
+          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
+        />
       </head>
       <GoogleTagManager gtmId="GTM-W9W78KMS" />
-      <body className={`${notoSansJP.variable} font-noto`}>
+      <body className={`${notoSansJP.variable} ${openSans.variable} font-noto`}>
         <main>
           <Header />
           {children}
