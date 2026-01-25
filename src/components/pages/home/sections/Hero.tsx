@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
             sizes="100vw"
             quality={100}
             fill
-
+            loading='eager'
             className="object-cover object-center block lg:hidden"
           />
           {/* Desktop Background - LCP Image with fetchPriority */}
@@ -27,6 +27,7 @@ const Hero: React.FC = () => {
             sizes="100vw"
             quality={100}
             fill
+            loading='eager'
             className="object-cover lg:object-right-top hidden lg:block"
           />
         </div>
