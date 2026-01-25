@@ -117,8 +117,8 @@ export default function RootLayout({
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
         />
       </head>
-      <GoogleTagManager gtmId="GTM-W9W78KMS" />
       <body className={`${notoSansJP.variable} ${openSans.variable} font-noto`}>
+      <GoogleTagManager gtmId="GTM-W9W78KMS" />
         <main>
           <Header />
           {children}
