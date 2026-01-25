@@ -114,7 +114,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com" />
 
         {/* Preload critical images */}
-        <link
+        {/* <link
           as="image"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
           type="image/webp"
@@ -125,7 +125,7 @@ export default function RootLayout({
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
           type="image/webp"
           media="(max-width: 1023px)"
-        />
+        /> */}
       </head>
       <GoogleTagManager gtmId="GTM-W9W78KMS" />
       <body className={`${notoSansJP.variable} font-noto`}>

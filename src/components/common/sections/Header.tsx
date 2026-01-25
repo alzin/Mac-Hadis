@@ -31,7 +31,6 @@ const Header: React.FC = () => {
             alt="Hadis Company Logo"
             fill
             unoptimized
-            loading="eager"
           />
         </Link>
 
@@ -68,7 +67,6 @@ const Header: React.FC = () => {
                   alt={item.name}
                   width={40}
                   height={40}
-                  loading="eager"
                 />
               </Link>
             ))}
@@ -90,7 +88,6 @@ const Header: React.FC = () => {
                   alt="arrow right hadis"
                   width={20}
                   height={20}
-                  loading="eager"
                 />
               </Link>
             ))}
@@ -113,7 +110,6 @@ const Header: React.FC = () => {
               alt="menu-hadis"
               width={24}
               height={24}
-              loading="eager"
             />
           ) : (
             <Image
@@ -123,7 +119,6 @@ const Header: React.FC = () => {
               alt="menu-hadis"
               width={24}
               height={24}
-              loading="eager"
             />
           )}
         </div>
@@ -191,7 +186,6 @@ const Header: React.FC = () => {
                   height={40}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
                   quality={100}
-                  loading="eager"
                 />
               </Link>
             ))}

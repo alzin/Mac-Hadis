@@ -8,38 +8,35 @@ const Hero: React.FC = () => {
         aria-label="Hero section with business highlights"
         className="relative px-4 w-full h-[410px] lg:h-[640px] 2xl:h-[calc(100vh-64px)] sm:bg-right-top overflow-hidden"
       >
-        {/* Background wrapper to ensure correct positioning */}
+        {/* Background wrapper */}
         <div className="absolute inset-0 -z-30">
-          {/* Mobile Background - LCP Image with fetch */}
-          <Image
-            src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
-            alt="Company's legacy image"
-            sizes="100vw"
-            quality={100}
-            fill
-            loading='eager'
-            className="object-cover object-center block lg:hidden"
-          />
-          {/* Desktop Background - LCP Image with fetchPriority */}
-          <Image
-            src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
-            alt="Company's legacy image"
-            sizes="100vw"
-            quality={100}
-            fill
-            loading='eager'
-            className="object-cover lg:object-right-top hidden lg:block"
-          />
+          {/* OPTIMIZATION: Use <picture> to force single download based on viewport */}
+          {/* Note: We use standard <img> inside picture for art direction to stop double-download. 
+              Since your source is S3 and already WebP, this is efficient. */}
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcSet="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
+            />
+            <img
+              src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
+              alt="Company's legacy image"
+              className="object-cover object-center w-full h-full lg:object-right-top"
+              fetchPriority="high" 
+            />
+          </picture>
         </div>
+
         <div className="flex lg:w-1/2 2xl:min-w-[1000px] items-start 2xl:items-center justify-center h-full 2xl:h-3/4 space-y-2 lg:space-y-7 flex-col pt-7 2xl:pt-20 sm:pl-12 pb-4">
-          {/* image 1  */}
+          {/* image 1 - Removed loading='eager', allow default lazy or priority if critical */}
           <div className="text-hero relative xl:w-[810px] xl:h-[64px] w-[335px] h-[38px] sm:h-[50px] lg:h-[70px] z-10">
             <Image
               src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-1.webp"
               alt="Company's legacy image"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
               fill
-              loading="eager"
+              // Removed quality={100} -> defaults to 75
+              priority // This adds preload automatically
             />
           </div>
           {/* image 2 */}
@@ -49,8 +46,8 @@ const Hero: React.FC = () => {
               alt="Hero promotional banner with details"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
               fill
-              loading="eager"
-              quality={100}
+              // quality={100}
+              priority
             />
           </div>
 
