@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, ArrowRight } from "lucide-react"; // OPTIMIZATION: Import icons from lucide-react
+import { Menu, X } from "lucide-react"; 
 
 // data
 import navbarLinksData from "@/content/home/navbarLinks.json";
@@ -31,8 +31,8 @@ const Header: React.FC = () => {
             src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/hadis-logo.png"
             alt="Hadis Company Logo"
             fill
-            // Removed unoptimized, added priority for LCP
             priority
+            // Optimization: Accurate sizing for 70px (mobile) and 101px (desktop)
             sizes="(max-width: 1024px) 70px, 101px"
             className="object-contain"
           />
@@ -93,6 +93,8 @@ const Header: React.FC = () => {
                   alt="arrow right hadis"
                   width={20}
                   height={20}
+                  // Small icon, no need for large sizes
+                  sizes="20px"
                 />
               </Link>
             ))}
@@ -107,8 +109,6 @@ const Header: React.FC = () => {
           role="button"
           tabIndex={0}
         >
-          {/* OPTIMIZATION: Use Lucide React icons instead of next/image for UI controls.
-              This prevents layout shifts and eliminates image download latency. */}
           {activeMenu ? (
             <X size={24} />
           ) : (
@@ -178,8 +178,7 @@ const Header: React.FC = () => {
                   alt={item.name}
                   width={40}
                   height={40}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
-                  quality={100}
+                  sizes="40px"
                 />
               </Link>
             ))}

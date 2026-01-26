@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Turbopack is enabled by default in dev in newer versions, keeping object for config if needed
+  // Turbopack is enabled by default in dev in newer versions
   turbopack: {},
   reactStrictMode: true,
-  // Standalone output is perfect for GCP Cloud Run / Docker
   output: 'standalone',
 
   images: {
@@ -13,10 +12,10 @@ const nextConfig = {
       { protocol: 'https', hostname: 'mac-hadis.s3.ap-northeast-1.amazonaws.com', pathname: '**' },
       { protocol: 'https', hostname: 'mac-hadis.com', pathname: '**' },
     ],
-    // Optimized device sizes to reduce the number of generated variants while covering all standard breakpoints
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256],
-    // Increase cache to reduce S3 hits and re-processing
+    // Optimized device sizes to cover mobile (640), tablet (768), laptop (1024), desktop (1280+)
+    deviceSizes: [640, 768, 1024, 1280, 1536, 1920],
+    // Reduced image sizes variants to save build time and cache hits
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
@@ -31,7 +30,13 @@ const nextConfig = {
     optimizeCss: true,
     scrollRestoration: true,
     // Add heavy UI libraries here to tree-shake them effectively
-    optimizePackageImports: ['swiper', 'sweetalert2', 'react-icons', 'lucide-react', 'framer-motion'],
+    optimizePackageImports: [
+      'swiper', 
+      'sweetalert2', 
+      'lucide-react', 
+      'framer-motion',
+      'lodash'
+    ],
   },
   
   async headers() {
@@ -55,6 +60,10 @@ const nextConfig = {
             key: 'Referrer-Policy',
             value: 'strict-origin-when-cross-origin',
           },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+          }
         ],
       },
       // Aggressive caching for Next.js optimized images

@@ -5,9 +5,9 @@ const Hero: React.FC = () => {
   const common = {
     alt: "Background",
     fill: true,
-    priority: true,
+    priority: true, // LCP Candidate
     sizes: "100vw",
-    quality: 85, // Performance Fix: Reduced from default 75 (or 100) to 85 for sweet spot
+    quality: 85,
   };
 
   // Generate the srcSet for the Mobile Image (upto 1023px)
@@ -40,6 +40,7 @@ const Hero: React.FC = () => {
             <img
               src={desktopSrc}
               alt="Background"
+              // fetchPriority="high" is crucial for LCP
               fetchPriority="high"
               style={{
                 position: "absolute",
@@ -54,32 +55,35 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="flex lg:w-1/2 2xl:min-w-[1000px] items-start 2xl:items-center justify-center h-full 2xl:h-3/4 space-y-2 lg:space-y-7 flex-col pt-7 2xl:pt-20 sm:pl-12 pb-4">
-          {/* image 1 */}
+          {/* image 1 - "Founded 25 years" text image */}
+          {/* Fixed width container: w-[335px] (mobile) -> xl:w-[810px] */}
           <div className="text-hero relative xl:w-[810px] xl:h-[64px] w-[335px] h-[38px] sm:h-[50px] lg:h-[70px] z-10">
             <Image
               src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-1.webp"
               alt="Company's legacy image"
-              // Performance Fix: Specific sizes to avoid downloading 1200px image on mobile
-              sizes="(max-width: 768px) 335px, (max-width: 1280px) 70vw, 810px"
+              // Optimization: Matches CSS width breakpoints exactly
+              sizes="(max-width: 1279px) 335px, 810px"
               fill
               priority
               quality={85}
             />
           </div>
-          {/* image 2 */}
+          
+          {/* image 2 - "Expensive purchase" text image */}
+          {/* Fixed width container: w-[340px] (mobile) -> xl:w-[810px] */}
           <div className="text-hero relative w-[340px] h-[88px] sm:h-[130px] lg:h-[300px] xl:w-[810px] xl:h-[350px] z-10">
             <Image
               src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-2.webp"
               alt="Hero promotional banner with details"
-              // Performance Fix: Exact sizes for typical breakpoints
-              sizes="(max-width: 768px) 340px, (max-width: 1280px) 70vw, 810px"
+              // Optimization: Matches CSS width breakpoints exactly
+              sizes="(max-width: 1279px) 340px, 810px"
               fill
               priority
               quality={85}
             />
           </div>
 
-          {/* details */}
+          {/* details - HTML text is faster than Images. Good job using text here. */}
           <div className="flex w-full items-start xl:items-center justify-center gap-2 flex-col lg:flex-row text-white flex-wrap">
             <h1 className="flex gap-1 items-center justify-center w-[165px] h-[66px] lg:w-[276px] lg:h-[102px] gradient-red rounded-lg font-black lg:text-[32px] text-xl">
               <span className="text-[18px] lg:text-[28px]">創業</span>

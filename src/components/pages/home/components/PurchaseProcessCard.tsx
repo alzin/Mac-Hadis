@@ -31,7 +31,6 @@ const PurchaseProcessCard: React.FC<IPurchaseProcessCard> = ({
             alt={data.title}
           />
           <Image
-            unoptimized
             className=" absolute -z-10 bottom-0 right-0 pl-[10px] pt-[10px] lg:pl-[23px] lg:pt-[23px]"
             fill
             src={
