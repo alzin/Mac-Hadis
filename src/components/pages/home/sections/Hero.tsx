@@ -42,6 +42,7 @@ const Hero: React.FC = () => {
             <img
               src={desktopSrc}
               alt="Background"
+              fetchPriority="high"
               // Replicate the 'fill' styles that Next/Image usually applies
               style={{
                 position: "absolute",
@@ -65,7 +66,6 @@ const Hero: React.FC = () => {
               alt="Company's legacy image"
               sizes="(max-width: 768px) 90vw, (max-width: 1280px) 70vw, 810px"
               fill
-              fetchPriority="high"
               loading="eager"
             />
           </div>
@@ -76,7 +76,6 @@ const Hero: React.FC = () => {
               alt="Hero promotional banner with details"
               sizes="(max-width: 768px) 90vw, (max-width: 1280px) 70vw, 810px"
               fill
-              fetchPriority="high"
               loading="eager"
             />
           </div>
