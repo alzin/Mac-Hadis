@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Menu, X, ArrowRight } from "lucide-react"; // OPTIMIZATION: Import icons from lucide-react
 
 // data
 import navbarLinksData from "@/content/home/navbarLinks.json";
@@ -30,7 +31,10 @@ const Header: React.FC = () => {
             src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/hadis-logo.png"
             alt="Hadis Company Logo"
             fill
-            unoptimized
+            // Removed unoptimized, added priority for LCP
+            priority
+            sizes="(max-width: 1024px) 70px, 101px"
+            className="object-contain"
           />
         </Link>
 
@@ -44,8 +48,8 @@ const Header: React.FC = () => {
               <li key={item.id}>
                 <Link
                   href={item.href}
-                  title={`Navigate to ${item.label}`}
-                  className="whitespace-nowrap"
+                  title={`Maps to ${item.label}`}
+                  className="whitespace-nowrap hover:opacity-80 transition-opacity"
                 >
                   {item.label}
                 </Link>
@@ -59,7 +63,7 @@ const Header: React.FC = () => {
               <Link
                 key={item.id}
                 href={item.href}
-                title={`Navigate to ${item.name}`}
+                title={`Maps to ${item.name}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -78,8 +82,8 @@ const Header: React.FC = () => {
               <Link
                 key={item.id}
                 href={item.href}
-                title={`Navigate to ${item.label}`}
-                className="bg-[#B81122] font-black text-white text-base flex items-center justify-center gap-2 py-3 px-8 rounded"
+                title={`Maps to ${item.label}`}
+                className="bg-[#B81122] font-black text-white text-base flex items-center justify-center gap-2 py-3 px-8 rounded hover:bg-[#a00f1e] transition-colors"
               >
                 <span className="whitespace-nowrap">{item.label}</span>
                 <Image
@@ -97,30 +101,18 @@ const Header: React.FC = () => {
 
         {/* burger btn */}
         <div
-          className="burger lg:hidden cursor-pointer"
+          className="burger lg:hidden cursor-pointer flex items-center justify-center text-[#B81122]"
           onClick={toggleMenu}
           aria-label="Toggle menu"
           role="button"
           tabIndex={0}
         >
+          {/* OPTIMIZATION: Use Lucide React icons instead of next/image for UI controls.
+              This prevents layout shifts and eliminates image download latency. */}
           {activeMenu ? (
-            <Image
-              src={
-                "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/close.svg"
-              }
-              alt="menu-hadis"
-              width={24}
-              height={24}
-            />
+            <X size={24} />
           ) : (
-            <Image
-              src={
-                "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/menu.svg"
-              }
-              alt="menu-hadis"
-              width={24}
-              height={24}
-            />
+            <Menu size={24} />
           )}
         </div>
 
@@ -134,7 +126,7 @@ const Header: React.FC = () => {
               <li key={item.id} onClick={toggleMenu}>
                 <Link
                   href={item.href}
-                  title={`Navigate to ${item.label}`}
+                  title={`Maps to ${item.label}`}
                   className="whitespace-nowrap"
                 >
                   {item.label}
@@ -177,7 +169,7 @@ const Header: React.FC = () => {
               <Link
                 key={item.id}
                 href={item.href}
-                title={`Navigate to ${item.name}`}
+                title={`Maps to ${item.name}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -1,21 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Turbo is the future, keep it enabled if using --turbo
   turbopack: {},
   reactStrictMode: true,
-
-  // Better for Cloud Run: smaller runtime image
   output: 'standalone',
 
-  // Optimize images
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       { protocol: 'https', hostname: 'mac-hadis.s3.ap-northeast-1.amazonaws.com', pathname: '**' },
       { protocol: 'https', hostname: 'mac-hadis.com', pathname: '**' },
     ],
-    // Reduced device sizes to match actual breakpoints, preventing generation of unused large images
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+    deviceSizes: [360, 480, 640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
@@ -23,25 +18,16 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // Enable compression
   compress: true,
-
-  // Disable powered by header
   poweredByHeader: false,
-
-  // Optimize production builds
   productionBrowserSourceMaps: false,
 
-  // Experimental features
   experimental: {
     optimizeCss: true,
     scrollRestoration: true,
-    // optimizePackageImports can help with tree-shaking specific large libraries
-    optimizePackageImports: ['swiper', 'sweetalert2', 'react-icons'],
+    // Added 'lucide-react' to optimized imports
+    optimizePackageImports: ['swiper', 'sweetalert2', 'react-icons', 'lucide-react'],
   },
-
-  // Removed manual splitChunks. Next.js defaults are highly optimized for Core Web Vitals.
-  // Manual chunking often increases Total Blocking Time (TBT).
   
   async headers() {
     return [

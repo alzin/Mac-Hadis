@@ -31,26 +31,21 @@ const Hero: React.FC = () => {
         aria-label="Hero section with business highlights"
         className="relative px-4 w-full h-[410px] lg:h-[640px] 2xl:h-[calc(100vh-64px)] sm:bg-right-top overflow-hidden"
       >
-        {/* Background wrapper using <picture> for strict Art Direction */}
+        {/* Background wrapper */}
         <div className="absolute inset-0 -z-30">
           <picture>
-            {/* If width is <= 1023px, use Mobile Source */}
             <source media="(max-width: 1023px)" srcSet={mobileSrcSet} />
-            {/* If width is > 1023px, use Desktop Source */}
             <source media="(min-width: 1024px)" srcSet={desktopSrcSet} />
-            {/* Fallback & Styling */}
             <img
               src={desktopSrc}
               alt="Background"
               fetchPriority="high"
-              // Replicate the 'fill' styles that Next/Image usually applies
               style={{
                 position: "absolute",
                 height: "100%",
                 width: "100%",
                 inset: 0,
                 objectFit: "cover",
-                // Using object-position based on your previous CSS classes
                 objectPosition: "right top",
               }}
             />
@@ -60,13 +55,15 @@ const Hero: React.FC = () => {
         <div className="flex lg:w-1/2 2xl:min-w-[1000px] items-start 2xl:items-center justify-center h-full 2xl:h-3/4 space-y-2 lg:space-y-7 flex-col pt-7 2xl:pt-20 sm:pl-12 pb-4">
           {/* image 1 */}
           <div className="text-hero relative xl:w-[810px] xl:h-[64px] w-[335px] h-[38px] sm:h-[50px] lg:h-[70px] z-10">
-            {/* OPTIMIZATION: Removed 'priority'. Using 'eager' loads it fast but doesn't block the Critical Path (background). */}
+            {/* OPTIMIZATION: Added 'priority' back. 
+                With 'deviceSizes' fixed in next.config.mjs, these images will be small enough 
+                to load instantly without blocking the background. This improves LCP time. */}
             <Image
               src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-1.webp"
               alt="Company's legacy image"
               sizes="(max-width: 768px) 90vw, (max-width: 1280px) 70vw, 810px"
               fill
-              loading="eager"
+              priority
             />
           </div>
           {/* image 2 */}
@@ -76,7 +73,7 @@ const Hero: React.FC = () => {
               alt="Hero promotional banner with details"
               sizes="(max-width: 768px) 90vw, (max-width: 1280px) 70vw, 810px"
               fill
-              loading="eager"
+              priority
             />
           </div>
 
