@@ -1,53 +1,66 @@
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import "@/styles/hero.css";
 
 const Hero: React.FC = () => {
+  const common = { alt: 'Background', fill: true, priority: true, sizes: '100vw' };
+
+  // Generate the srcSet for the Mobile Image (upto 1023px)
+  const {
+    props: { srcSet: mobileSrcSet, ...mobileRest },
+  } = getImageProps({
+    ...common,
+    src: 'https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp',
+  });
+
+  // Generate the srcSet for the Desktop Image (from 1024px)
+  const {
+    props: { srcSet: desktopSrcSet, src: desktopSrc, ...desktopRest },
+  } = getImageProps({
+    ...common,
+    src: 'https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp',
+  });
+
   return (
     <>
       <section
         aria-label="Hero section with business highlights"
         className="relative px-4 w-full h-[410px] lg:h-[640px] 2xl:h-[calc(100vh-64px)] sm:bg-right-top overflow-hidden"
       >
-        {/* Background wrapper */}
+        {/* Background wrapper using <picture> for strict Art Direction */}
         <div className="absolute inset-0 -z-30">
-          {/* OPTIMIZATION: Use Next/Image for background to leverage auto-format (AVIF/WebP) and resizing */}
-          
-          {/* Mobile Background */}
-          <div className="block lg:hidden w-full h-full relative">
-            <Image
-              src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
+          <picture>
+            {/* If width is <= 1023px, use Mobile Source */}
+            <source media="(max-width: 1023px)" srcSet={mobileSrcSet} />
+            {/* If width is > 1023px, use Desktop Source */}
+            <source media="(min-width: 1024px)" srcSet={desktopSrcSet} />
+            {/* Fallback & Styling */}
+            <img
+              src={desktopSrc}
               alt="Background"
-              fill
-              priority
-              className="object-cover object-center"
-              sizes="100vw"
+              // Replicate the 'fill' styles that Next/Image usually applies
+              style={{
+                position: 'absolute',
+                height: '100%',
+                width: '100%',
+                inset: 0,
+                objectFit: 'cover',
+                // Using object-position based on your previous CSS classes
+                objectPosition: 'right top',
+              }}
             />
-          </div>
-
-          {/* Desktop Background */}
-          <div className="hidden lg:block w-full h-full relative">
-            <Image
-              src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
-              alt="Background"
-              fill
-              priority
-              className="object-cover lg:object-right-top"
-              sizes="100vw"
-            />
-          </div>
+          </picture>
         </div>
 
         <div className="flex lg:w-1/2 2xl:min-w-[1000px] items-start 2xl:items-center justify-center h-full 2xl:h-3/4 space-y-2 lg:space-y-7 flex-col pt-7 2xl:pt-20 sm:pl-12 pb-4">
           {/* image 1 */}
           <div className="text-hero relative xl:w-[810px] xl:h-[64px] w-[335px] h-[38px] sm:h-[50px] lg:h-[70px] z-10">
+            {/* OPTIMIZATION: Removed 'priority'. Using 'eager' loads it fast but doesn't block the Critical Path (background). */}
             <Image
               src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-1.webp"
               alt="Company's legacy image"
-              // OPTIMIZATION: Adjusted sizes to be more realistic. 
-              // Mobile: 335px (approx 90vw), Desktop: 810px
               sizes="(max-width: 768px) 90vw, (max-width: 1280px) 70vw, 810px"
               fill
-              priority 
+              loading="eager"
             />
           </div>
           {/* image 2 */}
@@ -55,10 +68,9 @@ const Hero: React.FC = () => {
             <Image
               src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-2.webp"
               alt="Hero promotional banner with details"
-              // OPTIMIZATION: Adjusted sizes
               sizes="(max-width: 768px) 90vw, (max-width: 1280px) 70vw, 810px"
               fill
-              priority
+              loading="eager"
             />
           </div>
 
