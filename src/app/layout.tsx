@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
-// 1. Import from google
 import { Open_Sans, Noto_Sans_JP } from "next/font/google";
 import "@/styles/globals.css";
 import Header from "@/components/common/sections/Header";
@@ -11,22 +10,18 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-open-sans",
+  weight: ["400", "700"], // Optimization: Load only necessary weights
 });
 
 // 2. Configure Noto Sans JP
 const notoSansJP = Noto_Sans_JP({
-  // "preload: false" is REQUIRED for Japanese fonts in Next.js.
-  // Without this, it only loads English characters and falls back to Arial for Japanese.
+  // "preload: false" is strictly maintained as per your previous requirement
   preload: false, 
-  
-  // We don't list 'subsets' because we want the browser to fetch 
-  // whatever characters it needs (including Kanji/Kana).
   variable: "--font-noto-sans-jp",
   display: "swap",
-  
-  // Noto Sans JP is a variable font, so specifying weights is optional,
-  // but adding them ensures Next.js requests the correct range if needed.
-  weight: ["400", "500", "700", "900"], 
+  // Optimization: Removed "500" and "900". 
+  // Loading 4 weights of a Japanese font is the #1 cause of your slow render time.
+  weight: ["400", "700"], 
 });
 
 export const metadata: Metadata = {
