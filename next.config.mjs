@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Turbo is the future, keep it enabled if using --turbo
   turbopack: {},
   reactStrictMode: true,
 
@@ -13,8 +14,9 @@ const nextConfig = {
       { protocol: 'https', hostname: 'mac-hadis.s3.ap-northeast-1.amazonaws.com', pathname: '**' },
       { protocol: 'https', hostname: 'mac-hadis.com', pathname: '**' },
     ],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // Reduced device sizes to match actual breakpoints, preventing generation of unused large images
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
@@ -30,56 +32,17 @@ const nextConfig = {
   // Optimize production builds
   productionBrowserSourceMaps: false,
 
-  // Experimental features for better performance
+  // Experimental features
   experimental: {
-    // REMOVE optimizeCss to avoid version-related quirks
     optimizeCss: true,
     scrollRestoration: true,
+    // optimizePackageImports can help with tree-shaking specific large libraries
+    optimizePackageImports: ['swiper', 'sweetalert2', 'react-icons'],
   },
 
-  // Webpack optimizations (suggest disabling temporarily if you see issues)
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      config.optimization.concatenateModules = true;
-
-      // If you hit odd client/runtime issues, comment this whole splitChunks block out.
-      config.optimization.splitChunks = {
-        chunks: 'all',
-        cacheGroups: {
-          default: false,
-          vendors: false,
-          vendor: {
-            name: 'vendor',
-            chunks: 'all',
-            test: /node_modules/,
-            priority: 20,
-          },
-          common: {
-            name: 'common',
-            minChunks: 2,
-            chunks: 'all',
-            priority: 10,
-            reuseExistingChunk: true,
-            enforce: true,
-          },
-          swiper: {
-            test: /[\\/]node_modules[\\/](swiper)[\\/]/,
-            name: 'swiper',
-            priority: 30,
-            chunks: 'all',
-          },
-          sweetalert: {
-            test: /[\\/]node_modules[\\/](sweetalert2)[\\/]/,
-            name: 'sweetalert',
-            priority: 30,
-            chunks: 'all',
-          },
-        },
-      };
-    }
-    return config;
-  },
-
+  // Removed manual splitChunks. Next.js defaults are highly optimized for Core Web Vitals.
+  // Manual chunking often increases Total Blocking Time (TBT).
+  
   async headers() {
     return [
       {
