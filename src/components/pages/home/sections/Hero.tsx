@@ -2,14 +2,19 @@ import Image, { getImageProps } from "next/image";
 import "@/styles/hero.css";
 
 const Hero: React.FC = () => {
-  const common = { alt: 'Background', fill: true, priority: true, sizes: '100vw' };
+  const common = {
+    alt: "Background",
+    fill: true,
+    priority: true,
+    sizes: "100vw",
+  };
 
   // Generate the srcSet for the Mobile Image (upto 1023px)
   const {
     props: { srcSet: mobileSrcSet, ...mobileRest },
   } = getImageProps({
     ...common,
-    src: 'https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp',
+    src: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp",
   });
 
   // Generate the srcSet for the Desktop Image (from 1024px)
@@ -17,7 +22,7 @@ const Hero: React.FC = () => {
     props: { srcSet: desktopSrcSet, src: desktopSrc, ...desktopRest },
   } = getImageProps({
     ...common,
-    src: 'https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp',
+    src: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp",
   });
 
   return (
@@ -39,13 +44,13 @@ const Hero: React.FC = () => {
               alt="Background"
               // Replicate the 'fill' styles that Next/Image usually applies
               style={{
-                position: 'absolute',
-                height: '100%',
-                width: '100%',
+                position: "absolute",
+                height: "100%",
+                width: "100%",
                 inset: 0,
-                objectFit: 'cover',
+                objectFit: "cover",
                 // Using object-position based on your previous CSS classes
-                objectPosition: 'right top',
+                objectPosition: "right top",
               }}
             />
           </picture>
@@ -60,6 +65,7 @@ const Hero: React.FC = () => {
               alt="Company's legacy image"
               sizes="(max-width: 768px) 90vw, (max-width: 1280px) 70vw, 810px"
               fill
+              fetchPriority="high"
               loading="eager"
             />
           </div>
@@ -70,6 +76,7 @@ const Hero: React.FC = () => {
               alt="Hero promotional banner with details"
               sizes="(max-width: 768px) 90vw, (max-width: 1280px) 70vw, 810px"
               fill
+              fetchPriority="high"
               loading="eager"
             />
           </div>
