@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import "@/styles/privacy.css";
+// import "@/styles/privacy.css";
 
 const showPrivacyPolicy = () => {
   Swal.fire({
