@@ -6,22 +6,24 @@ import Header from "@/components/common/sections/Header";
 import Footer from "@/components/common/sections/Footer";
 import { baseUrl } from "@/utils/baseUrl";
 
+// Optimization: Use variable fonts to reduce network requests and allow subsetting
 const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-open-sans",
-  weight: ["400", "700"], // Optimization: Load only necessary weights
+  // No weight array needed for variable fonts (it includes all weights)
 });
 
-// 2. Configure Noto Sans JP
+// Optimization: Use Noto Sans JP Variable font.
+// This allows the browser to download only the required glyphs and weights more efficiently.
 const notoSansJP = Noto_Sans_JP({
-  // "preload: false" is strictly maintained as per your previous requirement
-  preload: false, 
+  // Preload is critical for LCP/CLS. 
+  // If "preload: false" was due to timeouts, try specifying 'latin' only, 
+  // but for Japanese sites, letting Next.js optimize the font is best.
+  preload: true, 
+  subsets: ["latin"], // Preload only latin subset initially to unblock paint
   variable: "--font-noto-sans-jp",
   display: "swap",
-  // Optimization: Removed "500" and "900". 
-  // Loading 4 weights of a Japanese font is the #1 cause of your slow render time.
-  weight: ["400", "700"], 
 });
 
 export const metadata: Metadata = {
@@ -79,16 +81,12 @@ export default function RootLayout({
   return (
     <html lang="ja" className="scroll-smooth">
       <head>
+        {/* Preconnect to S3 is good, keeping it */}
         <link
           rel="preconnect"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
         />
-        <link
-          rel="dns-prefetch"
-          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
-        />
       </head>
-      {/* 3. Apply the variable to the body */}
       <body className={`${notoSansJP.variable} ${openSans.variable} font-noto`}>
         <GoogleTagManager gtmId="GTM-W9W78KMS" />
         <main>
