@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 // data
@@ -14,18 +12,18 @@ const Footer: React.FC = () => {
           <Image
             src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/hadis-logo.png"
             alt="Hadis International Logo"
-            unoptimized
             width={101}
             height={64}
+            style={{ width: "auto", height: "auto" }} 
           />
         </Link>
 
         {/* navitems */}
         <nav className="flex flex-col lg:flex-row items-start lg:items-center justify-center h-full w-full gap-8">
-          <ul className="flex flex-col lg:flex-row  tems-start lg:items-center justify-center gap-8 font-bold text-base">
+          <ul className="flex flex-col lg:flex-row items-start lg:items-center justify-center gap-8 font-bold text-base">
             {navbarLinksData?.navbarItems?.map((item) => (
               <li key={item.id}>
-                <Link href={item.href} title={`Navigate to ${item.label}`}>
+                <Link href={item.href} title={`Maps to ${item.label}`}>
                   {item.label}
                 </Link>
               </li>
@@ -35,7 +33,7 @@ const Footer: React.FC = () => {
           <div className="flex items-start lg:items-center justify-center gap-2 font-bold">
             {navbarLinksData.navbarBtns?.map((item) => (
               <span key={item.id}>
-                <Link href={item.href} title={`Navigate to ${item.label}`}>
+                <Link href={item.href} title={`Maps to ${item.label}`}>
                   {item.label}
                 </Link>
               </span>
@@ -52,7 +50,7 @@ const Footer: React.FC = () => {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                title={`Navigate to ${item.name}`}
+                title={`Maps to ${item.name}`}
               >
                 <Image
                   src={item.iconSrc}
@@ -67,7 +65,7 @@ const Footer: React.FC = () => {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                title={`Navigate to ${item.name}`}
+                title={`Maps to ${item.name}`}
               >
                 <Image
                   src={item.iconSrc}

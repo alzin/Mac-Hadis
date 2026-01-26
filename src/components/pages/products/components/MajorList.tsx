@@ -40,7 +40,6 @@ const MajorList = ({ title, companies }: IMajorListProps) => {
               alt={item.en}
               width={250}
               height={250}
-              unoptimized
               className="w-full h-full object-contain"
             />
           </Link>
