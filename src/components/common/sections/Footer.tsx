@@ -59,7 +59,6 @@ const Footer: React.FC = () => {
                   alt={item.name}
                   width={40}
                   height={40}
-                  loading="eager"
                 />
               </a>
             ) : (
@@ -75,7 +74,6 @@ const Footer: React.FC = () => {
                   alt={item.name}
                   width={40}
                   height={40}
-                  loading="eager"
                 />
               </Link>
             ),

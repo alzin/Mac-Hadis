@@ -20,7 +20,6 @@ const ContactBanner = ({
         src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/backgrounds/banner-full-bg.jpeg"
         alt="banner-background-hadis"
         fill
-        loading="eager"
       />
       {/* Right image */}
       <div className="hidden md:block md:w-[48%] relative md:h-auto">
@@ -28,7 +27,6 @@ const ContactBanner = ({
           src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/backgrounds/right-bg-banner.jpeg"
           alt="banner-right-bg"
           fill
-          loading="eager"
           className="object-cover"
         />
       </div>
@@ -36,7 +34,9 @@ const ContactBanner = ({
       {/* left section */}
       <div className="px-5 py-[50px] xl:p-[75px] md:w-[52%] xl:pl-[80px] space-y-4 lg:max-h-[415px]">
         {/* Modern Badge */}
-        <div className={`absolute top-2 left-2 z-10 -rotate-[30deg] ${applyFactoryTheme ? "text-white": "text-red-600"}`}>
+        <div
+          className={`absolute top-2 left-2 z-10 -rotate-[30deg] ${applyFactoryTheme ? "text-white" : "text-red-600"}`}
+        >
           <svg
             className="w-20 md:w-24 h-auto"
             viewBox="0 0 100 100"

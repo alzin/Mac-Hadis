@@ -20,7 +20,6 @@ const Information = ({ information }: IInformationProps) => {
               src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/red-correct.svg"
               width={20}
               height={20}
-              loading="eager"
               alt="red-correct"
               className="mr-2 mt-1"
             />

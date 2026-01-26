@@ -14,7 +14,6 @@ const ImageTitleSlide = ({ imageSrc, title }: IImageTitleSlideProps) => {
         width={150}
         height={150}
         className="w-[100px] lg:w-[150px] h-[100px] lg:h-[150px] object-contain"
-        loading="eager"
       />
       <p className="text-[12px] lg:text-[16px] leading-[18px] lg:leading-[24px] text-[#111111] font-bold line-clamp-3">
         {title}

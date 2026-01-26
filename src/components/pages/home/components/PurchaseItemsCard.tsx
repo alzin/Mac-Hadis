@@ -29,7 +29,6 @@ const PurchaseItemsCard = ({
           alt={title}
           width={190}
           height={190}
-          loading="eager"
           className="w-auto h-[140px] lg:w-auto lg:h-[190px]"
         />
       </div>
@@ -41,7 +40,6 @@ const PurchaseItemsCard = ({
             height={20}
             src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/info-circle.svg"
             alt="info-icon"
-            loading="eager"
           />
         )}
       </p>

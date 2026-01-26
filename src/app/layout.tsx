@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Open_Sans, Noto_Sans_JP } from "next/font/google";
 import "@/styles/globals.css";
@@ -6,25 +6,29 @@ import Header from "@/components/common/sections/Header";
 import Footer from "@/components/common/sections/Footer";
 import { baseUrl } from "@/utils/baseUrl";
 
-// Optimization: Use variable fonts to reduce network requests and allow subsetting
+// Optimization: Subsetting reduces font file size significantly.
 const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-open-sans",
-  // No weight array needed for variable fonts (it includes all weights)
+  adjustFontFallback: true,
 });
 
-// Optimization: Use Noto Sans JP Variable font.
-// This allows the browser to download only the required glyphs and weights more efficiently.
 const notoSansJP = Noto_Sans_JP({
-  // Preload is critical for LCP/CLS. 
-  // If "preload: false" was due to timeouts, try specifying 'latin' only, 
-  // but for Japanese sites, letting Next.js optimize the font is best.
+  // Preload true is correct for LCP text
   preload: true, 
-  subsets: ["latin"], // Preload only latin subset initially to unblock paint
+  subsets: ["latin"], 
   variable: "--font-noto-sans-jp",
   display: "swap",
+  adjustFontFallback: true,
 });
+
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export const metadata: Metadata = {
   icons: "/favicon.ico",
@@ -43,7 +47,7 @@ export const metadata: Metadata = {
     "Hadis INTERNATIONAL",
   ],
   referrer: "origin",
-  creator: "機械工具買取ハディズs",
+  creator: "機械工具買取ハディズ",
   publisher: "機械工具買取ハディズ",
   alternates: {
     canonical: baseUrl,
@@ -67,7 +71,7 @@ export const metadata: Metadata = {
     images: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/main-ogp.jpg",
   },
   verification: {
-    google: "id",
+    google: "id", // Ideally replace 'id' with your actual code
   },
   category: "Sells",
   classification: "Sells",
@@ -81,15 +85,17 @@ export default function RootLayout({
   return (
     <html lang="ja" className="scroll-smooth">
       <head>
-        {/* Preconnect to S3 is good, keeping it */}
         <link
           rel="preconnect"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
+          crossOrigin="anonymous"
         />
       </head>
-      <body className={`${notoSansJP.variable} ${openSans.variable} font-noto`}>
+      <body className={`${notoSansJP.variable} ${openSans.variable} font-noto antialiased`}>
+        {/* Defer GTM to avoid blocking main thread initially if not critical, 
+            but standard implementation is usually fine. */}
         <GoogleTagManager gtmId="GTM-W9W78KMS" />
-        <main>
+        <main className="flex flex-col min-h-screen">
           <Header />
           {children}
           <Footer />

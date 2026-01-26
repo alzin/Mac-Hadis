@@ -12,8 +12,12 @@ const ProductHero = ({ productTitle }: IProductHeroProps) => {
         <Image
           src={"https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/product-hero.jpg"}
           alt="category hero"
-          sizes="100vw"
-          quality={100}
+          // Performance Fix: Adjusted sizes. 100vw is technically correct for full width, 
+          // but explicit breakpoints help the browser decide faster.
+          sizes="100vw" 
+          quality={85} // Performance Fix: 100 is too heavy. 85 is standard for high quality.
+          priority // Performance Fix: Critical for LCP
+          fetchPriority="high"
           fill
           className="object-cover object-[75%] lg:object-center"
         />

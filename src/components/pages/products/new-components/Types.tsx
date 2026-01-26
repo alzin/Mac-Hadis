@@ -18,7 +18,6 @@ const Types = ({ types }: ITypesProps) => {
         src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/red-correct.svg"
         width={20}
         height={20}
-        loading="eager"
         alt="red-correct"
         className="mt-0.5"
       />
@@ -43,7 +42,7 @@ const Types = ({ types }: ITypesProps) => {
                 </h4>
                 <div className="space-y-2 pl-2">
                   {category?.items?.map((item, itemIndex) =>
-                    renderItem(item, itemIndex)
+                    renderItem(item, itemIndex),
                   )}
                 </div>
               </div>
@@ -51,7 +50,7 @@ const Types = ({ types }: ITypesProps) => {
           ) : (
             <div className="space-y-3">
               {(types as string[]).map((item, index) =>
-                renderItem(item, index)
+                renderItem(item, index),
               )}
             </div>
           )}
