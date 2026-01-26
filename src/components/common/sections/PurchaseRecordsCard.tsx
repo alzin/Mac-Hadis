@@ -5,7 +5,10 @@ interface IPurchaseRecordsCardProps {
   title: string;
 }
 
-export const PurchaseRecordsCard = ({ image, title }: IPurchaseRecordsCardProps) => {
+export const PurchaseRecordsCard = ({
+  image,
+  title,
+}: IPurchaseRecordsCardProps) => {
   return (
     <div className="w-[47%] md:w-[30%] lg:w-[22%]">
       <div className="min-h-[240px] lg:min-h-[258px] bg-white relative">
@@ -15,7 +18,6 @@ export const PurchaseRecordsCard = ({ image, title }: IPurchaseRecordsCardProps)
             alt={title}
             width={190}
             height={190}
-            loading="eager"
             className="w-auto h-[140px] lg:w-auto lg:h-[190px]"
           />
         </div>

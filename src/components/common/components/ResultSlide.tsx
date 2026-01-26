@@ -21,7 +21,6 @@ const ResultSlide = ({
         src={image}
         alt={title1}
         width={150}
-        loading="eager"
         height={150}
         className="w-[100px] lg:w-[150px] h-[100px] lg:h-[150px]"
       />

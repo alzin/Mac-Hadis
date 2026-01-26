@@ -78,7 +78,6 @@ const ContactFixedBanner: React.FC = () => {
         }
         alt="hero-background-hadis"
         fill
-        loading="eager"
       />
 
       <div className="flex flex-wrap items-center justify-center w-full h-full gap-2 px-4 lg:px-20">

@@ -526,7 +526,6 @@ const FactoryService: React.FC = () => {
                 fill
                 sizes="(max-width: 768px) 90vw, (max-width: 1280px) 60vw, 800px"
                 className="object-contain bg-white"
-                loading="eager"
               />
             </div>
           </div>

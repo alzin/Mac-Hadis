@@ -35,7 +35,6 @@ const ImageListTemplate: React.FC<IImageListTemplate> = ({ content }) => {
                   alt={item.alt}
                   width={250}
                   height={250}
-                  loading="eager"
                   className="w-auto h-[200px] lg:w-auto lg:h-[250px] object-contain"
                 />
               </div>
