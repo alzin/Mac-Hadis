@@ -1,59 +1,35 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
-import localFont from "next/font/local";
-// 1. next/font/google から Open Sans をインポート
-import { Open_Sans } from "next/font/google";
+// 1. Import from google
+import { Open_Sans, Noto_Sans_JP } from "next/font/google";
 import "@/styles/globals.css";
-// sections
 import Header from "@/components/common/sections/Header";
 import Footer from "@/components/common/sections/Footer";
-// baseUrl
 import { baseUrl } from "@/utils/baseUrl";
 
-// 2. Open Sans の設定
 const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-open-sans", // Tailwind等で使う変数名
+  variable: "--font-open-sans",
 });
 
-// Define local font (Noto Sans JP)
-const notoSansJP = localFont({
-  src: [
-    {
-      path: "./fonts/noto-sans-jp-japanese-400-normal.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/noto-sans-jp-japanese-500-normal.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "./fonts/noto-sans-jp-japanese-700-normal.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "./fonts/noto-sans-jp-japanese-900-normal.ttf",
-      weight: "900",
-      style: "normal",
-    },
-  ],
-  display: "swap",
+// 2. Configure Noto Sans JP
+const notoSansJP = Noto_Sans_JP({
+  // "preload: false" is REQUIRED for Japanese fonts in Next.js.
+  // Without this, it only loads English characters and falls back to Arial for Japanese.
+  preload: false, 
+  
+  // We don't list 'subsets' because we want the browser to fetch 
+  // whatever characters it needs (including Kanji/Kana).
   variable: "--font-noto-sans-jp",
-  fallback: [
-    "system-ui",
-    "-apple-system",
-    "BlinkMacSystemFont",
-    "Arial",
-    "sans-serif",
-  ],
+  display: "swap",
+  
+  // Noto Sans JP is a variable font, so specifying weights is optional,
+  // but adding them ensures Next.js requests the correct range if needed.
+  weight: ["400", "500", "700", "900"], 
 });
 
 export const metadata: Metadata = {
-  // ... (メタデータ部分は変更なしでOK) ...
   icons: "/favicon.ico",
   title: {
     default: "中古機械、電動工具の高額買取のハディズ",
@@ -117,8 +93,9 @@ export default function RootLayout({
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
         />
       </head>
+      {/* 3. Apply the variable to the body */}
       <body className={`${notoSansJP.variable} ${openSans.variable} font-noto`}>
-      <GoogleTagManager gtmId="GTM-W9W78KMS" />
+        <GoogleTagManager gtmId="GTM-W9W78KMS" />
         <main>
           <Header />
           {children}
