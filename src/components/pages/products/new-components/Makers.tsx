@@ -28,6 +28,7 @@ const Makers = ({ companies }: IMajorListProps) => {
           <Link
             key={index}
             target="_blank"
+            rel="noopener noreferrer"
             href={item.link}
             className="w-[calc(50%-3.5px)] md:w-[calc(33.333%-4.67px)] lg:w-[calc(25%-24px)] 
             px-4 py-3 bg-white border-[3px] border-[#B81122] flex justify-center items-center 
