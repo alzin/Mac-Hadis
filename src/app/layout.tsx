@@ -94,12 +94,12 @@ export default function RootLayout({
       <body className={`${notoSansJP.variable} ${openSans.variable} font-noto antialiased`}>
         {/* Defer GTM to avoid blocking main thread initially if not critical, 
             but standard implementation is usually fine. */}
-        <GoogleTagManager gtmId="GTM-W9W78KMS" />
         <main className="flex flex-col min-h-screen">
           <Header />
           {children}
           <Footer />
         </main>
+        <GoogleTagManager gtmId="GTM-W9W78KMS" />
       </body>
     </html>
   );
