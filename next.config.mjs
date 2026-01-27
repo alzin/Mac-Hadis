@@ -28,7 +28,7 @@ const nextConfig = {
 
   experimental: {
     optimizeCss: true,
-    scrollRestoration: true,
+    // scrollRestoration: true,
     // Add heavy UI libraries here to tree-shake them effectively
     optimizePackageImports: [
       'swiper', 
