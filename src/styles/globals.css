@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: auto; /* Default to instant scrolling for page loads */
+}
+
+/* Only enable smooth scrolling when the user is interacting with the page */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 .card {
   @apply relative;
 }
