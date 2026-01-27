@@ -49,8 +49,9 @@ export const metadata: Metadata = {
   referrer: "origin",
   creator: "機械工具買取ハディズ",
   publisher: "機械工具買取ハディズ",
+  metadataBase: new URL(baseUrl),
   alternates: {
-    canonical: baseUrl,
+    canonical: './',
   },
   openGraph: {
     type: "website",
