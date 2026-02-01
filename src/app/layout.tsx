@@ -1,19 +1,22 @@
 import type { Metadata, Viewport } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Open_Sans, Noto_Sans_JP } from "next/font/google";
+import dynamic from "next/dynamic"; // ✅ Add this
 import "@/styles/globals.css";
 import Header from "@/components/common/sections/Header";
-import Footer from "@/components/common/sections/Footer";
 import { baseUrl } from "@/utils/baseUrl";
-
 import { OrganizationSchema, WebsiteSchema } from "@/components/seo/schemas";
 
-// Font optimization
+// ✅ Lazy load Footer (it's below the fold)
+const Footer = dynamic(() => import("@/components/common/sections/Footer"), {
+  ssr: true, // Still SSR for SEO, but loads after critical content
+});
+
+// ✅ Optimize fonts
 const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-open-sans",
-  adjustFontFallback: true,
   preload: false,
 });
 
@@ -22,8 +25,7 @@ const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
   variable: "--font-noto-sans-jp",
   display: "swap",
-  adjustFontFallback: true,
-  weight: ["400", "700", "900"],
+  weight: ["700", "900"], // ✅ Only load weights you actually use
 });
 
 export const viewport: Viewport = {
@@ -89,19 +91,15 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-        {/* DNS Prefetch - Resolve DNS early */}
         <link
           rel="dns-prefetch"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
         />
-
-        {/* Preconnect - Establish connection early */}
         <link
           rel="preconnect"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
           crossOrigin="anonymous"
         />
-        {/* Structured Data */}
         <OrganizationSchema />
         <WebsiteSchema />
       </head>
