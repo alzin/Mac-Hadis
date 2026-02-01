@@ -12,9 +12,10 @@ const Hero: React.FC = () => {
           src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
           alt="中古機械・電動工具買取のハディズ - 全国対応"
           fill
-          priority  // ✅ CRITICAL: This is the LCP element
+          priority // ✅ CRITICAL: This is the LCP element
           quality={85}
           sizes="100vw"
+          fetchPriority="high"
           className="object-cover object-right-top"
         />
       </div>
@@ -25,15 +26,15 @@ const Hero: React.FC = () => {
           src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
           alt="中古機械・電動工具買取のハディズ - 全国対応"
           fill
-          priority  // ✅ CRITICAL: This is the LCP element
+          priority // ✅ CRITICAL: This is the LCP element
           quality={85}
           sizes="100vw"
+          fetchPriority="high"
           className="object-cover object-right-top"
         />
       </div>
 
       <div className="flex lg:w-1/2 2xl:min-w-[1000px] items-start 2xl:items-center justify-center h-full 2xl:h-3/4 space-y-2 lg:space-y-7 flex-col pt-7 2xl:pt-20 sm:pl-12 pb-4">
-        
         {/* Text Image 1 - NO priority (loads after background) */}
         <div className="relative xl:w-[810px] xl:h-[64px] w-[335px] h-[38px] sm:h-[50px] lg:h-[70px] z-10">
           <Image
@@ -46,7 +47,7 @@ const Hero: React.FC = () => {
             loading="lazy" // ✅ Lazy load to prioritize background
           />
         </div>
-        
+
         {/* Text Image 2 - NO priority (loads after background) */}
         <div className="relative w-[340px] h-[88px] sm:h-[130px] lg:h-[300px] xl:w-[810px] xl:h-[350px] z-10">
           <Image
