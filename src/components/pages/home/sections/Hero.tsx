@@ -7,15 +7,31 @@ const Hero: React.FC = () => {
       className="relative px-4 w-full h-[410px] lg:h-[640px] 2xl:h-[calc(100vh-64px)] sm:bg-right-top overflow-hidden"
     >
       {/* 
-        CRITICAL FIX: Use simple Next.js Image with priority prop
-        Next.js will automatically handle preloading when priority={true}
+        SOLUTION: Use TWO separate Image components with responsive display classes
+        - Mobile image: hidden on desktop (lg:hidden)
+        - Desktop image: hidden on mobile (hidden lg:block)
       */}
-      <div className="absolute inset-0 -z-30">
+      
+      {/* Mobile Background Image (displays on screens < 1024px) */}
+      <div className="absolute inset-0 -z-30 lg:hidden">
+        <Image
+          src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
+          alt="中古機械・電動工具買取のハディズ - 全国対応"
+          fill
+          priority  // ✅ CRITICAL for LCP!
+          quality={85}
+          sizes="100vw"
+          className="object-cover object-right-top"
+        />
+      </div>
+
+      {/* Desktop Background Image (displays on screens >= 1024px) */}
+      <div className="absolute inset-0 -z-30 hidden lg:block">
         <Image
           src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
           alt="中古機械・電動工具買取のハディズ - 全国対応"
           fill
-          priority
+          priority  // ✅ CRITICAL for LCP!
           quality={85}
           sizes="100vw"
           className="object-cover object-right-top"
@@ -47,7 +63,7 @@ const Hero: React.FC = () => {
           />
         </div>
 
-        {/* HTML text - Keep as is */}
+        {/* HTML text */}
         <div className="flex w-full items-start xl:items-center justify-center gap-2 flex-col lg:flex-row text-white flex-wrap">
           <h1 className="flex gap-1 items-center justify-center w-[165px] h-[66px] lg:w-[276px] lg:h-[102px] gradient-red rounded-lg font-black lg:text-[32px] text-xl">
             <span className="text-[18px] lg:text-[28px]">創業</span>
