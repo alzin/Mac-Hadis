@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  turbopack: {},
+  // ✅ REMOVED: Turbopack empty object (unless you are explicitly using --turbo)
+  // reactStrictMode is good.
   reactStrictMode: true,
   output: "standalone",
 
@@ -27,7 +28,9 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
 
   experimental: {
-    optimizeCss: true, // This works best now that globals.css is smaller
+    // ✅ KEEP: This helps inline critical CSS
+    optimizeCss: true, 
+    // ✅ KEEP: Helps tree-shake these specific heavy packages
     optimizePackageImports: [
       "swiper",
       "sweetalert2",
@@ -38,45 +41,9 @@ const nextConfig = {
     ],
   },
 
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.optimization = {
-        ...config.optimization,
-        splitChunks: {
-          chunks: "all",
-          cacheGroups: {
-            default: false,
-            vendors: false,
-            // Ensure framework chunks are prioritized
-            framework: {
-              name: "framework",
-              test: /[\\/]node_modules[\\/](react|react-dom|scheduler)[\\/]/,
-              priority: 40,
-              enforce: true,
-            },
-            // Split heavy libs into their own chunks
-            lib: {
-              test: /[\\/]node_modules[\\/](lodash|sweetalert2|swiper)[\\/]/,
-              name(module) {
-                const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-                return `npm.${packageName.replace('@', '')}`;
-              },
-              priority: 30,
-            },
-            common: {
-              name: "common",
-              minChunks: 2,
-              priority: 10,
-              reuseExistingChunk: true,
-              enforce: true,
-            },
-          },
-        },
-      };
-    }
-    return config;
-  },
-
+  // ❌ DELETED: Custom webpack splitChunks configuration. 
+  // Letting Next.js handle chunking reduces render-blocking CSS significantly.
+  
   async headers() {
     return [
       {

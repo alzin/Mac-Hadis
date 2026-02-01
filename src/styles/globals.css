@@ -14,10 +14,6 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* =========================================
-   Hero Section - Critical LCP Styles
-   ========================================= */
-
 @layer components {
   /* Gradient styles used in hero section */
   .gradient-red {
