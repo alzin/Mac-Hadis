@@ -6,6 +6,8 @@ import Header from "@/components/common/sections/Header";
 import Footer from "@/components/common/sections/Footer";
 import { baseUrl } from "@/utils/baseUrl";
 
+import { OrganizationSchema, WebsiteSchema } from '@/components/seo/schemas';
+
 // Optimization: Subsetting reduces font file size significantly.
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -86,6 +88,12 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+
+        {/* ✅ 追加: Structured Data */}
+        <OrganizationSchema />
+        <WebsiteSchema />
+
+        {/* Preload critical images */}
         <link
           rel="preconnect"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"

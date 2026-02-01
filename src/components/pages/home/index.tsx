@@ -52,9 +52,14 @@ const Inquiry = dynamic(() => import("@/components/common/sections/Inquiry"), {
   loading: () => <SectionLoader height="600px" />
 });
 
+import { LocalBusinessSchema } from '@/components/seo/schemas';
+
 const Index = () => {
   return (
     <>
+      {/* ✅ 追加: Structured Data */}
+      <LocalBusinessSchema />
+
       <Hero />
       <ContactFixedBanner />
       <Flow />
