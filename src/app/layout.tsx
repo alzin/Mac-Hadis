@@ -2,17 +2,17 @@ import type { Metadata, Viewport } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Open_Sans, Noto_Sans_JP } from "next/font/google";
 import dynamic from "next/dynamic";
-import "@/styles/globals.css";
+import "@/styles/globals.css"; // Now lightweight
 import Header from "@/components/common/sections/Header";
 import { baseUrl } from "@/utils/baseUrl";
 import { OrganizationSchema, WebsiteSchema } from "@/components/seo/schemas";
 
-// Lazy load Footer
+// Lazy load Footer to reduce initial JS/CSS payload
 const Footer = dynamic(() => import("@/components/common/sections/Footer"), {
   ssr: true,
 });
 
-// ✅ FIX 1: Use Variable Fonts (Remove 'weight' array) to reduce CSS size
+// Optimized Font Loading: variable fonts prevent downloading multiple weight files
 const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
@@ -23,7 +23,6 @@ const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
   variable: "--font-noto-sans-jp",
   display: "swap",
-  // weight: ["700", "900"], // <-- DELETED: Forces variable font usage
 });
 
 export const viewport: Viewport = {

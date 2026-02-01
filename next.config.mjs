@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ✅ REMOVED: Turbopack empty object (unless you are explicitly using --turbo)
-  // reactStrictMode is good.
   reactStrictMode: true,
   output: "standalone",
+
+  // ⚡ PERFORMANCE: Disable Node.js compression. 
+  // Let your CDN/Nginx/Vercel Edge handle gzip/brotli. 
+  // This reduces Server Response Time (TTFB).
+  compress: false, 
 
   images: {
     formats: ["image/avif", "image/webp"],
@@ -15,6 +18,7 @@ const nextConfig = {
       },
       { protocol: "https", hostname: "mac-hadis.com", pathname: "**" },
     ],
+    // Reduced sizes to match mobile breakpoints accurately
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,
@@ -23,14 +27,11 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  compress: true,
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
 
   experimental: {
-    // ✅ KEEP: This helps inline critical CSS
-    optimizeCss: true, 
-    // ✅ KEEP: Helps tree-shake these specific heavy packages
+    optimizeCss: true, // Should work better now that globals.css is cleaner
     optimizePackageImports: [
       "swiper",
       "sweetalert2",
@@ -41,9 +42,6 @@ const nextConfig = {
     ],
   },
 
-  // ❌ DELETED: Custom webpack splitChunks configuration. 
-  // Letting Next.js handle chunking reduces render-blocking CSS significantly.
-  
   async headers() {
     return [
       {
@@ -81,17 +79,9 @@ const nextConfig = {
           },
         ],
       },
+      // Ensure fonts are cached heavily
       {
-        source: "/_next/static/:path*",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
-      {
-        source: "/:path*.(woff2|woff|ttf|otf)",
+        source: "/_next/static/media/:path*", 
         headers: [
           {
             key: "Cache-Control",

@@ -1,0 +1,51 @@
+/* src/styles/shared.module.css */
+
+/* Gradient styles used in hero/marketing sections */
+.gradientRed {
+  background: linear-gradient(to right bottom, #b81122 50%, #ac0c1c 50%);
+  border: 2px solid #990e1c;
+  text-shadow: 2px 2px 0 #990e1c, -2px 2px 0 #990e1c, -2px -2px 0 #990e1c,
+    2px -2px 0 #990e1c;
+}
+
+.gradientGreen {
+  background: linear-gradient(to right bottom, #50cb68 50%, #49bf60 50%);
+  border: 2px solid #43b058;
+  text-shadow: 2px 2px 0 #4ac061, -2px 2px 0 #4ac061, -2px -2px 0 #4ac061,
+    2px -2px 0 #4ac061;
+}
+
+.gradientBlue {
+  background: linear-gradient(to right bottom, #0194f7 50%, #008ae6 50%);
+  border: 2px solid #017fd4;
+  text-shadow: 2px 2px 0 #017fd4, -2px 2px 0 #017fd4, -2px -2px 0 #017fd4,
+    2px -2px 0 #017fd4;
+}
+
+.gradientSky {
+  background: linear-gradient(to right bottom, #3FA7D6 50%, #164E63 50%);
+  border: 2px solid #017fd4;
+  text-shadow: 2px 2px 0 #3FA7D6, -2px 2px 0 #3FA7D6, -2px -2px 0 #3FA7D6,
+    2px -2px 0 #3FA7D6;
+}
+
+.gradientNavigation {
+  background: linear-gradient(to right bottom, #b81122 50%, #ac0c1c 50%);
+}
+
+/* Card styles */
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: linear-gradient(90deg, #b81122 0%, #c93f4f 100%);
+}
