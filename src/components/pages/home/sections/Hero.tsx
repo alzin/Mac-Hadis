@@ -20,6 +20,7 @@ const Hero: React.FC = () => {
           fill
           priority  // ✅ CRITICAL for LCP!
           quality={85}
+          fetchPriority="high"
           sizes="100vw"
           className="object-cover object-right-top"
         />
@@ -34,6 +35,7 @@ const Hero: React.FC = () => {
           priority  // ✅ CRITICAL for LCP!
           quality={85}
           sizes="100vw"
+          fetchPriority="high"
           className="object-cover object-right-top"
         />
       </div>
