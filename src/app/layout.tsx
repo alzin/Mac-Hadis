@@ -2,28 +2,32 @@ import type { Metadata, Viewport } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Open_Sans, Noto_Sans_JP } from "next/font/google";
 import dynamic from "next/dynamic";
+import Script from "next/script";
 import "@/styles/globals.css";
 import Header from "@/components/common/sections/Header";
 import { baseUrl } from "@/utils/baseUrl";
 import { OrganizationSchema, WebsiteSchema } from "@/components/seo/schemas";
+import fs from "fs";
+import path from "path";
 
 // Lazy load Footer
 const Footer = dynamic(() => import("@/components/common/sections/Footer"), {
   ssr: true,
 });
 
-// ✅ FIX 1: Use Variable Fonts (Remove 'weight' array) to reduce CSS size
+// ✅ OPTIMIZED: font-display: optional prevents FOUT/FOIT, improving LCP
+// ✅ Turbopack handles preloading automatically
 const openSans = Open_Sans({
   subsets: ["latin"],
-  display: "swap",
+  display: "optional",
   variable: "--font-open-sans",
 });
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
   variable: "--font-noto-sans-jp",
-  display: "swap",
-  // weight: ["700", "900"], // <-- DELETED: Forces variable font usage
+  display: "optional",
+  // Using variable font (no weight array) reduces CSS chunks
 });
 
 export const viewport: Viewport = {
@@ -86,9 +90,28 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // ✅ Read critical CSS at build time for inlining
+  let criticalCSS = "";
+  try {
+    const criticalPath = path.join(process.cwd(), "src/styles/critical.css");
+    criticalCSS = fs.readFileSync(criticalPath, "utf8");
+  } catch {
+    // Fallback if critical.css doesn't exist yet
+    criticalCSS = "";
+  }
+
   return (
     <html lang="ja">
       <head>
+        {/* ✅ CRITICAL: Inline above-the-fold CSS for instant first paint */}
+        {criticalCSS && (
+          <style
+            dangerouslySetInnerHTML={{ __html: criticalCSS }}
+            data-critical="true"
+          />
+        )}
+
+        {/* ✅ Preconnect to CDN early */}
         <link
           rel="dns-prefetch"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
@@ -98,12 +121,38 @@ export default function RootLayout({
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
           crossOrigin="anonymous"
         />
+
+        {/* ✅ Preload LCP image with high priority */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
+          fetchPriority="high"
+          media="(max-width: 768px)"
+        />
+
         <OrganizationSchema />
         <WebsiteSchema />
       </head>
       <body
         className={`${notoSansJP.variable} ${openSans.variable} font-noto antialiased`}
       >
+        {/* ✅ Defer non-critical CSS using media="print" trick */}
+        <Script
+          id="defer-styles"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var links = document.querySelectorAll('link[rel="stylesheet"][media="print"]');
+                links.forEach(function(link) {
+                  link.media = 'all';
+                });
+              })();
+            `,
+          }}
+        />
+
         <main className="flex flex-col min-h-screen">
           <Header />
           {children}

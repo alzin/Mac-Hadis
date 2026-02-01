@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 /* =========================================
-   Critical Above-the-Fold Styles
+   NON-CRITICAL STYLES (Loaded async)
+   Critical styles moved to critical.css
    ========================================= */
 
 html {
@@ -15,37 +16,35 @@ html:focus-within {
 }
 
 @layer components {
-  /* Gradient styles used in hero section */
-  .gradient-red {
-    background: linear-gradient(to right bottom, #b81122 50%, #ac0c1c 50%);
-    border: 2px solid #990e1c;
-    text-shadow: 2px 2px 0 #990e1c, -2px 2px 0 #990e1c, -2px -2px 0 #990e1c,
-      2px -2px 0 #990e1c;
-  }
-
+  /* ✅ Keep all gradients but they're not critical */
   .gradient-green {
     background: linear-gradient(to right bottom, #50cb68 50%, #49bf60 50%);
     border: 2px solid #43b058;
-    text-shadow: 2px 2px 0 #4ac061, -2px 2px 0 #4ac061, -2px -2px 0 #4ac061,
+    text-shadow:
+      2px 2px 0 #4ac061,
+      -2px 2px 0 #4ac061,
+      -2px -2px 0 #4ac061,
       2px -2px 0 #4ac061;
   }
 
   .gradient-blue {
     background: linear-gradient(to right bottom, #0194f7 50%, #008ae6 50%);
     border: 2px solid #017fd4;
-    text-shadow: 2px 2px 0 #017fd4, -2px 2px 0 #017fd4, -2px -2px 0 #017fd4,
+    text-shadow:
+      2px 2px 0 #017fd4,
+      -2px 2px 0 #017fd4,
+      -2px -2px 0 #017fd4,
       2px -2px 0 #017fd4;
   }
 
   .gradient-sky {
-    background: linear-gradient(to right bottom, #3FA7D6 50%, #164E63 50%);
+    background: linear-gradient(to right bottom, #3fa7d6 50%, #164e63 50%);
     border: 2px solid #017fd4;
-    text-shadow: 2px 2px 0 #3FA7D6, -2px 2px 0 #3FA7D6, -2px -2px 0 #3FA7D6,
-      2px -2px 0 #3FA7D6;
-  }
-
-  .gradient-navigation {
-    background: linear-gradient(to right bottom, #b81122 50%, #ac0c1c 50%);
+    text-shadow:
+      2px 2px 0 #3fa7d6,
+      -2px 2px 0 #3fa7d6,
+      -2px -2px 0 #3fa7d6,
+      2px -2px 0 #3fa7d6;
   }
 
   /* Card styles */

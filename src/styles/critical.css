@@ -1,0 +1,104 @@
+/* =========================================
+   CRITICAL ABOVE-THE-FOLD STYLES
+   This CSS is INLINED in <head> for instant first paint
+   ========================================= */
+
+/* Base resets - only what's needed for initial viewport */
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Mobile-first container */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Critical gradient styles used in hero */
+.gradient-red {
+  background: linear-gradient(to right bottom, #b81122 50%, #ac0c1c 50%);
+  border: 2px solid #990e1c;
+  text-shadow: 2px 2px 0 #990e1c, -2px 2px 0 #990e1c, -2px -2px 0 #990e1c,
+    2px -2px 0 #990e1c;
+}
+
+.gradient-navigation {
+  background: linear-gradient(to right bottom, #b81122 50%, #ac0c1c 50%);
+}
+
+/* Header critical styles */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: white;
+}
+
+/* Hero section - above the fold */
+.hero-section {
+  position: relative;
+  min-height: 400px;
+  background: linear-gradient(to bottom, #fff7f7, #ffeaea);
+}
+
+/* Critical text styles */
+h1 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: #111111;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+/* Prevent flash of unstyled content */
+.hero-section img {
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -28,9 +28,9 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
 
   experimental: {
-    // ✅ KEEP: This helps inline critical CSS
-    optimizeCss: true, 
-    // ✅ KEEP: Helps tree-shake these specific heavy packages
+    // ✅ CRITICAL: Inline critical CSS automatically
+    optimizeCss: true,
+    // ✅ Tree-shake heavy packages
     optimizePackageImports: [
       "swiper",
       "sweetalert2",
@@ -39,11 +39,40 @@ const nextConfig = {
       "lodash",
       "react-icons",
     ],
+    // ✅ NEW: Enable server actions for better SSR performance
+    serverActions: {
+      bodySizeLimit: "2mb",
+    },
   },
 
-  // ❌ DELETED: Custom webpack splitChunks configuration. 
-  // Letting Next.js handle chunking reduces render-blocking CSS significantly.
-  
+  // ✅ Turbopack config (Next.js 16+ default bundler)
+  // Empty config allows webpack fallback without errors
+  turbopack: {},
+
+  // ✅ Webpack config for backwards compatibility
+  // Note: Turbopack handles CSS optimization automatically
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      // ✅ Prevent CSS code splitting for critical paths
+      config.optimization = {
+        ...config.optimization,
+        splitChunks: {
+          cacheGroups: {
+            // ✅ Bundle all CSS into fewer chunks
+            styles: {
+              name: "styles",
+              test: /\.css$/,
+              chunks: "all",
+              enforce: true,
+              priority: 20,
+            },
+          },
+        },
+      };
+    }
+    return config;
+  },
+
   async headers() {
     return [
       {
