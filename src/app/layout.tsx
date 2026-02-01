@@ -8,21 +8,23 @@ import { baseUrl } from "@/utils/baseUrl";
 
 import { OrganizationSchema, WebsiteSchema } from '@/components/seo/schemas';
 
-// Optimization: Subsetting reduces font file size significantly.
+// ✅ Optimized font loading - only load weights you actually use
 const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-open-sans",
   adjustFontFallback: true,
+  preload: false, // Only preload critical fonts
 });
 
 const notoSansJP = Noto_Sans_JP({
-  // Preload true is correct for LCP text
-  preload: true, 
+  preload: true, // Critical for Japanese text in hero
   subsets: ["latin"], 
   variable: "--font-noto-sans-jp",
   display: "swap",
   adjustFontFallback: true,
+  // ✅ Specify only the weights you use to reduce font file size
+  weight: ["400", "700", "900"],
 });
 
 export const viewport: Viewport = {
@@ -74,7 +76,7 @@ export const metadata: Metadata = {
     images: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/main-ogp.jpg",
   },
   verification: {
-    google: "id", // Ideally replace 'id' with your actual code
+    google: "id",
   },
   category: "Sells",
   classification: "Sells",
@@ -88,26 +90,69 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-
-        {/* ✅ 追加: Structured Data */}
-        <OrganizationSchema />
-        <WebsiteSchema />
-
-        {/* Preload critical images */}
+        {/* ✅ STEP 1: DNS Prefetch - Resolve DNS before any requests */}
+        <link rel="dns-prefetch" href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        
+        {/* ✅ STEP 2: Preconnect - Establish connection early */}
         <link
           rel="preconnect"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
           crossOrigin="anonymous"
         />
+        
+        {/* ✅ STEP 3: CRITICAL - Preload LCP Images (THE MOST IMPORTANT FIX!) */}
+        {/* Mobile hero background (shown on screens <= 1023px) */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
+          imageSrcSet="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp 640w, https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp 750w, https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp 828w"
+          imageSizes="100vw"
+          type="image/webp"
+          fetchPriority="high"
+          media="(max-width: 1023px)"
+        />
+        
+        {/* Desktop hero background (shown on screens >= 1024px) */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
+          imageSrcSet="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp 1080w, https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp 1200w, https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp 1920w"
+          imageSizes="100vw"
+          type="image/webp"
+          fetchPriority="high"
+          media="(min-width: 1024px)"
+        />
+
+        {/* ✅ STEP 4: Preload hero text images (they have priority prop) */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-1.webp"
+          type="image/webp"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-2.webp"
+          type="image/webp"
+          fetchPriority="high"
+        />
+
+        {/* ✅ Structured Data */}
+        <OrganizationSchema />
+        <WebsiteSchema />
       </head>
       <body className={`${notoSansJP.variable} ${openSans.variable} font-noto antialiased`}>
-        {/* Defer GTM to avoid blocking main thread initially if not critical, 
-            but standard implementation is usually fine. */}
         <main className="flex flex-col min-h-screen">
           <Header />
           {children}
           <Footer />
         </main>
+        {/* ✅ GTM loaded after main content */}
         <GoogleTagManager gtmId="GTM-W9W78KMS" />
       </body>
     </html>
