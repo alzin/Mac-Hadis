@@ -8,10 +8,10 @@ const SectionLoader = ({ height = "600px" }: { height?: string }) => (
   <div className="w-full bg-gray-50 animate-pulse" style={{ height }} />
 );
 
-// Dynamically import the heavy Inquiry form with SSR disabled
+// Dynamically import the heavy Inquiry form with SSR enabled for better display
 const Inquiry = dynamic(() => import("@/components/common/sections/Inquiry"), {
-  ssr: false,
-  loading: () => <SectionLoader />,
+  ssr: true,
+  loading: () => <SectionLoader height="800px" />,
 });
 
 export default function InquiryClient() {
