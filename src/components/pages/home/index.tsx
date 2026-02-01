@@ -1,8 +1,13 @@
+// src/components/pages/home/index.tsx
 import dynamic from "next/dynamic";
 import Hero from "./sections/Hero";
 import ContactFixedBanner from "@/components/common/sections/ContactFixedBanner";
 import { PurchaseRecords } from "@/components/common/sections/PurchaseRecords";
 import data from "@/content/home/PurchaseResults.json";
+import { LocalBusinessSchema } from '@/components/seo/schemas';
+
+// ✅ Import the Client Component Wrapper we just created
+import InquiryClient from "./sections/InquiryClient";
 
 // Helper for consistent loading states to prevent CLS
 const SectionLoader = ({ height = "400px" }: { height?: string }) => (
@@ -16,9 +21,6 @@ const WhyChoose = dynamic(() => import("./sections/WhyChoose"), {
   loading: () => <SectionLoader height="500px" />,
 });
 
-// If VideoSection is ever uncommented, load it lazily without SSR
-// const VideoSection = dynamic(() => import("./sections/VideoSection"), { ssr: false });
-
 const BlogsPost = dynamic(() => import("./sections/BlogsPost"), {
   loading: () => <SectionLoader height="400px" />,
 });
@@ -28,8 +30,6 @@ const ContactBanner = dynamic(() => import("./sections/ContactBanner"), {
 const PurchasedItems = dynamic(() => import("./sections/PurchasedItems"), {
   loading: () => <SectionLoader height="500px" />,
 });
-
-// const PurchaseResults = dynamic(() => import("./sections/PurchaseResults"));
 
 const PurchaseProcess = dynamic(() => import("./sections/PurchaseProcess"), {
   loading: () => <SectionLoader height="400px" />,
@@ -47,19 +47,13 @@ const FrequentlyAskedQuestions = dynamic(
 const CompanyProfile = dynamic(() => import("./sections/CompanyProfile"), {
   loading: () => <SectionLoader height="500px" />
 });
-const Inquiry = dynamic(() => import("@/components/common/sections/Inquiry"), {
-  // ssr: false, // Forms usually don't need SSR and are heavy
-  loading: () => <SectionLoader height="600px" />
-});
 
-import { LocalBusinessSchema } from '@/components/seo/schemas';
+// ❌ REMOVED: The render-blocking dynamic import definition from here
 
 const Index = () => {
   return (
     <>
-      {/* ✅ 追加: Structured Data */}
       <LocalBusinessSchema />
-
       <Hero />
       <ContactFixedBanner />
       <Flow />
@@ -79,7 +73,8 @@ const Index = () => {
       <FrequentlyAskedQuestions />
       <ContactBanner />
       <CompanyProfile />
-      <Inquiry />
+      {/* ✅ ADDED: The client wrapper handles the no-ssr loading */}
+      <InquiryClient />
     </>
   );
 };

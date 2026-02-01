@@ -4,14 +4,12 @@
 
 /* =========================================
    Critical Above-the-Fold Styles
-   These load first to prevent render blocking
    ========================================= */
 
 html {
-  scroll-behavior: auto; /* Default to instant scrolling for page loads */
+  scroll-behavior: auto;
 }
 
-/* Only enable smooth scrolling when the user is interacting with the page */
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -63,117 +61,5 @@ html:focus-within {
     content: "";
     @apply absolute top-0 left-0 right-0 h-[6px] rounded-t-[6px];
     background: linear-gradient(90deg, #b81122 0%, #c93f4f 100%);
-  }
-
-  /* =========================================
-     Non-Critical Styles (Below the Fold)
-     ========================================= */
-
-  /* Privacy Modal Styles */
-  .privacy-modal {
-    width: min(90%, 600px);
-    max-height: 80vh;
-    overflow-y: auto;
-    border-radius: 12px;
-    background-color: #fff;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-    transition: all 0.3s ease-in-out;
-    padding: 15px;
-  }
-
-  .privacy-modal.swal2-show {
-    animation: none !important;
-    -webkit-animation: none !important;
-  }
-
-  /* Responsive Modal */
-  @media (min-width: 768px) {
-    .privacy-modal {
-      max-width: 70%;
-      padding: 20px;
-    }
-  }
-
-  @media (min-width: 992px) {
-    .privacy-modal {
-      max-width: 60%;
-      padding: 25px;
-    }
-  }
-
-  /* Modal Title */
-  .privacy-title {
-    font-size: clamp(16px, 2vw, 24px);
-    font-weight: bold;
-  }
-
-  /* Content Inside the Modal */
-  .privacy-modal-content {
-    text-align: left;
-    font-size: clamp(12px, 1.5vw, 15px);
-    line-height: 1.7;
-    color: #333;
-  }
-
-  /* Paragraph Styling */
-  .privacy-modal-content p {
-    margin-bottom: 20px;
-  }
-
-  /* Headings */
-  .privacy-modal-content strong {
-    font-size: clamp(13px, 1.8vw, 16px);
-    color: #222;
-    display: block;
-  }
-
-  /* List Styling */
-  .privacy-modal-content ul {
-    padding-left: 20px;
-    margin-bottom: 20px !important;
-  }
-
-  .privacy-modal-content ul li {
-    margin-bottom: 8px;
-    list-style-type: disc;
-  }
-
-  .privacy-modal .swal2-actions {
-    margin: 0;
-  }
-
-  /* Loader Styles - Non-critical, loaded later */
-  .loader {
-    box-sizing: border-box;
-    border-top: 7px solid #555;
-    border-right: 7px solid #0000;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    animation: 1s linear infinite rotation;
-    display: inline-block;
-  }
-  
-  .loader:after {
-    content: "";
-    box-sizing: border-box;
-    border-bottom: 7px solid #0000;
-    border-left: 7px solid #ff3d00;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    animation: 0.5s linear infinite reverse rotation;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  @keyframes rotation {
-    0% {
-      transform: rotate(0);
-    }
-    to {
-      transform: rotate(360deg);
-    }
   }
 }

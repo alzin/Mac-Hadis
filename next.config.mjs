@@ -14,11 +14,7 @@ const nextConfig = {
       },
       { protocol: "https", hostname: "mac-hadis.com", pathname: "**" },
     ],
-
-    // ✅ CRITICAL FIX: Removed 2048 to prevent oversized images
-    // Mobile will request max 828px, Desktop max 1920px
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
-
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     minimumCacheTTL: 31536000,
     dangerouslyAllowSVG: true,
@@ -31,10 +27,7 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
 
   experimental: {
-    // ✅ CRITICAL: Optimize CSS delivery
-    optimizeCss: true,
-
-    // ✅ Tree-shake heavy libraries
+    optimizeCss: true, // This works best now that globals.css is smaller
     optimizePackageImports: [
       "swiper",
       "sweetalert2",
@@ -45,7 +38,6 @@ const nextConfig = {
     ],
   },
 
-  // ✅ Webpack optimizations
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.optimization = {
@@ -55,16 +47,21 @@ const nextConfig = {
           cacheGroups: {
             default: false,
             vendors: false,
+            // Ensure framework chunks are prioritized
             framework: {
               name: "framework",
               test: /[\\/]node_modules[\\/](react|react-dom|scheduler)[\\/]/,
               priority: 40,
               enforce: true,
             },
-            vendor: {
-              name: "vendor",
-              test: /[\\/]node_modules[\\/]/,
-              priority: 20,
+            // Split heavy libs into their own chunks
+            lib: {
+              test: /[\\/]node_modules[\\/](lodash|sweetalert2|swiper)[\\/]/,
+              name(module) {
+                const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
+                return `npm.${packageName.replace('@', '')}`;
+              },
+              priority: 30,
             },
             common: {
               name: "common",
@@ -98,8 +95,6 @@ const nextConfig = {
           },
         ],
       },
-
-      // ✅ CRITICAL: Cache Next.js images forever
       {
         source: "/_next/image(.*)",
         headers: [
@@ -109,7 +104,6 @@ const nextConfig = {
           },
         ],
       },
-
       {
         source: "/:all*(svg|jpg|jpeg|png|gif|ico|webp|avif)",
         locale: false,
@@ -120,7 +114,6 @@ const nextConfig = {
           },
         ],
       },
-
       {
         source: "/_next/static/:path*",
         headers: [
@@ -130,7 +123,6 @@ const nextConfig = {
           },
         ],
       },
-
       {
         source: "/:path*.(woff2|woff|ttf|otf)",
         headers: [
