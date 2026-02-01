@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ✅ REMOVED: Turbopack empty object (unless you are explicitly using --turbo)
-  // reactStrictMode is good.
   reactStrictMode: true,
   output: "standalone",
 
@@ -28,9 +26,11 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
 
   experimental: {
-    // ✅ CRITICAL: Inline critical CSS automatically
+    // ✅ CRITICAL: Enable Critters for automatic critical CSS inlining
+    // This extracts above-the-fold CSS and inlines it, deferring the rest
     optimizeCss: true,
-    // ✅ Tree-shake heavy packages
+
+    // ✅ Tree-shake heavy packages to reduce JS bundle
     optimizePackageImports: [
       "swiper",
       "sweetalert2",
@@ -39,26 +39,32 @@ const nextConfig = {
       "lodash",
       "react-icons",
     ],
-    // ✅ NEW: Enable server actions for better SSR performance
+
     serverActions: {
       bodySizeLimit: "2mb",
     },
   },
 
-  // ✅ Turbopack config (Next.js 16+ default bundler)
-  // Empty config allows webpack fallback without errors
+  // ✅ Turbopack config for Next.js 16
   turbopack: {},
 
-  // ✅ Webpack config for backwards compatibility
-  // Note: Turbopack handles CSS optimization automatically
+  // ✅ Webpack optimizations for CSS handling
   webpack: (config, { isServer }) => {
     if (!isServer) {
-      // ✅ Prevent CSS code splitting for critical paths
       config.optimization = {
         ...config.optimization,
         splitChunks: {
+          ...config.optimization.splitChunks,
           cacheGroups: {
-            // ✅ Bundle all CSS into fewer chunks
+            ...config.optimization.splitChunks?.cacheGroups,
+            // ✅ Separate font CSS into its own chunk for better caching
+            fonts: {
+              name: "fonts",
+              test: /[\\/]node_modules[\\/].*\.(woff2?|ttf|eot|otf)$/,
+              chunks: "all",
+              priority: 30,
+            },
+            // ✅ Keep styles together but allow code splitting
             styles: {
               name: "styles",
               test: /\.css$/,
