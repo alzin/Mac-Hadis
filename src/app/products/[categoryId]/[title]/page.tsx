@@ -10,6 +10,9 @@ import { getProductByTitle } from "@/services/products";
 import { notFound } from "next/navigation";
 import { isNewProduct, isTProduct } from "@/utils/typeguards";
 
+import { ProductSchema, BreadcrumbSchema, generateBreadcrumbs } from '@/components/seo/schemas';
+import { baseUrl } from '@/utils/baseUrl';
+
 interface IProductPageProps {
   params: Promise<{ title: string; categoryId: string }>;
 }
@@ -47,16 +50,31 @@ const Page = async ({ params }: IProductPageProps) => {
     return notFound();
   }
   console.log(productData);
+  const productImage = productData.webImagesGallery?.[0]?.imageSrc || '';
 
-  if (isNewProduct(productData)) {
-    // If true, TypeScript now knows productData is TNewProduct
-    return <NewProductPage product={productData} />;
-  } else if (isTProduct(productData)) {
-    // If false, TypeScript knows productData must be TProduct
-    return <ProductPage product={productData} />;
-  }
+  return (
+    <>
+      {/* ✅ 追加: Structured Data */}
+      <ProductSchema
+        name={productData.title}
+        description={productData.servicesDescription || productData.title}
+        image={productImage}
+        category={categoryTitle || ''}
+        url={`${baseUrl}/products/${categoryId}/${encodeURIComponent(title)}`}
+      />
+      <BreadcrumbSchema
+        items={generateBreadcrumbs.product(categoryId, categoryTitle || '', productData.title)}
+      />
 
-  return notFound();
+      {isNewProduct(productData) ? (
+        <NewProductPage product={productData} />
+      ) : isTProduct(productData) ? (
+        <ProductPage product={productData} />
+      ) : (
+        notFound()
+      )}
+    </>
+  );
 };
 
 export default Page;
