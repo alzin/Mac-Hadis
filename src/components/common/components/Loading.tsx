@@ -1,10 +1,10 @@
 /**
  * Loading Component - Optimized for Performance
- * 
+ *
  * WHY INLINE STYLES INSTEAD OF CSS MODULE:
  * The CSS module (Loading.module.css) was being bundled into a separate chunk
  * that became render-blocking (~1.2KB, 480ms delay on mobile).
- * 
+ *
  * By inlining the styles directly in the component using a <style> tag with
  * dangerouslySetInnerHTML, we:
  * 1. Eliminate the render-blocking CSS request entirely
@@ -45,14 +45,14 @@ const loaderStyles = `
 `;
 
 const Loading = () => {
-    return (
-        <>
-            <style dangerouslySetInnerHTML={{ __html: loaderStyles }} />
-            <section className="w-full h-[calc(100vh-60px)] flex items-center justify-center">
-                <span className="hadis-loader"></span>
-            </section>
-        </>
-    )
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: loaderStyles }} />
+      <section className="w-full h-[calc(100vh-60px)] flex items-center justify-center">
+        <span className="hadis-loader"></span>
+      </section>
+    </>
+  );
 };
 
 export default Loading;
