@@ -1,12 +1,22 @@
+/* ═══════════════════════════════════════════════════════════════════════════════
+   TAILWIND CSS - Base Imports
+   ═══════════════════════════════════════════════════════════════════════════════
+   
+   NOTE: experimental.optimizeCss in next.config.mjs enables Critters which:
+   1. Extracts critical CSS from Tailwind output
+   2. Inlines above-the-fold styles in <head>
+   3. Defers the rest with media="print" trick
+   
+   Keep this file clean - Critters handles the critical/non-critical split
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* =========================================
-   NON-CRITICAL STYLES (Loaded async)
-   Critical styles moved to critical.css
-   ========================================= */
-
+/* ─────────────────────────────────────────────────────────────────────────────
+   SCROLL BEHAVIOR - Non-critical enhancement
+   ───────────────────────────────────────────────────────────────────────────── */
 html {
   scroll-behavior: auto;
 }
@@ -15,8 +25,22 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
+/* ─────────────────────────────────────────────────────────────────────────────
+   CUSTOM COMPONENT STYLES - Below the fold
+   These are NOT critical for initial paint
+   ───────────────────────────────────────────────────────────────────────────── */
 @layer components {
-  /* ✅ Keep all gradients but they're not critical */
+  /* Gradient buttons - used in various sections */
+  .gradient-red {
+    background: linear-gradient(to right bottom, #b81122 50%, #ac0c1c 50%);
+    border: 2px solid #990e1c;
+    text-shadow:
+      2px 2px 0 #990e1c,
+      -2px 2px 0 #990e1c,
+      -2px -2px 0 #990e1c,
+      2px -2px 0 #990e1c;
+  }
+
   .gradient-green {
     background: linear-gradient(to right bottom, #50cb68 50%, #49bf60 50%);
     border: 2px solid #43b058;
@@ -47,7 +71,7 @@ html:focus-within {
       2px -2px 0 #3fa7d6;
   }
 
-  /* Card styles */
+  /* Card styles with top border accent */
   .card {
     @apply relative;
   }
