@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             alt="Hadis International Logo"
             width={101}
             height={64}
-            style={{ width: "auto", height: "auto" }} 
+            style={{ width: "101", height: "64" }} 
           />
         </Link>
 
