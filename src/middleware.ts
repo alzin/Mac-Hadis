@@ -2,34 +2,47 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  // Use nextUrl properties to safely separate domain from port
-  const url = request.nextUrl.clone();
-  const hostname = url.hostname; // This is just the domain (e.g. "www.mac-hadis.com")
+  // 1. Get the raw Host header (Reliable on Cloud Run)
+  // This handles cases where internal container hostname is "localhost"
+  const hostHeader = request.headers.get('host') || '';
+  const [hostname] = hostHeader.split(':'); // Remove port (e.g. :3000) if present
 
+  const url = request.nextUrl.clone();
+  
   // --- CONFIGURATION ---
-  // Set to TRUE to force "www.mac-hadis.com"
-  // Set to FALSE to force "mac-hadis.com" (Matches your current image config)
+  // FALSE = Redirect "www" -> "mac-hadis.com" (Your Goal)
   const forceWWW = false; 
 
+  // --- LOGIC ---
+  
   // Case 1: Force non-www (Redirect www -> non-www)
   if (!forceWWW && hostname.startsWith('www.')) {
     url.hostname = hostname.replace('www.', '');
-    // IMPORTANT: Pass 301 for SEO "Permanent Redirect"
+    url.port = ''; // Ensure no port is passed
     return NextResponse.redirect(url, 301);
   }
 
   // Case 2: Force www (Redirect non-www -> www)
   if (forceWWW && !hostname.startsWith('www.')) {
     url.hostname = `www.${hostname}`;
-    // IMPORTANT: Pass 301 for SEO "Permanent Redirect"
+    url.port = ''; // Ensure no port is passed
     return NextResponse.redirect(url, 301);
+  }
+
+  // Case 3: Force HTTPS (Cloud Run terminates SSL, so we check x-forwarded-proto)
+  if (process.env.NODE_ENV === 'production') {
+    const proto = request.headers.get('x-forwarded-proto');
+    if (proto === 'http') {
+      url.protocol = 'https:';
+      return NextResponse.redirect(url, 301);
+    }
   }
 
   return NextResponse.next();
 }
 
-// Keep your matcher config, it is good
 export const config = {
+  // Match all paths
   matcher: [
     '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)',
   ],
