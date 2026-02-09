@@ -17,6 +17,7 @@ import product16 from './住宅工事機械工具・木工機械/荷揚機(瓦�
 import product17 from './管工事機械・工具/ねじ切り機(パイプマシン).json'
 import product18 from './管工事機械・工具/コンクリートカッター.json'
 import product19 from './梱包機・包装機/シーラー機.json'
+import product20 from './梱包機・包装機/シュリンク包装機.json'
 
 const products = [
   product1,
@@ -38,6 +39,7 @@ const products = [
   product17,
   product18,
   product19,
+  product20
 ]
 
 export default products
