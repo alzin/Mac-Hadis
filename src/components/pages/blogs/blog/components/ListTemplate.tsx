@@ -35,21 +35,23 @@ const ListTemplate: React.FC<IListTemplate> = ({ content }) => {
       className="bg-white rounded-xl p-8 lg:p-12 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300"
     >
       {/* Section Header */}
-      <div className="flex items-start mb-6 pb-6 border-b-2 border-gray-100">
-        <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white text-2xl mr-4 flex-shrink-0">
-          {getListIcon(content.listType)}
+      {content.title && (
+        <div className="flex items-start mb-6 pb-6 border-b-2 border-gray-100">
+          <div className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white text-2xl mr-4 flex-shrink-0">
+            {getListIcon(content.listType)}
+          </div>
+          <div className="flex-1">
+            <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-2 leading-tight">
+              {content.title}
+            </h2>
+            {content.subTitle && (
+              <h3 className="text-lg text-gray-600 font-semibold">
+                {content.subTitle}
+              </h3>
+            )}
+          </div>
         </div>
-        <div className="flex-1">
-          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-2 leading-tight">
-            {content.title}
-          </h2>
-          {content.subTitle && (
-            <h3 className="text-lg text-gray-600 font-semibold">
-              {content.subTitle}
-            </h3>
-          )}
-        </div>
-      </div>
+      )}
 
       {/* Top Description */}
       {content.topDescription && (
