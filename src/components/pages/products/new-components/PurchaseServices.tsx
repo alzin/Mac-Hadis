@@ -26,12 +26,14 @@ const PurchaseServices = ({
           <div className="space-y-4 sm:space-y-5 leading-7 sm:leading-8">
             {paragraphs.map((desc, index) =>
               index === 0 ? (
-                <p key={index} className="font-semibold text-[#111111]">
-                  {desc}
-                </p>
+                <p
+                  key={index}
+                  className="font-semibold text-[#111111]"
+                  dangerouslySetInnerHTML={{ __html: desc }}
+                />
               ) : (
-                <p key={index}>{desc}</p>
-              )
+                <p key={index} dangerouslySetInnerHTML={{ __html: desc }} />
+              ),
             )}
           </div>
         </div>
