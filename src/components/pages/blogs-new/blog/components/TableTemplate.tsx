@@ -77,12 +77,14 @@ const TableTemplate: React.FC<ITableTemplate> = ({
 
       {/* Bottom Description */}
       {content.bottomDescription && (
-        <div className="mt-8 p-6 bg-indigo-50 border-l-4 border-indigo-500 rounded-lg">
+        <div className="border border-[#B81122] rounded-2xl bg-[#FFF5F6] p-4">
           {content.bottomDescription.split("\n").map((paragraph, index) => (
             <p
               key={index}
-              className="font-noto font-normal text-[14px] lg:text-[16px] leading-[200%] tracking-normal align-middle text-[#323232]"
-              dangerouslySetInnerHTML={{ __html: paragraph }}
+              className="text-[14px] lg:text-[16px] leading-[160%] align-middle font-noto text-[#B81122]"
+              dangerouslySetInnerHTML={{
+                __html: paragraph,
+              }}
             />
           ))}
         </div>
