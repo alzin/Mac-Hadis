@@ -24,6 +24,9 @@ export default {
       textShadow: {
         red: "-2px -2px 0 #4AC061, 2px -2px 0 #4AC061, -2px 2px 0 #4AC061, 2px 2px 0 #4AC061",
       },
+      boxShadow: {
+        'custom-light': '0px 2px 8px 0px #0000000D',
+      },
     },
   },
 } satisfies Config;
