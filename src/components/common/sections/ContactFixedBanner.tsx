@@ -10,7 +10,7 @@ import ContactDetails from "@/content/home/ContactDetails.json";
 const ContactFixedBanner: React.FC = () => {
   return (
     <section
-      className="w-full py-4 fixed bottom-0 left-0 z-40 md:overflow-hidden"
+      className="w-full py-4 fixed bottom-0 left-0 z-30 md:overflow-hidden"
       aria-label="Contact Banner"
     >
       {/* Modern Badge */}

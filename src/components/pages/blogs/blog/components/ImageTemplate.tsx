@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import SectionWrapper from "./common/SectionWrapper";
 
 interface IImageTemplate {
   content: ImageContent;
@@ -8,7 +9,7 @@ interface IImageTemplate {
 
 const ImageTemplate: React.FC<IImageTemplate> = ({ content, mainTitle }) => {
   return (
-    <section id={content.title} className="bg-white rounded-xl p-8 lg:p-12 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
+    <SectionWrapper id={content.title}>
       <div className="relative w-full max-w-3xl mx-auto">
         <div className="relative w-full h-64 md:h-80 lg:h-96 mb-6 rounded-lg overflow-hidden shadow-lg">
           <Image
@@ -24,14 +25,17 @@ const ImageTemplate: React.FC<IImageTemplate> = ({ content, mainTitle }) => {
         {content.title && (
           <div className="text-center space-y-2">
             {content.title.split("\n").map((paragraph, index) => (
-              <p key={index} className="text-gray-600 text-sm lg:text-base italic">
+              <p
+                key={index}
+                className="text-gray-600 text-sm lg:text-base italic"
+              >
                 {paragraph}
               </p>
             ))}
           </div>
         )}
       </div>
-    </section>
+    </SectionWrapper>
   );
 };
 

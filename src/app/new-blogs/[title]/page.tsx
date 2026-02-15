@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 // Import from the NEW folder
-import BlogDetailsNew from "@/components/pages/blogs-new/blog"; 
+import BlogDetailsNew from "@/components/pages/blogs/blog";
 
 // services (Keep using existing services)
 import { getBlogByTitle } from "@/services/blogs";
@@ -21,7 +21,5 @@ export default async function NewBlogDetailsPage({ params }: IBlogPage) {
     notFound();
   }
 
-  return (
-    <BlogDetailsNew data={data} />
-  );
+  return <BlogDetailsNew data={data} />;
 }
