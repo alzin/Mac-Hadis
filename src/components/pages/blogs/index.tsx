@@ -6,7 +6,7 @@ import Pagination from "./components/Pagination";
 import { useBlog } from "@/hooks/useBlog";
 import PostCard from "../home/components/PostCard";
 
-const Index = () => {
+const BlogsListNew = () => {
   const {
     currentBlogs,
     postsPerPage,
@@ -58,4 +58,4 @@ const Index = () => {
 };
 
 
-export default Index;
+export default BlogsListNew;

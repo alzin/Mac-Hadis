@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import SimpleTemplate from "../components/SimpleTemplate";
@@ -12,30 +12,50 @@ import ImageListTemplate from "../components/ImageListTemplate";
 interface ISubContent {
   content: BlogSubContent;
   mainTitle: string;
+  sectionNumber: number;
 }
 
-const SubContent: React.FC<ISubContent> = ({ content, mainTitle }) => {
+const SubContent: React.FC<ISubContent> = ({
+  content,
+  mainTitle,
+  sectionNumber,
+}) => {
   // Generate section ID for navigation
   const sectionId = content.title ? `section-${content.id}` : undefined;
 
   return (
-    <div id={sectionId} className="scroll-mt-24">
+    <div id={sectionId}>
       {(() => {
         switch (content.type) {
           case "simple":
-            return <SimpleTemplate content={content} />;
+            return (
+              <SimpleTemplate content={content} sectionNumber={sectionNumber} />
+            );
           case "image":
             return <ImageTemplate content={content} mainTitle={mainTitle} />;
           case "video":
-            return <VideoTemplate content={content} />;
+            return (
+              <VideoTemplate content={content} sectionNumber={sectionNumber} />
+            );
           case "list":
-            return <ListTemplate content={content} />;
+            return (
+              <ListTemplate content={content} sectionNumber={sectionNumber} />
+            );
           case "faq":
-            return <FAQTemplate content={content} />;
+            return (
+              <FAQTemplate content={content} sectionNumber={sectionNumber} />
+            );
           case "table":
-            return <TableTemplate content={content} />;
+            return (
+              <TableTemplate content={content} sectionNumber={sectionNumber} />
+            );
           case "imageList":
-            return <ImageListTemplate content={content} />;
+            return (
+              <ImageListTemplate
+                content={content}
+                sectionNumber={sectionNumber}
+              />
+            );
           default:
             return null;
         }

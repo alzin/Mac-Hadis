@@ -63,7 +63,7 @@
       "items": [
         {
           "id": "1",
-          "description": "日立製ボール盤（卓上ボール盤）",
+          "title": "日立製ボール盤（卓上ボール盤）",
           "imageSrc": [
             "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_10.jpg",
             "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_11.jpg"
@@ -71,31 +71,23 @@
         },
         {
           "id": "2",
-          "description": "永和製傾斜盤（横切り盤）",
-          "imageSrc": [
-            "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_12.jpg"
-          ]
+          "title": "永和製傾斜盤（横切り盤）",
+          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_12.jpg"
         },
         {
           "id": "3",
-          "description": "集塵機（木工用集じん機）",
-          "imageSrc": [
-            "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_13.jpg"
-          ]
+          "title": "集塵機（木工用集じん機）",
+          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_13.jpg"
         },
         {
           "id": "4",
-          "description": "岩田製コンプレッサー（エアコンプレッサー）",
-          "imageSrc": [
-            "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_15.jpg"
-          ]
+          "title": "岩田製コンプレッサー（エアコンプレッサー）",
+          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_15.jpg"
         },
         {
           "id": "5",
-          "description": "その他 木材加工用機械一式",
-          "imageSrc": [
-            "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_16.jpg"
-          ]
+          "title": "その他 木材加工用機械一式",
+          "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%85%A5%E9%96%93%E5%B8%82%E3%81%A7%E3%81%AE%E3%83%91%E3%83%8D%E3%83%AB%E3%82%BD%E3%83%BC%E5%87%BA%E5%BC%B5%E8%B2%B7%E5%8F%96%E4%BA%8B%E4%BE%8B/blog21_16.jpg"
         }
       ],
       "bottomDescription": "このように、木工機械や木材加工設備、各種<strong>切断機</strong>を中心とした複数機械の一括出張買取にも対応しております。工場の閉鎖や設備整理に伴う大量の機械処分などもご相談ください。"
