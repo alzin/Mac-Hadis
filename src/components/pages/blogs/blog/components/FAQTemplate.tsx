@@ -4,7 +4,7 @@ import SectionHeader from "./common/SectionHeader";
 
 interface IFAQTemplate {
   content: FAQContent;
-  sectionNumber: number;
+  sectionNumber?: number;
 }
 
 const FAQTemplate: React.FC<IFAQTemplate> = ({ content, sectionNumber }) => {

@@ -4,7 +4,7 @@ import SectionHeader from "./common/SectionHeader";
 
 interface ISimpleTemplate {
   content: SimpleContent;
-  sectionNumber: number;
+  sectionNumber?: number;
 }
 
 const SimpleTemplate: React.FC<ISimpleTemplate> = ({

@@ -17,7 +17,7 @@ const ImageTemplate: React.FC<IImageTemplate> = ({ content, mainTitle }) => {
             src={content.imageSrc}
             alt={content.title || mainTitle}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 30vw, 30vw"
             loading="lazy"
           />
         </div>

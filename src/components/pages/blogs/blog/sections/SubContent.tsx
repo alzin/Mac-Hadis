@@ -12,7 +12,7 @@ import ImageListTemplate from "../components/ImageListTemplate";
 interface ISubContent {
   content: BlogSubContent;
   mainTitle: string;
-  sectionNumber: number;
+  sectionNumber?: number;
 }
 
 const SubContent: React.FC<ISubContent> = ({

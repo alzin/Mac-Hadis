@@ -7,7 +7,7 @@ import SectionHeader from "./common/SectionHeader";
 
 interface IImageListTemplate {
   content: ImageListContent;
-  sectionNumber: number;
+  sectionNumber?: number;
 }
 
 const ImageListTemplate: React.FC<IImageListTemplate> = ({
