@@ -6,7 +6,7 @@ import SectionHeader from "./common/SectionHeader";
 
 interface IListTemplate {
   content: ListContent;
-  sectionNumber: number;
+  sectionNumber?: number;
 }
 
 const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {

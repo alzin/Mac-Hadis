@@ -187,14 +187,20 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
 
           {/* Sub Content Sections */}
           <div className="space-y-12">
-            {data.subContent.map((item, index) => (
-              <SubContent
-                key={index}
-                content={item}
-                mainTitle={data.title}
-                sectionNumber={index + 1}
-              />
-            ))}
+              {(() => {
+                let sectionCounter = 0;
+                return data.subContent.map((item, index) => {
+                  const number = item.title ? ++sectionCounter : undefined;
+                  return (
+                    <SubContent
+                      key={index}
+                      content={item}
+                      mainTitle={data.title}
+                      sectionNumber={number}
+                    />
+                  );
+                });
+              })()}
           </div>
         </main>
       </div>

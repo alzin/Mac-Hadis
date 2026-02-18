@@ -17,7 +17,7 @@ interface TableContent {
 
 interface ITableTemplate {
   content: TableContent;
-  sectionNumber: number;
+  sectionNumber?: number;
 }
 
 const TableTemplate: React.FC<ITableTemplate> = ({

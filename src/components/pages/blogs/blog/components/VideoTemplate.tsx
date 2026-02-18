@@ -4,7 +4,7 @@ import SectionHeader from "./common/SectionHeader";
 
 interface IVideoTemplate {
   content: VideoContent;
-  sectionNumber: number;
+  sectionNumber?: number;
 }
 
 const VideoTemplate: React.FC<IVideoTemplate> = ({
