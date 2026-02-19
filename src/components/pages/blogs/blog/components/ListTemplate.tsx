@@ -93,14 +93,14 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                     <div className="mt-4 w-full">
                       {/* 1. Single String Image — full width */}
                       {item.imageSrc && typeof item.imageSrc === "string" && (
-                        <div className="relative w-full overflow-hidden rounded-[12px]">
+                        <div className="relative w-full max-w-[321px] h-[175px] lg:max-w-[796px] lg:h-[434px] overflow-hidden rounded-[12px] bg-gray-50">
                           <Image
                             src={item.imageSrc}
                             alt={item.title || "Section illustration"}
-                            width={800}
-                            height={400}
-                            className="w-full h-auto object-cover rounded-[12px]"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+                            width={796}
+                            height={434}
+                            className="w-full h-full object-contain rounded-[12px]"
+                            sizes="(max-width: 1024px) 321px, 796px"
                             loading="lazy"
                           />
                         </div>
@@ -116,15 +116,15 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                             {item.imageSrc.map((src, imgIndex) => (
                               <div
                                 key={imgIndex}
-                                className="relative w-full overflow-hidden rounded-[12px]"
+                                className="relative w-full max-w-[321px] h-[175px] lg:max-w-[796px] lg:h-[434px] overflow-hidden rounded-[12px] bg-gray-50"
                               >
                                 <Image
                                   src={src}
                                   alt={`${item.title || "Section illustration"} - Image ${imgIndex + 1}`}
-                                  width={600}
-                                  height={400}
-                                  className="w-full h-auto object-cover rounded-[12px]"
-                                  sizes="(max-width: 768px) 50vw, 300px"
+                                  width={796}
+                                  height={434}
+                                  className="w-full h-full object-contain rounded-[12px]"
+                                  sizes="(max-width: 1024px) 321px, 796px"
                                   loading="lazy"
                                 />
                               </div>
@@ -140,7 +140,7 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                           {item.images.map((image, imgIndex) => (
                             <div
                               key={imgIndex}
-                              className="relative w-full overflow-hidden rounded-[12px]"
+                              className="relative w-full max-w-[321px] h-[175px] lg:max-w-[796px] lg:h-[434px] overflow-hidden rounded-[12px] bg-gray-50"
                             >
                               <Image
                                 src={image.src}
@@ -148,10 +148,10 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                                   image.alt ||
                                   `${item.title || "Section illustration"} - Image ${imgIndex + 1}`
                                 }
-                                width={600}
-                                height={400}
-                                className="w-full h-auto object-cover rounded-[12px]"
-                                sizes="(max-width: 768px) 50vw, 300px"
+                                width={796}
+                                height={434}
+                                className="w-full h-full object-contain rounded-[12px]"
+                                sizes="(max-width: 1024px) 321px, 796px"
                                 loading="lazy"
                               />
                             </div>
