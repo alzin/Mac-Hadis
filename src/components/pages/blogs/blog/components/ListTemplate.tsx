@@ -54,23 +54,29 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
               <div className="flex items-start">
                 {/* List Marker */}
                 {content.listType !== "none" && (
-                  <span className="font-noto font-bold text-[18px] leading-[200%] text-[#111111] mr-1 flex-shrink-0">
-                    {content.listType === "number" ? `${index + 1}.` : "・"}
-                  </span>
+                  content.listType === "number" ? (
+                    <span className="font-noto font-bold text-[18px] leading-[200%] text-[#111111] mr-1 flex-shrink-0">
+                      {`${index + 1}.`}
+                    </span>
+                  ) : (
+                    <span className="mr-3 flex-shrink-0 flex items-center mt-4" aria-hidden="true">
+                      <span className="w-2 h-2 rounded-full bg-[#111111] block" />
+                    </span>
+                  )
                 )}
 
                 <div className="flex-1">
                   {item.title && (
-                    <h3 className="font-noto font-bold text-[18px] lg:text-[20px] leading-[200%] tracking-normal align-middle text-[#111111]">
+                    <h3 className="font-noto text-[18px] lg:text-[20px] leading-[200%] tracking-normal align-middle text-[#111111]">
                       {item.isLink ? (
                         <Link
                           className="text-[#111111] hover:underline transition-colors"
                           href={item.href!}
                         >
-                          {item.title}
+                          <span dangerouslySetInnerHTML={{ __html: item.title }} />
                         </Link>
                       ) : (
-                        item.title
+                        <span dangerouslySetInnerHTML={{ __html: item.title }} />
                       )}
                     </h3>
                   )}
