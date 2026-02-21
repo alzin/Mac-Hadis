@@ -20,6 +20,8 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
     setShow((prev) => !prev);
   };
 
+  const stripHtml = (html: string): string => html.replace(/<[^>]*>/g, "");
+
   return (
     <SectionWrapper id={content.title}>
       {/* Section Header */}
@@ -53,24 +55,36 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
             <div key={index}>
               <div className="flex items-start">
                 {/* List Marker */}
-                {content.listType !== "none" && (
-                  <span className="font-noto font-bold text-[18px] leading-[200%] text-[#111111] mr-1 flex-shrink-0">
-                    {content.listType === "number" ? `${index + 1}.` : "・"}
-                  </span>
-                )}
+                {content.listType !== "none" &&
+                  (content.listType === "number" ? (
+                    <span className="font-noto font-bold text-[18px] leading-[200%] text-[#111111] mr-1 flex-shrink-0">
+                      {`${index + 1}.`}
+                    </span>
+                  ) : (
+                    <span
+                      className="mr-3 flex-shrink-0 flex items-center mt-4"
+                      aria-hidden="true"
+                    >
+                      <span className="w-2 h-2 rounded-full bg-[#111111] block" />
+                    </span>
+                  ))}
 
                 <div className="flex-1">
                   {item.title && (
-                    <h3 className="font-noto font-bold text-[18px] lg:text-[20px] leading-[200%] tracking-normal align-middle text-[#111111]">
+                    <h3 className="font-noto text-[18px] lg:text-[20px] leading-[200%] tracking-normal align-middle text-[#111111]">
                       {item.isLink ? (
                         <Link
                           className="text-[#111111] hover:underline transition-colors"
                           href={item.href!}
                         >
-                          {item.title}
+                          <span
+                            dangerouslySetInnerHTML={{ __html: item.title }}
+                          />
                         </Link>
                       ) : (
-                        item.title
+                        <span
+                          dangerouslySetInnerHTML={{ __html: item.title }}
+                        />
                       )}
                     </h3>
                   )}
@@ -87,14 +101,18 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                     <div className="mt-4 w-full">
                       {/* 1. Single String Image — full width */}
                       {item.imageSrc && typeof item.imageSrc === "string" && (
-                        <div className="relative w-full overflow-hidden rounded-[12px]">
+                        <div className="relative w-full max-w-[321px] h-[175px] lg:max-w-[796px] lg:h-[434px] overflow-hidden rounded-[12px] bg-gray-50">
                           <Image
                             src={item.imageSrc}
-                            alt={item.title || "Section illustration"}
-                            width={800}
-                            height={400}
-                            className="w-full h-auto object-cover rounded-[12px]"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 60vw"
+                            alt={
+                              item.title
+                                ? stripHtml(item.title)
+                                : "Section illustration"
+                            }
+                            width={796}
+                            height={434}
+                            className="w-full h-full object-contain rounded-[12px]"
+                            sizes="(max-width: 1024px) 321px, 796px"
                             loading="lazy"
                           />
                         </div>
@@ -110,15 +128,15 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                             {item.imageSrc.map((src, imgIndex) => (
                               <div
                                 key={imgIndex}
-                                className="relative w-full overflow-hidden rounded-[12px]"
+                                className="relative w-full max-w-[321px] h-[175px] lg:max-w-[796px] lg:h-[434px] overflow-hidden rounded-[12px] bg-gray-50"
                               >
                                 <Image
                                   src={src}
                                   alt={`${item.title || "Section illustration"} - Image ${imgIndex + 1}`}
-                                  width={600}
-                                  height={400}
-                                  className="w-full h-auto object-cover rounded-[12px]"
-                                  sizes="(max-width: 768px) 50vw, 300px"
+                                  width={796}
+                                  height={434}
+                                  className="w-full h-full object-contain rounded-[12px]"
+                                  sizes="(max-width: 1024px) 321px, 796px"
                                   loading="lazy"
                                 />
                               </div>
@@ -134,18 +152,15 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                           {item.images.map((image, imgIndex) => (
                             <div
                               key={imgIndex}
-                              className="relative w-full overflow-hidden rounded-[12px]"
+                              className="relative w-full max-w-[321px] h-[175px] lg:max-w-[796px] lg:h-[434px] overflow-hidden rounded-[12px] bg-gray-50"
                             >
                               <Image
                                 src={image.src}
-                                alt={
-                                  image.alt ||
-                                  `${item.title || "Section illustration"} - Image ${imgIndex + 1}`
-                                }
-                                width={600}
-                                height={400}
-                                className="w-full h-auto object-cover rounded-[12px]"
-                                sizes="(max-width: 768px) 50vw, 300px"
+                                alt={`${item.title ? stripHtml(item.title) : "Section illustration"} - Image ${imgIndex + 1}`}
+                                width={796}
+                                height={434}
+                                className="w-full h-full object-contain rounded-[12px]"
+                                sizes="(max-width: 1024px) 321px, 796px"
                                 loading="lazy"
                               />
                             </div>
