@@ -53,7 +53,7 @@ const blogs = [
     blog22,
     blog23,
     blog24,
-    blog25
+    blog25,
 ];
 
 // Export the array as default
