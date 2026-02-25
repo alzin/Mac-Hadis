@@ -24,6 +24,7 @@ import blog22 from './blog22.json'
 import blog23 from './blog23.json'
 import blog24 from './blog24.json'
 import blog25 from './blog25.json'
+import blog26 from './blog26.json'
 
 
 
@@ -54,6 +55,7 @@ const blogs = [
     blog23,
     blog24,
     blog25,
+    blog26,
 ];
 
 // Export the array as default
