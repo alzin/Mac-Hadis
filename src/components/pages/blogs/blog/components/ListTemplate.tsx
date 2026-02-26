@@ -74,7 +74,7 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                     <h3 className="font-noto text-[18px] lg:text-[20px] leading-[200%] tracking-normal align-middle text-[#111111]">
                       {item.isLink ? (
                         <Link
-                          className="text-[#111111] hover:underline transition-colors"
+                          className="text-[#111111] hover:underline transition-colors text-[14px] lg:text-[16px]"
                           href={item.href!}
                         >
                           <span
