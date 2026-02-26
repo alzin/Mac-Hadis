@@ -20,48 +20,48 @@
     },
     {
       "id": 4,
+      "title": "切断機 (シャーリング)",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/金属加工機械・ 板金機械/items/切断機 (シャーリング).png"
+    },
+    {
+      "id": 5,
       "title": "アングル加工機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/金属加工機械・ 板金機械/items/アングル加工機.png"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "コンターマシン",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/金属加工機械・ 板金機械/items/コンターマシン.png"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "スリッター",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/金属加工機械・ 板金機械/items/スリッター.png"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "ハゼ折り機 .共板成形機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/金属加工機械・ 板金機械/items/ハゼ折り機 .共板成形機.png"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "プラズマ切断機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/金属加工機械・ 板金機械/items/プラズマ切断機.png"
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "ベルトグラインダー",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/金属加工機械・ 板金機械/items/ベルトグラインダー.png"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "メタルソー",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/金属加工機械・ 板金機械/items/メタルソー.png"
     },
     {
-      "id": 11,
+      "id": 12,
       "title": "三本ロール",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/金属加工機械・ 板金機械/items/三本ロール.png"
-    },
-    {
-      "id": 12,
-      "title": "切断機 (シャーリング)",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/金属加工機械・ 板金機械/items/切断機 (シャーリング).png"
     },
     {
       "id": 13,
