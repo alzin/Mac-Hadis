@@ -39,6 +39,7 @@ const CategoryProducts = ({
               image={item.image}
               title={item.title}
               categoryId={categoryId}
+              categoryName={categoryName}
             />
           </div>
         ))}

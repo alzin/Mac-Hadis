@@ -1,19 +1,23 @@
 import { useHaveDetails } from "@/hooks/useHaveDetails";
+import { getCategoryTitleById } from "@/services/category";
 import Image from "next/image";
 import Link from "next/link";
 
 interface IPurchaseItemsCardProps {
   title: string;
-  categoryId?: string;
+  categoryId: string;
+  categoryName?: string;
   image: string;
 }
 
 const PurchaseItemsCard = ({
   title,
   categoryId,
+  categoryName,
   image,
 }: IPurchaseItemsCardProps) => {
-  const haveDetails = useHaveDetails(title);
+  const resolvedCategoryName = categoryName ?? getCategoryTitleById(categoryId);
+  const haveDetails = useHaveDetails(title, resolvedCategoryName);
 
   // Common content to avoid duplication
   const content = (
