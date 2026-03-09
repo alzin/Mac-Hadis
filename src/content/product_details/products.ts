@@ -21,6 +21,7 @@ import product20 from './梱包機・包装機/シュリンク包装機.json'
 import product21 from './金属加工機械・板金機械/手動折り曲げ機.json'
 import product22 from './金属加工機械・板金機械/切断機 (シャーリング).json'  
 import product23 from './管工事機械・工具/高圧洗浄機.json'
+import product24 from './管工事機械・工具/エンジンコンプレッサ.json';
 
 const products = [
   product1,
@@ -46,6 +47,7 @@ const products = [
   product21,
   product22,
   product23,
+  product24,
 ]
 
 export default products
