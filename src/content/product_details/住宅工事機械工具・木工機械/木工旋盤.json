@@ -74,7 +74,7 @@
     {
       "jp": "",
       "en": "vicmarc",
-      "link": "https://www.vicmarc.com/",
+      "link": "https://www.vicmarc.com/lathes",
       "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/%E4%BD%8F%E5%AE%85%E5%B7%A5%E4%BA%8B%E6%A9%9F%E6%A2%B0%E5%B7%A5%E5%85%B7%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0/%E6%9C%A8%E5%B7%A5%E6%97%8B%E7%9B%A4/makers/vicmarc.png"
     },
     {
@@ -98,19 +98,19 @@
     {
       "jp": "",
       "en": "deltamachinery",
-      "link": "https://deltamachinery.com/",
+      "link": "https://deltamachinery.com/product-category/lathes/",
       "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/%E4%BD%8F%E5%AE%85%E5%B7%A5%E4%BA%8B%E6%A9%9F%E6%A2%B0%E5%B7%A5%E5%85%B7%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0/%E6%9C%A8%E5%B7%A5%E6%97%8B%E7%9B%A4/makers/deltamachinery.png"
     },
     {
       "jp": "",
       "en": "toyoas",
-      "link": "https://www.toyoas.jp/",
+      "link": "https://www.toyoas.jp/products/brand/rexon/",
       "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/%E4%BD%8F%E5%AE%85%E5%B7%A5%E4%BA%8B%E6%A9%9F%E6%A2%B0%E5%B7%A5%E5%85%B7%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0/%E6%9C%A8%E5%B7%A5%E6%97%8B%E7%9B%A4/makers/toyoas.png"
     },
     {
       "jp": "",
       "en": "jettools",
-      "link": "https://jettools.com/",
+      "link": "https://jettools.com/woodworking/lathes",
       "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/%E4%BD%8F%E5%AE%85%E5%B7%A5%E4%BA%8B%E6%A9%9F%E6%A2%B0%E5%B7%A5%E5%85%B7%E3%83%BB%E6%9C%A8%E5%B7%A5%E6%A9%9F%E6%A2%B0/%E6%9C%A8%E5%B7%A5%E6%97%8B%E7%9B%A4/makers/jettools.jpg"
     }
   ],
@@ -152,5 +152,5 @@
       "answer": "はい、買取の際に引き取り可能です。手数料はかかりません。"
     }
   ],
-  "servicesDescription": "ご使用されなくなった木工旋盤はございませんか？\\n\nハディズでは、あらゆるメーカー・型式の中古木工旋盤を買取しております。重量のある機械の搬出・運搬も、専門知識を持つスタッフが安全に対応いたします。機械の状態を適正に評価し、公正な価格での買取と迅速なお支払いをお約束いたします。"
+  "servicesDescription": "ご使用されなくなった木工旋盤はございませんか？\nハディズでは、あらゆるメーカー・型式の中古木工旋盤を買取しております。重量のある機械の搬出・運搬も、専門知識を持つスタッフが安全に対応いたします。機械の状態を適正に評価し、公正な価格での買取と迅速なお支払いをお約束いたします。"
 }
