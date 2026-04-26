@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // 1. Get the raw Host header (Reliable on Cloud Run)
   // This handles cases where internal container hostname is "localhost"
   const hostHeader = request.headers.get('host') || '';
