@@ -28,9 +28,18 @@ export async function GET(_req: NextRequest, { params }: IParams) {
     return new Response("Not found", { status: 404 });
   }
 
-  // encodeURI handles raw non-ASCII characters and is idempotent for
-  // already-encoded URLs.
-  const upstream = await fetch(encodeURI(data.imageSrc));
+  // Normalize the URL so it is correctly percent-encoded whether the source
+  // value is raw (contains Japanese characters) or already encoded.
+  // NOTE: encodeURI alone is NOT idempotent — it re-encodes "%" into "%25",
+  // double-encoding an already-encoded URL. Decoding first fixes both cases.
+  let imageSrc = data.imageSrc;
+  try {
+    imageSrc = encodeURI(decodeURI(data.imageSrc));
+  } catch {
+    /* keep the original value if it cannot be decoded */
+  }
+
+  const upstream = await fetch(imageSrc);
   if (!upstream.ok) {
     return new Response("Upstream image error", { status: 502 });
   }

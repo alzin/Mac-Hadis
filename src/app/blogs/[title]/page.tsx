@@ -83,7 +83,7 @@ export default async function BlogDetailsPage({ params }: IBlogPage) {
       <ArticleSchema
         title={data.title}
         description={data.metaDescription}
-        image={encodeURI(data.imageSrc)}
+        image={`${baseUrl}/blogs/${data.title}/og`}
         datePublished={data.date}
         url={`${baseUrl}/blogs/${data.title}`}
       />
