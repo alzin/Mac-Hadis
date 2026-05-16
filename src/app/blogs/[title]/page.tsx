@@ -32,16 +32,11 @@ export async function generateMetadata({
       title: "Blog Not Found",
     };
   } else {
-    // The raw S3 image URL has two problems for social crawlers:
-    //  1. It may contain non-ASCII / fragile fullwidth characters in the key.
-    //  2. The originals are large progressive JPEGs that Facebook's scraper
-    //     intermittently rejects as "corrupt or invalid format".
-    // Route it through Next.js' image optimizer: this serves a small, resized,
-    // re-encoded image from a clean ASCII mac-hadis.com URL that crawlers like.
-    const rawImageUrl = encodeURI(data.imageSrc);
-    const imageUrl = `${baseUrl}/_next/image?url=${encodeURIComponent(
-      rawImageUrl
-    )}&w=1200&q=75`;
+    // Serve the social-share image through our own /og route. The raw S3
+    // covers carry an embedded ICC color profile, which Facebook's scraper
+    // rejects as "corrupt or invalid format". The /og route strips the ICC
+    // profile and returns a clean, resized 1200x630 JPEG.
+    const imageUrl = `${baseUrl}/blogs/${data.title}/og`;
 
     return {
       title: data?.title,
