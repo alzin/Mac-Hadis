@@ -32,6 +32,10 @@ export async function generateMetadata({
       title: "Blog Not Found",
     };
   } else {
+    // Ensure the image URL is valid for OG crawlers (Facebook rejects raw
+    // non-ASCII characters). encodeURI is idempotent for already-encoded URLs.
+    const imageUrl = encodeURI(data.imageSrc);
+
     return {
       title: data?.title,
       description: data?.metaDescription,
@@ -43,14 +47,14 @@ export async function generateMetadata({
         title: data?.title,
         description: data?.metaDescription,
         siteName: "機械工具買取ハディズ",
-        images: [{ url: `${data?.imageSrc}` }],
+        images: [{ url: imageUrl }],
       },
 
       twitter: {
         card: "summary_large_image",
         title: data?.title,
         description: data?.metaDescription,
-        images: `${data?.imageSrc}`,
+        images: imageUrl,
       },
 
       alternates: {
@@ -75,7 +79,7 @@ export default async function BlogDetailsPage({ params }: IBlogPage) {
       <ArticleSchema
         title={data.title}
         description={data.metaDescription}
-        image={data.imageSrc}
+        image={encodeURI(data.imageSrc)}
         datePublished={data.date}
         url={`${baseUrl}/blogs/${data.title}`}
       />
