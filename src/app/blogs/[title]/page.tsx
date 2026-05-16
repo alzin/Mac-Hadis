@@ -32,9 +32,16 @@ export async function generateMetadata({
       title: "Blog Not Found",
     };
   } else {
-    // Ensure the image URL is valid for OG crawlers (Facebook rejects raw
-    // non-ASCII characters). encodeURI is idempotent for already-encoded URLs.
-    const imageUrl = encodeURI(data.imageSrc);
+    // The raw S3 image URL has two problems for social crawlers:
+    //  1. It may contain non-ASCII / fragile fullwidth characters in the key.
+    //  2. The originals are large progressive JPEGs that Facebook's scraper
+    //     intermittently rejects as "corrupt or invalid format".
+    // Route it through Next.js' image optimizer: this serves a small, resized,
+    // re-encoded image from a clean ASCII mac-hadis.com URL that crawlers like.
+    const rawImageUrl = encodeURI(data.imageSrc);
+    const imageUrl = `${baseUrl}/_next/image?url=${encodeURIComponent(
+      rawImageUrl
+    )}&w=1200&q=75`;
 
     return {
       title: data?.title,
@@ -47,7 +54,9 @@ export async function generateMetadata({
         title: data?.title,
         description: data?.metaDescription,
         siteName: "機械工具買取ハディズ",
-        images: [{ url: imageUrl }],
+        images: [
+          { url: imageUrl, width: 1200, height: 630, alt: data?.title },
+        ],
       },
 
       twitter: {
