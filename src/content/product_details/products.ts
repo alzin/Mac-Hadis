@@ -30,6 +30,7 @@ import product29 from './業務用厨房機器・ ベーカリー機器/プレ�
 import product30 from './業務用厨房機器・ ベーカリー機器/ガスフライヤー.json';
 import product31 from './金属加工機械・板金機械/ロータリーシャ.json';
 import product32 from './金属加工機械・板金機械/コンターマシン.json';
+import product33 from './工作機械・精密加工機械/鋸盤 (バンドソー).json';
 
 
 const products = [
@@ -65,6 +66,7 @@ const products = [
   product30,
   product31,
   product32,
+  product33
 ]
 
 export default products
