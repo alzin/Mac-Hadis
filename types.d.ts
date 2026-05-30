@@ -1,6 +1,6 @@
 type PurchaseProcessCategoryType = "On-site purchase" | "Home delivery purchase" | "Bring-in purchase"
 
-type SubContentType = "simple" | "faq" | "list" | "image" | "video" | "table" | "imageList";
+type SubContentType = "simple" | "faq" | "list" | "image" | "video" | "table" | "imageList" | "btn" | "contactBanner";
 
 interface BlogItemBase {
     id: string;
@@ -59,6 +59,7 @@ interface ListContent extends BlogItemBase {
         bottomDescription?: string;
     }[];
     sectionImages?: string[] | { src: string; alt?: string }[];
+    imagesNote?: string;
     bottomDescription?: string;
     withPagination?: boolean;
 }
@@ -72,7 +73,20 @@ interface ImageListContent extends BlogItemBase {
     }[];
 }
 
-type BlogSubContent = SimpleContent | FAQContent | ImageContent | ListContent | VideoContent | TableContent | ImageListContent;
+interface BtnContent extends BlogItemBase {
+    type: "btn";
+    label?: string;
+    href?: string;
+    description?: string;
+    variant?: "primary" | "secondary";
+}
+
+interface ContactBannerContent extends BlogItemBase {
+    type: "contactBanner";
+    showFormBtn?: boolean;
+}
+
+type BlogSubContent = SimpleContent | FAQContent | ImageContent | ListContent | VideoContent | TableContent | ImageListContent | BtnContent | ContactBannerContent;
 
 interface BlogPost {
     id: string;
