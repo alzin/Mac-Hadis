@@ -1,9 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 // data
 import navbarLinksData from "@/content/home/navbarLinks.json";
+import { resolveNavItems } from "@/utils/navItems";
 
 const Footer: React.FC = () => {
+  const pathname = usePathname();
+  const navItems = resolveNavItems(pathname);
+
   return (
     <footer className="mb-32 xl:mb-20" aria-label="Website Footer">
       <div className="bg-white py-10 px-4 space-y-5 lg:space-y-6 font-medium text-sm lg:text-base text-[#B81122] flex items-center justify-center w-full flex-col">
@@ -14,14 +21,14 @@ const Footer: React.FC = () => {
             alt="Hadis International Logo"
             width={101}
             height={64}
-            style={{ width: "101", height: "64" }} 
+            style={{ width: "101", height: "64" }}
           />
         </Link>
 
         {/* navitems */}
         <nav className="flex flex-col lg:flex-row items-start lg:items-center justify-center h-full w-full gap-8">
           <ul className="flex flex-col lg:flex-row items-start lg:items-center justify-center gap-8 font-bold text-base">
-            {navbarLinksData?.navbarItems?.map((item) => (
+            {navItems?.map((item) => (
               <li key={item.id}>
                 <Link href={item.href} title={`Maps to ${item.label}`}>
                   {item.label}
@@ -45,7 +52,7 @@ const Footer: React.FC = () => {
         <div className="flex items-center justify-start lg:justify-center w-full gap-4">
           {navbarLinksData?.snsLinks?.map((item) =>
             item.href.startsWith("mailto:") ? (
-              <a
+              <Link
                 key={item.id}
                 href={item.href}
                 target="_blank"
@@ -58,7 +65,7 @@ const Footer: React.FC = () => {
                   width={40}
                   height={40}
                 />
-              </a>
+              </Link>
             ) : (
               <Link
                 key={item.id}
