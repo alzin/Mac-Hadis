@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import { Mail } from "lucide-react";
 
 interface IButtonTemplate {
   content: BtnContent;
@@ -53,8 +53,8 @@ const ButtonTemplate: React.FC<IButtonTemplate> = ({ content }) => {
             aria-hidden
             className="flex-none"
           >
-            <rect x={2.5} y={4} width={19} height={13} rx={2} />
-            <path d="M2.5 20.5h19" />
+            <rect x={2} y={4} width={20} height={16} rx={2} />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
           </svg>
           <span>{renderLabelWithFreeAccent(label)}</span>
           <svg
@@ -86,13 +86,7 @@ const ButtonTemplate: React.FC<IButtonTemplate> = ({ content }) => {
           background: "linear-gradient(135deg, #e02020 0%, #b81515 100%)",
         }}
       >
-        <Image
-          src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/computer.svg"
-          alt=""
-          width={24}
-          height={24}
-          className="brightness-0 invert"
-        />
+        <Mail size={24} aria-hidden className="flex-none" />
         <span>{label}</span>
         <span
           aria-hidden

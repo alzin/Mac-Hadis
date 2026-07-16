@@ -93,7 +93,7 @@ const ContactFixedBanner: React.FC = () => {
 
         <div className="flex items-center justify-center w-full lg:w-fit  h-full gap-2 ">
           <ContactBtn
-            mobileLabel={"フォーム"}
+            mobileLabel={"メール査定"}
             label={ContactDetails.support.label}
             href={ContactDetails.support.href}
             variant="blue"

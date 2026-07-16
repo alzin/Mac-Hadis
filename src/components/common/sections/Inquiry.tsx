@@ -11,7 +11,6 @@ import SelectField from "../../pages/home/components/SelectField";
 import ImageUpload from "../../pages/home/components/ImageUpload";
 
 // import options
-import usageOptions from "@/content/home/usageOptions";
 import japanRegions from "@/content/home/japanRegions";
 import conditionOptions from "@/content/home/conditionOptions";
 import confirmationOptions from "@/content/home/confirmationOptions";
@@ -58,7 +57,7 @@ const Inquiry = () => {
     >
       <div>
         <h2 className="text-[30px] md:text-[40px] lg:text-[60px] leading-[45px] md:leading-[60px] lg:leading-[90px] font-black bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent text-center">
-          お問い合わせ
+          メール査定
         </h2>
         <p className="mb-10 md:mb-12 lg:mb-14 mt-2 lg:mt-5 text-center text-xs lg:text-sm font-medium text-gray-700">
           <span className="text-red-600 pr-1 text-lg">*</span>
@@ -111,39 +110,6 @@ const Inquiry = () => {
           setClick={setClick}
           options={confirmationOptions}
         />
-        <RadioGroup
-          name="usageType"
-          question="使用状況"
-          inlineLabels={false}
-          required
-          value={formData.usageType}
-          click={click}
-          setClick={setClick}
-          options={usageOptions}
-          onChange={handleInputChange}
-        />
-        <RadioGroup
-          name="invoiceRegistration"
-          inlineLabels
-          required={false}
-          question="事業で使用していた場合、インボイスの登録はしていますか？"
-          value={formData.invoiceRegistration}
-          onChange={handleInputChange}
-          click={click}
-          setClick={setClick}
-          options={confirmationOptions}
-        />
-        <RadioGroup
-          name="provideRegistrationNumber"
-          inlineLabels
-          required={false}
-          question="買取が成立しましたら、登録番号をご提供いただけますでしょうか？"
-          value={formData.provideRegistrationNumber}
-          onChange={handleInputChange}
-          click={click}
-          setClick={setClick}
-          options={confirmationOptions}
-        />
 
         {/* Select Fields */}
         <SelectField
@@ -187,9 +153,9 @@ const Inquiry = () => {
             <InputField
               id={`productDetails-${index}`}
               name="product_details"
-              label="査定希望商品のメーカー名、型番"
-              placeholder="(例:リョービ電ノコ(ASK-1000)動作)"
-              required
+              label="査定希望商品の詳細"
+              placeholder="メーカー名、型番、商品名など"
+              required={false}
               value={product.product_details}
               onChange={(e) => handleProductInputChange(e, index)}
             />
@@ -198,7 +164,7 @@ const Inquiry = () => {
               id={`productCondition-${index}`}
               name="product_condition"
               label="状態を選択してください"
-              required
+              required={false}
               value={product.product_condition}
               onChange={(e) => handleProductInputChange(e, index)}
               options={conditionOptions}

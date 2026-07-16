@@ -36,6 +36,7 @@ import product35 from './発電機・溶接機・コンプレッサ/TIG溶接機
 import product36 from './発電機・溶接機・コンプレッサ/エアーコンプレッサー.json';
 import product37 from './管工事機械・工具/キールカッター.json';
 import product38 from './管工事機械・工具/穿孔機.json';
+import product39 from './住宅工事機械工具・木工機械/集じん機.json';
 
 
 const products = [
@@ -76,7 +77,8 @@ const products = [
   product35,
   product36,
   product37,
-  product38
+  product38,
+  product39
 ]
 
 export default products
