@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Mail } from "lucide-react";
 import { ReactNode } from "react";
 
 interface ContactBtnProps {
@@ -47,19 +48,23 @@ const ContactBtn: React.FC<ContactBtnProps> = ({
         variant === "red"
           ? "phone"
           : variant === "blue"
-            ? "online support"
+            ? "email appraisal form"
             : "Line app"
       }`}
       className={`${gradientBg}  relative font-black rounded h-14 text-white flex items-center justify-center sm:w-fit px-3 sm:px-14 py-3 gap-1 lg:gap-3 ${className}`}
       onClick={onClick}
     >
       {children}
-      <Image
-        src={iconPaths[variant]}
-        alt={`${variant} contact icon`}
-        width={32}
-        height={32}
-      />
+      {variant === "blue" ? (
+        <Mail size={32} aria-hidden className="shrink-0" />
+      ) : (
+        <Image
+          src={iconPaths[variant]}
+          alt={`${variant} contact icon`}
+          width={32}
+          height={32}
+        />
+      )}
       <span className="text-nowrap overflow-hidden hidden lg:block">
         {label}
       </span>

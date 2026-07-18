@@ -64,7 +64,7 @@ const Index = () => {
       {/* <PurchaseResults /> */}
       {/* Static data passed, this is fine to render immediately if it's above fold, 
           but usually this is lower down. If it causes issues, make PurchaseRecords dynamic too. */}
-      <PurchaseRecords label="買取実績" purchaseItems={data} isLimit={true} />
+      <PurchaseRecords label="機械買取実績" purchaseItems={data} isLimit={true} />
       <PurchaseProcess />
       <BusinessPolicy />
       <ContactBanner />
