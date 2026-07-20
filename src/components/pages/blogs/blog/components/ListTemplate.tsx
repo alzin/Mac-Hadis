@@ -291,7 +291,7 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
             onClick={handleShowMore}
             className="inline-block px-8 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white font-semibold rounded-lg hover:shadow-lg hover:translate-y-[-2px] transition-all duration-200"
           >
-            {show ? "Show Less" : "Show More"}
+            {show ? "閉じる" : "もっとみる"}
           </button>
         </div>
       )}
