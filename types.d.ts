@@ -94,6 +94,7 @@ interface BlogPost {
     date: string
     imageSrc: string;
     description: string;
+    metaTitle?: string;
     metaDescription: string;
     subContent: BlogSubContent[];
 }
