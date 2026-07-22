@@ -37,6 +37,9 @@ import product36 from './発電機・溶接機・コンプレッサ/エアーコ
 import product37 from './管工事機械・工具/キールカッター.json';
 import product38 from './管工事機械・工具/穿孔機.json';
 import product39 from './住宅工事機械工具・木工機械/集じん機.json';
+import product40 from './発電機・溶接機・コンプレッサ/エンジンコンプレッサー.json';
+import product41 from './住宅工事機械工具・木工機械/エンジンコンプレッサー.json';
+
 
 
 const products = [
@@ -78,7 +81,9 @@ const products = [
   product36,
   product37,
   product38,
-  product39
+  product39,
+  product40,
+  product41
 ]
 
 export default products

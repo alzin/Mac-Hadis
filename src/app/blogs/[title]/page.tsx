@@ -32,21 +32,18 @@ export async function generateMetadata({
       title: "Blog Not Found",
     };
   } else {
-    // Serve the social-share image through our own /og route. The raw S3
-    // covers carry an embedded ICC color profile, which Facebook's scraper
-    // rejects as "corrupt or invalid format". The /og route strips the ICC
-    // profile and returns a clean, resized 1200x630 JPEG.
+    const metaTitle = data?.metaTitle ?? data?.title;
     const imageUrl = `${baseUrl}/blogs/${data.title}/og`;
 
     return {
-      title: data?.title,
+      title: metaTitle,
       description: data?.metaDescription,
       // keywords: "",
 
       openGraph: {
         type: "article",
         url: `${baseUrl}/blogs/${data?.title}`,
-        title: data?.title,
+        title: metaTitle,
         description: data?.metaDescription,
         siteName: "機械工具買取ハディズ",
         images: [
@@ -56,7 +53,7 @@ export async function generateMetadata({
 
       twitter: {
         card: "summary_large_image",
-        title: data?.title,
+        title: metaTitle,
         description: data?.metaDescription,
         images: imageUrl,
       },
