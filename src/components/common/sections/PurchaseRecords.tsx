@@ -13,7 +13,7 @@ export const PurchaseRecords = async ({
   label,
   isCategory,
   purchaseItems,
-  isLimit=false,
+  isLimit = false,
 }: IPurchaseRecordsProps) => {
   let purchaseItemsList = purchaseItems;
   if (isLimit) {

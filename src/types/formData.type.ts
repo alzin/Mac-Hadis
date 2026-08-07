@@ -3,9 +3,6 @@ export type TFormData = {
   email: string;
   phone: string;
   phonePermission: string;
-  usageType: string;
-  invoiceRegistration: string;
-  provideRegistrationNumber: string;
   city: string;
   product_info: string;
   productsList: Product[]

@@ -31,8 +31,8 @@ export class ClientEmailTemplate extends EmailTemplate {
                 ${this.addField("市区町村", this.data.product_info, true)}
                 ${this.data.productsList.map((product: Product, index: number) =>
             `
-                   <li><strong>商品 ${index + 1} の詳細:</strong> ${product.product_details}</li>
-                   <li><strong>商品の状態:</strong> ${product.product_condition}</li>
+                   ${this.addField(`商品 ${index + 1} の詳細`, product.product_details, true)}
+                   ${this.addField("商品の状態", product.product_condition, true)}
                   `).join("")}
               </ul>
               <p>よろしくお願いいたします。<br /> <br />

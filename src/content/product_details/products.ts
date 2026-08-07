@@ -19,11 +19,30 @@ import product18 from './管工事機械・工具/コンクリートカッター
 import product19 from './梱包機・包装機/シーラー機.json'
 import product20 from './梱包機・包装機/シュリンク包装機.json'
 import product21 from './金属加工機械・板金機械/手動折り曲げ機.json'
-import product22 from './金属加工機械・板金機械/切断機 (シャーリング).json'  
+import product22 from './金属加工機械・板金機械/切断機 (シャーリング).json'
 import product23 from './管工事機械・工具/高圧洗浄機.json'
 import product24 from './管工事機械・工具/エンジンコンプレッサ.json';
 import product25 from './住宅工事機械工具・木工機械/木工旋盤.json';
 import product26 from './住宅工事機械工具・木工機械/自動壁紙糊付機.json';
+import product27 from './自動車整備機械/ホイールバランサー.json';
+import product28 from './自動車整備機械/油圧プレス.json';
+import product29 from './業務用厨房機器・ ベーカリー機器/プレハブ冷凍庫、冷蔵庫.json';
+import product30 from './業務用厨房機器・ ベーカリー機器/ガスフライヤー.json';
+import product31 from './金属加工機械・板金機械/ロータリーシャ.json';
+import product32 from './金属加工機械・板金機械/コンターマシン.json';
+import product33 from './工作機械・精密加工機械/鋸盤 (バンドソー).json';
+import product34 from './工作機械・精密加工機械/プレス機械.json';
+import product35 from './発電機・溶接機・コンプレッサ/TIG溶接機.json';
+import product36 from './発電機・溶接機・コンプレッサ/エアーコンプレッサー.json';
+import product37 from './管工事機械・工具/キールカッター.json';
+import product38 from './管工事機械・工具/穿孔機.json';
+import product39 from './住宅工事機械工具・木工機械/集じん機.json';
+import product40 from './発電機・溶接機・コンプレッサ/エンジンコンプレッサー.json';
+import product41 from './住宅工事機械工具・木工機械/エンジンコンプレッサー.json';
+import product42 from './金属加工機械・板金機械/プラズマ切断機.json';
+import product43 from './発電機・溶接機・コンプレッサ/プラズマ溶接機.json';
+
+
 
 const products = [
   product1,
@@ -52,6 +71,23 @@ const products = [
   product24,
   product25,
   product26,
+  product27,
+  product28,
+  product29,
+  product30,
+  product31,
+  product32,
+  product33,
+  product34,
+  product35,
+  product36,
+  product37,
+  product38,
+  product39,
+  product40,
+  product41,
+  product42,
+  product43
 ]
 
 export default products

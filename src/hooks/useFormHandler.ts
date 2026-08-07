@@ -19,9 +19,6 @@ const initialFormData: TFormData = {
   email: "",
   phone: "",
   phonePermission: "",
-  usageType: "",
-  invoiceRegistration: "",
-  provideRegistrationNumber: "",
   city: "",
   product_info: "",
   productsList: [
@@ -103,16 +100,17 @@ export const useFormHandler = () => {
       return;
     }
 
-    const hasInvalidProductCondition = formData.productsList.some(
-      (product) =>
-        !product.product_condition ||
-        product.product_condition === "選択してください"
-    );
-
-    if (hasInvalidProductCondition) {
-      Toast.fire({ icon: "warning", title: "商品の状態を選択してください。" });
-      return;
-    }
+    // 状態が未選択（プレースホルダーのまま）の場合はメールに載せない
+    const sanitizedFormData: TFormData = {
+      ...formData,
+      productsList: formData.productsList.map((product) => ({
+        ...product,
+        product_condition:
+          product.product_condition === "選択してください"
+            ? ""
+            : product.product_condition,
+      })),
+    };
 
     setIsSubmitting(true);
 
@@ -129,7 +127,7 @@ export const useFormHandler = () => {
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(sanitizedFormData),
       });
 
       if (!response.ok) {

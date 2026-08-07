@@ -19,9 +19,6 @@ export class SystemEmailTemplate extends EmailTemplate {
         ${this.addField("メールアドレス", this.data.email)}
         ${this.addField("電話番号", this.data.phone)}
         ${this.addField("電話の許可", this.data.phonePermission)}
-        ${this.addField("使用状況", this.data.usageType)}
-        ${this.addField("インボイス登録", this.data.invoiceRegistration)}
-        ${this.addField("登録番号の提供", this.data.provideRegistrationNumber)}
         ${this.addField("都道府県", this.data.city)}
         ${this.addField("市区町村", this.data.product_info)}
         ${this.addField("追加のメモ", this.data.additional_notes, false, true)}
