@@ -41,7 +41,8 @@ import product40 from './発電機・溶接機・コンプレッサ/エンジン
 import product41 from './住宅工事機械工具・木工機械/エンジンコンプレッサー.json';
 import product42 from './金属加工機械・板金機械/プラズマ切断機.json';
 import product43 from './発電機・溶接機・コンプレッサ/プラズマ溶接機.json';
-
+import product44 from './発電機・溶接機・コンプレッサ/半自動溶接機.json';
+import product45 from './自動車整備機械/ヒーター(塗装用乾燥機).json';
 
 
 const products = [
@@ -87,7 +88,9 @@ const products = [
   product40,
   product41,
   product42,
-  product43
+  product43,
+  product44,
+  product45
 ]
 
 export default products
