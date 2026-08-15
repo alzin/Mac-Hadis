@@ -107,8 +107,9 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
             </div>
             {/* Arrow Icon */}
             <span
-              className={`transform transition-transform duration-200 text-gray-400 ${isOpen ? "rotate-180" : "rotate-0"
-                }`}
+              className={`transform transition-transform duration-200 text-gray-400 ${
+                isOpen ? "rotate-180" : "rotate-0"
+              }`}
             >
               <Image
                 src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/blogs/icons/ChevronDown.svg"
@@ -126,31 +127,28 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
 
           {/* Mobile Dropdown Menu (Collapsible) */}
           {isOpen && (
-            <nav className="absolute left-1/2 transform -translate-x-1/2 w-[90%] bg-white border border-[#EAEAEA] rounded-[16px] shadow-[0px_4px_8px_0px_#0000000D] max-h-[60vh] mx-auto overflow-y-auto">
-              <ul className="space-y-1">
+            <nav className="absolute left-1/2 transform -translate-x-1/2 w-[90%] bg-white border border-[#EAEAEA] rounded-[16px] shadow-[0px_4px_8px_0px_#0000000D] max-h-[60vh] mx-auto overflow-y-auto pr-1 scroll-smooth [scrollbar-width:thin] [scrollbar-color:#B81122_#F3F3F3] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-[#F3F3F3] [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#B81122] [&::-webkit-scrollbar-thumb:hover]:bg-[#8E0D1D]">
+              <ul className="divide-y divide-[#F2F2F2]">
                 {items.map((item, index) => (
-                  <>
-                    <li key={index} className="relative group">
-                      <div className="block left-0 top-1/2 bg-[#B81122] rounded-tr-[4px] rounded-br-[4px] w-[4px] h-[90%] -translate-y-1/2 absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-                      <Link
-                        href={`#${item.title}`}
-                        onClick={() => setIsOpen(false)} // Close menu on click
-                        className="block p-5 font-noto font-normal text-[16px] leading-[20px] text-gray-600 hover:text-[#B81122] hover:font-bold rounded-md transition-all duration-200"
-                      >
-                        {item.title}
-                      </Link>
-                    </li>
-                    <div className="w-[80%] h-[1px] bg-[#F2F2F2] mx-auto block"></div>
-                  </>
+                  <li key={`${item.title}-${index}`} className="relative group">
+                    <div className="absolute inset-y-2 left-0 w-[3px] rounded-r-full bg-[#B81122] opacity-0 transition-all duration-200 group-hover:opacity-100 group-focus-within:opacity-100"></div>
+                    <Link
+                      href={`#${item.title}`}
+                      onClick={() => setIsOpen(false)}
+                      className="flex items-center justify-between gap-3 p-5 font-noto font-normal text-[16px] leading-[20px] text-gray-600 transition-all duration-200 hover:font-bold hover:text-[#B81122] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B81122]/60 focus-visible:ring-offset-2 rounded-md"
+                    >
+                      <span>{item.title}</span>
+                    </Link>
+                  </li>
                 ))}
                 <li className="relative group">
-                  <div className="block left-0 top-1/2 bg-[#B81122] rounded-tr-[4px] rounded-br-[4px] w-[4px] h-[90%] -translate-y-1/2 absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                  <div className="absolute inset-y-2 left-0 w-[3px] rounded-r-full bg-[#B81122] opacity-0 transition-all duration-200 group-hover:opacity-100 group-focus-within:opacity-100"></div>
                   <Link
                     href="#company-profile"
                     onClick={() => setIsOpen(false)}
-                    className="block p-5 font-noto font-normal text-[16px] leading-[20px] text-gray-600 hover:text-[#B81122] hover:font-bold rounded-md transition-all duration-200"
+                    className="flex items-center justify-between gap-3 p-5 font-noto font-normal text-[16px] leading-[20px] text-gray-600 transition-all duration-200 hover:font-bold hover:text-[#B81122] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B81122]/60 focus-visible:ring-offset-2 rounded-md"
                   >
-                    会社概要
+                    <span>会社概要</span>
                   </Link>
                 </li>
               </ul>
@@ -172,27 +170,26 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
               <span className="font-bold text-[16px] text-[#111111]">目次</span>
             </div>
             {/* List */}
-            <nav>
-              <ul>
+            <nav className="max-h-[66vh] overflow-y-auto pr-1 scroll-smooth [scrollbar-width:thin] [scrollbar-color:#B81122_#F3F3F3] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-track]:bg-[#F3F3F3] [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-[#B81122] [&::-webkit-scrollbar-thumb:hover]:bg-[#8E0D1D]">
+              <ul className="divide-y divide-[#F2F2F2]">
                 {items.map((item, index) => (
-                  <li key={index} className="relative group">
-                    <div className="block left-0 top-1/2 bg-[#B81122] rounded-tr-[4px] rounded-br-[4px] w-[4px] h-[90%] -translate-y-1/2 absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                  <li key={`${item.title}-${index}`} className="relative group">
+                    <div className="absolute inset-y-2 left-0 w-[3px] rounded-r-full bg-[#B81122] opacity-0 transition-all duration-200 group-hover:opacity-100 group-focus-within:opacity-100"></div>
                     <Link
                       href={`#${item.title}`}
-                      className="block font-noto font-normal text-[16px] leading-[20px] text-gray-600 hover:text-[#B81122] hover:font-bold p-5 transition-all duration-200"
+                      className="flex items-center justify-between gap-3 p-5 font-noto font-normal text-[16px] leading-[20px] text-gray-600 transition-all duration-200 hover:font-bold hover:text-[#B81122] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B81122]/60 focus-visible:ring-offset-2"
                     >
-                      {item.title}
+                      <span>{item.title}</span>
                     </Link>
-                    <div className="w-[80%] h-[1px] bg-[#F2F2F2] mx-auto"></div>
                   </li>
                 ))}
                 <li className="relative group">
-                  <div className="block left-0 top-1/2 bg-[#B81122] rounded-tr-[4px] rounded-br-[4px] w-[4px] h-[90%] -translate-y-1/2 absolute opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                  <div className="absolute inset-y-2 left-0 w-[3px] rounded-r-full bg-[#B81122] opacity-0 transition-all duration-200 group-hover:opacity-100 group-focus-within:opacity-100"></div>
                   <Link
                     href="#company-profile"
-                    className="block font-noto font-normal text-[16px] leading-[20px] text-gray-600 hover:text-[#B81122] hover:font-bold p-5 transition-all duration-200"
+                    className="flex items-center justify-between gap-3 p-5 font-noto font-normal text-[16px] leading-[20px] text-gray-600 transition-all duration-200 hover:font-bold hover:text-[#B81122] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B81122]/60 focus-visible:ring-offset-2"
                   >
-                    会社概要
+                    <span>会社概要</span>
                   </Link>
                 </li>
               </ul>
