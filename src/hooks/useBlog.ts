@@ -4,7 +4,7 @@ import { useState } from "react";
 import { getAllBlogs } from "@/services/blogs";
 
 export const useBlog = () => {
-  const postsPerPage = 10;
+  const postsPerPage = 9;
   const blogsData = getAllBlogs();
 
   // Sort blogs by date (most recent first) assuming blogs have a date property
@@ -22,6 +22,7 @@ export const useBlog = () => {
   // Calculate the range of blogs to display (most recent first)
   const startIndex = (currentPage - 1) * postsPerPage;
   const currentBlogs = sortedBlogs.slice(startIndex, startIndex + postsPerPage);
+  console.log("Current Blogs:", currentBlogs, "Start Index:", startIndex, "End Index:", startIndex + postsPerPage);
   const numberOfBlogs = sortedBlogs.length;
 
   return {
