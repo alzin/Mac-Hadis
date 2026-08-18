@@ -2,7 +2,7 @@ import { NextRequest } from "next/server";
 import sharp from "sharp";
 
 // services
-import { getBlogByTitle } from "@/services/blogs";
+import { getBlogByOldTitle, getBlogByTitle } from "@/services/blogs";
 
 // Node runtime is required for sharp (not Edge).
 export const runtime = "nodejs";
@@ -23,7 +23,12 @@ interface IParams {
 export async function GET(_req: NextRequest, { params }: IParams) {
   const { title } = await params;
 
-  const data = await getBlogByTitle(title);
+  // Fall back to a previous title so cards already shared on social networks
+  // keep rendering after the post is renamed. Served directly rather than
+  // redirected — several crawlers refuse to follow redirects on og:image.
+  const data =
+    (await getBlogByTitle(title)) ?? (await getBlogByOldTitle(title));
+
   if (!data?.imageSrc) {
     return new Response("Not found", { status: 404 });
   }

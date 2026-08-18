@@ -97,6 +97,13 @@ interface BlogPost {
     metaTitle?: string;
     metaDescription: string;
     subContent: BlogSubContent[];
+    /**
+     * Titles this post used to have. The blog URL is the raw title, so renaming
+     * a post 404s every indexed / shared link pointing at the old one. Push the
+     * previous title here on every rename and the route will permanently
+     * redirect the old URL to the current one. Never remove entries.
+     */
+    oldTitles?: string[];
 }
 
 interface CategoryType {
