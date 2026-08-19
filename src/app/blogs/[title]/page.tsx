@@ -1,11 +1,11 @@
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 
 // page
 import BlogDetails from "@/components/pages/blogs/blog";
 
 // services
-import { getBlogByTitle } from "@/services/blogs";
+import { getBlogByOldTitle, getBlogByTitle } from "@/services/blogs";
 
 // baseUrl
 import { baseUrl } from "@/utils/baseUrl";
@@ -71,6 +71,14 @@ export default async function BlogDetailsPage({ params }: IBlogPage) {
   const data: BlogPost | undefined = await getBlogByTitle(title);
 
   if (!data) {
+    // The URL may be a title this post used to have — send it (308) to the
+    // current URL so indexed links and shared links keep working after a rename.
+    const renamed = await getBlogByOldTitle(title);
+
+    if (renamed) {
+      permanentRedirect(`/blogs/${encodeURIComponent(renamed.title)}`);
+    }
+
     notFound();
   }
 
