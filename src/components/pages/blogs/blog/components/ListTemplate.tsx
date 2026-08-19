@@ -24,6 +24,12 @@ const isReferenceItem = (item: ListItem): boolean =>
   /^\s*<a[\s>]/i.test(item.description) &&
   /<\/a>\s*$/i.test(item.description);
 
+/** Links leaving mac-hadis.com open in a new tab; internal ones stay in place. */
+const isExternalHref = (href?: string): boolean =>
+  !!href &&
+  /^https?:\/\//i.test(href) &&
+  !/^https?:\/\/(www\.)?mac-hadis\.com/i.test(href);
+
 const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
   const withPagination: boolean = !!content.withPagination;
   const withCounter: boolean =
@@ -102,8 +108,12 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                       <h3 className="font-noto font-normal text-[14px] lg:text-[16px] leading-[200%] tracking-normal align-middle text-[#323232]">
                         {item.isLink ? (
                           <Link
-                            className="text-[#323232] hover:underline transition-colors"
+                            className="text-blue-600 underline hover:no-underline transition-colors"
                             href={item.href!}
+                            {...(isExternalHref(item.href) && {
+                              target: "_blank",
+                              rel: "noopener noreferrer",
+                            })}
                           >
                             <span
                               dangerouslySetInnerHTML={{ __html: item.title }}
