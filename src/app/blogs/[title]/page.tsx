@@ -19,6 +19,23 @@ interface IBlogPage {
   }>;
 }
 
+/**
+ * The one canonical URL form for a blog post.
+ *
+ * Blog slugs are raw Japanese titles, so the same post can be requested in
+ * several shapes — decoded CJK, percent-encoded, with tracking params, with a
+ * trailing slash. Every blog surface must emit the *same* string or Google
+ * treats them as separate URLs and splits the ranking between them.
+ *
+ * The chosen form is `https://mac-hadis.com/blogs/{encodeURIComponent(title)}`,
+ * no trailing slash — matching sitemap.ts, the rename redirect below, and
+ * `trailingSlash: false`. Interpolating the raw title also happens to render
+ * encoded (Next runs it through `new URL()`), but the two disagree on ASCII
+ * `& = + , ( ) ' ! ~ *`, so encode here rather than relying on the URL parser.
+ */
+const getBlogUrl = (title: string): string =>
+  `${baseUrl}/blogs/${encodeURIComponent(title)}`;
+
 // metadata
 export async function generateMetadata({
   params,
@@ -28,12 +45,17 @@ export async function generateMetadata({
   const data = await getBlogByTitle(title);
 
   if (!data) {
+    // The root layout sets `alternates.canonical: "./"`, which every page
+    // inherits as a self-referencing canonical. A slug that resolves to no post
+    // must not claim to be canonical, so opt out explicitly.
     return {
       title: "Blog Not Found",
+      alternates: { canonical: null },
     };
   } else {
     const metaTitle = data?.metaTitle ?? data?.title;
-    const imageUrl = `${baseUrl}/blogs/${data.title}/og`;
+    const blogUrl = getBlogUrl(data.title);
+    const imageUrl = `${blogUrl}/og`;
 
     return {
       title: metaTitle,
@@ -42,7 +64,7 @@ export async function generateMetadata({
 
       openGraph: {
         type: "article",
-        url: `${baseUrl}/blogs/${data?.title}`,
+        url: blogUrl,
         title: metaTitle,
         description: data?.metaDescription,
         siteName: "機械工具買取ハディズ",
@@ -59,7 +81,7 @@ export async function generateMetadata({
       },
 
       alternates: {
-        canonical: `${baseUrl}/blogs/${data?.title}`,
+        canonical: blogUrl,
       },
     };
   }
@@ -76,6 +98,8 @@ export default async function BlogDetailsPage({ params }: IBlogPage) {
     const renamed = await getBlogByOldTitle(title);
 
     if (renamed) {
+      // Relative on purpose: an absolute URL here would send staging/local
+      // traffic to the production origin. Same path shape as getBlogUrl().
       permanentRedirect(`/blogs/${encodeURIComponent(renamed.title)}`);
     }
 
@@ -88,9 +112,9 @@ export default async function BlogDetailsPage({ params }: IBlogPage) {
       <ArticleSchema
         title={data.title}
         description={data.metaDescription}
-        image={`${baseUrl}/blogs/${data.title}/og`}
+        image={`${getBlogUrl(data.title)}/og`}
         datePublished={data.date}
-        url={`${baseUrl}/blogs/${data.title}`}
+        url={getBlogUrl(data.title)}
       />
       <BreadcrumbSchema items={generateBreadcrumbs.blog(data.title)} />
 
