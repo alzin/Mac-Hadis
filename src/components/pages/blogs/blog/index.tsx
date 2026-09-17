@@ -220,7 +220,11 @@ const Index: React.FC<IBlogPage> = ({ data }) => {
             {(() => {
               let sectionCounter = 0;
               return data.subContent.map((item, index) => {
-                const number = item.title ? ++sectionCounter : undefined;
+                // Image sections render without a number, so don't consume one
+                const number =
+                  item.title && item.type !== "image"
+                    ? ++sectionCounter
+                    : undefined;
                 return (
                   <SubContent
                     key={index}
