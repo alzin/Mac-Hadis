@@ -36,7 +36,7 @@ const HadisReason = () => {
     <section className="px-5 py-[50px] bg-[url(https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/backgrounds/dot-bg-results.svg)] bg-auto">
       {/* Content */}
       <h2 className="bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent text-center text-[32px] leading-[36px] lg:text-[65px] lg:leading-[90px] font-black">
-        ハディズがを高額で買える理由
+        ハディズが高価買取できる理由
       </h2>
       {/* Points */}
       <div className="w-full md:w-[90%] lg:w-[80%] md:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[40px] md:gap-x-[32px] lg:gap-y-[60px] mt-[60px] lg:mt-[75px]">
