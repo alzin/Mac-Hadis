@@ -48,6 +48,7 @@ import product47 from './金属加工機械・板金機械/三本ロール.json'
 import product48 from './金属加工機械・板金機械/メタルソー.json';
 import product49 from './管工事機械・工具/バンドソー.json';
 import product50 from './金属加工機械・板金機械/鉄筋ベンダー.json';
+import product51 from './住宅工事機械工具・木工機械/丸鋸盤.json';
 
 
 const products = [
@@ -100,7 +101,8 @@ const products = [
   product47,
   product48,
   product49,
-  product50
+  product50,
+  product51
 ]
 
 export default products
