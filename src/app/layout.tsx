@@ -198,12 +198,6 @@ export const metadata: Metadata = {
     "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を「全国対応」で行っています。",
   applicationName: "機械工具買取ハディズ",
   generator: "Next.js",
-  keywords: [
-    "大型UVインクジェットプリンター買取",
-    "機械・電動工具の高価買取",
-    "簡単！買取の手順",
-    "Hadis INTERNATIONAL",
-  ],
   referrer: "origin",
   creator: "機械工具買取ハディズ",
   publisher: "機械工具買取ハディズ",
