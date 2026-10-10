@@ -10,12 +10,25 @@ import { ServiceSchema, BreadcrumbSchema, generateBreadcrumbs } from '@/componen
 
 // metadata
 export const metadata: Metadata = {
-  title: "無料価格査定 ",
+  title: "中古機械・工具買取の無料査定",
   description:
-    "弊社にとって、お客様に納得して頂けるお見積を提供出来る事は何よりも大切です。査定額に満足出来ることこそが良い取引の必須条件です。そのため、弊社は一切査定料を請求することはありません。現地査定の場合はお客様と一緒に現物を見て買い取り価格を決め、ご納得して頂ければその場でお支払いさせて頂きます。電話やメールでのお問い合わせの場合はお客様から頂く情報をもとにお見積もりを作成させて頂いてますが、最終査定は実際に商品を見て行わせて頂きます。是非とも正確な情報を共有し、お互いに納得出来る取引を目指したく思います",
-  keywords: "メール査定,その他のご連絡事項,見積もりは無料です。",
+    "中古機械・工具・設備の無料査定ならハディズ。出張査定、持込査定、メール査定に対応し、メーカー・型式・状態を確認し、買取価格をご案内します。査定料無料で、安心・スピーディーにご対応します。",
   alternates: {
     canonical: `${baseUrl}/satei`,
+  },
+  openGraph: {
+    type: "website",
+    url: `${baseUrl}/satei`,
+    title: "中古機械買取の無料査定 | 高価買取ならハディズ",
+    description: "中古機械・工具・設備の無料査定ならハディズ。出張査定、持込査定、メール査定に対応し、メーカー・型式・状態を確認し、買取価格をご案内します。",
+    siteName: "機械工具買取ハディズ",
+    images: [{ url: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/main-ogp.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "中古機械買取の無料査定 | 高価買取ならハディズ",
+    description: "中古機械・工具・設備の無料査定ならハディズ。出張査定、持込査定、メール査定に対応し、メーカー・型式・状態を確認し、買取価格をご案内します。",
+    images: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/main-ogp.jpg",
   },
 };
 
@@ -26,7 +39,7 @@ const page = () => {
       <ServiceSchema
         name="無料価格査定"
         description="弊社にとって、お客様に納得して頂けるお見積を提供出来る事は何よりも大切です。査定料は一切いただきません。"
-        url="https://www.mac-hadis.com/satei"
+        url={`${baseUrl}/satei`}
         serviceType="無料査定サービス"
       />
       <BreadcrumbSchema items={generateBreadcrumbs.satei()} />

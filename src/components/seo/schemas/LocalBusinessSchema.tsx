@@ -1,3 +1,4 @@
+import { baseUrl } from "@/utils/baseUrl";
 /**
  * LocalBusiness Schema - For local search visibility
  * Use this in: Home page (src/components/pages/home/index.tsx)
@@ -6,11 +7,11 @@
 const localBusinessData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://www.mac-hadis.com/#localbusiness",
+  "@id": `${baseUrl}/#localbusiness`,
   "name": "有限会社ハディズ・インターナショナル",
   "alternateName": "機械工具買取ハディズ",
   "description": "中古機械、電動工具の高額買取ならハディズへ。ハディズでは、業務用機器の買取を全国対応で行っています。創業25年以上の実績。",
-  "url": "https://www.mac-hadis.com",
+  "url": baseUrl,
   "telephone": "+81-120-842-881",
   "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/main-ogp.jpg",
   "logo": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/hadis-logo.png",
