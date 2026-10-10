@@ -1,3 +1,4 @@
+import { baseUrl } from "@/utils/baseUrl";
 /**
  * Article Schema - For blog posts and articles
  * Use this in: Blog detail pages (src/app/blogs/[title]/page.tsx)
@@ -38,7 +39,7 @@ export const ArticleSchema = ({
     "author": {
       "@type": "Organization",
       "name": authorName,
-      "url": "https://www.mac-hadis.com"
+      "url": baseUrl
     },
     "publisher": {
       "@type": "Organization",

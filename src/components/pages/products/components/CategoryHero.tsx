@@ -1,3 +1,4 @@
+import { buybackTitle } from "@/utils/seo";
 import Image from "next/image";
 
 interface ICategoryHeroProps {
@@ -5,8 +6,11 @@ interface ICategoryHeroProps {
 }
 
 const CategoryHero = ({ categoryName }: ICategoryHeroProps) => {
+  const heroTitle = buybackTitle(categoryName);
+  const heroSubtitle = "中古機械・工具の査定はハディズへ";
+
   return (
-    <section className="relative px-4 w-full h-[510px] lg:h-[640px] 2xl:h-[calc(100vh-64px)] sm:bg-right-top overflow-hidden">
+    <section className="relative px-4 py-8 w-full min-h-[510px] lg:min-h-[640px] 2xl:min-h-[calc(100vh-64px)] flex items-center sm:bg-right-top overflow-hidden">
       {/* Background wrapper */}
       <div className="absolute -z-10 inset-0">
         <Image
@@ -21,16 +25,16 @@ const CategoryHero = ({ categoryName }: ICategoryHeroProps) => {
         />
       </div>
       {/* content wrapper */}
-      <div className="w-[74%] lg:w-[65%] p-3 px-3 lg:p-10 space-y-2 lg:space-y-4 bg-[#ffffffbf] absolute left-[40%] lg:left-[5%] top-[50%] translate-x-[-50%] lg:translate-x-0 translate-y-[-50%] text-[#B81122]">
-        <h2 className="text-[32px] leading-[36px] lg:text-[65px] lg:leading-[90px] font-bold text-left lg:text-center">
-          {categoryName.split("\n").map((item, index) => (
+      <div className="w-[80%] lg:w-[65%] p-3 lg:p-10 lg:ml-[5%] space-y-2 lg:space-y-4 bg-[#ffffffbf] text-[#B81122]">
+        <h1 className="text-[32px] leading-[36px] lg:text-[65px] lg:leading-[90px] font-bold text-left lg:text-center">
+          {heroTitle.split("\n").map((item, index) => (
             <span className=" block" key={index}>
               {item}
             </span>
           ))}
-        </h2>
-        <p className="text-[24px] leading-[36px] lg:text-[48px] lg:leading-[90px] font-semibold text-left lg:text-center">
-          買取はハディズに お任せ！
+        </h1>
+        <p className="text-[24px] leading-[36px] lg:text-[48px] lg:leading-[1.5] font-semibold text-left lg:text-center">
+          {heroSubtitle}
         </p>
         {/* details */}
         <div className="flex w-full items-start xl:items-center lg:justify-center gap-2 flex-col lg:flex-row text-white flex-wrap">

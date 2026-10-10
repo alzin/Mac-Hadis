@@ -1,3 +1,4 @@
+import { baseUrl } from "@/utils/baseUrl";
 /**
  * Website Schema - For sitelinks search box in Google
  * Use this in: layout.tsx (global)
@@ -6,20 +7,20 @@
 const websiteData = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://www.mac-hadis.com/#website",
+  "@id": `${baseUrl}/#website`,
   "name": "機械工具買取ハディズ",
   "alternateName": "ハディズ・インターナショナル",
-  "url": "https://www.mac-hadis.com",
+  "url": baseUrl,
   "description": "中古機械、電動工具の高額買取のハディズ",
   "publisher": {
-    "@id": "https://www.mac-hadis.com/#organization"
+    "@id": `${baseUrl}/#organization`
   },
   "inLanguage": "ja-JP",
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://www.mac-hadis.com/?s={search_term_string}"
+      "urlTemplate": `${baseUrl}/?s={search_term_string}`
     },
     "query-input": "required name=search_term_string"
   }

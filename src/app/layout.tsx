@@ -232,8 +232,7 @@ export const metadata: Metadata = {
   verification: {
     google: "id",
   },
-  category: "Sells",
-  classification: "Sells",
+  category: "中古機械・工具の買取サービス",
 };
 
 export default function RootLayout({
