@@ -53,51 +53,51 @@
     },
     {
       "id": 9,
+      "title": "ロボット溶接機",
+      "category": "発電機・溶接機・コンプレッサ",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%BA%B6%E6%8E%A5%E6%A9%9F.jpg"
+    },
+    {
+      "id": 10,
       "title": "スポット 溶接機",
       "category": "発電機・溶接機・コンプレッサ",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88%E6%BA%B6%E6%8E%A5%E6%A9%9F.png"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "アーク溶接機",
       "category": "発電機・溶接機・コンプレッサ",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%82%A2%E3%83%BC%E3%82%AF%E6%BA%B6%E6%8E%A5%E6%A9%9F.jpg"
     },
     {
-      "id": 11,
+      "id": 12,
       "title": "エンジンTIG溶接機",
       "category": "発電機・溶接機・コンプレッサ",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3TIG%E6%BA%B6%E6%8E%A5%E6%A9%9F.png"
     },
     {
-      "id": 12,
+      "id": 13,
       "title": "スクロールコンプレッサ",
       "category": "発電機・溶接機・コンプレッサ",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%82%B9%E3%82%AF%E3%83%AD%E3%83%BC%E3%83%AB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5.png"
     },
     {
-      "id": 13,
+      "id": 14,
       "title": "スタッド溶接機",
       "category": "発電機・溶接機・コンプレッサ",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%82%B9%E3%82%BF%E3%83%83%E3%83%89%E6%BA%B6%E6%8E%A5%E6%A9%9F.png"
     },
     {
-      "id": 14,
+      "id": 15,
       "title": "バッテリー溶接機",
       "category": "発電機・溶接機・コンプレッサ",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E6%BA%B6%E6%8E%A5%E6%A9%9F.png"
     },
     {
-      "id": 15,
+      "id": 16,
       "title": "ポジショナー",
       "category": "発電機・溶接機・コンプレッサ",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%83%9D%E3%82%B8%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%BC.jpg"
-    },
-    {
-      "id": 16,
-      "title": "ロボット溶接機",
-      "category": "発電機・溶接機・コンプレッサ",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%83%BB%E6%BA%B6%E6%8E%A5%E6%A9%9F%E3%83%BB%E3%82%B3%E3%83%B3%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5/items/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%E6%BA%B6%E6%8E%A5%E6%A9%9F.jpg"
     }
   ],
   "makers": [
