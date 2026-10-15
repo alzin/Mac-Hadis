@@ -23,7 +23,7 @@ const ProductHero = ({ productTitle }: IProductHeroProps) => {
         />
       </div>
       {/* content wrapper */}
-      <div className="w-[74%] lg:w-[65%] p-3 px-3 lg:p-10 space-y-2 lg:space-y-4 bg-[#ffffffbf] absolute left-[40%] lg:left-[5%] top-[50%] translate-x-[-50%] lg:translate-x-0 translate-y-[-50%] text-[#B81122]">
+      <div className="w-full lg:w-[65%] p-3 px-3 lg:p-10 space-y-2 lg:space-y-4 bg-[#ffffffbf] absolute left-[50%] lg:left-[5%] top-[50%] translate-x-[-50%] lg:translate-x-0 translate-y-[-50%] text-[#B81122]">
         <h2 className="text-[32px] leading-[36px] lg:text-[65px] lg:leading-[90px] font-bold text-left lg:text-center">
           {productTitle.split("\n").map((item, index) => (
             <span className=" block" key={index}>
