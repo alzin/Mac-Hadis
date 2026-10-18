@@ -23,6 +23,7 @@ const index = ({ product }: IIndexProps) => {
       <ProductDetails
         subTitle={product.subTitle}
         description={product.description}
+        productTitle={product.title}
       />
       <ImagesGallery images={product.webImagesGallery}  />
       <PurchaseService

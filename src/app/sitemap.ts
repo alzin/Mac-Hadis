@@ -5,6 +5,9 @@ import { getAllBlogs } from '@/services/blogs';
 
 // category data
 import { getAllCategories } from '@/services/category';
+import { getProducts } from '@/services/products';
+import { normalizeCategoryName, productUrl } from '@/utils/seo';
+import { isNewProduct, isTProduct } from '@/utils/typeguards';
 
 // baseUrl
 import { baseUrl } from '@/utils/baseUrl';
@@ -34,6 +37,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "daily",
             priority: 0.8,
         },
+        {
+            url: `${baseUrl}/factory-service`,
+            changeFrequency: "weekly",
+            priority: 0.8,
+        },
     ];
 
     // Dynamic Blog URLs
@@ -52,9 +60,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
+    const dynamicProductUrls: MetadataRoute.Sitemap = getProducts().flatMap((product) => {
+        const category = categoriesData.find(
+            (item) => normalizeCategoryName(item.title) === product.category
+        );
+        if (!category || (!isNewProduct(product) && !isTProduct(product))) return [];
+        return [{
+            url: productUrl(category.id, product.title),
+            changeFrequency: "weekly" as const,
+            priority: 0.7,
+        }];
+    });
+
     return [
         ...staticUrls,
         ...dynamicBlogUrls,
-        ...dynamicCategoryUrls
+        ...dynamicCategoryUrls,
+        ...dynamicProductUrls
     ];
 }

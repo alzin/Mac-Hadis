@@ -1,3 +1,4 @@
+import { baseUrl } from "@/utils/baseUrl";
 /**
  * Organization Schema - For brand recognition in search results
  * Use this in: layout.tsx (global)
@@ -6,9 +7,10 @@
 const organizationData = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${baseUrl}/#organization`,
   "name": "有限会社ハディズ・インターナショナル",
   "alternateName": "機械工具買取ハディズ",
-  "url": "https://www.mac-hadis.com",
+  "url": baseUrl,
   "logo": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/hadis-logo.png",
   "description": "中古機械、電動工具の高額買取ならハディズへ。業務用機器の買取を全国対応で行っています。",
   "telephone": "+81-120-842-881",
@@ -33,7 +35,7 @@ const organizationData = {
     {
       "@type": "ContactPoint",
       "telephone": "+81-4-2955-5276",
-      "contactType": "sales",
+      "contactType": "customer service",
       "areaServed": "JP",
       "availableLanguage": "Japanese"
     }
