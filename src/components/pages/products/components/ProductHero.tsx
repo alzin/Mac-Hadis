@@ -28,7 +28,7 @@ const ProductHero = ({ productTitle, seoSubtitle }: IProductHeroProps) => {
         />
       </div>
       {/* content wrapper */}
-      <div className="w-[80%] lg:w-[65%] p-3 lg:p-10 lg:ml-[5%] space-y-2 lg:space-y-4 bg-[#ffffffbf] text-[#B81122]">
+      <div className="w-full lg:w-[65%] p-3 lg:p-10 lg:ml-[5%] space-y-2 lg:space-y-4 bg-[#ffffffbf] text-[#B81122]">
         <h1 className="text-[32px] leading-[36px] lg:text-[65px] lg:leading-[90px] font-bold text-left lg:text-center">
           {heroTitle.split("\n").map((item, index) => (
             <span className=" block" key={index}>
