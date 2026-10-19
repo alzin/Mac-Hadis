@@ -49,10 +49,6 @@
   "webImagesGallery": [
     {
       "title": "ロボット溶接機",
-      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/発電機・溶接機・コンプレッサ/ロボット溶接機/webImagesGallery/ロボット溶接機.JPG"
-    },
-    {
-      "title": "ロボット溶接機",
       "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/発電機・溶接機・コンプレッサ/ロボット溶接機/webImagesGallery/ロボット溶接機.png"
     },
     {
@@ -74,6 +70,10 @@
     {
       "title": "ロボット溶接機(3)",
       "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/発電機・溶接機・コンプレッサ/ロボット溶接機/webImagesGallery/ロボット溶接機(3).JPG"
+    },
+    {
+      "title": "ロボット溶接機",
+      "imageSrc": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/products/発電機・溶接機・コンプレッサ/ロボット溶接機/webImagesGallery/ロボット溶接機.JPG"
     }
   ],
   "makers": [
