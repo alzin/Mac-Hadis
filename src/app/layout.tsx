@@ -309,10 +309,6 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
 
-        {/* ✅ 追加: Structured Data */}
-        <OrganizationSchema />
-        <WebsiteSchema />
-
         {/* ✅ Preconnect to Google Fonts static CDN (for font files only - no CSS request needed) */}
         <link
           rel="preconnect"
