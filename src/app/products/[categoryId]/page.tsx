@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import CategoryPage from "@/components/pages/products/category/index";
 
 // services
-import { getCategoryById } from "@/services/category";
+import { getAllCategories, getCategoryById } from "@/services/category";
 
 // baseUrl
 import { baseUrl } from "@/utils/baseUrl";
@@ -15,6 +15,15 @@ interface IPageProps {
   params: Promise<{
     categoryId: string;
   }>;
+}
+
+// Prerender every known category and reject unknown ids at routing time.
+// The root loading.tsx wraps pages in Suspense, so a notFound() thrown during
+// on-demand rendering arrives after a 200 status has already been sent.
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getAllCategories().map((category) => ({ categoryId: category.id }));
 }
 
 // metadata

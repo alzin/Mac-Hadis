@@ -5,8 +5,8 @@
 import NewProductPage from "@/components/pages/products/new-product/index";
 import ProductPage from "@/components/pages/products/product/index";
 import { Metadata } from "next";
-import { getCategoryById } from "@/services/category";
-import { getProductByTitle } from "@/services/products";
+import { getAllCategories, getCategoryById } from "@/services/category";
+import { getProductByTitle, getProducts } from "@/services/products";
 import { notFound } from "next/navigation";
 import { isNewProduct, isTProduct } from "@/utils/typeguards";
 
@@ -15,6 +15,22 @@ import { buybackTitle, defaultSeoImage, normalizeCategoryName, productUrl } from
 
 interface IProductPageProps {
   params: Promise<{ title: string; categoryId: string }>;
+}
+
+// Prerender every known product and reject unknown params at routing time.
+// The root loading.tsx wraps pages in Suspense, so a notFound() thrown during
+// on-demand rendering arrives after a 200 status has already been sent.
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  const categories = getAllCategories();
+  return getProducts().flatMap((product) => {
+    const category = categories.find(
+      (item) => normalizeCategoryName(item.title) === product.category
+    );
+    if (!category || (!isNewProduct(product) && !isTProduct(product))) return [];
+    return [{ categoryId: category.id, title: product.title }];
+  });
 }
 
 function resolveProduct(categoryId: string, title: string) {
