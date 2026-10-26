@@ -59,9 +59,30 @@ const locations = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, loc]) => u
 assert.equal(new Set(locations).size, locations.length, 'Duplicate sitemap URLs');
 for (const path of paths) assert.ok(locations.includes(site + path), `Sitemap missing ${path}`);
 
-// A missing record must not emit indexable service metadata.
-const missing = await fetch(`${origin}/products/${categories[0].id}/missing-equipment-seo-check`);
-const missingHtml = await missing.text();
-assert.ok(missing.status === 404 || /name="robots" content="[^"]*noindex/.test(missingHtml));
-assert.ok(!missingHtml.includes('"@type":"Service"'));
-console.log(`PASS: ${products.length} equipment pages, ${categories.length} categories, 2 service pages; canonical/OG/schema/breadcrumb agreement, single H1, titles, sitemap coverage and missing-record handling.`);
+// A missing record must return a real 404 (not a soft 404) without service metadata.
+for (const path of [`/products/${categories[0].id}/missing-equipment-seo-check`, '/products/missing-category-seo-check']) {
+  const missing = await fetch(origin + path);
+  const missingHtml = await missing.text();
+  assert.equal(missing.status, 404, path);
+  assert.ok(!missingHtml.includes('"@type":"Service"'), path);
+}
+
+// Blog posts resolve, renamed posts 308 to their current URL, and unknown slugs 404.
+const blogs = readdirSync('src/content/blogs')
+  .filter(name => /^blog\d+\.json$/.test(name))
+  .map(name => JSON.parse(readFileSync(`src/content/blogs/${name}`, 'utf8')));
+const blogPath = title => `/blogs/${encodeURIComponent(title)}`;
+for (let i = 0; i < blogs.length; i += 4) {
+  await Promise.all(blogs.slice(i, i + 4).map(async blog => {
+    const response = await fetch(origin + blogPath(blog.title), { redirect: 'manual' });
+    assert.equal(response.status, 200, blogPath(blog.title));
+    for (const oldTitle of blog.oldTitles || []) {
+      const renamed = await fetch(origin + blogPath(oldTitle), { redirect: 'manual' });
+      assert.equal(renamed.status, 308, blogPath(oldTitle));
+      assert.equal(new URL(renamed.headers.get('location'), origin).pathname, blogPath(blog.title), blogPath(oldTitle));
+    }
+  }));
+}
+const missingBlog = await fetch(`${origin}/blogs/missing-blog-seo-check`, { redirect: 'manual' });
+assert.equal(missingBlog.status, 404, '/blogs/missing-blog-seo-check');
+console.log(`PASS: ${products.length} equipment pages, ${categories.length} categories, 2 service pages, ${blogs.length} blog posts; canonical/OG/schema/breadcrumb agreement, single H1, titles, sitemap coverage, blog redirects and missing-record handling.`);
