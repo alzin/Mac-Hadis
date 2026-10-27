@@ -1,14 +1,15 @@
-import { buybackTitle } from "@/utils/seo";
+import { appraisalSubtitle, buybackTitle } from "@/utils/seo";
 import Image from "next/image";
 
 interface IProductHeroProps {
   productTitle: string;
+  category?: string;
   seoSubtitle?: string;
 }
 
-const ProductHero = ({ productTitle, seoSubtitle }: IProductHeroProps) => {
+const ProductHero = ({ productTitle, category, seoSubtitle }: IProductHeroProps) => {
   const heroTitle = buybackTitle(productTitle);
-  const subtitle = seoSubtitle?.trim() || "中古機械・工具の査定はハディズへ";
+  const subtitle = seoSubtitle?.trim() || appraisalSubtitle(category);
 
   return (
     <section className="relative px-4 py-8 w-full min-h-[510px] lg:min-h-[640px] 2xl:min-h-[calc(100vh-64px)] flex items-center sm:bg-right-top overflow-hidden">

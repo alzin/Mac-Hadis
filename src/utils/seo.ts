@@ -13,3 +13,12 @@ export const buybackTitle = (name: string) => {
   if (cleanName === "その他の買取対応") return "その他の機械・工具の買取";
   return cleanName.includes("買取") ? cleanName : `${cleanName}の買取`;
 };
+
+const defaultAppraisalSubtitle = "中古機械・工具の査定はハディズへ";
+
+// Some product records carry a stray space after "・" (e.g. "望遠鏡・顕微鏡・ 測定機器").
+export const appraisalSubtitle = (category?: string) => {
+  const cleanName = category?.replace(/\s+/g, "") ?? "";
+  if (!cleanName || cleanName === "その他の買取対応") return defaultAppraisalSubtitle;
+  return `${cleanName}の査定はハディズへ`;
+};

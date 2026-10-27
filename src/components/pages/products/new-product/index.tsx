@@ -26,7 +26,7 @@ interface IIndexProps {
 const index = ({ product }: IIndexProps) => {
   return (
     <>
-      <ProductHero productTitle={product.title} />
+      <ProductHero productTitle={product.title} category={product.category} />
       <Breadcrumb title={product.title} category={product.category} />
       {product.types && product.types.length > 0 && (
         <Types types={product.types} />
