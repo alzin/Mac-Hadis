@@ -4,7 +4,6 @@ import { FactoryServiceSchema, BreadcrumbSchema, generateBreadcrumbs } from '@/c
 import type { Metadata } from "next";
 import { baseUrl } from "@/utils/baseUrl";
 
-// メタデータを追加
 export const metadata: Metadata = {
   title: "工場機械買取・撤去・整理サービス",
   description: "工場閉鎖・移転・廃業で不要になった機械設備の買取、撤去、解体、清掃まで一括対応。中古機械買取ならハディズにお任せください。",
@@ -30,7 +29,6 @@ export const metadata: Metadata = {
 const FactoryService: React.FC = () => {
   return (
     <>
-      {/* ✅ Structured Data */}
       <FactoryServiceSchema />
       <BreadcrumbSchema items={generateBreadcrumbs.factoryService()} />
       <FactoryServicePage />

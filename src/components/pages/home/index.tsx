@@ -1,4 +1,3 @@
-// src/components/pages/home/index.tsx
 import dynamic from "next/dynamic";
 import Hero from "./sections/Hero";
 import ContactFixedBanner from "@/components/common/sections/ContactFixedBanner";
@@ -6,7 +5,6 @@ import { PurchaseRecords } from "@/components/common/sections/PurchaseRecords";
 import data from "@/content/home/PurchaseResults.json";
 import { LocalBusinessSchema } from '@/components/seo/schemas';
 
-// ✅ Import the Client Component Wrapper we just created
 import InquiryClient from "./sections/InquiryClient";
 
 // Helper for consistent loading states to prevent CLS
@@ -48,8 +46,6 @@ const CompanyProfile = dynamic(() => import("./sections/CompanyProfile"), {
   loading: () => <SectionLoader height="500px" />
 });
 
-// ❌ REMOVED: The render-blocking dynamic import definition from here
-
 const Index = () => {
   return (
     <>
@@ -58,12 +54,8 @@ const Index = () => {
       <ContactFixedBanner />
       <Flow />
       <WhyChoose />
-      {/* <VideoSection /> */}
       <ContactBanner />
       <PurchasedItems />
-      {/* <PurchaseResults /> */}
-      {/* Static data passed, this is fine to render immediately if it's above fold, 
-          but usually this is lower down. If it causes issues, make PurchaseRecords dynamic too. */}
       <PurchaseRecords label="機械買取実績" purchaseItems={data} isLimit={true} />
       <PurchaseProcess />
       <BusinessPolicy />
@@ -73,7 +65,6 @@ const Index = () => {
       <FrequentlyAskedQuestions />
       <ContactBanner />
       <CompanyProfile />
-      {/* ✅ ADDED: The client wrapper handles the no-ssr loading */}
       <InquiryClient />
     </>
   );

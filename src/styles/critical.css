@@ -1,7 +1,4 @@
-/* ═══════════════════════════════════════════════════════════════════════════════
-   CRITICAL ABOVE-THE-FOLD CSS
-   ═══════════════════════════════════════════════════════════════════════════════
-   
+/*
    This file is automatically processed by Critters (experimental.optimizeCss)
    Only include styles that are VISIBLE on initial viewport without scrolling:
    - Header/Navigation
@@ -9,11 +6,8 @@
    - Essential layout styles
    
    IMPORTANT: Keep this file UNDER 14KB for optimal TCP packet delivery
-   ═══════════════════════════════════════════════════════════════════════════════ */
+   */
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   CSS RESET - Minimal reset for immediate rendering
-   ───────────────────────────────────────────────────────────────────────────── */
 *,
 ::before,
 ::after {
@@ -36,9 +30,6 @@ body {
   min-height: 100vh;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   TYPOGRAPHY - System font stack for instant text rendering
-   ───────────────────────────────────────────────────────────────────────────── */
 html,
 body {
   font-family:
@@ -73,9 +64,6 @@ video {
   display: block;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   LAYOUT UTILITIES - Essential flex/grid for structure
-   ───────────────────────────────────────────────────────────────────────────── */
 .flex {
   display: flex;
 }
@@ -140,9 +128,6 @@ video {
   display: block;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   SPACING - Common padding/margin used in header & hero
-   ───────────────────────────────────────────────────────────────────────────── */
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -170,9 +155,6 @@ video {
   margin-top: 0.5rem;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   SIZING - Header and hero specific dimensions
-   ───────────────────────────────────────────────────────────────────────────── */
 .h-16 {
   height: 4rem;
 }
@@ -204,9 +186,6 @@ video {
   width: 165px;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   COLORS - Brand colors for hero gradient buttons
-   ───────────────────────────────────────────────────────────────────────────── */
 .bg-white {
   background-color: #fff;
 }
@@ -217,9 +196,6 @@ video {
   color: #b81122;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   TYPOGRAPHY SIZES - Hero text
-   ───────────────────────────────────────────────────────────────────────────── */
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -251,9 +227,6 @@ video {
   white-space: nowrap;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   BORDERS & SHAPES
-   ───────────────────────────────────────────────────────────────────────────── */
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -267,9 +240,6 @@ video {
   object-position: right top;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   HERO GRADIENT - Critical brand styling
-   ───────────────────────────────────────────────────────────────────────────── */
 .gradient-red {
   background: linear-gradient(to right bottom, #b81122 50%, #ac0c1c 50%);
   border: 2px solid #990e1c;
@@ -280,17 +250,11 @@ video {
     2px -2px 0 #990e1c;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   ANIMATIONS - Smooth image reveal
-   ───────────────────────────────────────────────────────────────────────────── */
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   RESPONSIVE - Desktop overrides (lg: 1024px+)
-   ───────────────────────────────────────────────────────────────────────────── */
 @media (min-width: 1024px) {
   .lg\:hidden {
     display: none;

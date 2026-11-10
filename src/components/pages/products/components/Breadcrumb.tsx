@@ -13,7 +13,6 @@ const Breadcrumb = ({ title, category }: IBreadcrumbProps) => {
   return (
     <section className="bg-[#f8f7f6] text-[#111111]">
       <div className="max-w-[928px] mx-auto py-4 lg:py-10 px-4">
-        {/* Breadcrumb Navigation */}
         <div className="text-[#999999] font-normal text-xs lg:text-sm">
           <Link href={"/"} className="inline-block">
             <span>ホーム</span>

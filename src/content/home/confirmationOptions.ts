@@ -1,6 +1,6 @@
 const confirmationOptions = [
-  { value: "はい", label: "はい" }, // Yes
-  { value: "いいえ", label: "いいえ" }, // No
+  { value: "はい", label: "はい" },
+  { value: "いいえ", label: "いいえ" },
 ];
 
 export default confirmationOptions

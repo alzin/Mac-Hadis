@@ -37,7 +37,6 @@ const RadioGroup = ({
   return (
     <div
       className="text-[14px] leading-[21px] text-[#111111] p-3 rounded-md">
-      {/* Question */}
       <div className="flex items-center space-x-2 mb-[8px]">
         <p>{question}</p>
         {required && (
@@ -50,7 +49,6 @@ const RadioGroup = ({
         )}
       </div>
 
-      {/* Options */}
       <div className={inlineLabels ? "flex space-x-4" : "space-y-2"}>
         {options.map((option, index) => (
           <div className="flex items-center" key={index}>

@@ -1,8 +1,5 @@
-// import Swiper core and required modules
 import { Navigation, Pagination } from "swiper/modules";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -84,7 +81,6 @@ export const ReasonsSection = () => {
   ];
   return (
     <section className="bg-gray-100 py-20">
-      {/* Strengths Section */}
       <div className="fs-container max-w-6xl mx-auto px-5">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-factory-teal">
@@ -116,7 +112,6 @@ export const ReasonsSection = () => {
         </div>
       </div>
 
-      {/* slider */}
       <div className="relative mt-10">
         <Swiper
           modules={[Navigation, Pagination]}
@@ -124,9 +119,7 @@ export const ReasonsSection = () => {
           slidesPerView={3.5}
           loop
           centeredSlides
-          // preloads neighbors for smoother UX
           lazyPreloadPrevNext={2}
-          // keep your existing selectors
           navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }}
           pagination={{ clickable: true }}
           breakpoints={{
@@ -153,7 +146,6 @@ export const ReasonsSection = () => {
           ))}
         </Swiper>
 
-        {/* Custom nav buttons (match your selectors) */}
         <button
           className="custom-prev absolute -left-3 md:-left-6 top-1/2 z-10 -translate-y-1/2 rounded-full bg-white/90 backdrop-blur px-2.5 py-2 shadow hover:bg-white focus:outline-none focus:ring-2 focus:ring-factory-teal"
           aria-label="前へ"

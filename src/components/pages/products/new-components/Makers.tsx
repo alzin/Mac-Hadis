@@ -17,7 +17,6 @@ const Makers = ({ companies }: IMajorListProps) => {
         }
         alt="hero-background-hadis"
       />
-      {/* Content */}
       <h2 className="bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent text-center text-[32px] leading-[36px] lg:text-[65px] lg:leading-[90px] font-black">
         買取対象の主なメーカー
       </h2>

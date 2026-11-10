@@ -1,13 +1,10 @@
 import { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 
-// page
 import BlogDetails from "@/components/pages/blogs/blog";
 
-// services
 import { getBlogByOldTitle, getBlogByTitle } from "@/services/blogs";
 
-// baseUrl
 import { baseUrl } from "@/utils/baseUrl";
 
 import { ArticleSchema, BreadcrumbSchema, generateBreadcrumbs } from '@/components/seo/schemas';
@@ -36,7 +33,6 @@ interface IBlogPage {
 const getBlogUrl = (title: string): string =>
   `${baseUrl}/blogs/${encodeURIComponent(title)}`;
 
-// metadata
 export async function generateMetadata({
   params,
 }: IBlogPage): Promise<Metadata> {
@@ -107,7 +103,6 @@ export default async function BlogDetailsPage({ params }: IBlogPage) {
 
   return (
     <>
-      {/* ✅ 追加: Structured Data */}
       <ArticleSchema
         title={data.title}
         description={data.metaDescription}

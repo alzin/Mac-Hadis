@@ -63,7 +63,6 @@ const TableTemplate: React.FC<ITableTemplate> = ({
     <SectionWrapper id={content.title}>
       <SectionHeader number={sectionNumber} title={content.title} />
 
-      {/* Top Description */}
       {content.topDescription && (
         <div className="mb-8">
           {content.topDescription.split("\n").map((paragraph, index) => (
@@ -76,7 +75,6 @@ const TableTemplate: React.FC<ITableTemplate> = ({
         </div>
       )}
 
-      {/* Table */}
       <div className="relative my-8">
         <div
           ref={scrollRef}
@@ -139,7 +137,6 @@ const TableTemplate: React.FC<ITableTemplate> = ({
         )}
       </div>
 
-      {/* Bottom Description */}
       {content.bottomDescription && (
         <div className="border border-[#B81122] rounded-2xl bg-[#FFF5F6] p-4">
           {content.bottomDescription.split("\n").map((paragraph, index) => (

@@ -16,7 +16,6 @@ const ImageListTemplate: React.FC<IImageListTemplate> = ({
 }) => {
   return (
     <SectionWrapper id={content.title}>
-      {/* Add header if title exists */}
       {content.title && (
         <SectionHeader number={sectionNumber} title={content.title} />
       )}

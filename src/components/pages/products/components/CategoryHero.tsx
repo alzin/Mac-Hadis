@@ -11,7 +11,6 @@ const CategoryHero = ({ categoryName }: ICategoryHeroProps) => {
 
   return (
     <section className="relative px-4 py-8 w-full min-h-[510px] lg:min-h-[640px] 2xl:min-h-[calc(100vh-64px)] flex items-center sm:bg-right-top overflow-hidden">
-      {/* Background wrapper */}
       <div className="absolute -z-10 inset-0">
         <Image
           src={
@@ -24,7 +23,6 @@ const CategoryHero = ({ categoryName }: ICategoryHeroProps) => {
           className="object-cover object-[75%] lg:object-center"
         />
       </div>
-      {/* content wrapper */}
       <div className="w-full lg:w-[65%] p-3 lg:p-10 lg:ml-[5%] space-y-2 lg:space-y-4 bg-[#ffffffbf] text-[#B81122]">
         <h1 className="text-[32px] leading-[36px] lg:text-[65px] lg:leading-[90px] font-bold text-left lg:text-center">
           {heroTitle.split("\n").map((item, index) => (
@@ -36,7 +34,6 @@ const CategoryHero = ({ categoryName }: ICategoryHeroProps) => {
         <p className="text-[24px] leading-[36px] lg:text-[48px] lg:leading-[1.5] font-semibold text-left lg:text-center">
           {heroSubtitle}
         </p>
-        {/* details */}
         <div className="flex w-full items-start xl:items-center lg:justify-center gap-2 flex-col lg:flex-row text-white flex-wrap">
           <h2 className="flex gap-1 items-center justify-center w-[165px] h-[66px] lg:w-[276px] lg:h-[102px] gradient-red rounded-lg font-black lg:text-[32px] text-xl">
             <span className="text-[18px] lg:text-[28px]">創業</span>

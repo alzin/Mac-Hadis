@@ -16,10 +16,8 @@ const PurchaseItemsCategoryCard = ({
   const handleCategoryClick = useCallback(() => {
     changeCategory(id);
 
-    // Avoid unnecessary DOM queries on every click
     const scrollTarget = document.getElementById("scroll-to-items");
 
-    // Scroll only for small screens if element exists
     if (scrollTarget && window.innerWidth <= 600) {
       scrollTarget.scrollIntoView({ behavior: "smooth" });
     }

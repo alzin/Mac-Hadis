@@ -22,7 +22,6 @@ const SubContent: React.FC<ISubContent> = ({
   mainTitle,
   sectionNumber,
 }) => {
-  // Generate section ID for navigation
   const sectionId = content.title ? `section-${content.id}` : undefined;
 
   return (

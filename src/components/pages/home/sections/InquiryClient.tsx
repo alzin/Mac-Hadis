@@ -1,4 +1,3 @@
-// src/components/pages/home/sections/InquiryClient.tsx
 "use client";
 
 import dynamic from "next/dynamic";

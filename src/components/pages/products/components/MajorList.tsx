@@ -18,14 +18,12 @@ const MajorList = ({ title, companies }: IMajorListProps) => {
         }
         alt="hero-background-hadis"
       />
-      {/* Content */}
       <h2 className="bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent text-center text-[32px] leading-[36px] lg:text-[65px] lg:leading-[90px] font-black">
         {title}
       </h2>
       <p className="bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent text-center text-[24px] leading-[36px] lg:text-[48px] lg:leading-[90px] font-bold">
         の主なメーカー一覧
       </p>
-      {/* companies wrapper */}
       <div className="w-full md:w-[90%] lg:w-[80%] md:mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[7px] lg:gap-x-[32px] lg:gap-y-4 mt-10">
         {companies?.map((item, index) => (
           <Link

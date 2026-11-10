@@ -22,7 +22,6 @@ const ContactBtn: React.FC<ContactBtnProps> = ({
   onClick,
   mobileLabel,
 }) => {
-  // Determine the gradient background class based on the variant
   const gradientBg = {
     red: "gradient-red",
     blue: "gradient-blue",
@@ -30,7 +29,6 @@ const ContactBtn: React.FC<ContactBtnProps> = ({
     sky: "gradient-sky",
   }[variant];
 
-  // Define icon paths for each variant
   const iconPaths = {
     red: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/phone_in_talk.svg",
     blue: "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/computer.svg",

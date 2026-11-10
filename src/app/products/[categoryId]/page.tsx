@@ -2,10 +2,8 @@ import { buybackTitle, normalizeCategoryName } from "@/utils/seo";
 import { Metadata } from "next";
 import CategoryPage from "@/components/pages/products/category/index";
 
-// services
 import { getAllCategories, getCategoryById } from "@/services/category";
 
-// baseUrl
 import { baseUrl } from "@/utils/baseUrl";
 import { notFound } from "next/navigation";
 
@@ -26,7 +24,6 @@ export function generateStaticParams() {
   return getAllCategories().map((category) => ({ categoryId: category.id }));
 }
 
-// metadata
 export async function generateMetadata({
   params,
 }: IPageProps): Promise<Metadata> {
@@ -81,7 +78,6 @@ const page = async ({ params }: IPageProps) => {
 
   return (
     <>
-      {/* ✅ 追加: Structured Data */}
       <ServiceSchema
         name={`${buybackTitle(categoryTitle)}サービス`}
         description={`${buybackTitle(categoryTitle)}ならハディズへ。全国対応、出張費・査定費無料。創業25年以上の実績。`}

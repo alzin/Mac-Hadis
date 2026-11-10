@@ -7,18 +7,11 @@ import { useState, memo, useCallback } from "react";
 import { Menu, X } from "lucide-react";
 import { resolveNavItems, type INavItem } from "@/utils/navItems";
 
-// data
 import navbarLinksData from "@/content/home/navbarLinks.json";
 import ContactDetails from "@/content/home/ContactDetails.json";
 
-// components
 import ContactBtn from "@/components/pages/home/components/ContactBtn";
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// PERFORMANCE OPTIMIZATION: Memoize static nav items to prevent re-renders
-// ═══════════════════════════════════════════════════════════════════════════════
-
-// Desktop navigation - memoized since it doesn't change
 const DesktopNav = memo(function DesktopNav({
   navItems,
 }: {
@@ -43,7 +36,6 @@ const DesktopNav = memo(function DesktopNav({
         ))}
       </ul>
 
-      {/* SNS links */}
       <div className="hidden xl:flex items-center justify-start lg:justify-center gap-4">
         {navbarLinksData?.snsLinks?.map((item) => (
           <Link
@@ -58,13 +50,12 @@ const DesktopNav = memo(function DesktopNav({
               alt={item.name}
               width={40}
               height={40}
-              loading="lazy" // ✅ SNS icons are not critical
+              loading="lazy"
             />
           </Link>
         ))}
       </div>
 
-      {/* CTA Buttons */}
       <div className="flex items-center justify-center gap-2">
         {navbarLinksData.navbarBtns?.map((item) => (
           <Link
@@ -94,7 +85,6 @@ const Header: React.FC = () => {
   const pathname = usePathname();
   const navItems = resolveNavItems(pathname);
 
-  // ✅ Memoize toggle function to prevent unnecessary re-renders
   const toggleMenu = useCallback(() => {
     setActiveMenu((prev) => !prev);
   }, []);
@@ -114,16 +104,14 @@ const Header: React.FC = () => {
             src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/hadis-logo.png"
             alt="Hadis Company Logo"
             fill
-            priority // ✅ Logo is above-the-fold
+            priority
             sizes="(max-width: 1024px) 70px, 101px"
             className="object-contain"
           />
         </Link>
 
-        {/* Desktop Navigation - memoized component */}
         <DesktopNav navItems={navItems} />
 
-        {/* Mobile Burger Button */}
         <button
           className="burger lg:hidden cursor-pointer flex items-center justify-center text-[#B81122] p-2"
           onClick={toggleMenu}
@@ -134,7 +122,6 @@ const Header: React.FC = () => {
           {activeMenu ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Mobile Menu - Only renders DOM when needed via CSS transform */}
         <div
           className={`bg-white w-full space-y-10 h-[100vh] fixed overflow-y-auto top-16 left-0 z-50 py-7 px-5 lg:hidden transition-transform duration-300 ${
             activeMenu ? "translate-x-0" : "translate-x-[-100%]"
@@ -155,7 +142,6 @@ const Header: React.FC = () => {
             ))}
           </ul>
 
-          {/* Contact Details */}
           <div className="flex flex-col items-start justify-center w-full gap-4">
             <ContactBtn
               mobileLabel={ContactDetails.phoneNumber.label}
@@ -183,7 +169,6 @@ const Header: React.FC = () => {
             />
           </div>
 
-          {/* SNS Links */}
           <div className="flex items-center justify-start lg:justify-center w-full gap-4">
             {navbarLinksData?.snsLinks?.map((item) => (
               <Link

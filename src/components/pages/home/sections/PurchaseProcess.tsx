@@ -3,11 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 
-// components
 import PurchaseProcessCard from "../components/PurchaseProcessCard";
 import PurchaseProcessCategoryBtn from "../components/PurchaseProcessCategoryBtn";
 
-// data
 import PurchaseProcessData from "@/content/home/PurchaseProcess.json";
 
 const PurchaseProcess: React.FC = () => {

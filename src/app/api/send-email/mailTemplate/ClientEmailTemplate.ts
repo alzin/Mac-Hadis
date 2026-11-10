@@ -1,6 +1,5 @@
 import { TFormData, Product } from "@/types/formData.type";
 
-// interfaces
 import { EmailTemplate } from "./EmailTemplate";
 
 export class ClientEmailTemplate extends EmailTemplate {

@@ -49,14 +49,12 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
 
   return (
     <SectionWrapper id={content.title}>
-      {/* Section Header */}
       <SectionHeader
         number={sectionNumber}
         title={content.title}
         subTitle={content.subTitle}
       />
 
-      {/* Top Description */}
       {content.topDescription && (
         <>
           <div>
@@ -72,7 +70,6 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
         </>
       )}
 
-      {/* Reference Links (compact, SEO-only block) */}
       {isReferenceList && (
         <ReferenceLinks
           items={content.items}
@@ -80,7 +77,6 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
         />
       )}
 
-      {/* List Items */}
       {!isReferenceList && (
         <div className="space-y-6 my-8">
           {content.items
@@ -88,7 +84,6 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
             ?.map((item, index) => (
               <div key={index}>
                 <div className="flex items-start">
-                  {/* List Marker */}
                   {content.listType !== "none" &&
                     (content.listType === "number" ? (
                       <span className="font-noto font-bold text-[18px] leading-[200%] text-[#111111] mr-1 flex-shrink-0">
@@ -134,10 +129,8 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                       />
                     )}
 
-                    {/* --- IMAGES SECTION START --- */}
                     {(item.imageSrc || item.images) && (
                       <div className="mt-4 w-full">
-                        {/* 1. Single String Image — full width */}
                         {item.imageSrc && typeof item.imageSrc === "string" && (
                           <div className="relative w-full max-w-[321px] h-[175px] lg:max-w-[796px] lg:h-[434px] overflow-hidden rounded-[12px] bg-gray-50">
                             <Image
@@ -156,7 +149,6 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                           </div>
                         )}
 
-                        {/* 2. Array of String Images — grid layout */}
                         {item.imageSrc &&
                           Array.isArray(item.imageSrc) &&
                           item.imageSrc.length > 0 && (
@@ -182,7 +174,6 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                             </div>
                           )}
 
-                        {/* 3. Object Array Images — grid layout */}
                         {item.images && item.images.length > 0 && (
                           <div
                             className={`grid gap-3 ${item.images.length === 1 ? "grid-cols-1" : "grid-cols-2"}`}
@@ -210,7 +201,6 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                         )}
                       </div>
                     )}
-                    {/* --- IMAGES SECTION END --- */}
 
                     {item.subItems && item.subItems.length > 0 && (
                       <ul className="mt-4 space-y-3">
@@ -232,7 +222,6 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
                         ))}
                       </ul>
                     )}
-                    {/* Bottom Description */}
                     {item.bottomDescription && (
                       <div className="border mt-4 border-[#B81122] rounded-2xl bg-[#FFF5F6] p-4">
                         <p
@@ -250,7 +239,6 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
         </div>
       )}
 
-      {/* NEW: Section Gallery / Images (Below items, Above/Before Bottom Description) */}
       {content.sectionImages && content.sectionImages.length > 0 && (
         <div className="my-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
@@ -326,7 +314,6 @@ const ListTemplate: React.FC<IListTemplate> = ({ content, sectionNumber }) => {
         </>
       )}
 
-      {/* Show More Button — icon only */}
       {!isReferenceList &&
         content.withPagination &&
         content.items.length > 5 && (

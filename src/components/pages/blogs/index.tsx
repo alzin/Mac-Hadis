@@ -19,7 +19,6 @@ const BlogsListNew = () => {
     <>
       <section className="bg-gradient-to-b from-gray-50 to-white" id="blogs">
         <div className="pt-16 lg:pt-24 pb-20 mx-auto space-y-12 lg:space-y-16 px-4 max-w-7xl">
-          {/* Header */}
           <div className="text-center">
             <h1 className="font-black text-4xl lg:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-700 mb-4">
               ハディズのブログ
@@ -29,7 +28,6 @@ const BlogsListNew = () => {
             </p>
           </div>
 
-          {/* Blog Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {currentBlogs.map((item) => (
               <PostCard
@@ -42,7 +40,6 @@ const BlogsListNew = () => {
             ))}
           </div>
 
-          {/* Pagination */}
           <Pagination
             totalItems={numberOfBlogs}
             postsPerPage={postsPerPage}

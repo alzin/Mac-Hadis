@@ -14,15 +14,12 @@ export async function POST(req: Request) {
   const clientName = body.name
 
   const adminEmail = process.env.SMTP_USER
-  // const adminEmail = "audirezk@gmail.com"
 
 
   try {
 
-    // mail servise
     const gmailSender: IMailService = new GmailSender();
 
-    // Create gmail template
     const systemEmailTemplate = new SystemEmailTemplate(body);
     const clientEmailTemplate = new ClientEmailTemplate(body);
 

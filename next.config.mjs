@@ -26,11 +26,11 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
 
   experimental: {
-    // ✅ CRITICAL: Enable Critters for automatic critical CSS inlining
+    // Enable Critters for automatic critical CSS inlining
     // This extracts above-the-fold CSS and inlines it, deferring the rest
     optimizeCss: true,
 
-    // ✅ Tree-shake heavy packages to reduce JS bundle
+    // Tree-shake heavy packages to reduce JS bundle
     optimizePackageImports: [
       "swiper",
       "sweetalert2",
@@ -45,10 +45,9 @@ const nextConfig = {
     },
   },
 
-  // ✅ Turbopack config for Next.js 16
+  // Turbopack config for Next.js 16
   turbopack: {},
 
-  // ✅ Webpack optimizations for CSS handling
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.optimization = {
@@ -57,14 +56,14 @@ const nextConfig = {
           ...config.optimization.splitChunks,
           cacheGroups: {
             ...config.optimization.splitChunks?.cacheGroups,
-            // ✅ Separate font CSS into its own chunk for better caching
+            // Separate font CSS into its own chunk for better caching
             fonts: {
               name: "fonts",
               test: /[\\/]node_modules[\\/].*\.(woff2?|ttf|eot|otf)$/,
               chunks: "all",
               priority: 30,
             },
-            // ✅ Keep styles together but allow code splitting
+            // Keep styles together but allow code splitting
             styles: {
               name: "styles",
               test: /\.css$/,

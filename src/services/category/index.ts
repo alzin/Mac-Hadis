@@ -1,4 +1,3 @@
-// data
 import categories from "@/content/categories/categories";
 
 export const getCategoryByTitle = (title: string): CategoryType | undefined => {

@@ -4,13 +4,11 @@ import Image from "next/image";
 import PrivacyPolicy from "@/components/pages/home/components/PrivacyPolicy";
 import { useFormHandler } from "@/hooks/useFormHandler";
 
-// import fields
 import RadioGroup from "../../pages/home/components/RadioGroup";
 import InputField from "../../pages/home/components/InputField";
 import SelectField from "../../pages/home/components/SelectField";
 import ImageUpload from "../../pages/home/components/ImageUpload";
 
-// import options
 import japanRegions from "@/content/home/japanRegions";
 import conditionOptions from "@/content/home/conditionOptions";
 import confirmationOptions from "@/content/home/confirmationOptions";
@@ -69,7 +67,6 @@ const Inquiry = () => {
         className="space-y-6 max-w-[900px] md:mx-auto"
         onSubmit={handleSubmit}
       >
-        {/* Input Fields */}
         <InputField
           id="name"
           name="name"
@@ -98,7 +95,6 @@ const Inquiry = () => {
           onChange={handleInputChange}
         />
 
-        {/* Radio Groups */}
         <RadioGroup
           name="phonePermission"
           inlineLabels
@@ -111,7 +107,6 @@ const Inquiry = () => {
           options={confirmationOptions}
         />
 
-        {/* Select Fields */}
         <SelectField
           id="city"
           name="city"
@@ -131,7 +126,6 @@ const Inquiry = () => {
           onChange={handleInputChange}
         />
 
-        {/* Products List */}
         {formData.productsList.map((product, index) => (
           <div key={index} className="bg-[#fcf7f7] px-1 py-2 border">
             {index !== 0 && (
@@ -179,13 +173,11 @@ const Inquiry = () => {
           </div>
         ))}
 
-        {/* Add Product Button */}
         <AddProductButton
           addProduct={addProduct}
           productsList={formData.productsList}
         />
 
-        {/* Textarea */}
         <textarea
           id="additionalNotes"
           name="additional_notes"
@@ -195,13 +187,11 @@ const Inquiry = () => {
           onChange={handleInputChange}
         />
 
-        {/* Privacy Policy */}
         <PrivacyPolicy
           setAgreePrivacy={setAgreePrivacy}
           agreePrivacy={agreePrivacy}
         />
 
-        {/* Submit Button */}
         <button
           disabled={isDisabled}
           type="submit"
