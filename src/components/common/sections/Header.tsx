@@ -4,31 +4,43 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, memo, useCallback } from "react";
-import { Menu, X } from "lucide-react";
-import { resolveNavItems, type INavItem } from "@/utils/navItems";
+import { CircleArrowRight, Menu, X } from "lucide-react";
+import { resolveNavButtons, resolveNavItems, type INavItem } from "@/utils/navItems";
+import { isFactoryThemePath } from "@/utils/theme";
 
-import navbarLinksData from "@/content/home/navbarLinks.json";
 import ContactDetails from "@/content/home/ContactDetails.json";
 
 import ContactBtn from "@/components/pages/home/components/ContactBtn";
 
 const DesktopNav = memo(function DesktopNav({
   navItems,
+  navButtons,
+  factoryTheme,
 }: {
   navItems: INavItem[];
+  navButtons: INavItem[];
+  factoryTheme: boolean;
 }) {
   return (
     <nav
       className="hidden lg:flex items-center justify-end h-full w-full gap-8"
       aria-label="Main navigation"
     >
-      <ul className="flex items-center justify-center gap-8 font-bold text-base text-[#B81122]">
+      <ul
+        className={`flex items-center justify-center gap-8 font-bold text-base ${
+          factoryTheme ? "text-factory-teal" : "text-[#B81122]"
+        }`}
+      >
         {navItems?.map((item) => (
           <li key={item.id}>
             <Link
               href={item.href}
               title={`Maps to ${item.label}`}
-              className="whitespace-nowrap hover:opacity-80 transition-opacity"
+              className={`whitespace-nowrap transition ${
+                factoryTheme
+                  ? "underline-offset-8 decoration-factory-yellow decoration-[3px] hover:underline"
+                  : "hover:opacity-80"
+              }`}
             >
               {item.label}
             </Link>
@@ -36,43 +48,31 @@ const DesktopNav = memo(function DesktopNav({
         ))}
       </ul>
 
-      <div className="hidden xl:flex items-center justify-start lg:justify-center gap-4">
-        {navbarLinksData?.snsLinks?.map((item) => (
-          <Link
-            key={item.id}
-            href={item.href}
-            title={`Maps to ${item.name}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={item.iconSrc}
-              alt={item.name}
-              width={40}
-              height={40}
-              loading="lazy"
-            />
-          </Link>
-        ))}
-      </div>
-
       <div className="flex items-center justify-center gap-2">
-        {navbarLinksData.navbarBtns?.map((item) => (
+        {navButtons.map((item) => (
           <Link
             key={item.id}
             href={item.href}
             title={`Maps to ${item.label}`}
-            className="bg-[#B81122] font-black text-white text-base flex items-center justify-center gap-2 py-3 px-8 rounded hover:bg-[#a00f1e] transition-colors"
+            className={`font-black text-white text-base flex items-center justify-center gap-2 py-3 px-8 rounded transition-colors ${
+              factoryTheme
+                ? "bg-factory-teal hover:bg-[#0b2f3d]"
+                : "bg-[#B81122] hover:bg-[#a00f1e]"
+            }`}
           >
             <span className="whitespace-nowrap">{item.label}</span>
-            <Image
-              src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/arrow-right-red.svg"
-              alt="arrow right hadis"
-              width={20}
-              height={20}
-              sizes="20px"
-              loading="lazy"
-            />
+            {factoryTheme ? (
+              <CircleArrowRight size={20} className="text-factory-yellow" aria-hidden />
+            ) : (
+              <Image
+                src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/arrow-right-red.svg"
+                alt="arrow right hadis"
+                width={20}
+                height={20}
+                sizes="20px"
+                loading="lazy"
+              />
+            )}
           </Link>
         ))}
       </div>
@@ -84,6 +84,8 @@ const Header: React.FC = () => {
   const [activeMenu, setActiveMenu] = useState(false);
   const pathname = usePathname();
   const navItems = resolveNavItems(pathname);
+  const navButtons = resolveNavButtons(pathname);
+  const factoryTheme = isFactoryThemePath(pathname);
 
   const toggleMenu = useCallback(() => {
     setActiveMenu((prev) => !prev);
@@ -91,7 +93,9 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className="bg-white w-full h-16 lg:h-20 sticky top-0 z-50"
+      className={`bg-white w-full h-16 lg:h-20 sticky top-0 z-50 ${
+        factoryTheme ? "border-b-[3px] border-factory-teal" : ""
+      }`}
       aria-label="Website Header"
     >
       <div className="px-4 lg:px-7 flex overflow-y-auto items-center justify-between lg:justify-start gap-8 h-full relative">
@@ -110,10 +114,12 @@ const Header: React.FC = () => {
           />
         </Link>
 
-        <DesktopNav navItems={navItems} />
+        <DesktopNav navItems={navItems} navButtons={navButtons} factoryTheme={factoryTheme} />
 
         <button
-          className="burger lg:hidden cursor-pointer flex items-center justify-center text-[#B81122] p-2"
+          className={`burger lg:hidden cursor-pointer flex items-center justify-center p-2 ${
+            factoryTheme ? "text-factory-teal" : "text-[#B81122]"
+          }`}
           onClick={toggleMenu}
           aria-label={activeMenu ? "Close menu" : "Open menu"}
           aria-expanded={activeMenu}
@@ -147,7 +153,7 @@ const Header: React.FC = () => {
               mobileLabel={ContactDetails.phoneNumber.label}
               label={ContactDetails.phoneNumber.label}
               href={ContactDetails.phoneNumber.href}
-              variant="red"
+              variant={factoryTheme ? "sky" : "red"}
               className="w-full sm:w-full text-3xl"
               onClick={toggleMenu}
             />
@@ -167,27 +173,6 @@ const Header: React.FC = () => {
               className="w-full sm:w-full text-xl"
               onClick={toggleMenu}
             />
-          </div>
-
-          <div className="flex items-center justify-start lg:justify-center w-full gap-4">
-            {navbarLinksData?.snsLinks?.map((item) => (
-              <Link
-                key={item.id}
-                href={item.href}
-                title={`Maps to ${item.name}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={item.iconSrc}
-                  alt={item.name}
-                  width={40}
-                  height={40}
-                  sizes="40px"
-                  loading="lazy"
-                />
-              </Link>
-            ))}
           </div>
         </div>
       </div>
