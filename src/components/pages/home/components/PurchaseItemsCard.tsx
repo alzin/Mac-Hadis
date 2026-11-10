@@ -19,7 +19,6 @@ const PurchaseItemsCard = ({
   const resolvedCategoryName = categoryName ?? getCategoryTitleById(categoryId);
   const haveDetails = useHaveDetails(title, resolvedCategoryName);
 
-  // Common content to avoid duplication
   const content = (
     <>
       {haveDetails && (
@@ -50,7 +49,6 @@ const PurchaseItemsCard = ({
     </>
   );
 
-  // Conditional rendering: Link if haveDetails, div otherwise
   return haveDetails ? (
     <Link
       href={`/products/${categoryId}/${title}`}

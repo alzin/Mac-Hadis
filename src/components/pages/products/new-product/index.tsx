@@ -5,8 +5,6 @@
 import Breadcrumb from "../components/Breadcrumb";
 import ImagesGallery from "../new-components/ImagesGallery";
 import { TNewProduct } from "@/types/product.type";
-// import ProductDetails from "../components/ProductDetails";
-// import MajorList from "../components/MajorList";
 import ContactBanner from "../../home/sections/ContactBanner";
 import PurchaseProcess from "../../home/sections/PurchaseProcess";
 import ContactFixedBanner from "@/components/common/sections/ContactFixedBanner";
@@ -32,13 +30,7 @@ const index = ({ product }: IIndexProps) => {
         <Types types={product.types} />
       )}
       <ImagesGallery images={product.webImagesGallery} />
-      {/* <MajorList title={product.title} companies={product.makers} /> */}
       <Makers companies={product.makers} />
-      {/* Camera images as slider of image+title */}
-      {/* <CameraImagesSlider
-        sectionTitle={`${product.title}${product.purchaseProductTitle ?? ""}`}
-        items={product.cameraImagesGallery}
-      /> */}
       <PurchaseRecords
         label={`${product.title}${product.purchaseProductTitle ?? ""}`}
         purchaseItems={product.cameraImagesGallery}
@@ -46,13 +38,11 @@ const index = ({ product }: IIndexProps) => {
       <Information information={product.information} />
       <Questions questions={product.questions} />
       <PurchaseService
-        // servicesTitle={product.servicesTitle}
         servicesDescription={product.servicesDescription}
       />
       <ContactBanner />
       <ContactFixedBanner />
       <PurchaseProcess />
-      {/* <BusinessPolicy /> */}
       <PurchasedItems />
     </>
   );

@@ -31,13 +31,11 @@ const PostCard = ({
           className="object-contain group-hover:scale-105 transition-transform duration-500"
         />
 
-        {/* Date Badge */}
         <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-red-600 px-3 py-1 rounded-full text-sm font-semibold shadow-md z-10">
           {date}
         </div>
       </div>
 
-      {/* Content */}
       <div className="p-6 flex flex-col flex-1">
         <h3 className="text-xl font-bold text-gray-800 mb-3 line-clamp-2 group-hover:text-red-600 transition-colors">
           {title}
@@ -46,7 +44,6 @@ const PostCard = ({
           {description}
         </p>
 
-        {/* Read More Link — pinned to bottom via mt-auto */}
         <div className="mt-auto pt-4 flex items-center text-red-600 font-semibold text-sm gap-0 group-hover:gap-2 transition-all">
           <span>続きを読む</span>
           <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"

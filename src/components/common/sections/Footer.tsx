@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// data
 import navbarLinksData from "@/content/home/navbarLinks.json";
 import { resolveNavButtons, resolveNavItems } from "@/utils/navItems";
 import { isFactoryThemePath } from "@/utils/theme";
@@ -21,7 +20,6 @@ const Footer: React.FC = () => {
           factoryTheme ? "text-factory-teal" : "text-[#B81122]"
         }`}
       >
-        {/* logo */}
         <Link href={"/"} className="block">
           <Image
             src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/hadis-logo.png"
@@ -32,7 +30,6 @@ const Footer: React.FC = () => {
           />
         </Link>
 
-        {/* navitems */}
         <nav className="flex flex-col lg:flex-row items-start lg:items-center justify-center h-full w-full gap-8">
           <ul className="flex flex-col lg:flex-row items-start lg:items-center justify-center gap-8 font-bold text-base">
             {navItems?.map((item) => (
@@ -55,7 +52,6 @@ const Footer: React.FC = () => {
           </div>
         </nav>
 
-        {/* sns */}
         <div className="flex items-center justify-start lg:justify-center w-full gap-4">
           {navbarLinksData?.snsLinks?.map((item) =>
             item.href.startsWith("mailto:") ? (
@@ -92,7 +88,6 @@ const Footer: React.FC = () => {
           )}
         </div>
 
-        {/* copyright */}
         <span className={`text-xs ${factoryTheme ? "text-factory-teal/60" : "text-[#CA999B]"}`}>
           Copyright © ハディズ All rights reserved.
         </span>

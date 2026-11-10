@@ -1,7 +1,6 @@
 import { Attachment } from "../interfaces/IMailTemplate";
 import { TFormData, Product } from "@/types/formData.type";
 
-// interfaces
 import { EmailTemplate } from "./EmailTemplate";
 
 export class SystemEmailTemplate extends EmailTemplate {
@@ -50,7 +49,7 @@ export class SystemEmailTemplate extends EmailTemplate {
         return this.data.productsList.flatMap(
             (product: Product, productIndex: number) =>
                 (product.images ?? [])
-                    .filter((image: string | null): image is string => image !== null) // Remove null values
+                    .filter((image: string | null): image is string => image !== null)
                     .map((image: string, imageIndex: number) => ({
                         filename: `product_${productIndex + 1}_attachment_${imageIndex + 1}.png`,
                         content: Buffer.from(image.split(",")[1], "base64"),

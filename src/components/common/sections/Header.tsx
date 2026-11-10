@@ -8,17 +8,10 @@ import { CircleArrowRight, Menu, X } from "lucide-react";
 import { resolveNavButtons, resolveNavItems, type INavItem } from "@/utils/navItems";
 import { isFactoryThemePath } from "@/utils/theme";
 
-// data
 import ContactDetails from "@/content/home/ContactDetails.json";
 
-// components
 import ContactBtn from "@/components/pages/home/components/ContactBtn";
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// PERFORMANCE OPTIMIZATION: Memoize static nav items to prevent re-renders
-// ═══════════════════════════════════════════════════════════════════════════════
-
-// Desktop navigation - memoized since it doesn't change
 const DesktopNav = memo(function DesktopNav({
   navItems,
   navButtons,
@@ -55,7 +48,6 @@ const DesktopNav = memo(function DesktopNav({
         ))}
       </ul>
 
-      {/* CTA Buttons */}
       <div className="flex items-center justify-center gap-2">
         {navButtons.map((item) => (
           <Link
@@ -95,7 +87,6 @@ const Header: React.FC = () => {
   const navButtons = resolveNavButtons(pathname);
   const factoryTheme = isFactoryThemePath(pathname);
 
-  // ✅ Memoize toggle function to prevent unnecessary re-renders
   const toggleMenu = useCallback(() => {
     setActiveMenu((prev) => !prev);
   }, []);
@@ -117,16 +108,14 @@ const Header: React.FC = () => {
             src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/hadis-logo.png"
             alt="Hadis Company Logo"
             fill
-            priority // ✅ Logo is above-the-fold
+            priority
             sizes="(max-width: 1024px) 70px, 101px"
             className="object-contain"
           />
         </Link>
 
-        {/* Desktop Navigation - memoized component */}
         <DesktopNav navItems={navItems} navButtons={navButtons} factoryTheme={factoryTheme} />
 
-        {/* Mobile Burger Button */}
         <button
           className={`burger lg:hidden cursor-pointer flex items-center justify-center p-2 ${
             factoryTheme ? "text-factory-teal" : "text-[#B81122]"
@@ -139,7 +128,6 @@ const Header: React.FC = () => {
           {activeMenu ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Mobile Menu - Only renders DOM when needed via CSS transform */}
         <div
           className={`bg-white w-full space-y-10 h-[100vh] fixed overflow-y-auto top-16 left-0 z-50 py-7 px-5 lg:hidden transition-transform duration-300 ${
             activeMenu ? "translate-x-0" : "translate-x-[-100%]"
@@ -160,7 +148,6 @@ const Header: React.FC = () => {
             ))}
           </ul>
 
-          {/* Contact Details */}
           <div className="flex flex-col items-start justify-center w-full gap-4">
             <ContactBtn
               mobileLabel={ContactDetails.phoneNumber.label}

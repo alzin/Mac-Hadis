@@ -1,10 +1,8 @@
 import Image from "next/image";
 
-// components
 import ContactBtn from "@/components/pages/home/components/ContactBtn";
 import PointerIcon from "@/components/pages/home/components/PointerIcon";
 
-// data
 import ContactDetails from "@/content/home/ContactDetails.json";
 
 const ContactFixedBanner: React.FC = () => {
@@ -13,7 +11,6 @@ const ContactFixedBanner: React.FC = () => {
       className="w-full py-4 fixed bottom-0 left-0 z-30 md:overflow-hidden"
       aria-label="Contact Banner"
     >
-      {/* Modern Badge */}
       <div
         className={`absolute -top-12 md:top-1 left-2 z-10 -rotate-[30deg] text-red-600`}
       >
@@ -26,7 +23,6 @@ const ContactFixedBanner: React.FC = () => {
         >
           <title id="modernBadgeTitle">無料見積もりバッジ</title>
 
-          {/* --- Circle outline (clean) --- */}
           <circle
             cx="50"
             cy="50"
@@ -36,7 +32,6 @@ const ContactFixedBanner: React.FC = () => {
             strokeWidth="4"
           />
 
-          {/* --- Inner circle (accent ring) --- */}
           <circle
             cx="50"
             cy="50"
@@ -47,7 +42,6 @@ const ContactFixedBanner: React.FC = () => {
             strokeDasharray="6 6"
           />
 
-          {/* --- Text (centered, stacked) --- */}
           <text
             x="50"
             y="44"

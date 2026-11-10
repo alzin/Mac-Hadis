@@ -10,7 +10,6 @@ export const HeroSection = () => {
       aria-label="工場整理・閉鎖支援サービス"
       className="relative isolate flex items-center overflow-hidden bg-factory-teal text-white lg:min-h-[calc(100vh-80px)]"
     >
-      {/* Full-bleed background photo */}
       <Image
         src={FACTORY_HERO_IMAGE}
         alt="工場の機械設備を撤去・搬出するハディズの作業風景"
@@ -50,7 +49,6 @@ export const HeroSection = () => {
             まるごとワンストップでお任せ。
           </p>
 
-          {/* Key differentiator */}
           <div className="mb-8 flex items-start gap-3 rounded-xl border border-white/20 bg-[#0b2f3d]/50 p-4 backdrop-blur-sm md:p-5">
             <CheckCircle2 className="mt-0.5 h-6 w-6 shrink-0 text-factory-yellow" aria-hidden />
             <p className={`text-base leading-relaxed text-white/95 md:text-lg ${noBreak}`}>

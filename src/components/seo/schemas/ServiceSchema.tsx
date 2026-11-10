@@ -60,7 +60,6 @@ export const ServiceSchema = ({
   );
 };
 
-// Pre-configured for Factory Service page
 export const FactoryServiceSchema = () => {
   return (
     <ServiceSchema

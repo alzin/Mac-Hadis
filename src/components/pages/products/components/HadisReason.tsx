@@ -34,25 +34,21 @@ const pointsData = [
 const HadisReason = () => {
   return (
     <section className="px-5 py-[50px] bg-[url(https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/backgrounds/dot-bg-results.svg)] bg-auto">
-      {/* Content */}
       <h2 className="bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent text-center text-[32px] leading-[36px] lg:text-[65px] lg:leading-[90px] font-black">
         ハディズが高価買取できる理由
       </h2>
-      {/* Points */}
       <div className="w-full md:w-[90%] lg:w-[80%] md:mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[40px] md:gap-x-[32px] lg:gap-y-[60px] mt-[60px] lg:mt-[75px]">
         {pointsData.map((point) => (
           <div
             key={point.id}
             className="px-4 lg:px-[24px] py-[27px] lg:py-10 bg-[#FFF7F8] border-[2px] border-[#B81122] rounded relative"
           >
-            {/* header point counter */}
             <div className="px-[18px] min-h-[38px] lg:min-h-[48px] text-[20px] lg:text-[24px] leading-[20px] lg:leading-[24px] left-[50%] -top-[10%] -translate-x-[50%] rounded text-white gradient-red absolute flex items-center">
               Point
               <span className="font-[700px] ml-1 text-[28px] lg:text-[32px] leading-[28px] lg:leading-[32px]">
                 {point.id}
               </span>
             </div>
-            {/* details */}
             <h3 className="text-[20px] lg:text-[24px] leading-[30px] lg:leading-[36px] text-center font-black text-[#B81122] mb-4 ">
               {point.title}
             </h3>

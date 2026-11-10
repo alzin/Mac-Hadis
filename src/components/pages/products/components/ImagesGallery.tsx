@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, ZoomIn, X } from "lucide-react";
 
-// Types
 interface TImage {
   imageSrc: string; // absolute URL to image (URL-encoded!)
   title: string;
@@ -71,11 +70,9 @@ const ImagesGallery = ({
   const handleImageErr = (index: number) => {
     setImageLoading((p) => ({ ...p, [index]: false }));
     setImageError((p) => ({ ...p, [index]: true }));
-    // Diagnostics
     console.error("Image failed:", images[index]?.imageSrc);
   };
 
-  // Zoom
   const handleZoomIn = () => setZoomScale((p) => Math.min(p * 1.5, 4));
   const handleZoomOut = () => setZoomScale((p) => Math.max(p / 1.5, 1));
   const resetZoom = () => {
@@ -91,7 +88,6 @@ const ImagesGallery = ({
     resetZoom();
   };
 
-  // Drag
   const handleMouseDown = (e: React.MouseEvent) => {
     if (zoomScale > 1) {
       setIsDragging(true);
@@ -115,7 +111,6 @@ const ImagesGallery = ({
   };
   const handleMouseUp = () => setIsDragging(false);
 
-  // Touch
   const handleTouchStart = (e: React.TouchEvent) => {
     if (zoomScale > 1 && e.touches.length === 1) {
       setIsDragging(true);
@@ -140,14 +135,12 @@ const ImagesGallery = ({
   };
   const handleTouchEnd = () => setIsDragging(false);
 
-  // Wheel zoom
   const handleWheel = (e: React.WheelEvent) => {
     e.preventDefault();
     if (e.deltaY < 0) handleZoomIn();
     else handleZoomOut();
   };
 
-  // Key controls in modal
   const handleZoomKeyDown = (e: React.KeyboardEvent) => {
     e.preventDefault();
     if (e.key === "Escape") handleZoomClose();
@@ -158,12 +151,10 @@ const ImagesGallery = ({
     if (e.key === "0") resetZoom();
   };
 
-  // (Optional) Dev diagnostic
   console.log("MAIN SRC:", main?.imageSrc);
 
   return (
     <div className="w-full max-w-6xl mx-auto p-4 md:p-8">
-      {/* Product Title */}
       {purchaseeProductTitle && (
         <p className="mt-2 mb-5 lg:mt-4 text-[20px] lg:text-[40px] leading-[30px] lg:leading-[60px] font-black text-center bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent">
           {title}
@@ -171,7 +162,6 @@ const ImagesGallery = ({
         </p>
       )}
 
-      {/* Main Image */}
       <div className="relative mb-6">
         <div
           className="relative bg-white rounded-xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
@@ -179,7 +169,6 @@ const ImagesGallery = ({
           onMouseLeave={() => setIsHovered(false)}
         >
           <div className="relative flex items-center justify-center min-h-[200px] p-4 md:p-6">
-            {/* Loading Skeleton */}
             {imageLoading[selectedImageIndex] && (
               <div className="absolute inset-4 md:inset-6 bg-gray-200 animate-pulse rounded-lg" />
             )}
@@ -208,7 +197,6 @@ const ImagesGallery = ({
               )}
             </div>
 
-            {/* Zoom Button */}
             {!imageError[selectedImageIndex] && (
               <button
                 onClick={handleZoomOpen}
@@ -220,12 +208,10 @@ const ImagesGallery = ({
               </button>
             )}
 
-            {/* Image Counter */}
             <div className="absolute bottom-3 right-3 bg-gray-900/80 text-white px-2.5 py-1 rounded-md text-xs font-medium backdrop-blur-sm">
               {selectedImageIndex + 1} / {images.length}
             </div>
 
-            {/* Camera Image Title */}
             {isCameraImages && !imageError[selectedImageIndex] && (
               <div className="absolute bottom-3 left-3 bg-white/95 text-rose-600 px-3 py-1.5 rounded-md text-sm font-medium shadow-sm border border-gray-100 backdrop-blur-sm">
                 {main.title}
@@ -233,7 +219,6 @@ const ImagesGallery = ({
             )}
           </div>
 
-          {/* Navigation Arrows */}
           <button
             onClick={handlePrev}
             className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white text-gray-600 hover:text-gray-800 p-2.5 rounded-lg shadow-sm border border-gray-100 transition-all duration-200 hover:scale-105 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
@@ -254,7 +239,6 @@ const ImagesGallery = ({
         </div>
       </div>
 
-      {/* Thumbnails */}
       {images.length > 1 && (
         <div className="relative">
           <div className="flex gap-2 md:gap-3 overflow-x-auto pb-2 scrollbar-hide">
@@ -305,7 +289,6 @@ const ImagesGallery = ({
         </div>
       )}
 
-      {/* Zoom Modal */}
       {isZoomed && !imageError[selectedImageIndex] && (
         <div
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center"
@@ -313,7 +296,6 @@ const ImagesGallery = ({
           tabIndex={-1}
           onWheel={handleWheel}
         >
-          {/* Controls */}
           <div className="absolute top-4 left-4 z-10 flex gap-2">
             <button
               onClick={handleZoomOut}
@@ -349,12 +331,10 @@ const ImagesGallery = ({
             </button>
           </div>
 
-          {/* Zoom Level */}
           <div className="z-10 absolute top-4 left-1/2 -translate-x-1/2 bg-white/90 text-gray-900 px-3 py-1 rounded-lg text-sm font-medium shadow-lg">
             {Math.round(zoomScale * 100)}%
           </div>
 
-          {/* Image Container */}
           <div
             className="relative w-full h-full overflow-hidden cursor-grab active:cursor-grabbing"
             onMouseDown={handleMouseDown}
@@ -388,7 +368,6 @@ const ImagesGallery = ({
             </div>
           </div>
 
-          {/* Close */}
           <button
             onClick={handleZoomClose}
             className="absolute top-4 right-4 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 p-2 rounded-lg shadow-lg transition-all duration-200 z-10"
@@ -397,7 +376,6 @@ const ImagesGallery = ({
             <X size={20} />
           </button>
 
-          {/* Modal Navigation */}
           <button
             onClick={handlePrev}
             className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-700 hover:text-gray-900 p-3 rounded-lg shadow-lg transition-all duration-200 z-10"
@@ -414,12 +392,10 @@ const ImagesGallery = ({
             <ChevronRight size={24} />
           </button>
 
-          {/* Counter */}
           <div className="absolute bottom-6 md:bottom-4 left-10 md:left-1/2 -translate-x-1/2 bg-white/90 text-gray-900 px-4 py-2 rounded-lg text-sm font-medium shadow-lg">
             {selectedImageIndex + 1} / {images.length}
           </div>
 
-          {/* Instructions */}
           <div className="absolute bottom-4 right-4 bg-white/90 text-gray-700 px-3 py-2 rounded-lg text-xs font-medium shadow-lg">
             <div className="flex flex-col gap-1 text-right">
               <span>Scroll or +/- to zoom</span>
@@ -429,7 +405,6 @@ const ImagesGallery = ({
         </div>
       )}
 
-      {/* Custom Scrollbar Styles */}
       <style jsx>{`
         .scrollbar-hide {
           -ms-overflow-style: none;

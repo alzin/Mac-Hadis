@@ -84,7 +84,6 @@ const Page = async ({ params }: IProductPageProps) => {
 
   return (
     <>
-      {/* ✅ 追加: Structured Data */}
       <ServiceSchema
         name={buybackTitle(productData.title)}
         description={productData.servicesDescription || productData.title}

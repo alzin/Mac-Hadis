@@ -1,7 +1,6 @@
 import { NextRequest } from "next/server";
 import sharp from "sharp";
 
-// services
 import { getBlogByOldTitle, getBlogByTitle } from "@/services/blogs";
 
 // Node runtime is required for sharp (not Edge).

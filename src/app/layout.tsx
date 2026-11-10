@@ -8,26 +8,10 @@ import Header from "@/components/common/sections/Header";
 import { baseUrl } from "@/utils/baseUrl";
 import { OrganizationSchema, WebsiteSchema } from "@/components/seo/schemas";
 
-// ✅ Lazy load Footer - it's below the fold
+// Lazy load Footer - it's below the fold
 const Footer = dynamic(() => import("@/components/common/sections/Footer"), {
   ssr: true,
 });
-
-// ═══════════════════════════════════════════════════════════════════════════════
-// FONT OPTIMIZATION STRATEGY - Inlined Critical @font-face + Next.js Fonts
-// ═══════════════════════════════════════════════════════════════════════════════
-//
-// 🔑 KEY FIX: Inline critical Latin @font-face + use Next.js for full subsets
-// Based on: https://www.debugbear.com/blog/render-blocking-resources#inline-render-blocking-google-fonts-css
-//
-// STRATEGY:
-// 1. Inline critical Latin subset @font-face in <head> for immediate availability
-// 2. Next.js fonts handle full Japanese/extended subsets (loaded progressively)
-// 3. font-display: swap ensures text is visible immediately with fallback
-// 4. preload: false prevents render-blocking for non-critical subsets
-//
-// BENEFIT: FCP/LCP improves as Latin text renders immediately without waiting for CSS
-// ═══════════════════════════════════════════════════════════════════════════════
 
 // Next.js font configuration - Only Open Sans uses Next.js loader
 // Noto Sans JP is loaded via inlined CSS to avoid build-time font fetch issues
@@ -39,11 +23,8 @@ const openSans = Open_Sans({
   adjustFontFallback: true,
 });
 
-// ═══════════════════════════════════════════════════════════════════════════════
-// INLINED CRITICAL FONTS CSS
 // This CSS is inlined directly in <head> to eliminate render-blocking request
 // Contains only the most critical Latin subset @font-face declarations
-// ═══════════════════════════════════════════════════════════════════════════════
 const criticalFontCSS = `
 /* CSS Variable for Tailwind font-noto class */
 :root {
@@ -237,13 +218,13 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-        {/* ═══════════════════════════════════════════════════════════════════
+        {/*
             CSS DEFERRAL - MUST BE FIRST IN HEAD
             Based on web.dev/articles/defer-non-critical-css
             
             This script intercepts stylesheets as they're added and converts
             them to non-blocking using the media="print" trick.
-            ═══════════════════════════════════════════════════════════════════ */}
+            */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -292,43 +273,30 @@ export default function RootLayout({
           }}
         />
 
-        {/* ═══════════════════════════════════════════════════════════════════
-            RESOURCE HINTS - Order matters for priority
-            ═══════════════════════════════════════════════════════════════════ */}
+        {/* RESOURCE HINTS - Order matters for priority */}
 
-        {/* ✅ DNS Prefetch - resolve CDN hostname early */}
         <link
           rel="dns-prefetch"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
         />
 
-        {/* ✅ Preconnect - establish connection before resources are needed */}
         <link
           rel="preconnect"
           href="https://mac-hadis.s3.ap-northeast-1.amazonaws.com"
           crossOrigin="anonymous"
         />
 
-        {/* ✅ Preconnect to Google Fonts static CDN (for font files only - no CSS request needed) */}
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
 
-        {/* ✅ Preconnect to Google Fonts API */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-        {/* ═══════════════════════════════════════════════════════════════════
-            INLINED GOOGLE FONTS CSS - Eliminates render-blocking request
-            Based on: debugbear.com/blog/render-blocking-resources#inline-render-blocking-google-fonts-css
-            
-            Instead of: <link href="https://fonts.googleapis.com/css2?..."> (render-blocking)
-            We inline: @font-face rules directly in <style> tag (non-blocking)
-            ═══════════════════════════════════════════════════════════════════ */}
         <style dangerouslySetInnerHTML={{ __html: criticalFontCSS }} />
 
-        {/* ✅ Load full Google Fonts (Japanese) asynchronously via script */}
+        {/* Load full Google Fonts (Japanese) asynchronously via script */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -344,11 +312,8 @@ export default function RootLayout({
           }}
         />
 
-        {/* ═══════════════════════════════════════════════════════════════════
-            LCP IMAGE PRELOAD - Critical for mobile performance
-            ═══════════════════════════════════════════════════════════════════ */}
+        {/* LCP IMAGE PRELOAD - Critical for mobile performance */}
 
-        {/* ✅ Mobile LCP Image (< 768px viewport) */}
         <link
           rel="preload"
           as="image"
@@ -358,7 +323,6 @@ export default function RootLayout({
           type="image/webp"
         />
 
-        {/* ✅ Tablet/Desktop LCP Image (>= 768px viewport) */}
         <link
           rel="preload"
           as="image"
@@ -368,7 +332,6 @@ export default function RootLayout({
           type="image/webp"
         />
 
-        {/* ✅ Preload logo for faster header paint */}
         <link
           rel="preload"
           as="image"
@@ -376,7 +339,6 @@ export default function RootLayout({
           fetchPriority="high"
         />
 
-        {/* Schema.org structured data */}
         <OrganizationSchema />
         <WebsiteSchema />
       </head>
@@ -391,7 +353,7 @@ export default function RootLayout({
           <Footer />
         </main>
 
-        {/* ═══════════════════════════════════════════════════════════════════
+        {/*
             CSS DEFERRAL - Based on web.dev/articles/defer-non-critical-css
             
             This script converts render-blocking stylesheets to non-blocking
@@ -399,7 +361,7 @@ export default function RootLayout({
             
             Technique: Change media to "print" initially, then switch to "all"
             after stylesheet loads. This allows FCP/LCP without waiting for CSS.
-            ═══════════════════════════════════════════════════════════════════ */}
+            */}
         <Script
           id="defer-css"
           strategy="beforeInteractive"
@@ -462,7 +424,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* ✅ GTM loads with afterInteractive strategy by default */}
+        {/* GTM loads with afterInteractive strategy by default */}
         <GoogleTagManager gtmId="GTM-W9W78KMS" />
       </body>
     </html>

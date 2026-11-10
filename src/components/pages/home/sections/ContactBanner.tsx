@@ -1,9 +1,7 @@
 import Image from "next/image";
 
-// components
 import ContactBtn from "../components/ContactBtn";
 
-// data
 import ContactDetails from "@/content/home/ContactDetails.json";
 
 const ContactBanner = ({
@@ -23,7 +21,6 @@ const ContactBanner = ({
         alt="banner-background-hadis"
         fill
       />
-      {/* Right image */}
       {!hideRightImage && (
         <div className="hidden md:block md:w-[48%] relative md:h-auto">
           <Image
@@ -35,9 +32,7 @@ const ContactBanner = ({
         </div>
       )}
 
-      {/* left section */}
       <div className={`px-5 py-[50px] xl:p-[75px] xl:pl-[80px] space-y-4 lg:max-h-[415px] ${hideRightImage ? "w-full" : "md:w-[52%]"}`}>
-        {/* Modern Badge */}
         <div
           className={`absolute top-2 left-2 z-10 -rotate-[30deg] ${applyFactoryTheme ? "text-white" : "text-red-600"}`}
         >
@@ -50,7 +45,6 @@ const ContactBanner = ({
           >
             <title id="modernBadgeTitle">無料見積もりバッジ</title>
 
-            {/* --- Circle outline (clean) --- */}
             <circle
               cx="50"
               cy="50"
@@ -60,7 +54,6 @@ const ContactBanner = ({
               strokeWidth="4"
             />
 
-            {/* --- Inner circle (accent ring) --- */}
             <circle
               cx="50"
               cy="50"
@@ -71,7 +64,6 @@ const ContactBanner = ({
               strokeDasharray="6 6"
             />
 
-            {/* --- Text (centered, stacked) --- */}
             <text
               x="50"
               y="44"
@@ -96,7 +88,6 @@ const ContactBanner = ({
           </svg>
         </div>
 
-        {/* Show this only on screens smaller than 600px */}
         <h2
           className={`font-noto !mt-8 bg-gradient-to-r bg-clip-text text-transparent text-center text-[32px] md:text-[36px] font-black leading-[48px] md:leading-[54px] block sm:hidden ${
             applyFactoryTheme ? "bg-white" : "from-light-red to-dark-red"
@@ -105,7 +96,6 @@ const ContactBanner = ({
           ラクラク無料査定
         </h2>
 
-        {/* Show this only on screens 600px and above */}
         <h2
           className={`font-noto bg-gradient-to-r  bg-clip-text text-transparent text-center text-[32px] md:text-[36px] font-black leading-[48px] md:leading-[54px] hidden sm:block ${
             applyFactoryTheme ? "bg-white" : "from-light-red to-dark-red"
@@ -113,9 +103,7 @@ const ContactBanner = ({
         >
           ラクラク無料査定
         </h2>
-        {/* communication information */}
         <div className="flex justify-center flex-wrap space-y-4 lg:space-y-[24px]">
-          {/* call button */}
           <div className="w-full">
             <ContactBtn
               mobileLabel={ContactDetails.phoneNumber.label}
@@ -134,7 +122,6 @@ const ContactBanner = ({
               </p>
             )}
           </div>
-          {/* social media buttons */}
           <div className="space-y-2 md:space-y-0 md:space-x-2 flex-wrap md:flex-nowrap flex w-full">
             {showFormBtn && (
               <ContactBtn

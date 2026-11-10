@@ -34,7 +34,6 @@ export const BreadcrumbSchema = ({ items }: BreadcrumbSchemaProps) => {
   );
 };
 
-// Helper function to generate common breadcrumb paths
 export const generateBreadcrumbs = {
   home: (): BreadcrumbItem[] => [
     { name: "ホーム", url: baseUrl }

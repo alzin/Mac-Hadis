@@ -1,9 +1,7 @@
 import Link from "next/link";
 
-// components
 import PostCard from "../components/PostCard";
 
-// data
 import { getAllBlogs } from "@/services/blogs";
 
 const BlogsPost = () => {
@@ -13,7 +11,6 @@ const BlogsPost = () => {
       <h2 className="mb-[40px] lg:mb-[50px] text-[30px] md:text-[40px] lg:text-[60px] leading-[45px] md:leading-[60px] lg:leading-[90px] font-black text-center bg-gradient-to-r from-light-red to-dark-red bg-clip-text text-transparent">
         ブログ記事
       </h2>
-      {/* boxes */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {blogsData
           .slice(-3)

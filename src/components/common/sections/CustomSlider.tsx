@@ -1,9 +1,6 @@
 "use client";
-// import Swiper core and required modules
 import { Navigation } from "swiper/modules";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -34,7 +31,6 @@ const CustomSlider = <T,>({
           {sectionTitle}
         </h2>
       )}
-      {/* sliders buttons */}
       <div className="custom-prev absolute top-[65%] translate-y-[-65%] left-1 lg:left-[5%] z-10 w-[40px] lg:w-[52px] h-[40px] lg:h-[52px] gradient-navigation rounded-full border-0 text-white flex justify-center items-center cursor-pointer">
         <Image
           src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/icons/arrow-navigation.svg"
@@ -53,7 +49,6 @@ const CustomSlider = <T,>({
           className="w-[24px] lg:w-[31px] h-[12px] lg:h-[15px]"
         />
       </div>
-      {/* sliders */}
       <Swiper
         modules={[Navigation]}
         spaceBetween={16}

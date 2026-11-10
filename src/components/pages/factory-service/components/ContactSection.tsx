@@ -49,7 +49,6 @@ export const ContactSection = () => {
           ハディズは、お客様の立場に立って、最適な解決策をご提案いたします。
         </p>
 
-        {/* Typical questions */}
         <ul className="mb-8 grid gap-3 text-left md:grid-cols-3 md:gap-4">
           {WORRIES.map((w) => (
             <li

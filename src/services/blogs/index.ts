@@ -1,4 +1,3 @@
-// data
 import blogs from "@/content/blogs/blogs"
 
 // The JSON modules infer `subContent[].type` as a plain string, and `oldTitles`
@@ -10,7 +9,7 @@ const toBlogPost = (data: BlogPost): BlogPost => ({
     ...data,
     subContent: data.subContent.map((sub) => ({
         ...sub,
-        type: sub.type as SubContentType, // Explicitly cast type
+        type: sub.type as SubContentType,
     })),
 } as BlogPost);
 
@@ -18,7 +17,7 @@ export const getBlogByTitle = async (title: string): Promise<BlogPost | undefine
 
     const data = allBlogs.find((item) => item.title === decodeURI(title));
 
-    if (!data) return undefined; // Ensure undefined is returned if not found
+    if (!data) return undefined;
 
     return toBlogPost(data);
 };

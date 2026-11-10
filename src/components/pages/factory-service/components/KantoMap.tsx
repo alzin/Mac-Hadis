@@ -120,7 +120,6 @@ const MapKanto: React.FC<MapKantoProps> = ({ className }) => {
 
       const infoWindow = new window.google.maps.InfoWindow();
 
-      // Markers
       PREFECTURES.forEach((p) => {
         const marker = new window.google.maps.Marker({
           position: { lat: p.lat, lng: p.lng },
@@ -148,7 +147,6 @@ const MapKanto: React.FC<MapKantoProps> = ({ className }) => {
         });
       });
 
-      // Kanto polygon
       const poly = new window.google.maps.Polygon({
         paths: KANTO_POLY,
         strokeColor: "#2c3e50",
@@ -159,7 +157,6 @@ const MapKanto: React.FC<MapKantoProps> = ({ className }) => {
       });
       poly.setMap(map);
 
-      // Custom control
       const controlButton = document.createElement("button");
       controlButton.className =
         "bg-white border border-white rounded shadow px-3 h-10 my-2 text-gray-800 text-sm";
@@ -181,7 +178,6 @@ const MapKanto: React.FC<MapKantoProps> = ({ className }) => {
 
   return (
     <div className={className}>
-      {/* Map surface */}
       <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
         <div ref={mapRef} className="w-full h-full">
           <div className="flex items-center justify-center h-full text-gray-500">
@@ -190,7 +186,6 @@ const MapKanto: React.FC<MapKantoProps> = ({ className }) => {
         </div>
       </div>
 
-      {/* Load Google Maps JS once after hydration */}
       <Script
         id="google-maps"
         src={`https://maps.googleapis.com/maps/api/js?key=${apiKey ?? ""

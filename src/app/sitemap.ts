@@ -1,15 +1,12 @@
 import { MetadataRoute } from 'next';
 
-// blogs data
 import { getAllBlogs } from '@/services/blogs';
 
-// category data
 import { getAllCategories } from '@/services/category';
 import { getProducts } from '@/services/products';
 import { normalizeCategoryName, productUrl } from '@/utils/seo';
 import { isNewProduct, isTProduct } from '@/utils/typeguards';
 
-// baseUrl
 import { baseUrl } from '@/utils/baseUrl';
 
 
@@ -17,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const blogsData = getAllBlogs()
     const categoriesData = getAllCategories()
 
-    // Static URLs
     const staticUrls: MetadataRoute.Sitemap = [
         {
             url: baseUrl,
@@ -44,18 +40,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
     ];
 
-    // Dynamic Blog URLs
     const dynamicBlogUrls: MetadataRoute.Sitemap = blogsData.map((blog) => ({
         url: `${baseUrl}/blogs/${encodeURIComponent(blog.title)}`,
-        lastModified: new Date().toISOString(), // Use actual lastModified if available
+        lastModified: new Date().toISOString(),
         changeFrequency: "weekly",
         priority: 0.7,
     }));
 
-    // Dynamic category URLs
     const dynamicCategoryUrls: MetadataRoute.Sitemap = categoriesData.map((category) => ({
         url: `${baseUrl}/products/${category.id}`,
-        lastModified: new Date().toISOString(), // Use actual lastModified if available
+        lastModified: new Date().toISOString(),
         changeFrequency: "weekly",
         priority: 0.7,
     }));

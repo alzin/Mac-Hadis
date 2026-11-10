@@ -110,7 +110,6 @@ const ImageUpload = ({
               )}
             </div>
 
-            {/* Input is now correctly referenced with an ID */}
             <input
               id={`file-input-${productIndex}-${imageIndex}`}
               type="file"

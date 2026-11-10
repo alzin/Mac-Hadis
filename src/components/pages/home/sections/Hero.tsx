@@ -6,13 +6,12 @@ const Hero: React.FC = () => {
       aria-label="Hero section with business highlights"
       className="relative px-4 w-full h-[410px] lg:h-[640px] 2xl:h-[calc(100vh-64px)] overflow-hidden"
     >
-      {/* Mobile Background Image (< 1024px) */}
       <div className="absolute inset-0 -z-30 lg:hidden">
         <Image
           src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background-mobile.webp"
           alt="中古機械・電動工具買取のハディズ - 全国対応"
           fill
-          priority // ✅ CRITICAL: This is the LCP element
+          priority // This is the LCP element
           quality={85}
           sizes="100vw"
           fetchPriority="high"
@@ -20,13 +19,12 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      {/* Desktop Background Image (>= 1024px) */}
       <div className="absolute inset-0 -z-30 hidden lg:block">
         <Image
           src="https://mac-hadis.s3.ap-northeast-1.amazonaws.com/home-page/hero-section/hero-background.webp"
           alt="中古機械・電動工具買取のハディズ - 全国対応"
           fill
-          priority // ✅ CRITICAL: This is the LCP element
+          priority // This is the LCP element
           quality={85}
           sizes="100vw"
           fetchPriority="high"
@@ -116,7 +114,6 @@ const Hero: React.FC = () => {
           </span>
         </h1>
 
-        {/* Highlights */}
         <ul className="flex w-full items-start xl:items-center justify-center gap-2 flex-col lg:flex-row text-white flex-wrap">
           <li className="flex gap-1 items-center justify-center w-[165px] h-[66px] lg:w-[276px] lg:h-[102px] gradient-red rounded-lg font-black lg:text-[32px] text-xl">
             <span className="text-[18px] lg:text-[28px]">創業</span>

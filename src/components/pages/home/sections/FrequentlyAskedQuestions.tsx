@@ -1,7 +1,5 @@
-// components
 import FrequentlyQuestionsCard from "../components/FrequentlyQuestionsCard";
 
-// data
 import FrequentlyAskedQuestionsData from "@/content/home/FrequentlyAskedQuestions.json";
 
 const FrequentlyAskedQuestions: React.FC = () => {

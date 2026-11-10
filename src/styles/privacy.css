@@ -1,4 +1,3 @@
-/* Modal Container */
 .privacy-modal {
   width: min(90%, 600px);
   max-height: 80vh;
@@ -15,7 +14,6 @@
   -webkit-animation: none !important;
 }
 
-/* Responsive Modal */
 @media (min-width: 768px) {
   .privacy-modal {
     max-width: 70%;
@@ -30,13 +28,11 @@
   }
 }
 
-/* Modal Title */
 .privacy-title {
   font-size: clamp(16px, 2vw, 24px);
   font-weight: bold;
 }
 
-/* Content Inside the Modal */
 .privacy-modal-content {
   text-align: left;
   font-size: clamp(12px, 1.5vw, 15px);
@@ -44,19 +40,16 @@
   color: #333;
 }
 
-/* Paragraph Styling */
 .privacy-modal-content p {
   margin-bottom: 20px;
 }
 
-/* Headings */
 .privacy-modal-content strong {
   font-size: clamp(13px, 1.8vw, 16px);
   color: #222;
   display: block;
 }
 
-/* List Styling */
 .privacy-modal-content ul {
   padding-left: 20px;
   margin-bottom: 20px !important;

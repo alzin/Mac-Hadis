@@ -20,7 +20,6 @@ const Pagination: React.FC<IPagination> = ({
     const pages = [];
 
     if (totalPages <= 7) {
-      // Show all pages if total pages are less than or equal to 7
       for (let i = 1; i <= totalPages; i++) {
         pages.push(
           <Link
@@ -38,7 +37,6 @@ const Pagination: React.FC<IPagination> = ({
         );
       }
     } else {
-      // When totalPages > 7
       if (currentPage <= 3) {
         // First few pages
         for (let i = 1; i <= 4; i++) {

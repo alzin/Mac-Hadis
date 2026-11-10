@@ -1,9 +1,5 @@
 import type { Config } from "tailwindcss";
 
-/**
- * ✅ MOBILE-FIRST TAILWIND CONFIG
- * Reduces CSS size by purging unused utilities
- */
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -27,9 +23,7 @@ const config: Config = {
     },
   },
   plugins: [],
-  // ✅ CRITICAL: Purge unused CSS aggressively
   safelist: [
-    // Only safelist critical classes
     "gradient-red",
     "gradient-navigation",
     "hero-section",
