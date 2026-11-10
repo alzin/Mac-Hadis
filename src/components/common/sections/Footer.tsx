@@ -5,15 +5,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 // data
 import navbarLinksData from "@/content/home/navbarLinks.json";
-import { resolveNavItems } from "@/utils/navItems";
+import { resolveNavButtons, resolveNavItems } from "@/utils/navItems";
+import { isFactoryThemePath } from "@/utils/theme";
 
 const Footer: React.FC = () => {
   const pathname = usePathname();
   const navItems = resolveNavItems(pathname);
+  const navButtons = resolveNavButtons(pathname);
+  const factoryTheme = isFactoryThemePath(pathname);
 
   return (
     <footer className="mb-32 xl:mb-20" aria-label="Website Footer">
-      <div className="bg-white py-10 px-4 space-y-5 lg:space-y-6 font-medium text-sm lg:text-base text-[#B81122] flex items-center justify-center w-full flex-col">
+      <div
+        className={`bg-white py-10 px-4 space-y-5 lg:space-y-6 font-medium text-sm lg:text-base flex items-center justify-center w-full flex-col ${
+          factoryTheme ? "text-factory-teal" : "text-[#B81122]"
+        }`}
+      >
         {/* logo */}
         <Link href={"/"} className="block">
           <Image
@@ -38,7 +45,7 @@ const Footer: React.FC = () => {
           </ul>
 
           <div className="flex items-start lg:items-center justify-center gap-2 font-bold">
-            {navbarLinksData.navbarBtns?.map((item) => (
+            {navButtons.map((item) => (
               <span key={item.id}>
                 <Link href={item.href} title={`Maps to ${item.label}`}>
                   {item.label}
@@ -86,7 +93,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* copyright */}
-        <span className="text-xs text-[#CA999B]">
+        <span className={`text-xs ${factoryTheme ? "text-factory-teal/60" : "text-[#CA999B]"}`}>
           Copyright © ハディズ All rights reserved.
         </span>
       </div>

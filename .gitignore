@@ -45,3 +45,8 @@ next-env.d.ts
 .idea
 
 claude.md
+
+# local tooling / working files
+/.claude/
+/.playwright-mcp/
+/work/

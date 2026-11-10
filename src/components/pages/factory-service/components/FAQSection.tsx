@@ -30,7 +30,7 @@ export const FAQSection = () => {
     },
   ];
   return (
-    <section className="bg-gray-100 py-20">
+    <section id="faq" className="scroll-mt-16 bg-gray-100 py-20 lg:scroll-mt-20">
       <div className="fs-container max-w-6xl mx-auto px-5">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-factory-teal">
