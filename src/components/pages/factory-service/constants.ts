@@ -1,6 +1,6 @@
 // AI-generated (ChatGPT) scene: crane loading an NC lathe out of a cleared factory.
 // Action sits on the right so the left side stays calm for the copy.
-export const FACTORY_HERO_IMAGE = "/images/factory-service/hero.webp";
+export const FACTORY_HERO_IMAGE = "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/facotry-services/hero.webp";
 
 /**
  * Elements that already show the phone / LINE / mail buttons.
