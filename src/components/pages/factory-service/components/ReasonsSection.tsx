@@ -83,7 +83,7 @@ export const ReasonsSection = () => {
     },
   ];
   return (
-    <section className="bg-gray-100 py-20">
+    <section id="reasons" className="scroll-mt-16 bg-gray-100 py-20 lg:scroll-mt-20">
       {/* Strengths Section */}
       <div className="fs-container max-w-6xl mx-auto px-5">
         <div className="text-center mb-12">

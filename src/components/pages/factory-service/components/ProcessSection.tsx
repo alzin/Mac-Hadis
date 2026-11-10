@@ -26,7 +26,7 @@ export const ProcessSection = () => {
     },
   ];
   return (
-    <section className="bg-white py-20">
+    <section id="process" className="scroll-mt-16 bg-white py-20 lg:scroll-mt-20">
       <div className="fs-container max-w-6xl mx-auto px-5">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-factory-teal">作業の流れ</h2>

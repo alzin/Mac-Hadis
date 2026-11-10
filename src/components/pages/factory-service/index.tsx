@@ -7,15 +7,13 @@ import { ProcessSection } from "./components/ProcessSection";
 import { ReasonsSection } from "./components/ReasonsSection";
 import { ServiceContentSection } from "./components/ServiceContentSection";
 import { TipsSection } from "./components/TipsSection";
-import ContactBanner from "../home/sections/ContactBanner";
-import ContactFixedBanner from "@/components/common/sections/ContactFixedBanner";
-import { CTASection } from "./components/CTASection";
+import { StickyContactBanner } from "./components/StickyContactBanner";
 import { FAQSection } from "./components/FAQSection";
 
 export const Index = () => {
   return (
     <div className="min-h-screen bg-factory-sky font-sans text-gray-800 leading-relaxed">
-      <HeroSection />;
+      <HeroSection />
       <ProblemsSection />
       <ReasonsSection />
       <ServiceContentSection />
@@ -24,9 +22,7 @@ export const Index = () => {
       <FAQSection/>
       <TipsSection />
       <ContactSection />
-      <ContactBanner applyFactoryTheme />
-      <CTASection />
-      <ContactFixedBanner />
+      <StickyContactBanner />
     </div>
   );
 };
