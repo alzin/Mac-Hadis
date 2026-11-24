@@ -55,6 +55,7 @@ import product54 from './発電機・溶接機・コンプレッサ/ロボット
 import product55 from './管工事機械・工具/コアドリル.json';
 import product56 from './業務用厨房機器・ ベーカリー機器/製氷機.json';
 import product57 from './自動車整備機械/サンドブラスト機.json';
+import product58 from './自動車整備機械/門型クレーン.json';
 
 
 const products = [
@@ -114,7 +115,8 @@ const products = [
   product54,
   product55,
   product56,
-  product57
+  product57,
+  product58
 ]
 
 export default products

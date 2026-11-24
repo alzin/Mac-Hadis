@@ -71,38 +71,38 @@
     },
     {
       "id": 12,
+      "title": "門型クレーン",
+      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/門型クレーン.png",
+      "category": "自動車整備機械"
+    },
+    {
+      "id": 13,
       "title": "高圧洗浄機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/高圧洗浄機.png",
       "category": "自動車整備機械"
     },
     {
-      "id": 13,
+      "id": 14,
       "title": "オイルチェンジャー",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/オイルチェンジャー.png",
       "category": "自動車整備機械"
     },
     {
-      "id": 14,
+      "id": 15,
       "title": "フロンガス回収機",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/フロンガス回収機.jpg",
       "category": "自動車整備機械"
     },
     {
-      "id": 15,
+      "id": 16,
       "title": "ヘッドライトテスター",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/ヘッドライトテスター.png",
       "category": "自動車整備機械"
     },
     {
-      "id": 16,
+      "id": 17,
       "title": "排気ガステスター",
       "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/排気ガステスター.png",
-      "category": "自動車整備機械"
-    },
-    {
-      "id": 17,
-      "title": "門型クレーン",
-      "image": "https://mac-hadis.s3.ap-northeast-1.amazonaws.com/categories/自動車整備機械/items/門型クレーン.png",
       "category": "自動車整備機械"
     },
     {
